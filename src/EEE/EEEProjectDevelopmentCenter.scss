@@ -1,0 +1,296 @@
+/* Root wrapper */
+.EEEProjectDevelopmentCenter {
+  --bg: #ffffff;
+  --text: #1f2430;
+  --muted: #5c6773;
+  --brand: #1d4ed8; /* blue accent for EEE */
+  --brand-2: #0ea5e9;
+  --border: #e5e7eb;
+  --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.06);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --gap: 24px;
+  --gap-sm: 16px;
+  --maxw: 1200px;
+  --code-bg: #0b1020;
+  background: var(--bg);
+  color: var(--text);
+  width: 100%;
+  min-height: 100%;
+}
+
+/* Main container */
+.EEEProjectDevelopmentCenter-main {
+  padding: 24px;
+  @media (min-width: 1200px) {
+    padding: 32px 24px 48px;
+  }
+}
+
+/* Grid layout: left (keywords), center (content), right (related) */
+.EEEProjectDevelopmentCenter-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+
+  @media (min-width: 900px) {
+    grid-template-columns: 240px minmax(0, 1fr) 260px;
+    align-items: start;
+  }
+
+  //max-width: var(--maxw);
+  //margin: 0 auto;
+}
+
+/* Left and Right sidebars */
+.EEEProjectDevelopmentCenter-left,
+.EEEProjectDevelopmentCenter-right {
+  position: sticky;
+  top: 88px; /* keep under any fixed header */
+  height: fit-content;
+}
+
+.EEEProjectDevelopmentCenter-left h3,
+.EEEProjectDevelopmentCenter-right h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.EEEProjectDevelopmentCenter-left ul,
+.EEEProjectDevelopmentCenter-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+
+.EEEProjectDevelopmentCenter-left li,
+.EEEProjectDevelopmentCenter-right li {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: var(--muted);
+  border-bottom: 1px dashed var(--border);
+}
+
+.EEEProjectDevelopmentCenter-left li:last-child,
+.EEEProjectDevelopmentCenter-right li:last-child {
+  border-bottom: none;
+}
+
+.EEEProjectDevelopmentCenter-right a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.EEEProjectDevelopmentCenter-right a:hover {
+  text-decoration: underline;
+}
+
+/* Center content */
+.EEEProjectDevelopmentCenter-center {
+  display: grid;
+  gap: var(--gap);
+}
+
+.EEEProjectDevelopmentCenter-center h1 {
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.EEEProjectDevelopmentCenter-center h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+/* Intro and sections */
+.EEEProjectDevelopmentCenter-intro,
+.EEEProjectDevelopmentCenter-ecosystem,
+.EEEProjectDevelopmentCenter-table,
+.EEEProjectDevelopmentCenter-cycle,
+.EEEProjectDevelopmentCenter-project-titles,
+.EEEProjectDevelopmentCenter-conclusion,
+.kerala-alluniversityfaq-section {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 18px 16px;
+}
+
+.EEEProjectDevelopmentCenter-intro p,
+.EEEProjectDevelopmentCenter-ecosystem p,
+.EEEProjectDevelopmentCenter-table p,
+.EEEProjectDevelopmentCenter-cycle p,
+.EEEProjectDevelopmentCenter-project-titles p,
+.EEEProjectDevelopmentCenter-conclusion p,
+.kerala-alluniversityfaq-section p {
+  margin: 10px 0;
+  color: var(--text);
+}
+
+/* Strong highlight */
+.EEEProjectDevelopmentCenter-intro strong {
+  color: var(--brand);
+}
+
+/* Table styling */
+.EEEProjectDevelopmentCenter-table-container {
+  overflow-x: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.EEEProjectDevelopmentCenter-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  min-width: 720px;
+}
+
+.EEEProjectDevelopmentCenter-table-container thead th {
+  background: #f8fafc;
+  color: #0f172a;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.EEEProjectDevelopmentCenter-table-container tbody td {
+  padding: 12px;
+  font-size: 14px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+.EEEProjectDevelopmentCenter-table-container tbody tr:hover {
+  background: #f9fbff;
+}
+
+/* Lists inside sections */
+.EEEProjectDevelopmentCenter-project-titles ul {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.EEEProjectDevelopmentCenter-project-titles li {
+  margin: 6px 0;
+  line-height: 1.35;
+}
+
+/* FAQ (details/summary) */
+.kerala-alluniversityfaq-section h2 {
+  margin-bottom: 8px;
+}
+
+.kerala-faq-items {
+  display: grid;
+  gap: 10px;
+}
+
+.kerala-faq-items details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  overflow: hidden;
+}
+
+.kerala-faq-items summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 12px 14px;
+  font-weight: 600;
+  position: relative;
+}
+
+.kerala-faq-items summary::-webkit-details-marker {
+  display: none;
+}
+
+.kerala-faq-items summary::after {
+  content: "▸";
+  position: absolute;
+  right: 12px;
+  transition: transform 0.2s ease;
+  color: var(--brand);
+}
+
+.kerala-faq-items details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+.kerala-faq-items p {
+  margin: 0;
+  padding: 0 14px 12px 14px;
+  color: var(--muted);
+}
+
+/* Links and emphasis */
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks (if any) */
+pre,
+code,
+kbd,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+pre {
+  background: var(--code-bg);
+  color: #cbd5e1;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  overflow: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 899.98px) {
+  .EEEProjectDevelopmentCenter-left,
+  .EEEProjectDevelopmentCenter-right {
+    position: static;
+  }
+
+  .EEEProjectDevelopmentCenter-left ul,
+  .EEEProjectDevelopmentCenter-right ul {
+    padding: 10px;
+  }
+
+  .EEEProjectDevelopmentCenter-center h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .EEEProjectDevelopmentCenter-left {
+    top: 96px;
+  }
+  .EEEProjectDevelopmentCenter-right {
+    top: 96px;
+  }
+}
+
+/* Subtle accent borders on headers */
+.EEEProjectDevelopmentCenter-center h2 {
+  border-left: 3px solid var(--brand);
+  padding-left: 10px;
+}
+
+/* Accent bullets in left keywords */
+.EEEProjectDevelopmentCenter-left li::marker {
+  color: var(--brand-2);
+}

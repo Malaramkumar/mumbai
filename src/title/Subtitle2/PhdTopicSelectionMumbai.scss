@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.consulting-wrapper {
+  padding: 40px 20px;
+  display: flex;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 59, 115, 1),
+    rgba(5, 102, 180, 0.8) 70%
+  );
+
+  .left-links,
+  .right-keywords {
+      flex: 0 0 15%;
+      width: 15%;
+      position: sticky;
+      top: 1%;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      max-height: 500px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      overflow-y: auto;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 10px;
+      }
+
+      h3 {
+        color: #003b73;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 0.5rem;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+
+        li {
+          margin-bottom: 0.6rem;
+          color: #000;
+          font-weight: 400;
+          line-height: 1.5;
+          padding: 0.4rem 0.6rem;
+          border-radius: 6px;
+          transition: background 0.2s ease;
+
+          &:hover {
+            background-color: #f1f9ff;
+            color: #003b73;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  
+
+  .main-content {
+    flex: 1;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+    h1 {
+      font-size: 2rem;
+      color: #1a1a1a;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #2b4a73;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 1.5rem;
+
+      li {
+        margin-bottom: 8px;
+        list-style: none;
+        padding-left: 2rem;
+        color: #111;
+        font-size: 1.1rem;
+      }
+    }
+
+    h3 {
+      color: #111;
+    }
+
+    .table-section,
+    .process-section {
+      background: #f1f7fc;
+      padding: 2rem;
+      border: 1px solid #d4e5f8;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+
+      .table {
+        display: flex;
+        flex-direction: column;
+
+        .row {
+          display: flex;
+          padding: 0.75rem 1rem;
+          border-bottom: 1px solid #ddd;
+
+          div {
+            flex: 1;
+          }
+
+          &.head {
+            background: #d3e9ff;
+            font-weight: 600;
+            color: #003b73;
+          }
+        }
+      }
+    }
+  }
+
+  .faq-section11 {
+    background-color: #fdfdfd;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+    .faq-title11 {
+      color: #003b73;
+      margin-bottom: 1.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .faq-item11 {
+      border-bottom: 1px solid #eee;
+      padding: 1rem 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .faq-question11 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        color: #003b73;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #0077b6;
+        }
+      }
+
+      .faq-answer11 {
+        margin-top: 0.75rem;
+        font-size: 0.95rem;
+        color: #333;
+        padding-left: 1rem;
+        border-left: 2px solid #003b73;
+      }
+
+      &.active .faq-question11 {
+        color: #0077b6;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    .left-links
+     {
+      order:2;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+    
+    
+    .right-keywords {
+      order:3;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+
+
+    .main-content {
+      order:1;
+      width: 93%;
+      padding: 24px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+    padding: 24px 16px;
+
+    .main-content {
+      width: 90%;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    table,
+    th,
+    td {
+      font-size: 0.9rem;
+    }
+  }
+}

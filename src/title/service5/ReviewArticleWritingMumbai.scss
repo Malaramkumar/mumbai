@@ -1,0 +1,162 @@
+.ReviewArticleMumbai {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+   background: linear-gradient(
+    to bottom,
+    rgba(0, 59, 115, 1),
+    rgba(5, 102, 180, 0.8) 70%
+  );
+ 
+
+  .ReviewArticleMumbai-left,
+  .ReviewArticleMumbai-right {
+  flex: 1;
+  position: relative;
+  top: 1%;
+  width: auto;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  max-height: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+
+  h3 {
+    color: #003b73;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: .5rem;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.6rem;
+      color: #000;
+      line-height: 1.5;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background-color: #f1f9ff;
+        color: #003b73;
+        cursor: pointer;
+      }
+
+      &.active {
+        background-color: #003b73;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+  }
+  }
+
+  .ReviewArticleMumbai-center {
+    flex: 3;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+    h1 {
+      color: #003d80;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      color: #004a91;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      color: #333;
+      line-height: 1.8;
+      margin-top: 1rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 2.5rem;
+      li {
+        color: #333;
+        line-height: 1.8;
+      }
+    }
+
+    .ReviewArticleMumbai-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 0.8rem;
+        text-align: left;
+      }
+
+      th {
+        background: #004a91;
+        color: #fff;
+      }
+
+      tr:nth-child(even) {
+        background: #f7faff;
+      }
+    }
+
+    .ReviewArticleMumbai-faq {
+      margin-top: 2rem;
+
+      .faq-item {
+        margin-bottom: 1.5rem;
+
+        h3 {
+          color: #004a91;
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
+        }
+
+        p {
+          color: #333;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    .ReviewArticleMumbai-left,
+    .ReviewArticleMumbai-right,
+    .ReviewArticleMumbai-center {
+      width: 100%;
+    }
+  }
+}

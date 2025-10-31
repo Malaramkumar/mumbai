@@ -1,0 +1,126 @@
+.PhdAdmissionMumbai {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: "Segoe UI", sans-serif;
+  color: #000000;
+  text-align: justify;
+
+  /* LEFT SECTION */
+  &-left {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      font-size: 1.2rem;
+      color: #0c2a4d;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        background: #e6f0fb;
+        padding: 0.5rem 0.8rem;
+        margin-bottom: 0.6rem;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        color: #0e3a64;
+      }
+    }
+  }
+
+  /* CENTER SECTION */
+  &-center {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    h2 {
+      color: #0c2a4d;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      color: #1a3e5f;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .PhdAdmissionMumbai-faq {
+      .faq-item {
+        margin-bottom: 1.2rem;
+
+        h5 {
+          color: #0e3b5d;
+          font-size: 1rem;
+          margin-bottom: 0.3rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  /* RIGHT SECTION */
+  &-right {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    h4 {
+      font-size: 1.2rem;
+      color: #0c2a4d;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        background: #eef5ff;
+        padding: 0.6rem 0.8rem;
+        margin-bottom: 0.6rem;
+        border-radius: 6px;
+        color: #0e3a64;
+        font-size: 0.95rem;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: #d9e9ff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  /* MEDIA QUERIES */
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    &-left,
+    &-right {
+      order: 2;
+    }
+    &-center {
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+
+.colleges-list-container {
+  // ... (all previous styles remain the same)
+  position: relative;
+  text-align: center;
+  padding: 5rem 1.5rem;
+  background-color: #0a101f;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.7;
+    z-index: 0;
+  }
+  .shape-1 {
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    left: -100px;
+    background: linear-gradient(135deg, #3a8dff, #1c4a8c);
+    animation: float 20s infinite ease-in-out alternate;
+  }
+  .shape-2 {
+    width: 350px;
+    height: 350px;
+    bottom: -50px;
+    right: -50px;
+    background: linear-gradient(135deg, #ff51c6, #8e2de2);
+    animation: float 25s infinite ease-in-out alternate-reverse;
+  }
+  .shape-3 {
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    right: 20%;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    animation: float 15s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      transform: translate(80px, 40px) scale(1.2);
+    }
+  }
+
+  .colleges-title {
+    font-size: 3rem;
+    color: #f0f4f8;
+    margin-bottom: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 3.5rem;
+    z-index: 1;
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      width: 1.25rem;
+      height: 1.25rem;
+      stroke: #9fb3c8;
+      transition: stroke 0.3s ease;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.8rem 1rem 0.8rem 3rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(15, 23, 42, 0.5);
+      color: #f0f4f8;
+      outline: none;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+
+      &::placeholder {
+        color: #9fb3c8;
+      }
+
+      &:focus {
+        border-color: #3a8dff;
+        box-shadow: 0 0 15px rgba(58, 141, 255, 0.3);
+        background: rgba(15, 23, 42, 0.7);
+        
+        + .search-icon {
+          stroke: #3a8dff;
+        }
+      }
+    }
+  }
+
+  .colleges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  // Wrapper for Framer Motion to apply transformations
+  .college-card-wrapper {
+    position: relative;
+    display: block; // This ensures the link inside fills the wrapper
+  }
+
+  .college-card {
+    position: relative;
+    display: flex;
+    width: 100%; // Make link fill the wrapper
+    height: 100%; // Make link fill the wrapper
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+    .card-content {
+      color: #e2e8f0;
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    
+    .card-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(58, 141, 255, 0.3) 0%, rgba(58, 141, 255, 0) 60%);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: -1;
+    }
+    
+    // The hover effects on the card itself are now handled by Framer Motion's `whileHover`
+    // We only keep the inner glow transition here
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.3);
+
+      .card-glow {
+        opacity: 1;
+      }
+    }
+  }
+
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: 600;
+    color: #9fb3c8;
+    font-size: 1.2rem;
+  }
+}

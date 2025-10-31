@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.consulting-wrapper {
+  
+  padding: 40px 20px;
+  display: flex;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 59, 115, 1),
+    rgba(5, 102, 180, 0.8) 70%
+  );
+
+  /* SIDE BARS */
+  .left-side,
+  .right-side {
+    flex: 0 0 15%;
+    width: 15%;
+    position: sticky;
+    top: 1%;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    max-height: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar { width: 6px; }
+    &::-webkit-scrollbar-track { background: transparent; }
+    &::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 10px; }
+
+    h3 {
+      color: #003b73;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.6rem;
+        color: #000;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 0.4rem 0.6rem;
+        border-radius: 6px;
+        transition: background 0.2s ease;
+
+        &:hover { background-color: #f1f9ff; color: #003b73; cursor: pointer; }
+      }
+    }
+  }
+
+
+  .main-content {
+    flex: 1;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+    h1 {
+      font-size: 2rem;
+      color: #1a1a1a;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #2b4a73;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 1.5rem;
+
+      li {
+        margin-bottom: 8px;
+        list-style: disc;
+        color:#111;
+        font-size: 1.1rem;
+      }
+    }
+  h3{
+        color:#111;
+      }
+  
+  }
+
+  // palette helpers (optional tweaks)
+$header-bg: #4051ff;      // deep accent for <thead>
+$header-txt: #ffffff;
+$row-bg:    #ffffff;
+$shadow:    0 8px 16px rgba(0, 0, 0, 0.08);
+$hover:     0 12px 22px rgba(0, 0, 0, 0.12);
+$gap:       14px;
+
+.service-table-wrapper {
+  padding: 2rem;
+  background: #f7f9fc;
+  overflow-x: auto; // mobile safety
+}
+
+.service-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 $gap; // vertical gaps between rows
+
+  thead {
+    tr {
+      th {
+        background: $header-bg;
+        color: $header-txt;
+        padding: 1rem .75rem;
+        font-weight: 600;
+        text-align: left;
+
+        // keep rounded corners on the header “block”
+        &:first-child { border-radius: 12px 0 0 0; }
+        &:last-child  { border-radius: 0 12px 0 0; }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      background: $row-bg;
+      box-shadow: $shadow;
+      transition: transform .25s ease, box-shadow .25s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: $hover;
+      }
+
+      td {
+        padding: 1rem .75rem;
+        font-size: .95rem;
+        line-height: 1.45;
+        color: #333;
+
+        &:first-child {
+          width: 3rem;          // narrow index column
+          font-weight: 600;
+          color: #4051ff;
+        }
+      }
+
+      // rounded corners on each “card‑row”
+      &:first-child td:first-child { border-radius: 12px 0 0 12px; }
+      &:first-child td:last-child  { border-radius: 0 12px 12px 0; }
+      &:not(:first-child) td { border-top: 1px solid #e9edf5; } // fine divider
+    }
+  }
+}
+
+// simple responsiveness (stack column headers on narrow screens)
+@media (max-width: 640px) {
+  .service-table thead { display: none; }
+
+  .service-table tbody tr {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden; // clip shadow fade
+
+    td {
+      display: flex;
+      padding: .75rem 1rem;
+
+      &:before {
+        content: attr(data-label);
+        flex-basis: 120px;
+        font-weight: 600;
+        color: #4051ff;
+      }
+
+      &:first-child { display: none; } // drop numeric index on mobile
+    }
+  }
+}
+
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    .left-links,
+    .right-keywords {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .main-content {
+      padding: 24px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+    padding: 24px 16px;
+
+    .main-content {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    table,
+    th,
+    td {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+ 
+/* FAQ Section */
+.faq-section11 {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  .faq-title11 {
+    color: #003b73;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .faq-item11 {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question11 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      color: #003b73;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #0077b6;
+      }
+    }
+
+    .faq-answer11 {
+      margin-top: 0.75rem;
+      font-size: 0.95rem;
+      color: #333;
+      padding-left: 1rem;
+      border-left: 2px solid #003b73;
+    }
+
+    &.active .faq-question {
+      color: #0077b6;
+    }
+  }
+}

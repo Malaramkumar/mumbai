@@ -1,0 +1,188 @@
+.phd-mumbai-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: "Segoe UI", sans-serif;
+  color: #000;
+  
+
+  /* LEFT COLUMN */
+  .phd-mumbai-left {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    h3 {
+      color: #0e2a47;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #d0e1ff;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        background: #e6effc;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        color: #0f3a66;
+      }
+    }
+  }
+
+  /* CENTER COLUMN */
+  .phd-mumbai-center {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    h1 {
+      font-size: 2rem;
+      color: #0e2a47;
+      margin-bottom: 1.2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color: #1c3c59;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+      color: #222;
+    }
+
+    .checklist {
+      list-style: none;
+      margin-top: 1rem;
+      padding: 0;
+
+      li {
+        background: #f5f9ff;
+        border-left: 4px solid #0f3a66;
+        margin-bottom: 0.7rem;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input[type="checkbox"] {
+          transform: scale(1.2);
+          accent-color: #0f3a66;
+        }
+      }
+    }
+
+    .faq-section {
+      margin-top: 2rem;
+
+      h2 {
+        color: #0f3a66;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 1rem;
+        background: #f1f6ff;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+
+        strong {
+          color: #0d3a5f;
+        }
+
+        span {
+          font-weight: bold;
+          color: #444;
+        }
+      }
+    }
+  }
+
+  /* RIGHT COLUMN */
+  .phd-mumbai-right {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    h3 {
+      color: #0e2a47;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #d0e1ff;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 0.7rem;
+
+        a {
+          color: #0f3a66;
+          text-decoration: none;
+          font-size: 0.95rem;
+
+          &:hover {
+            color: #005bb5;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  /* ======================
+     RESPONSIVE DESIGN
+     ====================== */
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    .phd-mumbai-left,
+    .phd-mumbai-right {
+      order: 2;
+    }
+    .phd-mumbai-center {
+      order: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+
+    .phd-mumbai-center {
+      padding: 1.2rem;
+    }
+
+    .phd-mumbai-left,
+    .phd-mumbai-right {
+      padding: 1rem;
+    }
+
+    .checklist li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

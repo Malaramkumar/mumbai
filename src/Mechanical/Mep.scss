@@ -1,0 +1,273 @@
+// MEProjectDevelopmentCenter.scss
+
+// Color variables for consistent theming
+$primary-color: #1a73e8; // Blue for links and highlights
+$secondary-color: #333; // Dark gray for text
+$background-color: #f8f9fa; // Light background
+$dark-theme-background: #1c2526; // Dark theme background
+$dark-theme-text: #e0e0e0; // Light text for dark theme
+$border-color: #ddd; // Light border
+$accent-color: #28a745; // Green for accents
+
+// Typography
+$font-stack: 'Roboto', 'Arial', sans-serif;
+$font-size-base: 16px;
+$font-size-heading: 2rem;
+$font-size-subheading: 1.5rem;
+$font-size-small: 0.875rem;
+
+// Grid and spacing
+$grid-gap: 20px;
+$padding-section: 20px;
+$max-width: 1200px;
+
+// Responsive breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+
+.MEProjectDevelopmentCenter {
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  color: $secondary-color;
+  background-color: $background-color;
+  padding: $padding-section;
+  min-height: 100vh;
+
+  // Dark theme support
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark-theme-background;
+    color: $dark-theme-text;
+  }
+
+  &-main {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; // Left keywords, center content, right links
+    gap: $grid-gap;
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: 1fr 3fr; // Drop right column on tablet
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      grid-template-columns: 1fr; // Single column on mobile
+    }
+  }
+
+  &-left {
+    padding: $padding-section;
+
+    h3 {
+      font-size: $font-size-subheading;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+        font-size: $font-size-small;
+        color: $secondary-color;
+
+        @media (prefers-color-scheme: dark) {
+          color: $dark-theme-text;
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      text-align: center;
+    }
+  }
+
+  &-center {
+    padding: $padding-section;
+
+    h1 {
+      font-size: $font-size-heading;
+      color: $secondary-color;
+      margin-bottom: 20px;
+
+      @media (prefers-color-scheme: dark) {
+        color: $dark-theme-text;
+      }
+    }
+
+    h2 {
+      font-size: $font-size-subheading;
+      color: $primary-color;
+      margin: 20px 0 10px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      color: $secondary-color;
+      margin: 15px 0 10px;
+
+      @media (prefers-color-scheme: dark) {
+        color: $dark-theme-text;
+      }
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 15px;
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &-table {
+    margin: 20px 0;
+
+    &-container {
+      overflow-x: auto;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+
+        th, td {
+          border: 1px solid $border-color;
+          padding: 10px;
+          text-align: left;
+          font-size: $font-size-small;
+        }
+
+        th {
+          background-color: $primary-color;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        td {
+          background-color: #fff;
+
+          @media (prefers-color-scheme: dark) {
+            background-color: #2c3e50;
+            color: $dark-theme-text;
+          }
+        }
+      }
+    }
+  }
+
+  &-right {
+    padding: $padding-section;
+
+    h3 {
+      font-size: $font-size-subheading;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          color: $primary-color;
+          text-decoration: none;
+          font-size: $font-size-small;
+
+          &:hover {
+            text-decoration: underline;
+            color: $accent-color;
+          }
+        }
+      }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      display: none; // Hide related services on tablet and below
+    }
+  }
+
+  .kerala-alluniversityfaq-section {
+    margin-top: 30px;
+
+    h2 {
+      font-size: $font-size-subheading;
+      color: $primary-color;
+      margin-bottom: 15px;
+    }
+
+    .kerala-faq-items {
+      details {
+        margin-bottom: 10px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #fff;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: #2c3e50;
+          color: $dark-theme-text;
+          border-color: #444;
+        }
+
+        summary {
+          font-weight: bold;
+          cursor: pointer;
+          padding: 10px;
+          color: $secondary-color;
+
+          @media (prefers-color-scheme: dark) {
+            color: $dark-theme-text;
+          }
+        }
+
+        p {
+          padding: 10px;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: $breakpoint-mobile) {
+    padding: 10px;
+
+    &-grid {
+      gap: 10px;
+    }
+
+    &-center {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p, ul li {
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

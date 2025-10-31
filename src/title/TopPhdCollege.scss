@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.phd-mumbai-container {
+  padding: 40px 20px;
+  display: flex;
+  gap: 30px;
+  font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 59, 115, 1),
+    rgba(5, 102, 180, 0.8) 70%
+  );
+
+  .left-sidebar,
+  .right-sidebar {
+    width: 220px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+
+    h3 {
+      font-size: 1.1rem;
+      color: #003b5c;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #111;
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    text-align: justify;
+
+    h1 {
+      font-size: 2rem;
+      color: #111;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #111;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.1rem;
+      color: #111;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 1.5rem;
+
+      li {
+        margin-bottom: 8px;
+        list-style-type: disc;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    }
+
+   .highlight-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1.2rem;
+  font-family: "Segoe UI", sans-serif;
+  margin-top: 2rem;
+   }
+  }
+
+  table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem; // adds vertical gap between rows
+  font-family: 'Segoe UI', sans-serif;
+
+  thead {
+    th {
+      background-color: #859bfc; // soft tan/yellow
+      color: #000;
+      font-weight: 700;
+      text-align: center;
+      padding: 1rem 1.5rem;
+      border-radius: 40px;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: transparent;
+      box-shadow: none;
+
+      td {
+        background: linear-gradient(to right, #d6e4fa, #eaf1ff); // light pastel blue
+        color: #000;
+        padding: 1rem 1.5rem;
+        text-align: center;
+        font-size: 1.1rem;
+        border-radius: 40px;
+        transition: transform 0.2s ease;
+
+        &:first-child {
+          border-top-left-radius: 40px;
+          border-bottom-left-radius: 40px;
+        }
+
+        &:last-child {
+          border-top-right-radius: 40px;
+          border-bottom-right-radius: 40px;
+        }
+
+        &:hover {
+          transform: scale(1.02);
+          background: linear-gradient(to right, #bfd8f6, #dce8ff);
+        }
+      }
+    }
+  }
+}
+
+
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+
+    .left-sidebar,
+    .right-sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .main-content {
+      width: 95%;
+      padding: 24px;
+    }
+  }
+
+  @media (max-width: 576px) {
+  margin-left: 0;
+  padding: 24px 16px;
+
+  .main-content {
+    padding: 20px;
+    overflow-x: auto; // ensures scroll inside content if needed
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  table {
+    display: block; // allows horizontal scroll
+    width: 100%;
+    overflow-x: auto;
+    border-spacing: 0.5rem; // adjust spacing for compact view
+    font-size: 0.9rem;
+    white-space: nowrap; // prevents wrapping inside cells
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+        
+  }
+
+  thead th {
+    border-radius: 20px; // smaller radius for mobile
+  }
+
+  tbody td {
+    border-radius: 20px;
+  }
+
+  // Keep shadow and hover transitions minimal for mobile performance
+  tbody td:hover {
+    transform: none;
+  }
+}
+
+}
+
+ .faq-section {
+    margin: auto;
+    max-width: 900px;
+
+    h2 {
+      padding-top: 20px;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      color: #002244;
+    }
+
+    details {
+      background: #f8f9fc;
+      border: 1px solid #d1d9e6;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 5px;
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: #004080;
+      }
+
+      p {
+        margin-top: 10px;
+        line-height: 1.6;
+        color:black;
+      }
+    }
+  }
