@@ -1,0 +1,300 @@
+.services4-wrapper {
+  .services4-dark-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding-bottom: 1rem;
+
+    .services4-container {
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+      position: relative;
+    }
+
+    .services4-center-content {
+      position: absolute;
+      top: 24%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #000000;
+      max-width: 1300px;
+      width: 100%;
+      margin: auto;
+
+      h1 {
+        font-size: 38px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        //text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        margin: 2rem;
+        color: #000000;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+
+      button {
+        background-color: #3c78b9;
+        color: #fff;
+        padding: 0.6rem 1.2rem;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: 3rem;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+
+    .services4-title-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      z-index: 2;
+      margin-bottom: 3rem;
+      max-width: 1300px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 50%;
+      top: 43%;
+      transform: translateX(-50%);
+
+      .services4-title-box {
+        background: rgba(255, 255, 255, 0.122);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        font-size: 1.3rem;
+        color: #033832;
+        transform: translateY(0);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        border: 2px solid transparent;
+
+        &.services4-active {
+          border-left: 4px solid #007bff;
+          padding-left: 1rem;
+          background: #cdddf8;
+          color:navy;
+          box-shadow: 0 6px 20px rgba(0, 123, 255, 0.15);
+
+          &::after {
+            content: "★";
+            color: #075beb;
+            font-size: 1.1rem;
+            margin-left: 6px;
+            animation: services4-pulse 1s infinite ease-in-out;
+          }
+        }
+      }
+
+      @keyframes services4-pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.2);
+          opacity: 0.7;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+
+    .services4-card-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 6rem 1rem;
+      border-radius: 12px;
+      z-index: 2;
+      position: relative;
+      max-width: 1500px;
+      width: 100%;
+      margin: 0 auto;
+
+      .services4-service-card {
+        background: rgba(255, 255, 255, 0);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 1.5rem 1rem;
+        border-radius: 12px;
+        width: 240px;
+        text-align: center;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
+        min-height: 180px;
+        cursor: pointer;
+        .services4-service-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.35);
+           // border-radius: inherit;
+            z-index: 0;
+       }
+
+        .services4-service-card * {
+          position: relative;
+          z-index: 1;
+        }
+
+        .services4-icon-circle {
+          width: 48px;
+          height: 48px;
+          margin: 0 auto 0.8rem;
+          border-radius: 50%;
+          background: rgb(255, 255, 255);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #060606;
+        }
+
+        h3 {
+          margin-bottom: 0.5rem;
+          color: #ffffff;
+          text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);      
+        }
+
+        .services4-desc {
+          font-size: 1.1rem;
+          color: #ffffff;
+          animation: services4-fadeIn 0.3s ease-in-out;
+          margin-top: 0.4rem;
+          text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        &.services4-active {
+          border: 1px solid #007bff;
+          transform: translateY(-4px);
+          box-shadow: 0 30px 100px rgba(5, 126, 255, 0.61);
+        }
+      }
+    }
+  }
+
+  @keyframes services4-fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ✅ Media Queries */
+  @media (max-width: 1024px) {
+    .services4-dark-section {
+      .services4-center-content {
+        top: 28%;
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .services4-title-row {
+        top: 46%;
+      }
+
+      .services4-card-row {
+        padding: 8rem 1rem;
+        gap: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services4-dark-section {
+      .services4-center-content {
+        top: 22%;
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          font-size: 1rem;
+        }
+        button {
+          font-size: 1.2rem;
+        }
+      }
+
+      .services4-title-row {
+        flex-direction: column;
+        align-items: center;
+        top: 45%;
+      }
+
+      .services4-card-row {
+        padding: 6rem 1rem;
+        gap: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .services4-dark-section {
+      .services4-center-content {
+        top: 20%;
+        h1 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 0.95rem;
+        }
+        button {
+          font-size: 1rem;
+          padding: 0.5rem 1rem;
+        }
+      }
+
+      .services4-card-row {
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 1rem;
+      }
+
+      .services4-service-card {
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+  }
+}
+
+.services4-icon {
+  width: 28px;
+  height: 28px;
+  stroke: #222;
+  stroke-width: 1.8;
+}

@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+// Variables
+$bg-color: #1a1d24;
+$primary-color: #00aaff;
+$text-color: #e0e0e0;
+$primary-item-size: 12vmin;
+$center-button-size: 18vmin;
+$icon-size: 3.5vmin;
+
+// Container
+.interactive-hub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: $bg-color;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+// Floating shapes
+.background-shapes {
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, $primary-color, darken($primary-color, 20%));
+    opacity: 0.1;
+    animation: float 20s infinite ease-in-out;
+  }
+  .shape-1 {
+    top: 10%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+  }
+  .shape-2 {
+    bottom: 15%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    animation-duration: 25s;
+    animation-delay: -5s;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-30px) translateX(20px);
+  }
+}
+
+// Menu wrapper
+.menu-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .center-button {
+    position: relative;
+    width: $center-button-size;
+    height: $center-button-size;
+    border-radius: 50%;
+    border: 3px solid $primary-color;
+    background: radial-gradient(circle, #2c3240, #1a1d24);
+    color: $text-color;
+    font-size: 2.2vmin;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+      inset 0 0 15px rgba(0, 170, 255, 0.3);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// Ring
+.primary-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  animation: fadeIn 3.5s ease;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Connector wrapper
+.connector-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// Connector line
+// .connector-line {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 0;
+//   height: 2px;
+//   background-color: $primary-color;
+//   transform-origin: left center;
+//   animation: growLine 0.5s forwards ease-out;
+// }
+
+// @keyframes growLine {
+//   from {
+//     width: 0;
+//     opacity: 0;
+//   }
+//   to {
+//     width: 28vmin;
+//     opacity: 1;
+//   }
+// }
+
+// Service item wrapper
+
+.primary-item-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:  $primary-item-size;
+  height: $primary-item-size;
+  margin: calc(-#{$primary-item-size} / 2);
+  z-index: 20;  
+}
+
+// Service item
+.primary-item {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: $text-color;
+  position: relative;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+  border: none;
+
+  .icon-container {
+    font-size: $icon-size;
+    color: $primary-color;
+    transition: transform 0.3s ease;
+  }
+
+  .text-container {
+    font-size: 1.5vmin;
+    text-align: center;
+    margin-top: 1vmin;
+    font-weight: 500;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+  }
+
+  &:hover .icon-container {
+    transform: scale(1.2);
+  }
+  &:hover .text-container {
+    color: $primary-color;
+  }
+}

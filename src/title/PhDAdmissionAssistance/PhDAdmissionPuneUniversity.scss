@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.phd-pune-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.phd-pune-box {
+  flex: 1 1 700px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  ul {
+    list-style-type: none;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    border: 1px solid #dbe4f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+
+    thead {
+      background: linear-gradient(135deg, #003b73, #0078d4);
+      color: #fff;
+
+      th {
+        padding: 14px 16px;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        font-size: 1.05rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background: #f9fbfd;
+        transition: background 0.2s ease-in-out;
+
+        &:nth-child(even) {
+          background: #f1f5fb;
+        }
+
+        &:hover {
+          background: #e6f0ff;
+        }
+
+        td {
+          padding: 14px 16px;
+          border-bottom: 1px solid #dbe4f0;
+          color: #333;
+          font-weight: 400;
+          line-height: 1.6;
+
+          &:first-child {
+            font-weight: 600;
+            color: #003b73;
+          }
+        }
+
+        &:last-child td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.left-box,
+.right-box {
+  width: 280px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  height: fit-content;
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #003b5c;
+  }
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding: 10px 16px 10px 36px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      background-color: #f9fafb;
+      color: #1f2937;
+      font-size: 0.95rem;
+      font-weight: 400;
+      position: relative;
+      transition: background 0.3s;
+
+      &::before {
+        content: '✓';
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #3b82f6;
+      }
+
+      &:hover {
+        background-color: #e7f3ff;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+
+/* ============================
+   RESPONSIVE DESIGN SECTION
+   ============================ */
+
+@media (max-width: 992px) {
+  .phd-pune-layout {
+
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+
+  .left-box,
+  .right-box {
+    width: 100%;
+    max-width: 700px;
+    order: 2;
+  }
+
+  .phd-pune-box {
+    order: 1;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  table {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .phd-pune-box {
+    padding: 25px 15px;
+    width: 110%;
+  }
+
+  .left-box,
+  .right-box {
+    padding: 15px;
+  }
+  table{
+    width: 60%;
+  }
+  table th,
+  table td {
+    padding: 10px;
+    font-size: 0.9rem;
+    
+  }
+
+  .left-box ul li,
+  .right-box ul li {
+    padding: 8px 12px 8px 30px;
+    font-size: 0.9rem;
+  }
+}

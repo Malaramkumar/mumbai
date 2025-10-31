@@ -1,0 +1,164 @@
+.phd-assist-pune {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+
+  .phd-pune-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1700px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  // LEFT
+  .phd-pune-left {
+    flex: 1;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+    h3 {
+      color: #0e2a47;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        background: #e6f0fb;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #cfe2f7;
+        }
+      }
+    }
+  }
+
+  // CENTER
+  .phd-pune-center {
+    flex: 2.5;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      color: #0e2a47;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      color: #1b3a57;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .phd-pune-faq {
+      margin-top: 1rem;
+
+      .faq-item {
+        background: #f2f7fc;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 0.8rem;
+
+        h4 {
+          color: #0d2b45;
+          font-weight: 600;
+          font-size: 1.05rem;
+          margin-bottom: 0.3rem;
+        }
+
+        p {
+          font-size: 0.98rem;
+          margin: 0;
+        }
+      }
+    }
+
+    .keyword-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+
+      li {
+        background: #e6f0fb;
+        color: #0e2a47;
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // RIGHT
+  .phd-pune-right {
+    flex: 1;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+    h3 {
+      color: #0e2a47;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.6rem 1rem;
+        background: #f3f6fb;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+
+        &:hover {
+          background: #dce9fa;
+        }
+      }
+    }
+  }
+
+  // Responsive
+  @media (max-width: 992px) {
+    .phd-pune-wrapper {
+      flex-direction: column;
+    }
+
+    .phd-pune-left,
+    .phd-pune-center,
+    .phd-pune-right {
+      width: 90%;
+    }
+  }
+}

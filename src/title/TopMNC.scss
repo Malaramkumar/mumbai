@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+.top-mnc-phd-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px 20px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 59, 115, 1),
+    rgba(5, 102, 180, 0.8) 70%
+  );
+  box-sizing: border-box;
+  text-align: justify;
+
+  /* ---------------- Left, Main & Right Boxes ---------------- */
+  .left-box {
+    //order: 1;
+    flex: 0 0 280px;
+    background: #f3f6fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .career-after-phd {
+    //order: 2;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .right-box {
+    //order: 3;
+    flex: 0 0 280px;
+    background: #f3f6fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  /* ---------------- Main Content ---------------- */
+  .main-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #002b45;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      color: #111;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 1.5rem;
+
+      li {
+        margin-bottom: 8px;
+        list-style-type: disc;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+
+      th,
+      td {
+        border: 1px solid #d1d5db;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f3f4f6;
+        font-weight: 600;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9fafb;
+      }
+    }
+
+    .highlight {
+      background: #ebf8ff;
+      border-left: 6px solid #3182ce;
+      padding: 20px;
+      margin-top: 2rem;
+      border-radius: 8px;
+
+      h4 {
+        margin-top: 0;
+        color: #2c5282;
+      }
+
+      ul {
+        padding-left: 24px;
+
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  /* ---------------- Laptop View (≤1200px) ---------------- */
+  @media (max-width: 1200px) {
+    gap: 16px;
+    padding: 30px 15px;
+
+    .left-box,
+    .right-box {
+      flex: 0 0 25%;
+      padding: 20px;
+    }
+
+    .main-content {
+      padding: 30px;
+      h1 {
+        font-size: 1.9rem;
+      }
+    }
+  }
+
+  /* ---------------- Tablet View (≤992px) ---------------- */
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    .career-after-phd {
+      order: 1;
+      width: 100%;
+    }
+
+    .left-box {
+      order: 2;
+      width: 100%;
+    }
+
+    .right-box {
+      order: 3;
+      width: 100%;
+    }
+
+    .main-content {
+      padding: 28px;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  /* ---------------- Mobile View (≤768px) ---------------- */
+  @media (max-width: 768px) {
+    padding: 24px 16px;
+    gap: 16px;
+
+    .main-content {
+      padding: 24px;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      table {
+        font-size: 0.9rem;
+      }
+    }
+
+    .left-box,
+    .right-box {
+      padding: 20px;
+      width: 95%;
+    }
+  }
+
+  /* ---------------- Small Mobile (≤480px) ---------------- */
+  @media (max-width: 480px) {
+    padding: 20px 14px;
+    gap: 14px;
+
+    .main-content {
+      padding: 20px;
+      border-radius: 10px;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      h4 {
+        font-size: 0.95rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      table {
+        font-size: 0.85rem;
+        overflow-x: auto;
+        display: block;
+      }
+    }
+
+    .left-box,
+    .right-box {
+      padding: 16px;
+      width: 90%;
+    }
+  }
+}
+
+/* ---------------- FAQ Section ---------------- */
+.faq-section {
+  margin: 60px auto;
+  max-width: 900px;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    font-size: 1.6rem;
+    color: #002244;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  details {
+    background: #f8f9fc;
+    border: 1px solid #d1d9e6;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: #004080;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin-top: 10px;
+      line-height: 1.6;
+      color: #111;
+    }
+
+    &:hover {
+      background: #eef3fa;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 15px 20px;
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    summary {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px 15px;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    summary {
+      font-size: 0.95rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
