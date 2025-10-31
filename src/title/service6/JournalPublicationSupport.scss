@@ -1,0 +1,353 @@
+/* ==== Global Wrapper Layout ==== */
+.jp-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr 280px;
+  gap: 30px;
+  padding: 40px 60px;
+  background: linear-gradient(135deg, #f6f8fb, #eef2f7);
+  color: #222;
+  position: relative;
+  overflow-x: hidden;
+
+  /* Scroll fade-in animation for sections */
+  section, header, footer {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.9s ease forwards;
+  }
+}
+
+/* ==== Left Sidebar Navigation ==== */
+.jp-left-nav {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  animation: floatIn 1.2s ease;
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(90deg, #007bff33, #0099ff33);
+      transform: translateX(6px);
+      color: #007bff;
+    }
+
+    &.active {
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
+    }
+  }
+}
+
+/* ==== Right SEO Sidebar ==== */
+.jp-right-seo {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .seo-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: floatIn 1s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+    }
+
+    h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+      li {
+        margin-bottom: 6px;
+        font-size: 0.95rem;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.6;
+    }
+  }
+}
+
+/* ==== Main Journal Container ==== */
+.journal-container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  animation: slideIn 1.3s ease;
+
+  .journal-hero {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .jp-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #004aad;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(90deg, #007bff, #00c6ff);
+        margin: 12px auto;
+        border-radius: 10px;
+      }
+    }
+
+    p {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+
+  .jp-section {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .jp-subtitle {
+      font-size: 1.4rem;
+      color: #003366;
+      margin-bottom: 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+
+    .jp-list {
+      padding-left: 20px;
+      li {
+        margin: 6px 0;
+        line-height: 1.6;
+        position: relative;
+        padding-left: 12px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          color: #007bff;
+        }
+      }
+    }
+
+    .jp-do-dont {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      .jp-box {
+        flex: 1;
+        background: #f7faff;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          background: #f0f8ff;
+        }
+
+        h4 {
+          color: #007bff;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .jp-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+
+      th {
+        background: linear-gradient(90deg, #007bff, #00c6ff);
+        color: white;
+        padding: 10px;
+        text-align: left;
+      }
+
+      td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:hover td {
+        background: #f5faff;
+      }
+    }
+
+    .jp-faq-item {
+      margin-bottom: 15px;
+
+      .jp-faq-question {
+        background: #f5f8ff;
+        padding: 12px 16px;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #e8f1ff;
+          color: #007bff;
+        }
+
+        &.active {
+          background: linear-gradient(90deg, #007bff, #00b3ff);
+          color: white;
+        }
+      }
+
+      .jp-faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 16px;
+        transition: all 0.4s ease;
+        line-height: 1.6;
+        color: #333;
+
+        &.open {
+          max-height: 200px;
+          margin-top: 10px;
+          padding: 10px 16px;
+          background: #f9fcff;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  .jp-footer {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #003366;
+    text-align: center;
+    background: linear-gradient(90deg, #e8f0ff, #f6faff);
+    padding: 20px;
+    border-radius: 12px;
+  }
+}
+
+/* ==== Animations ==== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== Responsive Design ==== */
+@media (max-width: 1200px) {
+  .jp-layout {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .jp-right-seo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .jp-layout {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .jp-left-nav {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+    li {
+      display: inline-block;
+      margin-right: 12px;
+      padding: 8px 14px;
+    }
+  }
+
+  .journal-container {
+    padding: 25px;
+  }
+}
