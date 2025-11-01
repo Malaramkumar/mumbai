@@ -1,98 +1,151 @@
-.departments-page {
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, #f2f6fb, #e8efff);
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+/* src/components/DepartmentNavigation.scss */
+.dept-nav {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .page-title {
-    text-align: center;
-    font-size: 2.6rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 3rem;
+.dept-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.dept-item {
+  position: relative;
+}
+
+.dept-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+
+  &:hover {
+    color: #5a67d8; // indigo-600
   }
 
-  .departments-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    gap: 2rem;
+  .chevron {
+    margin-left: 0.4rem;
+    font-size: 0.75rem;
+    transition: transform 0.2s;
   }
+}
 
-  .department-card {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem 2rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    overflow: hidden;
-    border-top: 4px solid transparent;
+/* Rotate chevron while dropdown is open */
+.dept-item:hover .chevron {
+  transform: rotate(180deg);
+}
+
+/* ---------- Dropdown ---------- */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 360px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #5a67d8;
+}
+
+/* ---------- Topics ---------- */
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.topic {
+  .topic-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2d3748;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    transition: color 0.2s;
 
     &:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      border-top-color: #007bff;
+      color: #5a67d8;
     }
 
-    &.active {
-      border-top-color: #007bff;
-      .sub-section {
-        max-height: 500px;
-        opacity: 1;
-        padding-top: 1rem;
-      }
-    }
-
-    .department-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-
-      .icon {
-        background: #007bff;
-        color: #fff;
-        width: 48px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 12px;
-        font-size: 1.5rem;
-        box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
-      }
-
-      h2 {
-        font-size: 1.3rem;
-        color: #2d3e50;
-        font-weight: 600;
-      }
-    }
-
-    .sub-section {
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      margin-top: 1rem;
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: all 0.4s ease;
-
-      .sub-link {
-        text-decoration: none;
-        color: #444;
-        background: #f5f7fb;
-        padding: 0.6rem 1rem;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-
-        &:hover {
-          background: #007bff;
-          color: #fff;
-          transform: translateX(5px);
-        }
-      }
+    .chevron-right {
+      font-size: 0.7rem;
+      margin-left: 0.5rem;
     }
   }
 }
 
+/* ---------- Sub-topics ---------- */
+.subtopics {
+  list-style: none;
+  margin: 0.25rem 0 0 1rem;
+  padding: 0;
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  .subtopic-link {
+    display: block;
+    font-size: 0.85rem;
+    color: #4a5568;
+    text-decoration: none;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+      background: #edf2f7;
+      color: #5a67d8;
+    }
+  }
+}
+
+/* Responsive – stack on very small screens */
+@media (max-width: 640px) {
+  .dept-list {
+    flex-direction: column;
+  }
+
+  .dept-link {
+    justify-content: space-between;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+}

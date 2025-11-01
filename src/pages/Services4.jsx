@@ -23,7 +23,7 @@ const services = [
   {
     title: "CSC/IT",
     desc: "Department of Computer Science & Information Technology",
-    link: "/career-opportunities-after-phd",
+     
     link: "/",
     icon: <Cpu size={20} />, // 💻 Computer chip icon
     bg: dept1,
@@ -31,7 +31,7 @@ const services = [
   {
     title: "MECHANICAL",
     desc: "Department of Mechanical Engineering",
-    link: "/top-mnc-hiring",
+     
     link: "/",
     icon: <Cog size={20} />, // ⚙️ Mechanical gear
     bg: dept2,
@@ -39,7 +39,7 @@ const services = [
   {
     title: "EEE",
     desc: "Department of Electrical & Electronics Engineering",
-    link: "/top-phd-colleges-mumbai",
+     
     link: "/",
     icon: <Zap size={20} />, // ⚡ Electricity icon
     bg: dept3,
@@ -47,7 +47,7 @@ const services = [
   {
     title: "ECE",
     desc: "Department of Electronics & Communication Engineering",
-    link: "/top-for-phd-colleges-in-mumbai",
+    
     link: "/",
     icon: <Radio size={20} />, // 📡 Communication signal
     bg: dept4,
@@ -55,7 +55,7 @@ const services = [
   {
     title: "CIVIL",
     desc: "Department of Civil Engineering",
-    link: "/top-for-phd-colleges-in-mumbai",
+ 
     link: "/",
     icon: <Ruler size={20} />, // 📏 Architecture/measurement tool
     bg: dept5,

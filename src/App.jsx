@@ -345,8 +345,7 @@ function App() {
         <Route path="/college/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
         <Route path="/college/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
         <Route path="/college/university-of-mumbai" element={<MumbaiPhDOverview />} />
- 
-        
+         
         {/* college */}
         <Route path="/colleges/amity-university" element={<Amitycollege />} />
         <Route path="/colleges/atlas-skilltech-university" element={<AtlasPhD />} />
@@ -380,180 +379,184 @@ function App() {
         <Route path="/colleges/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
         <Route path="/colleges/university-of-mumbai" element={<MumbaiPhDOverview />} />
  
-        {/* mech */}
-        <Route path="/mech-1" element={<ThermalEnergyEngineering />} />
-              {/* sub */}
-              <Route path="/mech-1-1" element={<HeatTransferEnhancement />} />
-              <Route path="/mech-1-2" element={<ComputationalFluidDynamics />} />
-              <Route path="/mech-1-3" element={<SolarThermalGeothermal />} />
-              <Route path="/mech-1-4" element={<RefrigerationCryogenics />} />
-              <Route path="/mech-1-5" element={<WasteHeatRecoveryEnergy />} />
-              <Route path="/mech-1-6" element={<ThermalEnergy />} />
-        <Route path="/mech-2" element={<DesignManufacturing />} />
-              {/* sub */}
-              <Route path="mech-2-1" element={<CADCAMMechanicalDesign />} />
-              <Route path="mech-2-2" element={<AdditiveManufacturing3DPrinting />} />
-              <Route path="mech-2-3" element={<AdvancedMachiningManufacturing />} />
-              <Route path="mech-2-4" element={<ProductLifecycleManagementProject />} />
-              <Route path="mech-2-5" element={<RapidPrototypingReverse />} />
-              <Route path="mech-2-6" element={<SmartManufacturingIndustry />} />
-        <Route path="/mech-3" element={<MaterialsMetallurgy />} />
-              {/* sub */}
-              <Route path="mech-3-1" element={<AdvancedCompositeMaterials />} />
-              <Route path="mech-3-2" element={<NanomaterialsforMechanical />} />
-              <Route path="mech-3-3" element={<WeldingCastingJoining />} />
-              <Route path="mech-3-4" element={<CorrosionSurfaceEngineering />} />
-              <Route path="mech-3-5" element={<MaterialTestingNonDestructive />} />
-              <Route path="mech-3-6" element={<SmartIntelligentMaterials />} />
-        <Route path="/mech-4" element={<RoboticsAutomation />} />
-              {/* sub */}
-              <Route path="/mech-4-1" element={<IndustrialCollaborativeRobots />} />
-              <Route path="/mech-4-2" element={<MechatronicSystemsSmart />} />
-              <Route path="/mech-4-3" element={<AutonomousVehiclesMobile /> } />
-              <Route path="/mech-4-4" element={<ControlSystemsRobotics />} />
-              <Route path="/mech-4-5" element={<AIMLRobotics />} />
-              <Route path="/mech-4-6" element={<RoboticProcessAutomation />} />
-        <Route path="/mech-5" element={<DynamicsVibration />} />
-               {/* sub */}
-               <Route path="/mech-5-1" element={<StructuralDynamicsEarthquake />} />
-               <Route path="/mech-5-2" element={<NoiseVibrationHarshness />} />
-               <Route path="/mech-5-3" element={<RotorDynamicsBalancing />} />
-               <Route path="/mech-5-4" element={<ModalHarmonicAnalysis />} />
-               <Route path="/mech-5-5" element={<SeismicVibrationControl />} />
-               <Route path="/mech-5-6" element={<SmartMaterialsVibration />} />
-        <Route path="/mech-6" element={<FluidMechanicsHydraulics />} />
-                {/* sub */}
-                <Route path="/mech-6-1" element={<AerodynamicsAeroPropulsion />} />
-                <Route path="/mech-6-2" element={<TurbomachineryGasTurbines />} />
-                <Route path="/mech-6-3" element={<HydraulicPneumaticControl />} /> 
-                <Route path="/mech-6-4" element={<MultiphaseFlowHeat />} />
-                <Route path="/mech-6-5" element={<FluidStructureInteraction />} />
-                <Route path="/mech-6-6" element={<BiofluidMechanicsMicrofluidics />} />
-        <Route path="/mech-7" element={<TribologyMaintenance />} />
-                 {/* sub */}
-                  <Route path="/mech-7-1" element={<WearFrictionAnalysis />} />
-                  <Route path="/mech-7-2" element={<LubricationTechnologyAdvanced />} />
-                  <Route path="/mech-7-3" element={<BearingDesignCondition />} />
-                  <Route path="/mech-7-4" element={<FaultDiagnosisRotating />} />
-                  <Route path="/mech-7-5" element={<TribologyinMicroNano />} />
-                  <Route path="/mech-7-6" element={<PredictivePreventiveMaintenance />} />
-        <Route path="/mech-8" element={<IndustrialProductionEngineering />} />
-                  {/* sub */}
-                  <Route path="/mech-8-1" element={<LeanManufacturingTechniques />} />
-                  <Route path="/mech-8-2" element={<SupplyChainProcess />} />
-                  <Route path="/mech-8-3" element={<SmartFactorySystems />} />
-                  <Route path="/mech-8-4" element={<CostTimeOptimization />} />
+        {/* MECHANICAL */}
+            <Route path="/mechanical/thermalenergyengineering" element={<ThermalEnergyEngineering />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/thermalenergyengineering/heattransferenhancement" element={<HeatTransferEnhancement />} />
+            <Route path="/mechanical/thermalenergyengineering/ComputationalFluidDynamics" element={<ComputationalFluidDynamics />} />
+            <Route path="/mechanical/thermalenergyengineering/SolarThermalGeothermal" element={<SolarThermalGeothermal />} />
+            <Route path="/mechanical/thermalenergyengineering/RefrigerationCryogenics" element={<RefrigerationCryogenics />} />
+            <Route path="/mechanical/thermalenergyengineering/WasteHeatRecoveryEnergy" element={<WasteHeatRecoveryEnergy />} />
+            <Route path="/mechanical/thermalenergyengineering/ThermalEnergy" element={<ThermalEnergy />} />
 
-        <Route path="/mech-9" element={<AutomobileTransportationSystems />} />   
-                  {/* sub */}
-                  <Route path="/mech-9-1" element={<ElectricHybridVehicleDesign />} />
-                  <Route path="/mech-9-2" element={<VehicleDynamicsCrashSafety />} />
-                  <Route path="/mech-9-3" element={<InternalCombustionEngine />} />
-                  <Route path="/mech-9-4" element={<AutomotiveAerodynamicsFuel />} />
-                  <Route path="/mech-9-5" element={<AdvancedVehicleSuspensions />} />
-                  <Route path="/mech-9-6" element={<IntelligentTransportation />} />
-        <Route path="/mech-10" element={<ComputationalSimulationTechniques />} />
-                  {/* sub */}
-                  <Route path="/mech-10-1" element={<FiniteElementAnalysis />} />
-                  <Route path="/mech-10-2" element={<ComputationalFluidDynamic />} />
-                  <Route path="/mech-10-3" element={<MultiBodyDynamics />} />
-                  <Route path="/mech-10-4" element={<FractureMechanicsFatigue />} />
-                  <Route path="/mech-10-5" element={<DigitalTwinSmartSimulation />} />
-                  <Route path="/mech-10-6" element={<HighPerformanceComputing />} />
+            <Route path="/mechanical/DesignManufacturing" element={<DesignManufacturing />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/DesignManufacturing/CADCAMMechanicalDesign" element={<CADCAMMechanicalDesign />} />
+            <Route path="/mechanical/DesignManufacturing/AdditiveManufacturing3DPrinting" element={<AdditiveManufacturing3DPrinting />} />
+            <Route path="/mechanical/DesignManufacturing/AdvancedMachiningManufacturing" element={<AdvancedMachiningManufacturing />} />
+            <Route path="/mechanical/DesignManufacturing/ProductLifecycleManagementProject" element={<ProductLifecycleManagementProject />} />
+            <Route path="/mechanical/DesignManufacturing/RapidPrototypingReverse" element={<RapidPrototypingReverse />} />
+            <Route path="/mechanical/DesignManufacturing/SmartManufacturingIndustry" element={<SmartManufacturingIndustry />} />
+
+            <Route path="/mechanical/MaterialsMetallurgy" element={<MaterialsMetallurgy />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/MaterialsMetallurgy/AdvancedCompositeMaterials" element={<AdvancedCompositeMaterials />} />
+            <Route path="/mechanical/MaterialsMetallurgy/NanomaterialsforMechanical" element={<NanomaterialsforMechanical />} />
+            <Route path="/mechanical/MaterialsMetallurgy/WeldingCastingJoining" element={<WeldingCastingJoining />} />
+            <Route path="/mechanical/MaterialsMetallurgy/CorrosionSurfaceEngineering" element={<CorrosionSurfaceEngineering />} />
+            <Route path="/mechanical/MaterialsMetallurgy/MaterialTestingNonDestructive" element={<MaterialTestingNonDestructive />} />
+            <Route path="/mechanical/MaterialsMetallurgy/SmartIntelligentMaterials" element={<SmartIntelligentMaterials />} />
+
+            <Route path="/mechanical/RoboticsAutomation" element={<RoboticsAutomation />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/RoboticsAutomation/IndustrialCollaborativeRobots" element={<IndustrialCollaborativeRobots />} />
+            <Route path="/mechanical/RoboticsAutomation/MechatronicSystemsSmart" element={<MechatronicSystemsSmart />} />
+            <Route path="/mechanical/RoboticsAutomation/AutonomousVehiclesMobile" element={<AutonomousVehiclesMobile />} />
+            <Route path="/mechanical/RoboticsAutomation/ControlSystemsRobotics" element={<ControlSystemsRobotics />} />
+            <Route path="/mechanical/RoboticsAutomation/AIMLRobotics" element={<AIMLRobotics />} />
+            <Route path="/mechanical/RoboticsAutomation/RoboticProcessAutomation" element={<RoboticProcessAutomation />} />
+
+            <Route path="/mechanical/DynamicsVibration" element={<DynamicsVibration />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/DynamicsVibration/StructuralDynamicsEarthquake" element={<StructuralDynamicsEarthquake />} />
+            <Route path="/mechanical/DynamicsVibration/NoiseVibrationHarshness" element={<NoiseVibrationHarshness />} />
+            <Route path="/mechanical/DynamicsVibration/RotorDynamicsBalancing" element={<RotorDynamicsBalancing />} />
+            <Route path="/mechanical/DynamicsVibration/ModalHarmonicAnalysis" element={<ModalHarmonicAnalysis />} />
+            <Route path="/mechanical/DynamicsVibration/SeismicVibrationControl" element={<SeismicVibrationControl />} />
+            <Route path="/mechanical/DynamicsVibration/SmartMaterialsVibration" element={<SmartMaterialsVibration />} />
+
+            <Route path="/mechanical/FluidMechanicsHydraulics" element={<FluidMechanicsHydraulics />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/FluidMechanicsHydraulics/AerodynamicsAeroPropulsion" element={<AerodynamicsAeroPropulsion />} />
+            <Route path="/mechanical/FluidMechanicsHydraulics/TurbomachineryGasTurbines" element={<TurbomachineryGasTurbines />} />
+            <Route path="/mechanical/FluidMechanicsHydraulics/HydraulicPneumaticControl" element={<HydraulicPneumaticControl />} />
+            <Route path="/mechanical/FluidMechanicsHydraulics/MultiphaseFlowHeat" element={<MultiphaseFlowHeat />} />
+            <Route path="/mechanical/FluidMechanicsHydraulics/FluidStructureInteraction" element={<FluidStructureInteraction />} />
+            <Route path="/mechanical/FluidMechanicsHydraulics/BiofluidMechanicsMicrofluidics" element={<BiofluidMechanicsMicrofluidics />} />
+
+            <Route path="/mechanical/TribologyMaintenance" element={<TribologyMaintenance />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/TribologyMaintenance/WearFrictionAnalysis" element={<WearFrictionAnalysis />} />
+            <Route path="/mechanical/TribologyMaintenance/LubricationTechnologyAdvanced" element={<LubricationTechnologyAdvanced />} />
+            <Route path="/mechanical/TribologyMaintenance/BearingDesignCondition" element={<BearingDesignCondition />} />
+            <Route path="/mechanical/TribologyMaintenance/FaultDiagnosisRotating" element={<FaultDiagnosisRotating />} />
+            <Route path="/mechanical/TribologyMaintenance/TribologyinMicroNano" element={<TribologyinMicroNano />} />
+            <Route path="/mechanical/TribologyMaintenance/PredictivePreventiveMaintenance" element={<PredictivePreventiveMaintenance />} />
+
+            <Route path="/mechanical/IndustrialProductionEngineering" element={<IndustrialProductionEngineering />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/IndustrialProductionEngineering/LeanManufacturingTechniques" element={<LeanManufacturingTechniques />} />
+            <Route path="/mechanical/IndustrialProductionEngineering/SupplyChainProcess" element={<SupplyChainProcess />} />
+            <Route path="/mechanical/IndustrialProductionEngineering/SmartFactorySystems" element={<SmartFactorySystems />} />
+            <Route path="/mechanical/IndustrialProductionEngineering/CostTimeOptimization" element={<CostTimeOptimization />} />
+
+            <Route path="/mechanical/AutomobileTransportationSystems" element={<AutomobileTransportationSystems />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/AutomobileTransportationSystems/ElectricHybridVehicleDesign" element={<ElectricHybridVehicleDesign />} />
+            <Route path="/mechanical/AutomobileTransportationSystems/VehicleDynamicsCrashSafety" element={<VehicleDynamicsCrashSafety />} />
+            <Route path="/mechanical/AutomobileTransportationSystems/InternalCombustionEngine" element={<InternalCombustionEngine />} />
+            <Route path="/mechanical/AutomobileTransportationSystems/AutomotiveAerodynamicsFuel" element={<AutomotiveAerodynamicsFuel />} />
+            <Route path="/mechanical/AutomobileTransportationSystems/AdvancedVehicleSuspensions" element={<AdvancedVehicleSuspensions />} />
+            <Route path="/mechanical/AutomobileTransportationSystems/IntelligentTransportation" element={<IntelligentTransportation />} />
+
+            <Route path="/mechanical/ComputationalSimulationTechniques" element={<ComputationalSimulationTechniques />} />
+            {/* Subtopics */}
+            <Route path="/mechanical/ComputationalSimulationTechniques/FiniteElementAnalysis" element={<FiniteElementAnalysis />} />
+            <Route path="/mechanical/ComputationalSimulationTechniques/ComputationalFluidDynamic" element={<ComputationalFluidDynamic />} />
+            <Route path="/mechanical/ComputationalSimulationTechniques/MultiBodyDynamics" element={<MultiBodyDynamics />} />
+            <Route path="/mechanical/ComputationalSimulationTechniques/FractureMechanicsFatigue" element={<FractureMechanicsFatigue />} />
+            <Route path="/mechanical/ComputationalSimulationTechniques/DigitalTwinSmartSimulation" element={<DigitalTwinSmartSimulation />} />
+            <Route path="/mechanical/ComputationalSimulationTechniques/HighPerformanceComputing" element={<HighPerformanceComputing />} />
  
             {/* CSE  */}
-            <Route path="/cse-1" element={<ArtificialIntelligenceMachineLearning />} />
-            <Route path="/cse-2" element={<DataScience_BigDataAnalytics />} />
-            <Route path="/cse-3" element={<InternetofThings />} />
-            <Route path="/cse-4" element={<CybersecurityPrivacy />} />
-            <Route path="/cse-5" element={<BlockchainDistributedSystems />} />
-            <Route path="/cse-6" element={<CloudEdgeInfrastructure />} />
-            <Route path="/cse-7" element={<QuantumComputing_Information />} />
-            <Route path="/cse-8" element={<HumanComputerInteraction />} />
-            <Route path="/cse-9" element={<ComputerVisionImage />} />
-            <Route path="/cse-10" element={<AutonomousSystemsRobotics />} />
-            <Route path="/cse-11" element={<NaturalLanguageProcessing />} />
-            <Route path="/cse-12" element={<DigitalTwinsSimulation />} />
-            <Route path="/cse-13" element={<QuantumNetworkingCommunication />} />
-            <Route path="/cse-14" element={<WebApplicationDevelopment />} />
-            <Route path="/cse-15" element={<MobileAppDevelopment />} />
-            <Route path="/cse-16" element={<MVPDevelopment />} />
-            <Route path="/cse-17" element={<StartupSoftwareDevelopment />} />
-            <Route path="/cse-18" element={<EnterpriseSoftwareSolutions />} />
-            <Route path="/cse-19" element={<DedicatedDevelopmentTeams />} />
-            <Route path="/cse-20" element={<DesignLabUI_UXDevelopment />} />
-            <Route path="/cse-21" element={<QATestingServices />} />
-            <Route path="/cse-22" element={<Java />} />
-            <Route path="/cse-23" element={<PHPDevelopment />} />
-            <Route path="/cse-24" element={<SpringDevelopment />} />
-            <Route path="/cse-25" element={<CSharpDevelopment />} />
-            <Route path="/cse-26" element={<MachineLearningBased />} />
-            <Route path="/cse-27" element={<PythonDevelopment />} />
-            {/*Zip */}
-            <Route path="/cse-28" element={<MATLABProjects />} />       
-            <Route path="/cse-29" element={<DotNetProjects />} /> 
-            <Route path="/cse-30" element={<RProjects />} />  
-            <Route path="/cse-31" element={<VLSIProjects />} />
-            <Route path="/cse-32" element={<OPNETProjects />} />
-            <Route path="/cse-33" element={<RoboticsProjects />} />
-            <Route path="/cse-34" element={<AnsysProjects />} />
-            <Route path="/cse-35" element={<SolidWorksProjects />} />
-            <Route path="/cse-36" element={<CartiaProjects />} />
-            <Route path="/cse-37" element={<LabVIEWProjects />} />
-            <Route path="/cse-38" element={<PowerSystemProjects />} />
-            <Route path="/cse-39" element={<PowerDocuments />} />
-            <Route path="/cse-40" element={<ImageProcessing />} /> 
-            <Route path="/cse-41" element={<SignalProcessing />} />
+            <Route path="/cse/artificial-intelligence-machine-learning" element={<ArtificialIntelligenceMachineLearning />} />
+            <Route path="/cse/data-science-big-data-analytics" element={<DataScience_BigDataAnalytics />} />
+            <Route path="/cse/internet-of-things" element={<InternetofThings />} />
+            <Route path="/cse/cybersecurity-privacy" element={<CybersecurityPrivacy />} />
+            <Route path="/cse/blockchain-distributed-systems" element={<BlockchainDistributedSystems />} />
+            <Route path="/cse/cloud-edge-infrastructure" element={<CloudEdgeInfrastructure />} />
+            <Route path="/cse/quantum-computing-information" element={<QuantumComputing_Information />} />
+            <Route path="/cse/human-computer-interaction" element={<HumanComputerInteraction />} />
+            <Route path="/cse/computer-vision-image" element={<ComputerVisionImage />} />
+            <Route path="/cse/autonomous-systems-robotics" element={<AutonomousSystemsRobotics />} />
+            <Route path="/cse/natural-language-processing" element={<NaturalLanguageProcessing />} />
+            <Route path="/cse/digital-twins-simulation" element={<DigitalTwinsSimulation />} />
+            <Route path="/cse/quantum-networking-communication" element={<QuantumNetworkingCommunication />} />
+            <Route path="/cse/web-application-development" element={<WebApplicationDevelopment />} />
+            <Route path="/cse/mobile-app-development" element={<MobileAppDevelopment />} />
+            <Route path="/cse/mvp-development" element={<MVPDevelopment />} />
+            <Route path="/cse/startup-software-development" element={<StartupSoftwareDevelopment />} />
+            <Route path="/cse/enterprise-software-solutions" element={<EnterpriseSoftwareSolutions />} />
+            <Route path="/cse/dedicated-development-teams" element={<DedicatedDevelopmentTeams />} />
+            <Route path="/cse/design-lab-ui-ux-development" element={<DesignLabUI_UXDevelopment />} />
+            <Route path="/cse/qa-testing-services" element={<QATestingServices />} />
+            <Route path="/cse/java" element={<Java />} />
+            <Route path="/cse/php-development" element={<PHPDevelopment />} />
+            <Route path="/cse/spring-development" element={<SpringDevelopment />} />
+            <Route path="/cse/csharp-development" element={<CSharpDevelopment />} />
+            <Route path="/cse/machine-learning-based" element={<MachineLearningBased />} />
+            <Route path="/cse/python-development" element={<PythonDevelopment />} />
+            <Route path="/cse/matlab-projects" element={<MATLABProjects />} />
+            <Route path="/cse/dotnet-projects" element={<DotNetProjects />} />
+            <Route path="/cse/r-projects" element={<RProjects />} />
+            <Route path="/cse/vlsi-projects" element={<VLSIProjects />} />
+            <Route path="/cse/opnet-projects" element={<OPNETProjects />} />
+            <Route path="/cse/robotics-projects" element={<RoboticsProjects />} />
+            <Route path="/cse/ansys-projects" element={<AnsysProjects />} />
+            <Route path="/cse/solidworks-projects" element={<SolidWorksProjects />} />
+            <Route path="/cse/cartia-projects" element={<CartiaProjects />} />
+            <Route path="/cse/labview-projects" element={<LabVIEWProjects />} />
+            <Route path="/cse/power-system-projects" element={<PowerSystemProjects />} />
+            <Route path="/cse/power-documents" element={<PowerDocuments />} />
+            <Route path="/cse/image-processing" element={<ImageProcessing />} />
+            <Route path="/cse/signal-processing" element={<SignalProcessing />} />
       {/* Civil */}
-      <Route path="/civil-1" element={<StructuralEngineering />} />
-      <Route path="/civil-2" element={<EarthquakeResistant />} />
-      <Route path="/civil-3" element={<SteelAndRccDesign />} />
-      <Route path="/civil-4" element={<TallBuildingAnalysis />} />
-      <Route path="/civil-5" element={<GeotechnicalEngineering />} />
-      <Route path="/civil-6" element={<SoilStabilizationTechniques />} />
-      <Route path="/civil-7" element={<FoundationDesign />} />
-      <Route path="/civil-8" element={<TransportationEngineering />} />
-      <Route path="/civil-9" element={<SmartTrafficManagement />} />
-      <Route path="/civil-10" element={<PavementAnalysisDesign />} />
-      <Route path="/civil-11" element={<EnvironmentalEngineering />} />
-      <Route path="/civil-12" element={<WaterTreatmentRecycling />} />
-      <Route path="/civil-13" element={<ConstructionProject />} />
-      <Route path="/civil-14" element={<RemoteSensingGIS />} />
-
+      <Route path="/civil/structural-engineering" element={<StructuralEngineering />} />
+      <Route path="/civil/earthquake-resistant" element={<EarthquakeResistant />} />
+      <Route path="/civil/steel-and-rcc-design" element={<SteelAndRccDesign />} />
+      <Route path="/civil/tall-building-analysis" element={<TallBuildingAnalysis />} />
+      <Route path="/civil/geotechnical-engineering" element={<GeotechnicalEngineering />} />
+      <Route path="/civil/soil-stabilization-techniques" element={<SoilStabilizationTechniques />} />
+      <Route path="/civil/foundation-design" element={<FoundationDesign />} />
+      <Route path="/civil/transportation-engineering" element={<TransportationEngineering />} />
+      <Route path="/civil/smart-traffic-management" element={<SmartTrafficManagement />} />
+      <Route path="/civil/pavement-analysis-design" element={<PavementAnalysisDesign />} />
+      <Route path="/civil/environmental-engineering" element={<EnvironmentalEngineering />} />
+      <Route path="/civil/water-treatment-recycling" element={<WaterTreatmentRecycling />} />
+      <Route path="/civil/construction-project" element={<ConstructionProject />} />
+      <Route path="/civil/remote-sensing-gis" element={<RemoteSensingGIS />} />
       {/* ECE */}
-      <Route path="/ece-1" element={<VLSIDesignandVerification />} />
-      <Route path="/ece-2" element={<EmbeddedSystemsandIoT />} />
-      <Route path="/ece-3" element={<CommunicationSignalProcessing />} />
-      <Route path="/ece-4" element={<PowerElectronicsandDrives />} />
-      <Route path="/ece-5" element={<RenewableEnergySystems />} />
-      <Route path="/ece-6" element={<EmbeddedandIoT />} />  
-      <Route path="/ece-7" element={<WirelessCommunicationandNetworking />} />   
-      <Route path="/ece-8" element={<AIandMLApplicationsinElectronics />} />
-      <Route path="/ece-9" element={<InternetofMedicalThings />} />
-      <Route path="/ece-10" element={<SmartAntennaandMicrowave />} />
-      <Route path="/ece-11" element={<FPGAandReconfigurable />} />
-      <Route path="/ece-12" element={<CyberPhysicalandSmart />} />
-      <Route path="/ece-13" element={<ControlSystemsMechatronics />} />
-      <Route path="/ece-14" element={<SatelliteCommunicationNavigation />} />
-
+     <Route path="/ece/vlsi-design-verification" element={<VLSIDesignandVerification />} />
+      <Route path="/ece/embedded-systems-iot" element={<EmbeddedSystemsandIoT />} />
+      <Route path="/ece/communication-signal-processing" element={<CommunicationSignalProcessing />} />
+      <Route path="/ece/power-electronics-drives" element={<PowerElectronicsandDrives />} />
+      <Route path="/ece/renewable-energy-systems" element={<RenewableEnergySystems />} />
+      <Route path="/ece/embedded-iot" element={<EmbeddedandIoT />} />
+      <Route path="/ece/wireless-communication-networking" element={<WirelessCommunicationandNetworking />} />
+      <Route path="/ece/ai-ml-applications-electronics" element={<AIandMLApplicationsinElectronics />} />
+      <Route path="/ece/internet-of-medical-things" element={<InternetofMedicalThings />} />
+      <Route path="/ece/smart-antenna-microwave" element={<SmartAntennaandMicrowave />} />
+      <Route path="/ece/fpga-reconfigurable-systems" element={<FPGAandReconfigurable />} />
+      <Route path="/ece/cyber-physical-smart-systems" element={<CyberPhysicalandSmart />} />
+      <Route path="/ece/control-systems-mechatronics" element={<ControlSystemsMechatronics />} />
+      <Route path="/ece/satellite-communication-navigation" element={<SatelliteCommunicationNavigation />} />
       {/* EEE */}
-      <Route path="eee-1" element={<SmartGridMicrogrid />} />
-      <Route path="eee-2" element={<EVChargingInfrastructureV2G />} />
-      <Route path="eee-3" element={<PowerSystemStability />} />
-      <Route path="eee-4" element={<LoadForecastingDemandResponse />} />
-      <Route path="eee-5" element={<HighVoltageDC />} />
-      <Route path="eee-6" element={<PowerSystemProtection />} />
-      <Route path="eee-7" element={<PowerElectronicsRenewables />} />
-      <Route path="eee-8" element={<EmbeddedIoTEnergy />} />
-      <Route path="eee-9" element={<SmartLightingBuilding />} />
-      <Route path="eee-10" element={<ConditionMonitoringDiagnosis />} />
-      <Route path="eee-11" element={<ElectricMachinesforCoastalMarine />} />
-      <Route path="eee-12" element={<PowerElectronicsEVMotorDrives />} />
+     <Route path="/eee/smart-grid-microgrid" element={<SmartGridMicrogrid />} />
+      <Route path="/eee/ev-charging-infrastructure-v2g" element={<EVChargingInfrastructureV2G />} />
+      <Route path="/eee/power-system-stability" element={<PowerSystemStability />} />
+      <Route path="/eee/load-forecasting-demand-response" element={<LoadForecastingDemandResponse />} />
+      <Route path="/eee/high-voltage-dc" element={<HighVoltageDC />} />
+      <Route path="/eee/power-system-protection" element={<PowerSystemProtection />} />
+      <Route path="/eee/power-electronics-renewables" element={<PowerElectronicsRenewables />} />
+      <Route path="/eee/embedded-iot-energy" element={<EmbeddedIoTEnergy />} />
+      <Route path="/eee/smart-lighting-building" element={<SmartLightingBuilding />} />
+      <Route path="/eee/condition-monitoring-diagnosis" element={<ConditionMonitoringDiagnosis />} />
+      <Route path="/eee/electric-machines-coastal-marine" element={<ElectricMachinesforCoastalMarine />} />
+      <Route path="/eee/power-electronics-ev-motor-drives" element={<PowerElectronicsEVMotorDrives />} />
+      <Route path="/eee/wireless-power-transfer" element={<WirelessPowerTransfer />} />
+      <Route path="/eee/artificial-intelligence-power" element={<ArtificialIntelligenceinPower />} />
+      <Route path="/eee/smart-metering-demand-response" element={<SmartMeteringDemandResponse />} />
       
-      <Route path="eee-13" element={<WirelessPowerTransfer />} /> 
-      <Route path="eee-14" element={<ArtificialIntelligenceinPower />} />
-      <Route path="eee-15" element={<SmartMeteringDemandResponse />} />
-
       </Routes>
     </BrowserRouter>
   );

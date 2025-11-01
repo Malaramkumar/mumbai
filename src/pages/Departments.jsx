@@ -1,110 +1,161 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FaCogs, FaLaptopCode, FaCity, FaMicrochip, FaBolt } from "react-icons/fa";
-import "./Departments.scss";
+// src/components/DepartmentNavigation.jsx
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Departments.scss';
 
-const Departments = () => {
-  const [activeDept, setActiveDept] = useState(null);
+// ---------------------------------------------------------------
+// 1. DATA – keep it in sync with your <Route …> definitions
+// ---------------------------------------------------------------
+const departments = [
+  {
+    name: 'Mechanical',
+    slug: 'mechanical',
+    topics: [
+      {
+        title: 'Thermal Energy Engineering',
+        slug: 'thermalenergyengineering',
+        subtopics: [
+          { title: 'Heat Transfer Enhancement', slug: 'heattransferenhancement' },
+          { title: 'Computational Fluid Dynamics', slug: 'ComputationalFluidDynamics' },
+          { title: 'Solar, Thermal & Geothermal', slug: 'SolarThermalGeothermal' },
+          { title: 'Refrigeration & Cryogenics', slug: 'RefrigerationCryogenics' },
+          { title: 'Waste Heat Recovery', slug: 'WasteHeatRecoveryEnergy' },
+          { title: 'Thermal Energy', slug: 'ThermalEnergy' },
+        ],
+      },
+      {
+        title: 'Design & Manufacturing',
+        slug: 'DesignManufacturing',
+        subtopics: [
+          { title: 'CAD/CAM & Mechanical Design', slug: 'CADCAMMechanicalDesign' },
+          { title: 'Additive Manufacturing & 3D Printing', slug: 'AdditiveManufacturing3DPrinting' },
+          { title: 'Advanced Machining', slug: 'AdvancedMachiningManufacturing' },
+          { title: 'Product Lifecycle Management', slug: 'ProductLifecycleManagementProject' },
+          { title: 'Rapid Prototyping & Reverse Engg.', slug: 'RapidPrototypingReverse' },
+          { title: 'Smart Manufacturing (Industry 4.0)', slug: 'SmartManufacturingIndustry' },
+        ],
+      },
+      {
+        title: 'Materials & Metallurgy',
+        slug: 'MaterialsMetallurgy',
+        subtopics: [
+          { title: 'Advanced Composite Materials', slug: 'AdvancedCompositeMaterials' },
+          { title: 'Nanomaterials for Mechanical', slug: 'NanomaterialsforMechanical' },
+          { title: 'Welding, Casting & Joining', slug: 'WeldingCastingJoining' },
+          { title: 'Corrosion & Surface Engineering', slug: 'CorrosionSurfaceEngineering' },
+          { title: 'Material Testing & NDT', slug: 'MaterialTestingNonDestructive' },
+          { title: 'Smart & Intelligent Materials', slug: 'SmartIntelligentMaterials' },
+        ],
+      },
+      // … add the rest of Mechanical topics the same way …
+    ],
+  },
 
-  const departments = [
-    {
-      id: 1,
-      title: "Mechanical Engineering",
-      icon: <FaCogs />,
-      subs: [
-        { name: "Thermal Energy Engineering", link: "/mech-1" },
-        { name: "Design & Manufacturing", link: "/mech-2" },
-        { name: "Materials & Metallurgy", link: "/mech-3" },
-        { name: "Robotics & Automation", link: "/mech-4" },
-        { name: "Dynamics & Vibration", link: "/mech-5" },
-        { name: "Fluid Mechanics & Hydraulics", link: "/mech-6" },
-        { name: "Tribology & Maintenance", link: "/mech-7" },
-        { name: "Industrial Production", link: "/mech-8" },
-        { name: "Automobile Systems", link: "/mech-9" },
-        { name: "Computational Simulation", link: "/mech-10" },
-      ],
-    },
-    {
-      id: 2,
-      title: "Computer Science Engineering",
-      icon: <FaLaptopCode />,
-      subs: [
-        { name: "AI & Machine Learning", link: "/cse-1" },
-        { name: "Data Science", link: "/cse-2" },
-        { name: "Cyber Security", link: "/cse-4" },
-        { name: "Cloud Computing", link: "/cse-6" },
-        { name: "Blockchain Systems", link: "/cse-5" },
-        { name: "Quantum Computing", link: "/cse-7" },
-      ],
-    },
-    {
-      id: 3,
-      title: "Civil Engineering",
-      icon: <FaCity />,
-      subs: [
-        { name: "Structural Engineering", link: "/civil-1" },
-        { name: "Geotechnical Engineering", link: "/civil-5" },
-        { name: "Transportation Systems", link: "/civil-8" },
-        { name: "Environmental Engineering", link: "/civil-11" },
-      ],
-    },
-    {
-      id: 4,
-      title: "Electronics & Communication",
-      icon: <FaMicrochip />,
-      subs: [
-        { name: "VLSI Design", link: "/ece-1" },
-        { name: "Embedded Systems", link: "/ece-2" },
-        { name: "Signal Processing", link: "/ece-3" },
-        { name: "Power Electronics", link: "/ece-4" },
-      ],
-    },
-    {
-      id: 5,
-      title: "Electrical & Electronics",
-      icon: <FaBolt />,
-      subs: [
-        { name: "Smart Grid Systems", link: "/eee-1" },
-        { name: "EV Infrastructure", link: "/eee-2" },
-        { name: "Power System Stability", link: "/eee-3" },
-        { name: "High Voltage DC", link: "/eee-5" },
-      ],
-    },
-  ];
+  {
+    name: 'CSE',
+    slug: 'cse',
+    topics: [
+      { title: 'Artificial Intelligence & Machine Learning', slug: 'artificial-intelligence-machine-learning' },
+      { title: 'Data Science & Big Data Analytics', slug: 'data-science-big-data-analytics' },
+      { title: 'Internet of Things', slug: 'internet-of-things' },
+      { title: 'Cybersecurity & Privacy', slug: 'cybersecurity-privacy' },
+      // … add remaining CSE topics …
+    ],
+  },
 
-  const toggleDept = (id) => {
-    setActiveDept(activeDept === id ? null : id);
-  };
+  {
+    name: 'Civil',
+    slug: 'civil',
+    topics: [
+      { title: 'Structural Engineering', slug: 'structural-engineering' },
+      { title: 'Earthquake Resistant Design', slug: 'earthquake-resistant' },
+      // …
+    ],
+  },
+
+  {
+    name: 'ECE',
+    slug: 'ece',
+    topics: [
+      { title: 'VLSI Design & Verification', slug: 'vlsi-design-verification' },
+      // …
+    ],
+  },
+
+  {
+    name: 'EEE',
+    slug: 'eee',
+    topics: [
+      { title: 'Smart Grid & Microgrid', slug: 'smart-grid-microgrid' },
+      // …
+    ],
+  },
+
+  // Add more departments if you have them
+];
+
+// ---------------------------------------------------------------
+// 2. COMPONENT
+// ---------------------------------------------------------------
+export default function DepartmentNavigation() {
+  const [openDept, setOpenDept] = useState(null);
 
   return (
-    <div className="departments-page">
-      <h1 className="page-title">Engineering Departments</h1>
-
-      <div className="departments-container">
+    <nav className="dept-nav">
+      <ul className="dept-list">
         {departments.map((dept) => (
-          <div
-            key={dept.id}
-            className={`department-card ${activeDept === dept.id ? "active" : ""}`}
-            onClick={() => toggleDept(dept.id)}
+          <li
+            key={dept.slug}
+            className="dept-item"
+            onMouseEnter={() => setOpenDept(dept.slug)}
+            onMouseLeave={() => setOpenDept(null)}
           >
-            <div className="department-header">
-              <div className="icon">{dept.icon}</div>
-              <h2>{dept.title}</h2>
-            </div>
+            {/* Department link */}
+            <Link to={`/${dept.slug}`} className="dept-link">
+              {dept.name}
+              <span className="chevron">▼</span>
+            </Link>
 
-            <div className={`sub-section ${activeDept === dept.id ? "visible" : ""}`}>
-              {dept.subs.map((sub, i) => (
-                <Link key={i} to={sub.link} className="sub-link">
-                  {sub.name}
-                </Link>
-              ))}
-            </div>
-          </div>
+            {/* Dropdown */}
+            {openDept === dept.slug && (
+              <div className="dropdown">
+                <h3 className="dropdown-title">{dept.name}</h3>
+
+                <div className="topics">
+                  {dept.topics.map((topic) => (
+                    <div key={topic.slug} className="topic">
+                      {/* Main topic */}
+                      <Link
+                        to={`/${dept.slug}/${topic.slug}`}
+                        className="topic-link"
+                      >
+                        {topic.title}
+                        {topic.subtopics && <span className="chevron-right">▶</span>}
+                      </Link>
+
+                      {/* Sub-topics */}
+                      {topic.subtopics && (
+                        <ul className="subtopics">
+                          {topic.subtopics.map((sub) => (
+                            <li key={sub.slug}>
+                              <Link
+                                to={`/${dept.slug}/${topic.slug}/${sub.slug}`}
+                                className="subtopic-link"
+                              >
+                                {sub.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </li>
         ))}
-      </div>
-    </div>
+      </ul>
+    </nav>
   );
-};
-
-export default Departments;
-
+}
