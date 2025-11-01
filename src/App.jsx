@@ -58,6 +58,7 @@ import SiuPhDPage from './college/SymbiosisInternationalPune';
 import SspuPhDPage from './college/SymbiosisSkillsandProfessionalUniversityPune';
 import VishwakarmaPhDPage from './college/VishwakarmaUniversityPune';
 import MumbaiPhDOverview from "./college/UniversityofMumbai"
+import NICMARPhDPage from './college/NICMARUniversityPune';
 //mech 
 import ThermalEnergyEngineering from "./Mechanical/ThermalEnergyEngineering"
       //Sub 
@@ -236,6 +237,7 @@ import ResearchPaperWritingMumbai from './title/service5/ResearchPaperWritingMum
 import ReviewPaperWritingMumbai from './title/service5/ReviewPaperWritingMumbai';
 import ReviewArticleWritingMumbai from './title/service5/ReviewArticleWritingMumbai';
 import LiteratureReviewWritingMumbai from './title/service5/LiteratureReviewWritingMumbai';
+import Departments from './pages/Departments';
 
 
 function App() {
@@ -248,6 +250,7 @@ function App() {
         <Route path="/home-page" element={<Home />} />
         <Route path="/phd-research-proposal-writing-services" element={<Main3 />} />
         <Route path="/colleges" element={<CollegeList />} />
+        <Route path="/departments" element={<Departments />} />       
 
         {/* PhDConsulting*/ }
         <Route path="/phd-consulting" element={<PhDConsulting />} />
@@ -286,37 +289,37 @@ function App() {
         <Route path="/research-article-and-journal-paper/literature-review-writing-services-in-mumbai" element={<LiteratureReviewWritingMumbai />} />
         
         {/* college */}
-        <Route path="/college/amity-university" element={<Amitycollege />} />
-        <Route path="/college/atlas-skilltech-university" element={<AtlasPhD />} />
-        <Route path="/college/homi-bhabha-state-university" element={<HBSIPhDEnhancedPage />} />
-        <Route path="/college/homi-bhabha-nation-university" element={<HBNIPhDEnhancedPage />} />
-        <Route path="/college/indira-gandhi-institute-of-development-research" element={<IGIDRPhD />} />
-        <Route path="/college/institute-of-chemical-technology" element={<ICTPhD />} />
-        <Route path="/college/international-institute-for-population-sciences" element={<IIPSPhD />} /> 
-        <Route path="/college/institute-of-chemical-technology" element={<ICTPhD />} />
-        <Route path="/college/hyderabad-sind-national-collegiate-university" element={<HSNCPhD />} /> 
-        <Route path="/college/narsee-monjee-institute-of-management-studies" element={<NMIMSPhD />} />
-        <Route path="/college/smt-nathibai-damodar-thackersey-university" element={<SNDTPhDPage />} />
-        <Route path="/college/somaiya-vidyavihar-university" element={<SVUPhDPage />} />
-        <Route path="/college/tata-institute-of-fundamental-research" element={<TifrPhDPage />} />
-        <Route path="/college/tata-institute-of-social-sciences" element={<TissPhDPage />} />
-        <Route path="/college/chhatrapati-shivaji-maharaj-university" element={<CsmuPhDPage />} />
-        <Route path="/college/d-y-patil-university" element={<DyPatilPhDPage />} />
-        <Route path="/college/ajeenkya-d-y-patil-university-pune" element={<AdypuPhDPage />} />
-        <Route path="/college/bharati-vidyapeeth-university" element={<BharatiVidyapeethPhDPage />} />
-        <Route path="/college/deccan-college" element={<DeccanCollegePhDPage />} />
-        <Route path="/college/dr-vishwanath-karad-mit" element={<DrVishwanathKaradMIT />} />
-        <Route path="/college/flame-university-pune" element={<FLAMEPhDPage />} />
-        <Route path="/college/gokhale-institute-of-politics-and-economics-pune" element={<GIPEPhDPage />} />
-        <Route path="/college/mit-art-design-&-technology-university-pune" element={<MITADTPhDPage />} />
-        <Route path="/college/national-institute-of-construction-management-and-research" element={<MITADTPhDPage />} />
-        <Route path="/college/savitribai-phule-pune-university" element={<SPPUPhDPage />} />
-        <Route path="/college/spicer-adventist-university-pune" element={<SpicerPhDPage />} />
-        <Route path="/college/sri-balaji-university-pune" element={<SbupPhDPage />} />
-        <Route path="/college/symbiosis-international-pune" element={<SiuPhDPage />} />
-        <Route path="/college/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
-        <Route path="/college/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
-        <Route path="/college/university-of-mumbai" element={<MumbaiPhDOverview />} />
+        <Route path="/colleges/amity-university" element={<Amitycollege />} />
+        <Route path="/colleges/atlas-skilltech-university" element={<AtlasPhD />} />
+        <Route path="/colleges/homi-bhabha-state-university" element={<HBSIPhDEnhancedPage />} />
+        <Route path="/colleges/homi-bhabha-nation-university" element={<HBNIPhDEnhancedPage />} />
+        <Route path="/colleges/indira-gandhi-institute-of-development-research" element={<IGIDRPhD />} />
+        <Route path="/colleges/institute-of-chemical-technology" element={<ICTPhD />} />
+        <Route path="/colleges/international-institute-for-population-sciences" element={<IIPSPhD />} /> 
+        <Route path="/colleges/institute-of-chemical-technology" element={<ICTPhD />} />
+        <Route path="/colleges/hyderabad-sind-national-collegiate-university" element={<HSNCPhD />} /> 
+        <Route path="/colleges/narsee-monjee-institute-of-management-studies" element={<NMIMSPhD />} />
+        <Route path="/colleges/smt-nathibai-damodar-thackersey-university" element={<SNDTPhDPage />} />
+        <Route path="/colleges/somaiya-vidyavihar-university" element={<SVUPhDPage />} />
+        <Route path="/colleges/tata-institute-of-fundamental-research" element={<TifrPhDPage />} />
+        <Route path="/colleges/tata-institute-of-social-sciences" element={<TissPhDPage />} />
+        <Route path="/colleges/chhatrapati-shivaji-maharaj-university" element={<CsmuPhDPage />} />
+        <Route path="/colleges/d-y-patil-university" element={<DyPatilPhDPage />} />
+        <Route path="/colleges/ajeenkya-d-y-patil-university-pune" element={<AdypuPhDPage />} />
+        <Route path="/colleges/bharati-vidyapeeth-university" element={<BharatiVidyapeethPhDPage />} />
+        <Route path="/colleges/deccan-college" element={<DeccanCollegePhDPage />} />
+        <Route path="/colleges/dr-vishwanath-karad-mit" element={<DrVishwanathKaradMIT />} />
+        <Route path="/colleges/flame-university-pune" element={<FLAMEPhDPage />} />
+        <Route path="/colleges/gokhale-institute-of-politics-and-economics-pune" element={<GIPEPhDPage />} />
+        <Route path="/colleges/mit-art-design-&-technology-university-pune" element={<MITADTPhDPage />} />
+        <Route path="/colleges/national-institute-of-construction-management-and-research" element={<NICMARPhDPage />} />
+        <Route path="/colleges/savitribai-phule-pune-university" element={<SPPUPhDPage />} />
+        <Route path="/colleges/spicer-adventist-university-pune" element={<SpicerPhDPage />} />
+        <Route path="/colleges/sri-balaji-university-pune" element={<SbupPhDPage />} />
+        <Route path="/colleges/symbiosis-international-pune" element={<SiuPhDPage />} />
+        <Route path="/colleges/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
+        <Route path="/colleges/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
+        <Route path="/colleges/university-of-mumbai" element={<MumbaiPhDOverview />} />
 
         {/* mech */}
         <Route path="/mech-1" element={<ThermalEnergyEngineering />} />
@@ -398,6 +401,7 @@ function App() {
                   <Route path="/mech-10-4" element={<FractureMechanicsFatigue />} />
                   <Route path="/mech-10-5" element={<DigitalTwinSmartSimulation />} />
                   <Route path="/mech-10-6" element={<HighPerformanceComputing />} />
+
             {/* CSE  */}
             <Route path="/cse-1" element={<ArtificialIntelligenceMachineLearning />} />
             <Route path="/cse-2" element={<DataScience_BigDataAnalytics />} />
