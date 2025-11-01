@@ -250,6 +250,8 @@ import ConferencePaperPublication from './title/service6/ConferencePaperPublicat
  
 import Departments from './pages/Departments';
 
+import Footer from './Footer';
+
  
 
 function App() {
@@ -554,6 +556,7 @@ function App() {
       <Route path="eee-14" element={<ArtificialIntelligenceinPower />} />
       <Route path="eee-15" element={<SmartMeteringDemandResponse />} />
 
+      <Route path="footer" element={<Footer />} />
       </Routes>
     </BrowserRouter>
   );
