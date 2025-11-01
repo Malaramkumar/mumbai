@@ -58,10 +58,9 @@ import SiuPhDPage from './college/SymbiosisInternationalPune';
 import SspuPhDPage from './college/SymbiosisSkillsandProfessionalUniversityPune';
 import VishwakarmaPhDPage from './college/VishwakarmaUniversityPune';
 import MumbaiPhDOverview from "./college/UniversityofMumbai"
-<<<<<<< HEAD
-=======
+ 
 import NICMARPhDPage from './college/NICMARUniversityPune';
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
+ 
 //mech 
 import ThermalEnergyEngineering from "./Mechanical/ThermalEnergyEngineering"
       //Sub 
@@ -240,7 +239,7 @@ import ResearchPaperWritingMumbai from './title/service5/ResearchPaperWritingMum
 import ReviewPaperWritingMumbai from './title/service5/ReviewPaperWritingMumbai';
 import ReviewArticleWritingMumbai from './title/service5/ReviewArticleWritingMumbai';
 import LiteratureReviewWritingMumbai from './title/service5/LiteratureReviewWritingMumbai';
-<<<<<<< HEAD
+ HEAD
 import JournalPublicationSupport from './title/service6/JournalPublicationSupport';
 import ResearchPublicationServices from './title/service6/ResearchPublicationServices';
 import ReviewPaperPublication from './title/service6/ReviewPaperPublication';
@@ -248,10 +247,10 @@ import ConferencePaperPublication from './title/service6/ConferencePaperPublicat
       import IEEEConferencePaperPublication from './title/service6/IEEEConferencePaperPublication';
       import SpringerConferencePaperPublication from './title/service6/SpringerConferencePaperPublication';
       import ElsevierConferencePublication from './title/service6/ElsevierConferencePublication';
-=======
+ 
 import Departments from './pages/Departments';
 
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
+ 
 
 function App() {
   return (
@@ -263,10 +262,9 @@ function App() {
         <Route path="/home-page" element={<Home />} />
         <Route path="/phd-research-proposal-writing-services" element={<Main3 />} />
         <Route path="/colleges" element={<CollegeList />} />
-<<<<<<< HEAD
-=======
+ 
         <Route path="/departments" element={<Departments />} />       
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
+ 
 
         {/* PhDConsulting*/ }
         <Route path="/phd-consulting" element={<PhDConsulting />} />
@@ -303,7 +301,7 @@ function App() {
         <Route path="/research-article-and-journal-paper/review-paper-writing-service-in-mumbai" element={<ReviewPaperWritingMumbai />} />
         <Route path="/research-article-and-journal-paper/review-article-writing-service-in-mumbai" element={<ReviewArticleWritingMumbai />} />
         <Route path="/research-article-and-journal-paper/literature-review-writing-services-in-mumbai" element={<LiteratureReviewWritingMumbai />} />
-<<<<<<< HEAD
+ 
 
         {/* Services 6 */}
         <Route path="/service6-1" element={<JournalPublicationSupport />} />
@@ -347,7 +345,7 @@ function App() {
         <Route path="/college/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
         <Route path="/college/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
         <Route path="/college/university-of-mumbai" element={<MumbaiPhDOverview />} />
-=======
+ 
         
         {/* college */}
         <Route path="/colleges/amity-university" element={<Amitycollege />} />
@@ -381,8 +379,7 @@ function App() {
         <Route path="/colleges/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
         <Route path="/colleges/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
         <Route path="/colleges/university-of-mumbai" element={<MumbaiPhDOverview />} />
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
-
+ 
         {/* mech */}
         <Route path="/mech-1" element={<ThermalEnergyEngineering />} />
               {/* sub */}
@@ -463,10 +460,7 @@ function App() {
                   <Route path="/mech-10-4" element={<FractureMechanicsFatigue />} />
                   <Route path="/mech-10-5" element={<DigitalTwinSmartSimulation />} />
                   <Route path="/mech-10-6" element={<HighPerformanceComputing />} />
-<<<<<<< HEAD
-=======
-
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
+ 
             {/* CSE  */}
             <Route path="/cse-1" element={<ArtificialIntelligenceMachineLearning />} />
             <Route path="/cse-2" element={<DataScience_BigDataAnalytics />} />
@@ -555,6 +549,7 @@ function App() {
       <Route path="eee-10" element={<ConditionMonitoringDiagnosis />} />
       <Route path="eee-11" element={<ElectricMachinesforCoastalMarine />} />
       <Route path="eee-12" element={<PowerElectronicsEVMotorDrives />} />
+      
       <Route path="eee-13" element={<WirelessPowerTransfer />} /> 
       <Route path="eee-14" element={<ArtificialIntelligenceinPower />} />
       <Route path="eee-15" element={<SmartMeteringDemandResponse />} />

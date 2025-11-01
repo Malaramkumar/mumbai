@@ -25,10 +25,9 @@
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-<<<<<<< HEAD
-=======
+ 
     "gh-pages": "^6.3.0",
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
+ 
     "globals": "^16.0.0",
     "sass-embedded": "^1.89.2",
     "vite": "^6.3.5"
