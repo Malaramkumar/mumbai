@@ -240,3 +240,4 @@ const MECostTimeOptimizationInManufacturingProjectDevelopmentCenter = () => {
 };
 
 export default MECostTimeOptimizationInManufacturingProjectDevelopmentCenter;
+

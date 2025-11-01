@@ -347,3 +347,4 @@ export default function WoSConferencePublication() {
     </div>
   );
 }
+

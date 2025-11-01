@@ -272,3 +272,4 @@ const [openIndex, setOpenIndex] = useState(null);
 };
 
 export default AmityPhDEnhancedPage;
+

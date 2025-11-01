@@ -247,3 +247,4 @@ const MEFiniteElementAnalysisApplicationsProjectDevelopmentCenter = () => {
 };
 
 export default MEFiniteElementAnalysisApplicationsProjectDevelopmentCenter;
+

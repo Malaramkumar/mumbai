@@ -76,3 +76,4 @@ const ResearchProposalWritingMain = () => {
 };
 
 export default ResearchProposalWritingMain;
+

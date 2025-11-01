@@ -234,3 +234,4 @@ const WirelessPowerChargingMumbai = () => {
 };
 
 export default WirelessPowerChargingMumbai;
+

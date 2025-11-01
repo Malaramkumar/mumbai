@@ -5,8 +5,6 @@ import "./CollegesList.scss";
 
 const CollegesList = () => {
   const colleges = [
-    
-<<<<<<< HEAD
     { name: "University of Mumbai", path: "/college/university-of-mumbai" },
     { name: "Amity University", path: "/college/amity-university" },
     { name: "Atlas SkillTech University", path: "/college/atlas-skilltech-university" },
@@ -37,7 +35,6 @@ const CollegesList = () => {
     { name: "Symbiosis International Pune", path: "/college/symbiosis-international-pune" },
     { name: "Symbiosis Skills and Professional University Pune", path: "/college/symbiosis-skills-and-professional-university-pune" },
     { name: "Vishwakarma University Pune", path: "/college/vishwakarma-university-pune" },
-=======
     { name: "University of Mumbai", path: "/colleges/university-of-mumbai" },
     { name: "Amity University", path: "/colleges/amity-university" },
     { name: "Atlas SkillTech University", path: "/colleges/atlas-skilltech-university" },
@@ -68,7 +65,6 @@ const CollegesList = () => {
     { name: "Symbiosis International Pune", path: "/colleges/symbiosis-international-pune" },
     { name: "Symbiosis Skills and Professional University Pune", path: "/colleges/symbiosis-skills-and-professional-university-pune" },
     { name: "Vishwakarma University Pune", path: "/colleges/vishwakarma-university-pune" },
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     
   ];
 
@@ -169,3 +165,4 @@ const CollegesList = () => {
 };
 
 export default CollegesList;
+

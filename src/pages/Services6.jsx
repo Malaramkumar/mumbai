@@ -15,41 +15,29 @@ import bgImage from "../images/PublicationSupport.png"
 const services = [
   {
     title: "Journal Publication Services",
-<<<<<<< HEAD
     desc: "Get end-to-end assistance with journal selection, formatting, and submission.",
-=======
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     link: "/career-opportunities-after-phd",
     icon: <BookOpenCheck size={24} />,
   },
   {
     title: "Research Publication Services",
-<<<<<<< HEAD
     desc: "Professional guidance for publishing your original research with precision.",
-=======
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     link: "/top-mnc-hiring",
     icon: <FileText size={24} />,
   },
   {
     title: "Review Paper Publication Support",
-<<<<<<< HEAD
     desc: "Expert assistance in writing and structuring your review papers.",
-=======
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     link: "/top-phd-colleges-mumbai",
     icon: <FilePenLine size={24} />,
   },
   {
     title: "Conference Paper Publication Services",
-<<<<<<< HEAD
     desc: "Comprehensive support for conference paper writing and presentations.",
-=======
     desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     link: "/top-for-phd-colleges-in-mumbai",
     icon: <Presentation size={24} />,
   },
@@ -94,7 +82,6 @@ const Services6 = () => {
         <div className="services6-center-content">
           <h1>Publication Support</h1>
           <p>
-<<<<<<< HEAD
             At Narpavi Research Institute, we offer end-to-end PhD consulting
             services designed to support scholars through every stage of their
             doctoral journey. From expert guidance in PhD admission assistance
@@ -102,11 +89,8 @@ const Services6 = () => {
             implementation, and thesis development, we ensure academic
             excellence with precision and professionalism.
           </p>
-=======
            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa rem animi velit tenetur eaque, deleniti culpa nam, vel architecto incidunt cum nesciunt sint, ea aperiam illo id vero odit iure dicta adipisci! Voluptatibus mollitia sunt obcaecati possimus quas, inventore, cupiditate laboriosam veniam maxime sit cumque, quaerat animi. Minus voluptates tenetur mollitia, numquam quam eligendi perferendis nihil eius quos magni, sed facilis! Debitis, nam in sunt dolorum, eum illum consequuntur vel vitae aspernatur suscipit velit ducimus recusandae? Facere consequatur nihil, quos omnis culpa expedita eveniet distinctio labore iste quod. Quis esse expedita tenetur laborum deleniti aliquam commodi delectus! Blanditiis, ipsum ullam.
           </p>
-          
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
           <button onClick={() => navigate("/phd-consulting")}>
             Publication Support
           </button>
@@ -150,3 +134,4 @@ const Services6 = () => {
 };
 
 export default Services6;
+

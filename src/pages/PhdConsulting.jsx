@@ -1,7 +1,7 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./PhdConsulting.scss";
+
 const faqs = [
   {
     question: "What does a PhD consulting service cover?",
@@ -25,10 +25,13 @@ const faqs = [
   }
 ];
 
-
 const PhDConsultingMumbai = () => {
-   const [openIndex, setOpenIndex] = useState(null);
-    const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="consulting-wrapper">
       <div className="left-side">
@@ -64,69 +67,67 @@ const PhDConsultingMumbai = () => {
           <li>University-level merit scholarships</li>
           <li>Industry-sponsored & part-time fellowships</li>
         </ul>
-        <p>Beyond academics, our consulting also emphasizes career opportunities for PhD scholars in academia, research labs, corporate R&D, policy think tanks, and postdoctoral fellowships both in India and abroad. Our expert mentors help you align your PhD research with long-term employability.
-</p>
+        <p>Beyond academics, our consulting also emphasizes career opportunities for PhD scholars in academia, research labs, corporate R&D, policy think tanks, and postdoctoral fellowships both in India and abroad. Our expert mentors help you align your PhD research with long-term employability.</p>
 
         <h2>✍️ Writing Support: Proposal to Publication</h2>
-        <p>A key pillar of our PhD Consulting – Assistance and Guidance in Mumbai is our professional writing support, tailored for each phase of your doctoral program. We offer:
-</p>
+        <p>A key pillar of our PhD Consulting – Assistance and Guidance in Mumbai is our professional writing support, tailored for each phase of your doctoral program. We offer:</p>
+
         <div className="why-narpavi-wrapper">
-  <h2>WHY CHOOSE NARPAVI FOR YOUR PHD JOURNEY?</h2>
-  <p className="subtext">We offer tailored support at every stage — from proposal to viva — ensuring academic excellence with expert guidance.</p>
+          <h2>WHY CHOOSE NARPAVI FOR YOUR PHD JOURNEY?</h2>
+          <p className="subtext">We offer tailored support at every stage — from proposal to viva — ensuring academic excellence with expert guidance.</p>
 
-  <div className="service-table-wrapper">
-    <table className="service-table">
-      <thead>
-        <tr>
-          <th className="col-index"></th>
-          <th className="col-service">Service</th>
-          <th className="col-desc">Description</th>
-        </tr>
-      </thead>
+          <div className="service-table-wrapper">
+            <table className="service-table">
+              <thead>
+                <tr>
+                  <th className="col-index"></th>
+                  <th className="col-service">Service</th>
+                  <th className="col-desc">Description</th>
+                </tr>
+              </thead>
 
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>Research Proposal</td>
-          <td>University‑specific proposals with objectives, gap analysis, and feasibility checks</td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>Funding Proposal</td>
-          <td>Assistance in writing grant proposals for national and institutional research funds</td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>Synopsis Writing</td>
-          <td>Summarising your research direction, methods, and preliminary findings as per guidelines</td>
-        </tr>
-        <tr>
-          <td>04</td>
-          <td>Thesis Writing</td>
-          <td>End‑to‑end support including data interpretation, formatting, plagiarism check, and references</td>
-        </tr>
-        <tr>
-          <td>05</td>
-          <td>Journal Article</td>
-          <td>Drafting, formatting, and aligning your paper with Scopus / SCI / UGC journal scopes</td>
-        </tr>
-        <tr>
-          <td>06</td>
-          <td>Publication Support</td>
-          <td>Journal shortlisting, formatting, submission, and revision handling</td>
-        </tr>
-        <tr>
-          <td>07</td>
-          <td>Viva Voce Prep</td>
-          <td>Mock sessions, Q&A sets, presentation design, and confidence‑building training</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>Research Proposal</td>
+                  <td>University‑specific proposals with objectives, gap analysis, and feasibility checks</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>Funding Proposal</td>
+                  <td>Assistance in writing grant proposals for national and institutional research funds</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>Synopsis Writing</td>
+                  <td>Summarising your research direction, methods, and preliminary findings as per guidelines</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>Thesis Writing</td>
+                  <td>End‑to‑end support including data interpretation, formatting, plagiarism check, and references</td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>Journal Article</td>
+                  <td>Drafting, formatting, and aligning your paper with Scopus / SCI / UGC journal scopes</td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>Publication Support</td>
+                  <td>Journal shortlisting, formatting, submission, and revision handling</td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>Viva Voce Prep</td>
+                  <td>Mock sessions, Q&A sets, presentation design, and confidence‑building training</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-        <p>Our writing experts ensure that your work is technically sound, plagiarism-free, and aligned with the expectations of both universities and top-tier journals.
-</p>
+        <p>Our writing experts ensure that your work is technically sound, plagiarism-free, and aligned with the expectations of both universities and top-tier journals.</p>
 
         <h2>🔬 Research Development & Implementation Assistance</h2>
         <p>Beyond writing, successful research depends on real-world implementation. As part of our PhD Consulting – Assistance and Guidance in Mumbai, we assist scholars in:</p>
@@ -134,10 +135,10 @@ const PhDConsultingMumbai = () => {
           <li>Finalizing research methodology and tools</li>
           <li>Designing experiments or field studies</li>
           <li>Software development for technical research (MATLAB, Python, SPSS, etc.)</li>
-          <li> Data collection, coding, analysis, and visualization </li>
-          <li> Prototyping and model development (especially for Engineering, IT, and Applied Sciences) </li>
+          <li>Data collection, coding, analysis, and visualization</li>
+          <li>Prototyping and model development (especially for Engineering, IT, and Applied Sciences)</li>
         </ul>
-      <p>This hands-on research implementation assistance ensures that your project doesn’t remain theoretical but evolves into actionable and publishable outcomes.</p>
+        <p>This hands-on research implementation assistance ensures that your project doesn’t remain theoretical but evolves into actionable and publishable outcomes.</p>
 
         <h2>🌐 Why Choose Narpavi for PhD Consulting – Assistance and Guidance in Mumbai?</h2>
         <p>Choosing Narpavi Research Institute means partnering with Mumbai’s most trusted name in doctoral research services. Here’s what sets our PhD Consulting – Assistance and Guidance apart:</p>
@@ -150,7 +151,7 @@ const PhDConsultingMumbai = () => {
         </ul>
         <p>We ensure that every PhD scholar is equipped not just to complete their degree—but to thrive in their research career and professional life.</p>
 
-            <section id="faqs" className="faq-section11">
+        <section id="faqs" className="faq-section11">
           <h2> FAQs – PhD Research Proposal Writing Services</h2>
           {faqs.map((item, index) => (
             <div className={`faq-item11 ${openIndex === index ? "active" : ""}`} key={index}>
@@ -161,24 +162,20 @@ const PhDConsultingMumbai = () => {
               {openIndex === index && <div className="faq-answer11"><p>{item.answer}</p></div>}
             </div>
           ))}
-<<<<<<< HEAD
         </section>
-=======
-        </section>  
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
       </div>
 
       <div className="right-side">
         <h3>📌 Keywords</h3>
-            <ul>
-              <li>Best PhD consulting assistance and guidance in Mumbai</li>
-              <li>Best PhD assistance in India</li>
-              <li>PhD guidance review</li>
-              <li>PhD guidance in India</li>
-              <li>PhD assistance services</li>
-              <li>Chanakya PhD assistance</li>
-              <li>PhD Guide eligibility</li>
-            </ul>
+        <ul>
+          <li>Best PhD consulting assistance and guidance in Mumbai</li>
+          <li>Best PhD assistance in India</li>
+          <li>PhD guidance review</li>
+          <li>PhD guidance in India</li>
+          <li>PhD assistance services</li>
+          <li>Chanakya PhD assistance</li>
+          <li>PhD Guide eligibility</li>
+        </ul>
       </div>
     </div>
   );

@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 .methodology-page {
   padding: 40px;
-=======
 .methodology-page {
   padding: 40px;
   display: flex;
   gap: 30px;
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(
     to bottom,
@@ -39,8 +36,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     overflow-y: auto;
     scrollbar-width: thin;
-
-<<<<<<< HEAD
     &::-webkit-scrollbar {
       width: 6px;
     }
@@ -51,11 +46,9 @@
       background-color: #ccc;
       border-radius: 10px;
     }
-=======
     &::-webkit-scrollbar { width: 6px; }
     &::-webkit-scrollbar-track { background: transparent; }
     &::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 10px; }
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
 
     h3 {
       color: #003b73;
@@ -73,10 +66,7 @@
         margin-bottom: 0.6rem;
         color: #000;
         font-size: 1.1rem;
-<<<<<<< HEAD
-=======
         font-weight: 400;
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
         line-height: 1.5;
         padding: 0.4rem 0.6rem;
         border-radius: 6px;
@@ -93,13 +83,10 @@
 
   .methodology-main {
     flex: 1;
-<<<<<<< HEAD
     background: #fff;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-=======
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
 
     .methodology-header {
       h1 {
@@ -129,12 +116,9 @@
 
       p,
       li {
-<<<<<<< HEAD
         font-size: 1.15rem;
-=======
         font-size: 1.2rem;
         font-weight: 400;
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
         color: #000;
       }
 
@@ -147,22 +131,16 @@
         width: 100%;
         border-collapse: collapse;
         margin-top: 1rem;
-<<<<<<< HEAD
         overflow-x: auto;
         display: block;
-=======
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
 
         th,
         td {
           border: 1px solid #ccc;
           padding: 0.75rem;
           text-align: left;
-<<<<<<< HEAD
           font-size: 1rem;
-=======
           font-size: 1.1rem;
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
         }
 
         thead {
@@ -171,11 +149,8 @@
           th {
             font-weight: 600;
             color: #002b5c;
-<<<<<<< HEAD
             font-size: 1.1rem;
-=======
             font-size: 1.2rem;
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
           }
         }
 
@@ -184,8 +159,6 @@
         }
       }
     }
-
-<<<<<<< HEAD
     .methodology-cta-box {
       background: #f0f8ff;
       border-left: 5px solid #0077b6;
@@ -364,7 +337,6 @@
 
     h1 {
       font-size: 1.4rem;
-=======
    .methodology-cta-box {
   background: #f0f8ff;
   border-left: 5px solid #0077b6;
@@ -467,7 +439,7 @@
         color: #d32f2f;
         font-size: 1.1rem;
       }
->>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     }
   }
 }
+
