@@ -239,7 +239,7 @@ import ResearchPaperWritingMumbai from './title/service5/ResearchPaperWritingMum
 import ReviewPaperWritingMumbai from './title/service5/ReviewPaperWritingMumbai';
 import ReviewArticleWritingMumbai from './title/service5/ReviewArticleWritingMumbai';
 import LiteratureReviewWritingMumbai from './title/service5/LiteratureReviewWritingMumbai';
- HEAD
+ 
 import JournalPublicationSupport from './title/service6/JournalPublicationSupport';
 import ResearchPublicationServices from './title/service6/ResearchPublicationServices';
 import ReviewPaperPublication from './title/service6/ReviewPaperPublication';
