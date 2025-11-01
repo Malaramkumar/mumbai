@@ -58,6 +58,10 @@ import SiuPhDPage from './college/SymbiosisInternationalPune';
 import SspuPhDPage from './college/SymbiosisSkillsandProfessionalUniversityPune';
 import VishwakarmaPhDPage from './college/VishwakarmaUniversityPune';
 import MumbaiPhDOverview from "./college/UniversityofMumbai"
+<<<<<<< HEAD
+=======
+import NICMARPhDPage from './college/NICMARUniversityPune';
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
 //mech 
 import ThermalEnergyEngineering from "./Mechanical/ThermalEnergyEngineering"
       //Sub 
@@ -236,6 +240,7 @@ import ResearchPaperWritingMumbai from './title/service5/ResearchPaperWritingMum
 import ReviewPaperWritingMumbai from './title/service5/ReviewPaperWritingMumbai';
 import ReviewArticleWritingMumbai from './title/service5/ReviewArticleWritingMumbai';
 import LiteratureReviewWritingMumbai from './title/service5/LiteratureReviewWritingMumbai';
+<<<<<<< HEAD
 import JournalPublicationSupport from './title/service6/JournalPublicationSupport';
 import ResearchPublicationServices from './title/service6/ResearchPublicationServices';
 import ReviewPaperPublication from './title/service6/ReviewPaperPublication';
@@ -243,6 +248,10 @@ import ConferencePaperPublication from './title/service6/ConferencePaperPublicat
       import IEEEConferencePaperPublication from './title/service6/IEEEConferencePaperPublication';
       import SpringerConferencePaperPublication from './title/service6/SpringerConferencePaperPublication';
       import ElsevierConferencePublication from './title/service6/ElsevierConferencePublication';
+=======
+import Departments from './pages/Departments';
+
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
 
 function App() {
   return (
@@ -254,6 +263,10 @@ function App() {
         <Route path="/home-page" element={<Home />} />
         <Route path="/phd-research-proposal-writing-services" element={<Main3 />} />
         <Route path="/colleges" element={<CollegeList />} />
+<<<<<<< HEAD
+=======
+        <Route path="/departments" element={<Departments />} />       
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
 
         {/* PhDConsulting*/ }
         <Route path="/phd-consulting" element={<PhDConsulting />} />
@@ -290,6 +303,7 @@ function App() {
         <Route path="/research-article-and-journal-paper/review-paper-writing-service-in-mumbai" element={<ReviewPaperWritingMumbai />} />
         <Route path="/research-article-and-journal-paper/review-article-writing-service-in-mumbai" element={<ReviewArticleWritingMumbai />} />
         <Route path="/research-article-and-journal-paper/literature-review-writing-services-in-mumbai" element={<LiteratureReviewWritingMumbai />} />
+<<<<<<< HEAD
 
         {/* Services 6 */}
         <Route path="/service6-1" element={<JournalPublicationSupport />} />
@@ -333,6 +347,41 @@ function App() {
         <Route path="/college/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
         <Route path="/college/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
         <Route path="/college/university-of-mumbai" element={<MumbaiPhDOverview />} />
+=======
+        
+        {/* college */}
+        <Route path="/colleges/amity-university" element={<Amitycollege />} />
+        <Route path="/colleges/atlas-skilltech-university" element={<AtlasPhD />} />
+        <Route path="/colleges/homi-bhabha-state-university" element={<HBSIPhDEnhancedPage />} />
+        <Route path="/colleges/homi-bhabha-nation-university" element={<HBNIPhDEnhancedPage />} />
+        <Route path="/colleges/indira-gandhi-institute-of-development-research" element={<IGIDRPhD />} />
+        <Route path="/colleges/institute-of-chemical-technology" element={<ICTPhD />} />
+        <Route path="/colleges/international-institute-for-population-sciences" element={<IIPSPhD />} /> 
+        <Route path="/colleges/institute-of-chemical-technology" element={<ICTPhD />} />
+        <Route path="/colleges/hyderabad-sind-national-collegiate-university" element={<HSNCPhD />} /> 
+        <Route path="/colleges/narsee-monjee-institute-of-management-studies" element={<NMIMSPhD />} />
+        <Route path="/colleges/smt-nathibai-damodar-thackersey-university" element={<SNDTPhDPage />} />
+        <Route path="/colleges/somaiya-vidyavihar-university" element={<SVUPhDPage />} />
+        <Route path="/colleges/tata-institute-of-fundamental-research" element={<TifrPhDPage />} />
+        <Route path="/colleges/tata-institute-of-social-sciences" element={<TissPhDPage />} />
+        <Route path="/colleges/chhatrapati-shivaji-maharaj-university" element={<CsmuPhDPage />} />
+        <Route path="/colleges/d-y-patil-university" element={<DyPatilPhDPage />} />
+        <Route path="/colleges/ajeenkya-d-y-patil-university-pune" element={<AdypuPhDPage />} />
+        <Route path="/colleges/bharati-vidyapeeth-university" element={<BharatiVidyapeethPhDPage />} />
+        <Route path="/colleges/deccan-college" element={<DeccanCollegePhDPage />} />
+        <Route path="/colleges/dr-vishwanath-karad-mit" element={<DrVishwanathKaradMIT />} />
+        <Route path="/colleges/flame-university-pune" element={<FLAMEPhDPage />} />
+        <Route path="/colleges/gokhale-institute-of-politics-and-economics-pune" element={<GIPEPhDPage />} />
+        <Route path="/colleges/mit-art-design-&-technology-university-pune" element={<MITADTPhDPage />} />
+        <Route path="/colleges/national-institute-of-construction-management-and-research" element={<NICMARPhDPage />} />
+        <Route path="/colleges/savitribai-phule-pune-university" element={<SPPUPhDPage />} />
+        <Route path="/colleges/spicer-adventist-university-pune" element={<SpicerPhDPage />} />
+        <Route path="/colleges/sri-balaji-university-pune" element={<SbupPhDPage />} />
+        <Route path="/colleges/symbiosis-international-pune" element={<SiuPhDPage />} />
+        <Route path="/colleges/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
+        <Route path="/colleges/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
+        <Route path="/colleges/university-of-mumbai" element={<MumbaiPhDOverview />} />
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
 
         {/* mech */}
         <Route path="/mech-1" element={<ThermalEnergyEngineering />} />
@@ -414,6 +463,10 @@ function App() {
                   <Route path="/mech-10-4" element={<FractureMechanicsFatigue />} />
                   <Route path="/mech-10-5" element={<DigitalTwinSmartSimulation />} />
                   <Route path="/mech-10-6" element={<HighPerformanceComputing />} />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
             {/* CSE  */}
             <Route path="/cse-1" element={<ArtificialIntelligenceMachineLearning />} />
             <Route path="/cse-2" element={<DataScience_BigDataAnalytics />} />

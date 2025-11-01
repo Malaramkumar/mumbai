@@ -161,7 +161,11 @@ const PhDConsultingMumbai = () => {
               {openIndex === index && <div className="faq-answer11"><p>{item.answer}</p></div>}
             </div>
           ))}
+<<<<<<< HEAD
         </section>
+=======
+        </section>  
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
       </div>
 
       <div className="right-side">

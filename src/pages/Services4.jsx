@@ -23,35 +23,55 @@ const services = [
   {
     title: "CSC/IT",
     desc: "Department of Computer Science & Information Technology",
+<<<<<<< HEAD
     link: "/career-opportunities-after-phd",
+=======
+    link: "/",
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     icon: <Cpu size={20} />, // 💻 Computer chip icon
     bg: dept1,
   },
   {
     title: "MECHANICAL",
     desc: "Department of Mechanical Engineering",
+<<<<<<< HEAD
     link: "/top-mnc-hiring",
+=======
+    link: "/",
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     icon: <Cog size={20} />, // ⚙️ Mechanical gear
     bg: dept2,
   },
   {
     title: "EEE",
     desc: "Department of Electrical & Electronics Engineering",
+<<<<<<< HEAD
     link: "/top-phd-colleges-mumbai",
+=======
+    link: "/",
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     icon: <Zap size={20} />, // ⚡ Electricity icon
     bg: dept3,
   },
   {
     title: "ECE",
     desc: "Department of Electronics & Communication Engineering",
+<<<<<<< HEAD
     link: "/top-for-phd-colleges-in-mumbai",
+=======
+    link: "/",
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     icon: <Radio size={20} />, // 📡 Communication signal
     bg: dept4,
   },
   {
     title: "CIVIL",
     desc: "Department of Civil Engineering",
+<<<<<<< HEAD
     link: "/top-for-phd-colleges-in-mumbai",
+=======
+    link: "/",
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
     icon: <Ruler size={20} />, // 📏 Architecture/measurement tool
     bg: dept5,
   },
@@ -96,11 +116,15 @@ const Services4 = () => {
         <div className="services4-center-content">
           <h1>Research Methodology</h1>
           <p>
+<<<<<<< HEAD
             At Narpavi Research Institute, we offer end-to-end PhD consulting
             services designed to support scholars through every stage of their
             doctoral journey. From expert guidance in PhD admission assistance
             and proposal writing to hands-on support in research methodology,
             implementation, and thesis development, we ensure academic excellence with precision and professionalism.
+=======
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, nesciunt facere. Deserunt odio labore quos neque nobis tempora ea ab voluptatibus aspernatur aliquid quaerat, earum cumque sunt modi maiores maxime quasi possimus perspiciatis. Delectus, ut odit aliquid dolore repellat iusto neque laborum in magnam quod eaque iste est culpa quos eum rerum recusandae quam commodi pariatur porro laudantium, debitis deleniti. Neque suscipit, culpa soluta sed quibusdam voluptate debitis architecto asperiores laboriosam quas quasi sequi sapiente at, commodi aperiam excepturi labore tenetur quia amet voluptatum exercitationem accusamus! Nemo quos ea odio numquam odit sed obcaecati vero dolor. Totam, aut! Iste, aperiam.
+>>>>>>> 56075816bb97cd6566cbf2ae701d4aa0dc9307f9
           </p>
           <button onClick={() => navigate("/phd-consulting")}>
             Research Methodology

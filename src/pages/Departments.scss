@@ -1,0 +1,97 @@
+.departments-page {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f2f6fb, #e8efff);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+
+  .page-title {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .departments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 2rem;
+  }
+
+  .department-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    border-top: 4px solid transparent;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border-top-color: #007bff;
+    }
+
+    &.active {
+      border-top-color: #007bff;
+      .sub-section {
+        max-height: 500px;
+        opacity: 1;
+        padding-top: 1rem;
+      }
+    }
+
+    .department-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .icon {
+        background: #007bff;
+        color: #fff;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        color: #2d3e50;
+        font-weight: 600;
+      }
+    }
+
+    .sub-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 1rem;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.4s ease;
+
+      .sub-link {
+        text-decoration: none;
+        color: #444;
+        background: #f5f7fb;
+        padding: 0.6rem 1rem;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #007bff;
+          color: #fff;
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+}
