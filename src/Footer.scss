@@ -1,0 +1,140 @@
+.footer-classic {
+  background: linear-gradient(135deg, #002d62, #004a99);
+  color: #fff;
+  padding: 60px 40px 20px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25);
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 30px;
+  }
+
+  .footer-col {
+    flex: 1;
+    min-width: 250px;
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 50px;
+        height: 3px;
+        background: #00aaff;
+        border-radius: 2px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        opacity: 0.9;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: 0.3s ease;
+
+          &:hover {
+            color: #00aaff;
+          }
+
+          .external-icon {
+            font-size: 0.8rem;
+            margin-left: 6px;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        color: #00aaff;
+        font-size: 1rem;
+      }
+
+      .map-link {
+        color: #00aaff;
+        text-decoration: none;
+        transition: 0.3s ease;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .footer-social-links {
+    margin-top: 25px;
+
+    h4 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 18px;
+
+      a {
+        font-size: 1.4rem;
+        color: #fff;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: #00aaff;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+
+    .footer-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .footer-col h3::after {
+      width: 40px;
+    }
+
+    .social-icons {
+      gap: 12px;
+    }
+  }
+}

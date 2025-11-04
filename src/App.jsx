@@ -249,6 +249,7 @@ import ConferencePaperPublication from './title/service6/ConferencePaperPublicat
       import ElsevierConferencePublication from './title/service6/ElsevierConferencePublication';
  
 import Departments from './pages/Departments';
+import SkeletonLoader from './SkeletonLoader';
 
  
 
@@ -265,8 +266,7 @@ function App() {
  
         <Route path="/departments" element={<Departments />} />       
  
-
-        {/* PhDConsulting*/ }
+         {/* PhDConsulting*/ }
         <Route path="/phd-consulting" element={<PhDConsulting />} />
         <Route path="/career-opportunities-after-phd" element={<CareerAfterPhD />} />
         <Route path="/top-mnc-hiring" element={<TopMNCHiringPhD />} />
@@ -313,7 +313,7 @@ function App() {
             <Route path="/service6-4-2" element={<SpringerConferencePaperPublication />} />
             <Route path="/service6-4-3" element={<ElsevierConferencePublication />} />
 
-        {/* college */}
+        {/* college
         <Route path="/college/amity-university" element={<Amitycollege />} />
         <Route path="/college/atlas-skilltech-university" element={<AtlasPhD />} />
         <Route path="/college/homi-bhabha-state-university" element={<HBSIPhDEnhancedPage />} />
@@ -344,7 +344,7 @@ function App() {
         <Route path="/college/symbiosis-international-pune" element={<SiuPhDPage />} />
         <Route path="/college/symbiosis-skills-and-professional-university-pune" element={<SspuPhDPage />} />
         <Route path="/college/vishwakarma-university-pune" element={<VishwakarmaPhDPage />} />
-        <Route path="/college/university-of-mumbai" element={<MumbaiPhDOverview />} />
+        <Route path="/college/university-of-mumbai" element={<MumbaiPhDOverview />} /> */}
          
         {/* college */}
         <Route path="/colleges/amity-university" element={<Amitycollege />} />
@@ -510,6 +510,7 @@ function App() {
             <Route path="/cse/power-documents" element={<PowerDocuments />} />
             <Route path="/cse/image-processing" element={<ImageProcessing />} />
             <Route path="/cse/signal-processing" element={<SignalProcessing />} />
+
       {/* Civil */}
       <Route path="/civil/structural-engineering" element={<StructuralEngineering />} />
       <Route path="/civil/earthquake-resistant" element={<EarthquakeResistant />} />
@@ -525,8 +526,9 @@ function App() {
       <Route path="/civil/water-treatment-recycling" element={<WaterTreatmentRecycling />} />
       <Route path="/civil/construction-project" element={<ConstructionProject />} />
       <Route path="/civil/remote-sensing-gis" element={<RemoteSensingGIS />} />
+
       {/* ECE */}
-     <Route path="/ece/vlsi-design-verification" element={<VLSIDesignandVerification />} />
+      <Route path="/ece/vlsi-design-verification" element={<VLSIDesignandVerification />} />
       <Route path="/ece/embedded-systems-iot" element={<EmbeddedSystemsandIoT />} />
       <Route path="/ece/communication-signal-processing" element={<CommunicationSignalProcessing />} />
       <Route path="/ece/power-electronics-drives" element={<PowerElectronicsandDrives />} />
@@ -540,8 +542,9 @@ function App() {
       <Route path="/ece/cyber-physical-smart-systems" element={<CyberPhysicalandSmart />} />
       <Route path="/ece/control-systems-mechatronics" element={<ControlSystemsMechatronics />} />
       <Route path="/ece/satellite-communication-navigation" element={<SatelliteCommunicationNavigation />} />
+
       {/* EEE */}
-     <Route path="/eee/smart-grid-microgrid" element={<SmartGridMicrogrid />} />
+      <Route path="/eee/smart-grid-microgrid" element={<SmartGridMicrogrid />} />
       <Route path="/eee/ev-charging-infrastructure-v2g" element={<EVChargingInfrastructureV2G />} />
       <Route path="/eee/power-system-stability" element={<PowerSystemStability />} />
       <Route path="/eee/load-forecasting-demand-response" element={<LoadForecastingDemandResponse />} />
@@ -557,6 +560,8 @@ function App() {
       <Route path="/eee/artificial-intelligence-power" element={<ArtificialIntelligenceinPower />} />
       <Route path="/eee/smart-metering-demand-response" element={<SmartMeteringDemandResponse />} />
       
+      <Route path="/1" element={<SkeletonLoader />} />
+    
       </Routes>
     </BrowserRouter>
   );

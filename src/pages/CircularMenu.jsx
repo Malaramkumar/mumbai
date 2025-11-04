@@ -25,8 +25,8 @@ const CircularMenu = () => {
     { name: "Methodology", id: "methodology", icon: <FaBook /> },
     { name: "Journal Writing", id: "journal-writing", icon: <FaPenFancy /> },
     { name: "Publication", id: "publication-services", icon: <FaFileUpload /> },
-    { name: "Thesis Writing", id: "thesis-writing", icon: <FaAward /> },
-    { name: "Viva-Voce", id: "viva-voce", icon: <FaComments /> },
+    { name: "Thesis Writing & Viva Voce", id: "thesis-writing", icon: <FaAward /> },
+     
   ];
 
   const handleRedirect = (sectionId) => {
@@ -113,4 +113,3 @@ const CircularMenu = () => {
 };
 
 export default CircularMenu;
-

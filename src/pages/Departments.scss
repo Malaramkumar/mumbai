@@ -1,67 +1,111 @@
-/* src/components/DepartmentNavigation.scss */
-.dept-nav {
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-.dept-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-x: auto;
-  white-space: nowrap;
-}
+.deptExplorer-container {
+  font-family: "Poppins", sans-serif;
+  background: #f9fbfd;
+  padding: 40px 20px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
-.dept-item {
-  position: relative;
-}
-
-.dept-link {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
-
-  &:hover {
-    color: #5a67d8; // indigo-600
+  .deptExplorer-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #003b73;
+    margin-bottom: 30px;
   }
 
-  .chevron {
-    margin-left: 0.4rem;
-    font-size: 0.75rem;
-    transition: transform 0.2s;
+  .deptExplorer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .deptExplorer-department {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid #e0e0e0;
+
+      .deptExplorer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #003b73;
+        color: #fff;
+        padding: 12px 18px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+
+        h3 {
+          margin: 0;
+        }
+
+        .icon {
+          font-size: 14px;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      .deptExplorer-mainTopics {
+        background: #f2f6fa;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+        animation: fadeIn 0.3s ease-in-out;
+
+        .deptExplorer-main {
+          position: relative;
+          padding: 8px 12px;
+          border-radius: 6px;
+          margin: 4px 0;
+          transition: background 0.3s ease;
+
+          a {
+            text-decoration: none;
+            color: #003b73;
+            font-weight: 500;
+          }
+
+          &:hover {
+            background: #d9eaff;
+          }
+
+          .deptExplorer-subtopics {
+            position: relative;
+            background: #e8f3ff;
+            border-left: 3px solid #007bff;
+            margin-top: 5px;
+            border-radius: 6px;
+            padding: 8px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            a {
+              font-size: 14px;
+              color: #005bb5;
+              text-decoration: none;
+
+              &:hover {
+                color: #007bff;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-}
-
-/* Rotate chevron while dropdown is open */
-.dept-item:hover .chevron {
-  transform: rotate(180deg);
-}
-
-/* ---------- Dropdown ---------- */
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 360px;
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-  z-index: 1000;
-  padding: 1rem;
-  animation: fadeIn 0.2s ease-out;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(-5px);
   }
   to {
     opacity: 1;
@@ -69,83 +113,17 @@
   }
 }
 
-.dropdown-title {
-  margin: 0 0 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #5a67d8;
-}
+// Responsive Design
+@media (max-width: 768px) {
+  .deptExplorer-container {
+    padding: 20px;
 
-/* ---------- Topics ---------- */
-.topics {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.topic {
-  .topic-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #2d3748;
-    text-decoration: none;
-    padding: 0.25rem 0;
-    transition: color 0.2s;
-
-    &:hover {
-      color: #5a67d8;
+    .deptExplorer-title {
+      font-size: 22px;
     }
 
-    .chevron-right {
-      font-size: 0.7rem;
-      margin-left: 0.5rem;
+    .deptExplorer-header {
+      font-size: 16px;
     }
-  }
-}
-
-/* ---------- Sub-topics ---------- */
-.subtopics {
-  list-style: none;
-  margin: 0.25rem 0 0 1rem;
-  padding: 0;
-
-  li {
-    margin-bottom: 0.25rem;
-  }
-
-  .subtopic-link {
-    display: block;
-    font-size: 0.85rem;
-    color: #4a5568;
-    text-decoration: none;
-    padding: 0.15rem 0.5rem;
-    border-radius: 0.25rem;
-    transition: background 0.2s, color 0.2s;
-
-    &:hover {
-      background: #edf2f7;
-      color: #5a67d8;
-    }
-  }
-}
-
-/* Responsive – stack on very small screens */
-@media (max-width: 640px) {
-  .dept-list {
-    flex-direction: column;
-  }
-
-  .dept-link {
-    justify-content: space-between;
-  }
-
-  .dropdown {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding: 0.5rem 1rem;
   }
 }

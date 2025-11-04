@@ -6,6 +6,7 @@ import Services4 from "./Services4";
 import Services5 from "./Services5";
 import Services6 from "./Services6";
 import "./Home.scss";
+import Footer from "../Footer";
 
 const Home = () => {
   useEffect(() => {
@@ -29,8 +30,8 @@ const Home = () => {
       <section id="methodology"><Services4 /></section> 
       <section id="journal-writing"><Services5 /></section>
       <section id="publication-services"><Services6 /></section>
-      <section id="thesis-writing"><div>Thesis Writing Section</div></section>
-      <section id="viva-voce"><div>Viva Voce Section</div></section>
+      <section id="thesis-writing"><div>Thesis Writing & Viva Voce Section</div></section>
+        <Footer />
     </div>
   );
 };
