@@ -1,5 +1,5 @@
 import "../MEProjectDevelopmentCenter.scss";
-
+import SEO from "../../assets/SEO"
 const faqs = [
   {
     question: "What services does the Heat Transfer Enhancement Techniques Project Development Center offer in Mumbai?",
@@ -22,10 +22,36 @@ const faqs = [
     answer: "We offer end-to-end guidance, including topic selection, simulation, hardware prototyping, documentation, and support for IEEE/Scopus/SCI journal publications and patents, with collaboration opportunities in Mumbai’s industrial ecosystem."
   }
 ];
+      const keywords = [
+  "Heat transfer enhancement projects Mumbai",
+  "thermal engineering project center",
+  "nanofluid cooling IEEE projects",
+  "PCM cooling research Mumbai",
+  "porous media heat exchanger projects",
+  "hybrid thermal systems projects",
+  "CFD heat transfer simulation projects",
+  "ANSYS Fluent thermal analysis projects",
+  "COMSOL multiphysics thermal projects",
+  "B.Tech M.Tech Ph.D thermal project guidance",
+  "EV battery thermal management cooling",
+  "waste heat recovery enhancement",
+  "heat exchanger CFD optimization",
+  "thermal energy storage PCM projects",
+  "Narpavi Research Institute thermal projects"
+];
 
 const MEHeatTransferEnhancementTechniquesProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+
+<SEO
+  title="Heat Transfer Enhancement Techniques Project Development in Mumbai"
+  description="IEEE-aligned Heat Transfer Enhancement Techniques project development for B.Tech, M.Tech, and Ph.D. students in Mumbai. Work on nanofluids, PCM cooling, porous media heat exchangers, hybrid cooling, vibration-assisted systems, and CFD thermal analysis using ANSYS Fluent, COMSOL, MATLAB, and Python."
+  url="/mechanical/thermal-energy-engineering/heat-transfer-enhancemen "
+  keywords={keywords}   
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -206,13 +232,42 @@ const MEHeatTransferEnhancementTechniquesProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/computational-simulation-techniques-project-development">Computational & Simulation Techniques Project Development</a></li>
-              <li><a href="/automobile-transportation-systems-project-development">Automobile & Transportation Systems Project Development</a></li>
-              <li><a href="/industrial-production-engineering-project-development">Industrial & Production Engineering Project Development</a></li>
-              <li><a href="/fluid-mechanics-hydraulics-project-development">Fluid Mechanics & Hydraulics Project Development</a></li>
-              <li><a href="/dynamics-vibration-engineering-project-development">Dynamics & Vibration Engineering Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering">Thermal Energy Engineering</a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/heat-transfer-enhancement">
+      Heat Transfer Enhancement
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/computational-fluid-dynamics">
+      Computational Fluid Dynamics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/solar-thermal-geothermal">
+      Solar Thermal & Geothermal
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/refrigeration-cryogenics">
+      Refrigeration & Cryogenics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/waste-heat-recovery-energy">
+      Waste Heat Recovery & Energy
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/thermal-energy">
+      Thermal Energy
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

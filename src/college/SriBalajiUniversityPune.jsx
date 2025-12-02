@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from "../assets/SEO";
 const faqs = [
   {
     question: "Does SBUP require a PhD entrance exam?",
@@ -24,13 +24,31 @@ const faqs = [
     answer: "Applications close in May. Entrance exam is held in June, followed by interviews in July."
   }
 ];
-
+const keywords = [
+  "SBUP PhD Admission ",
+  "Sri Balaji University Pune PhD",
+  "SBUP RAT Exam",
+  "PhD in Management Pune",
+  "Business Analytics PhD",
+  "HR PhD Admission ",
+  "Corporate PhD Research",
+  "SBUP Fellowship",
+  "Management Doctoral Program",
+  "SBUP PhD Fees"
+];
 const SbupPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="SBUP PhD Admission  | RAT Exam, Eligibility, Fellowship & Research Guide"
+        description="Sri Balaji University Pune PhD Admissions  – Eligibility, SBUP-RAT exam details, research ecosystem, funding, corporate assistantships, and complete admission timeline."
+        url="/colleges/sbup-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -174,14 +192,12 @@ const SbupPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>SBUP</li>
-            <li>PhD in Management</li>
-            <li>Corporate Doctorate</li>
-            <li>Business Analytics</li>
-            <li>ABDC Journal Support</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

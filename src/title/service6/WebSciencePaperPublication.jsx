@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./WebSciencePaperPublication.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const sections = [
   {
@@ -180,6 +181,8 @@ export default function WoSConferencePublication() {
     <div className="wos-layout">
       {/* Left sticky TOC */}
       <aside className="wos-aside wos-aside--left fade-in-left" aria-label="On this page">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <div className="wos-sidebar-header">
           <h2 className="wos-sidebar-title">On this page</h2>
           <span className="wos-section-count">{tocItems.length} sections</span>

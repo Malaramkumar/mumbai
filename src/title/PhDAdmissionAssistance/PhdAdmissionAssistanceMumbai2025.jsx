@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./PhdAdmissionAssistanceMumbai2025.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const PhdAdmissionAssistanceMumbai2025 = () => {
   const seoKeywords = [
@@ -51,6 +52,8 @@ const PhdAdmissionAssistanceMumbai2025 = () => {
     <div className="phd-mumbai-layout">
       {/* LEFT: SEO KEYWORDS */}
       <aside className="phd-mumbai-left">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>SEO Keywords</h3>
         <ul>
           {seoKeywords.map((keyword, index) => (

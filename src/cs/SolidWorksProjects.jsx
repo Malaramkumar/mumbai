@@ -1,5 +1,19 @@
 import "./CSEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO";
+import LeftSidebar from "../LeftSidebar";
 
+const keywords = [
+  "SolidWorks Projects Mumbai",
+  "3D CAD Modeling Projects Mumbai",
+  "Mechanical Simulation Projects Mumbai",
+  "SolidWorks FEA Projects Mumbai",
+  "Motion Analysis Projects Mumbai",
+  "Industrial Design Projects Mumbai",
+  "B.Tech SolidWorks Projects Mumbai",
+  "M.Tech SolidWorks Projects Mumbai",
+  "Ph.D. SolidWorks Projects Mumbai",
+  "Narpavi Technologies SolidWorks Project Development Center"
+];
 const faqs = [
   {
     question: "What services does the SolidWorks Projects Project Development Center offer in Mumbai?",
@@ -26,22 +40,23 @@ const faqs = [
 const CSESolidWorksProjectsProjectDevelopmentCenter = () => {
   return (
     <div className="CSEProjectDevelopmentCenter">
+      <SEO
+        title="SolidWorks Projects – Project Development Support in Mumbai | Narpavi Technologies"
+        description="Narpavi Technologies presents the SolidWorks Projects Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on SolidWorks technologies."
+        url="/cse/solidworks-projects"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="CSEProjectDevelopmentCenter-main">
         <div className="CSEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="CSEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>SolidWorks Projects Mumbai</li>
-              <li>3D CAD Modeling Projects Mumbai</li>
-              <li>Mechanical Simulation Projects Mumbai</li>
-              <li>SolidWorks FEA Projects Mumbai</li>
-              <li>Motion Analysis Projects Mumbai</li>
-              <li>Industrial Design Projects Mumbai</li>
-              <li>B.Tech SolidWorks Projects Mumbai</li>
-              <li>M.Tech SolidWorks Projects Mumbai</li>
-              <li>Ph.D. SolidWorks Projects Mumbai</li>
-              <li>Narpavi Technologies SolidWorks Project Development Center</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -192,12 +207,59 @@ const CSESolidWorksProjectsProjectDevelopmentCenter = () => {
           <div className="CSEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/robotics-projects-project-development">Robotics Projects Project Development</a></li>
-              <li><a href="/ns3-projects-project-development">NS3 Projects Project Development</a></li>
-              <li><a href="/vlsi-projects-project-development">VLSI Projects Project Development</a></li>
-              <li><a href="/r-projects-project-development">R Projects Project Development</a></li>
-              <li><a href="/dotnet-projects-project-development">DotNet Projects Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/departments?dept=cse">Computer Science & Engineering</a>
+  </li>
+
+  <li><a href="/cse/artificial-intelligence-machine-learning">Artificial Intelligence & Machine Learning</a></li>
+  <li><a href="/cse/custom-software-development">Custom Software Development</a></li>
+  <li><a href="/cse/data-science-big-data-analytics">Data Science & Big Data Analytics</a></li>
+  <li><a href="/cse/internet-of-things">Internet of Things (IoT)</a></li>
+  <li><a href="/cse/cybersecurity-privacy">Cybersecurity & Privacy</a></li>
+  <li><a href="/cse/blockchain-distributed-systems">Blockchain & Distributed Systems</a></li>
+  <li><a href="/cse/cloud-edge-infrastructure">Cloud & Edge Infrastructure</a></li>
+  <li><a href="/cse/quantum-computing-information">Quantum Computing & Information</a></li>
+  <li><a href="/cse/human-computer-interaction">Human-Computer Interaction</a></li>
+  <li><a href="/cse/computer-vision-image">Computer Vision & Image Processing</a></li>
+  <li><a href="/cse/autonomous-systems-robotics">Autonomous Systems & Robotics</a></li>
+  <li><a href="/cse/natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="/cse/digital-twins-simulation">Digital Twins & Simulation</a></li>
+  <li><a href="/cse/quantum-networking-communication">Quantum Networking & Communication</a></li>
+  <li><a href="/cse/web-application-development">Web Application Development</a></li>
+  <li><a href="/cse/mobile-app-development">Mobile App Development</a></li>
+  <li><a href="/cse/mvp-development">MVP Development</a></li>
+  <li><a href="/cse/startup-software-development">Startup Software Development</a></li>
+  <li><a href="/cse/enterprise-software-solutions">Enterprise Software Solutions</a></li>
+  <li><a href="/cse/dedicated-development-teams">Dedicated Development Teams</a></li>
+  <li><a href="/cse/design-lab-ui-ux-development">Design Lab UI/UX Development</a></li>
+  <li><a href="/cse/qa-testing-services">QA & Testing Services</a></li>
+
+  <li><a href="/cse/java">Java Development</a></li>
+  <li><a href="/cse/php-development">PHP Development</a></li>
+  <li><a href="/cse/spring-development">Spring Development</a></li>
+  <li><a href="/cse/csharp-development">C# Development</a></li>
+
+  <li><a href="/cse/machine-learning-based">Machine Learning Based Projects</a></li>
+  <li><a href="/cse/python-development">Python Development</a></li>
+  <li><a href="/cse/matlab-projects">MATLAB Projects</a></li>
+  <li><a href="/cse/dotnet-projects">DotNet Projects</a></li>
+  <li><a href="/cse/r-projects">R Projects</a></li>
+  <li><a href="/cse/ns3-projects">NS3 Projects</a></li>
+  <li><a href="/cse/vlsi-projects">VLSI Projects</a></li>
+  <li><a href="/cse/opnet-projects">OPNET Projects</a></li>
+  <li><a href="/cse/robotics-projects">Robotics Projects</a></li>
+  <li><a href="/cse/ansys-projects">ANSYS Projects</a></li>
+  <li><a href="/cse/solidworks-projects">SolidWorks Projects</a></li>
+  <li><a href="/cse/cartia-projects">Cartia Projects</a></li>
+  <li><a href="/cse/labview-projects">LabVIEW Projects</a></li>
+
+  <li><a href="/cse/power-system-projects">Power System Projects</a></li>
+  <li><a href="/cse/power-documents">Power Documents</a></li>
+
+  <li><a href="/cse/image-processing">Image Processing</a></li>
+  <li><a href="/cse/signal-processing">Signal Processing</a></li>
+</ul>
+
           </div>
         </div>
       </div>

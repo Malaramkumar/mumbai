@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Does GIPE require an entrance test for PhD?",
@@ -24,13 +24,33 @@ const faqs = [
     answer: "GIPE conducts PET in May, interviews in June, and final offers are released by July."
   }
 ];
-
+const keywords = [
+  "GIPE PhD Admission 2025",
+  "Gokhale Institute PhD Economics",
+  "GIPE PET Exam",
+  "PhD in Economics Pune",
+  "GIPE Research Programs",
+  "ICSSR Fellowship",
+  "Econometrics PhD India",
+  "Population Studies PhD",
+  "GIPE Entrance Test 2025",
+  "Public Policy Research Pune"
+];
 const GIPEPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="GIPE Pune PhD Admission 2025 | Eligibility, PET Exam, Research Areas & Fellowships"
+        description="Complete guide to GIPE PhD admissions: PET exam structure, eligibility, research areas, fellowships, data access, timeline, and Narpavi research support."
+        url="/colleges/gipe-pune"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -190,14 +210,12 @@ const GIPEPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-                <ul>
-            <li>PhD in Economics</li>
-            <li>GIPE Pune</li>
-            <li>Public Policy</li>
-            <li>Data Analytics</li>
-            <li>ICSSR</li>
-          </ul>
+       <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

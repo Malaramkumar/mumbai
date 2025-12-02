@@ -9,6 +9,7 @@ import {
   Users,
   CheckCircle,
 } from "lucide-react";
+import LeftSidebar from "../LeftSidebar";
 
 const steps = [
   "Title",
@@ -80,8 +81,11 @@ const PhDProposalMumbai = () => {
 
   return (
     <div className="proposal-container">
+      
       {/* Left Sidebar with Anchor Links */}
       <aside className="left-side">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>Navigation</h3>
         <ul>
           <li><a href="#why-proposal">1. Why Proposal Matters</a></li>

@@ -2,7 +2,8 @@ import React from "react";
 import "./ResearchPaperWritingMumbai.scss";
 import  { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "Who can avail of the Research Paper Writing Service in Mumbai?",
@@ -41,6 +42,17 @@ const faqs = [
   },
 ];
 
+const keywords = [
+  "Research paper writing services in India",
+  "Research paper writing services in Mumbai",
+  "Journal paper writing services in India",
+  "PhD thesis writing services in Mumbai",
+  "Scopus paper writing services",
+  "Best research paper writing services in India",
+  "Top PhD thesis writing services in Mumbai",
+  "Online PhD thesis writing services in Mumbai",
+];
+
 const ResearchPaperWritingServiceMumbai = () => {
     const [openIndex, setOpenIndex] = useState(null);
     
@@ -49,22 +61,27 @@ const ResearchPaperWritingServiceMumbai = () => {
       };
   return (
     <div className="ResearchPaperWritingServiceMumbai">
+        <SEO
+        title="Research Paper Writing Service in Mumbai | Journal & Scopus Paper Experts"
+        description="Professional Research Paper Writing Services in Mumbai for scholars and researchers. Scopus, Elsevier & UGC-CARE aligned research article drafting, formatting & plagiarism-free writing support."
+        url="/research-paper-writing-service-in-mumbai"
+        image="/assets/research-paper-writing-service-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="researchpaper-wrapper">
         {/* LEFT SECTION */}
         <div className="ResearchPaper-left">
+          
           <div className="ResearchPaper-left-box">
+             <a href="/home-page" class="buttonhp">Home Page</a>
+            <LeftSidebar/>
             <h3>Keywords</h3>
             <ul>
-              <li>Research paper writing services in India</li>
-              <li>Research paper writing services in Mumbai</li>
-              <li>Journal paper writing services in India</li>
-              <li>PhD thesis writing services in Mumbai</li>
-              <li>Scopus paper writing services</li>
-              <li>Best research paper writing services in India</li>
-              <li>Top PhD thesis writing services in Mumbai</li>
-              <li>Online PhD thesis writing services in Mumbai</li>
-            </ul>
-            
+              {keywords.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
+            </ul>            
           </div>
         </div>
 

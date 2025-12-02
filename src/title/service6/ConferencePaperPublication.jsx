@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ConferencePaperPublication.scss";
-
+import LeftSidebar from "../../LeftSidebar"
 // Conference-specific sections data
 const sections = [
   {
@@ -177,6 +177,8 @@ export default function ConferencePaperPublicationMumbai() {
     <div className="cpp-layout">
       {/* Animated Left Sidebar - Table of Contents */}
       <aside className="cpp-aside cpp-aside--left fade-in-left" aria-label="Page navigation">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/> <br/>
         <div className="cpp-sidebar-header">
           <h2 className="cpp-sidebar-title">Conference Guide</h2>
           <div className="cpp-section-count">
@@ -326,7 +328,7 @@ export default function ConferencePaperPublicationMumbai() {
 
           {/* Conclusion Section */}
           <section id="section-conclusion" className="cpp-section fade-in-slide" aria-labelledby="h-conclusion">
-            <h2 id="h-conclusion" className="cpp-section-title">Conclusion</h2>
+            <h2 id="h-conclusion" className="cpp-section-title"></h2>
             <div className="cpp-conclusion-content">
               <p className="cpp-paragraph cpp-conclusion-highlight">
                 In today's competitive academic world, conference paper publication services in Mumbai play a vital role in showcasing your research globally. With Narpavi Research Institute's comprehensive support, your paper not only meets technical and editorial standards but also gains international recognition.

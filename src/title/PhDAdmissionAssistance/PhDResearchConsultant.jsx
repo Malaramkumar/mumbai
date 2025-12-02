@@ -1,5 +1,6 @@
 import React from "react";
 import "./PhDResearchConsultant.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const services = [
   "PhD Topic Selection & Refinement",
@@ -84,6 +85,8 @@ const PhDConsultingMumbai = () => {
     <div className="consulting-layout">
       {/* Left Sidebar */}
       <div className="left-box">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>📚 Explore More</h3>
         <ul>
           {leftItems.map((item, idx) => (

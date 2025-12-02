@@ -1,5 +1,19 @@
 import "../MEProjectDevelopmentCenter.scss";
-
+import SEO from "../../assets/SEO";
+const keywords = [
+  "digital twin projects Mumbai",
+  "smart simulation mechanical projects",
+  "IoT digital twin projects IEEE",
+  "EV battery digital twin projects Mumbai",
+  "aerospace digital twin projects IEEE",
+  "ship propulsion smart simulation projects",
+  "digital twin in oil & gas Mumbai",
+  "Industry 4.0 simulation projects",
+  "B.Tech digital twin projects Mumbai",
+  "M.Tech smart simulation projects",
+  "Ph.D. digital twin research Mumbai",
+  "Narpavi Research Institute mechanical projects"
+];
 const faqs = [
   {
     question: "What services does the Digital Twin & Smart Simulation in Mechanical Engineering Project Development Center offer in Mumbai?",
@@ -26,24 +40,22 @@ const faqs = [
 const MEDigitalTwinSmartSimulationInMechanicalEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Digital Twin & Smart Simulation in Mechanical Engineering Project Development Center in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute's Digital Twin & Smart Simulation in Mechanical Engineering Project Development Center in Mumbai supports B.Tech, M.Tech, and Ph.D. students in developing IEEE-aligned (2023–2025) projects on digital twin modeling, real-time monitoring, IoT integration, predictive maintenance, and smart simulation for automotive, aerospace, oil & gas, marine, manufacturing, civil infrastructure, and biomedical applications."
+          url="/mechanical/computational-simulation-techniques/digital-twin-smart-simulation"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>digital twin projects Mumbai</li>
-              <li>smart simulation mechanical projects</li>
-              <li>IoT digital twin projects IEEE</li>
-              <li>EV battery digital twin projects Mumbai</li>
-              <li>aerospace digital twin projects IEEE</li>
-              <li>ship propulsion smart simulation projects</li>
-              <li>digital twin in oil & gas Mumbai</li>
-              <li>Industry 4.0 simulation projects</li>
-              <li>B.Tech digital twin projects Mumbai</li>
-              <li>M.Tech smart simulation projects</li>
-              <li>Ph.D. digital twin research Mumbai</li>
-              <li>Narpavi Research Institute mechanical projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -243,12 +255,49 @@ const MEDigitalTwinSmartSimulationInMechanicalEngineeringProjectDevelopmentCente
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/fracture-mechanics-fatigue-analysis-mechanical-systems-project-development">Fracture Mechanics & Fatigue Analysis in Mechanical Systems Project Development</a></li>
-              <li><a href="/computational-fluid-dynamics-mechanical-systems-project-development">Computational Fluid Dynamics (CFD) in Mechanical Systems Project Development</a></li>
-              <li><a href="/finite-element-analysis-applications-project-development">Finite Element Analysis (FEA) Applications Project Development</a></li>
-              <li><a href="/intelligent-transportation-systems-project-development">Intelligent Transportation Systems (ITS) Project Development</a></li>
-              <li><a href="/advanced-vehicle-suspension-systems-project-development">Advanced Vehicle Suspension Systems Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/computational-simulation-techniques">
+      Computational Simulation Techniques
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/finite-element-analysis">
+      Finite Element Analysis (FEA)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/computational-fluid-dynamic">
+      Computational Fluid Dynamics (CFD)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/multi-body-dynamics">
+      Multi-Body Dynamics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/fracture-mechanics-fatigue">
+      Fracture Mechanics & Fatigue
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/digital-twin-smart-simulation">
+      Digital Twin & Smart Simulation
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/high-performance-computing">
+      High Performance Computing (HPC)
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

@@ -1,9 +1,62 @@
-import React from "react";
+import React,{useState} from "react";
 import "./university.scss";
+import SEO from ".././assets/SEO";
+import { ChevronDown, ChevronUp } from "lucide-react";
+const faqs = [
+  {
+    question: "Is PET required for PhD admission at SNDT?",
+    answer:
+      "Yes, PET-SNDT is compulsory unless the candidate is exempt under NET/JRF/SET/GATE/MPhil."
+  },
+  {
+    question: "What is the PET-SNDT exam pattern?",
+    answer:
+      "PET consists of 100 multiple-choice questions, 120 minutes duration, with 50% qualifying marks (45% for reserved categories)."
+  },
+  {
+    question: "Does SNDT offer full-time fellowships?",
+    answer:
+      "Yes, University Studentship offers ₹18,000–₹20,000 per month for eligible full-time scholars."
+  },
+  {
+    question: "Can working professionals apply for PhD?",
+    answer:
+      "Yes, working professionals can apply under the Part-Time or External mode with a valid NOC."
+  },
+  {
+    question: "Is publication mandatory before thesis submission?",
+    answer:
+      "Yes, at least two Scopus or UGC-CARE indexed publications are required before the synopsis."
+  }
+];
+const keywords = [
+  "SNDT PhD Admission 2025",
+  "SNDT Women's University PhD",
+  "PET SNDT Exam",
+  "PhD admission Mumbai",
+  "SNDT PhD eligibility",
+  "SNDT PET syllabus",
+  "SNDT Research Centres",
+  "Women’s University PhD",
+  "SNDT Fellowship",
+  "SNDT PhD exam date"
+];
 
 const SNDTPhDAdmission = () => {
+
+ const [openIndex, setOpenIndex] = useState(null);
+  const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
+
   return (
     <div className="phd-layout">
+        <SEO
+        title="SNDT University PhD Admission 2025 | PET Exam, Eligibility, Fees & Fellowships"
+        description="Complete SNDT Women’s University PhD admission guide 2025: PET exam structure, eligibility, research facilities, fees, fellowships, and application timeline."
+        url="/colleges/sndt-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -163,18 +216,30 @@ const SNDTPhDAdmission = () => {
           </ul>
           <strong>"Empowering Doctoral Dreams – Narpavi at Every Step"</strong>
         </section>
+         <section className="faq-section11">
+          <h2>FAQs – SPPU PhD Admissions</h2>
+          {faqs.map((item, index) => (
+            <div className={`faq-item11 ${openIndex === index ? "active" : ""}`} key={index}>
+              <div className="faq-question11" onClick={() => toggleFAQ(index)}>
+                <span>{item.question}</span>
+                {openIndex === index ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+              </div>
+              {openIndex === index && (
+                <div className="faq-answer11"><p>{item.answer}</p></div>
+              )}
+            </div>
+          ))}
+        </section>
       </main>
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD Mumbai</li>
-            <li>SNDT</li>
-            <li>Admissions</li>
-            <li>Women Research</li>
-            <li>Narpavi</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

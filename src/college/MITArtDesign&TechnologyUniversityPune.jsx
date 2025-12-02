@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Does MIT-ADT require a design portfolio for PhD admission?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Applications are open from January to March, with exams in April and interviews in May."
   }
 ];
+const keywords = [
+  "MIT ADT PhD Admission 2025",
+  "MIT ADT Pune PhD",
+  "PhD in Design India",
+  "MIT ADT RAT Entrance Test",
+  "Design PhD Pune",
+  "Transdisciplinary Research MIT",
+  "Sustainable Architecture PhD",
+  "Creative Media PhD",
+  "MIT ADT Research Fellowship",
+  "PhD Admission MIT Art Design Technology"
+];
 
 const MITADTPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,14 @@ const MITADTPhDPage = () => {
 
   return (
     <div className="phd-layout">
+        <SEO
+        title="MIT-ADT PhD Admission 2025 | Eligibility, RAT Exam, Design Research, Fellowships"
+        description="MIT-ADT University PhD Admission 2025: Eligibility, MIT-ADT-RAT exam pattern, portfolio requirements, research areas, fellowships, mode of study, fees & timeline."
+        url="/colleges/mit-adt-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -181,15 +201,12 @@ const MITADTPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD in Design</li>
-            <li>MIT-ADT Pune</li>
-            <li>Creative Media</li>
-            <li>VR/AR</li>
-            <li>Sustainable Architecture</li>
-          </ul>
-         
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

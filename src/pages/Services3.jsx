@@ -7,19 +7,19 @@ const proposalServices = [
   {
     title: "Funding Project Proposal Support",
     desc: "Expert help in crafting funding-ready PhD project proposals tailored to Indian and international agencies.",
-    link: "/proposal/funding-project-support-mumbai",
+    link: "/funding-project-support-mumbai",
     icon: <FileText size={36} />,
   },
   {
     title: "Research Methodology Assistance ",
     desc: "Get complete assistance in framing your PhD methodology chapter including design, sampling, tools, and validation.",
-    link: "/proposal/methodology-support-assistance-mumbai",
+    link: "/methodology-support-assistance-mumbai",
     icon: <BookOpenCheck size={36} />,
   },
   {
     title: "Research Methodology Roadmap",
     desc: "Build a clear and structured methodology roadmap with step-by-step milestones for your PhD research.",
-    link: "/proposal/methodology-roadmap-mumbai",
+    link: "/methodology-roadmap-mumbai",
     icon: <Workflow size={36} />,
   },
 ];
@@ -46,7 +46,7 @@ const ResearchProposalWritingMain = () => {
           <p>
             We provide complete assistance for crafting PhD research proposals, including methodology design, funding alignment, and structured roadmaps. Our Mumbai-based experts help you plan, write, and refine proposals aligned with academic standards and real-world impact.
           </p>
-          <button onClick={() => navigate("/phd-research-proposal-writing-services")}>
+          <button className="btn3" onClick={() => navigate("/phd-research-proposal-writing-services")}>
             Get Full Proposal Help
           </button>
         </div>

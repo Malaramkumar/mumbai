@@ -2,6 +2,8 @@ import React from 'react';
 import './TopMNC.scss';
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import SEO from "../assets/SEO";
+import LeftSidebar from '../LeftSidebar';
 const faqs = [
   {
     question: "Which MNCs hire PhD holders in India?",
@@ -29,7 +31,20 @@ const faqs = [
       "We guide PhD scholars with domain-specific job mapping, fellowship applications, CV and proposal polishing, and R&D role interview prep.",
   },
 ];
-
+const keywords = [
+  "Top MNC companies hiring PhD holders",
+  "PhD career in MNCs and government organizations",
+  "Post-PhD job opportunities India 2025",
+  "Best jobs for PhD scholars in India and abroad",
+  "Government research jobs after PhD",
+  "PhD jobs in DRDO, ISRO, Google, Amazon",
+  "High-paying jobs for PhD holders in Engineering & Management",
+  "Top MNC companies hiring PhD holders worldwide",
+  "Government jobs for PhD holders",
+  "PhD jobs in India government",
+  "Jobs for PhD holders in Management",
+  "Jobs for PhD holders in Chemistry",
+];
 
 const TopMNCHiringPhD = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -37,7 +52,17 @@ const TopMNCHiringPhD = () => {
 
   return (
     <section className="top-mnc-phd-wrapper">
+       <SEO
+        title="Top MNC Companies Hiring PhD Holders in India | 2025 Guide"
+        description="Explore top MNCs hiring PhD holders in India and abroad including Google, Amazon, Microsoft, TCS, ISRO, and DRDO. Learn about salaries, roles, and job opportunities for PhD scholars."
+        url="/top-mnc-hiring"
+        image="/assets/top-mnc-hiring-phd-banner.jpg"
+        keywords={keywords}
+        faqs={faqs} // ✅ Auto-generates FAQ Schema
+      />
      <div className="side-box left-box">
+       <a href="/home-page" class="buttonhp">Home Page</a>
+      <LeftSidebar/>
         <h3>Explore Career Domains</h3>
         <ul>
           <li>Engineering</li>
@@ -169,40 +194,34 @@ const TopMNCHiringPhD = () => {
         </p>
 
          
-<section  className="faq-section11">
-          <h2> FAQs – PhD Research Proposal Writing Services</h2>
+ <section className="faq-section11">
+          <h2>FAQs – Top MNC Companies Hiring PhD Holders</h2>
           {faqs.map((item, index) => (
-            <div className={`faq-item11 ${openIndex === index ? "active" : ""}`} key={index}>
+            <div
+              className={`faq-item11 ${openIndex === index ? "active" : ""}`}
+              key={index}
+            >
               <div className="faq-question11" onClick={() => toggleFAQ(index)}>
                 <span>{item.question}</span>
                 {openIndex === index ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
               </div>
-              {openIndex === index && <div className="faq-answer11"><p>{item.answer}</p></div>}
+              {openIndex === index && (
+                <div className="faq-answer11">
+                  <p>{item.answer}</p>
+                </div>
+              )}
             </div>
           ))}
         </section>
 
       </article>
     <div className="side-box right-box">
-      <h3>SEO Keywords</h3>
-<ul>
- 
-  <li>Top MNC companies hiring PhD holders</li>
-  <li>PhD career in MNCs and government organizations</li>
-  <li>Post-PhD job opportunities India 2025</li>
-  <li>Best jobs for PhD scholars in India and abroad</li>
-  <li>Government research jobs after PhD</li>
-  <li>PhD jobs in DRDO, ISRO, Google, Amazon</li>
-  <li>High-paying jobs for PhD holders in Engineering & Management</li>
-  <li>Top MNC companies hiring PhD holders in India</li>
-  <li>Top MNC companies hiring PhD holders worldwide</li>
-  <li>Government jobs for PhD holders</li>
-  <li>Jobs for PhD holders in India</li>
-  <li>Jobs for PhD holders in Management</li>
-  <li>PhD jobs in India government</li>
-  <li>PhD jobs in Chennai</li>
-  <li>Jobs for PhD holders in Chemistry</li>
-</ul>
+     <h3>Keywords</h3>
+        <ul>
+          {keywords.map((keyword, index) => (
+            <li key={index}>{keyword}</li>
+          ))}
+        </ul>
 
     </div>
     

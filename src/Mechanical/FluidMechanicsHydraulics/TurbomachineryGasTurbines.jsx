@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import "../../assets/SEO"
+const keywords = [
+  "turbomachinery projects mumbai",
+  "gas turbine projects ieee",
+  "axial compressor cfd simulation",
+  "radial flow compressor analysis",
+  "turbine blade cooling projects",
+  "ai based gas turbine optimization",
+  "micro gas turbine projects",
+  "combined cycle gas turbine study",
+  "turbocharger performance analysis",
+  "hydrogen gas turbine research",
+  "btech turbomachinery projects",
+  "mtech gas turbine projects india",
+  "phd turbomachinery research",
+  "jet engine cfd simulation",
+  "narpavi research institute turbomachinery"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const METurbomachineryGasTurbinesProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Turbomachinery & Gas Turbines Project Development in Mumbai | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Turbomachinery & Gas Turbines project development in Mumbai. Work on axial/radial compressors, gas turbine combustors, turbochargers, cooling systems, AI-driven turbine optimization, and micro gas turbines."
+        url="/mechanical/fluid-mechanics-hydraulic s/turbomachinery-gas-turbines"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -226,12 +252,49 @@ const METurbomachineryGasTurbinesProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/aerodynamics-aero-propulsion-project-development">Aerodynamics & Aero-Propulsion Systems Project Development</a></li>
-              <li><a href="/rotor-dynamics-balancing-project-development">Rotor Dynamics & Balancing Project Development</a></li>
-              <li><a href="/noise-vibration-harshness-project-development">Noise, Vibration & Harshness (NVH) Analysis Project Development</a></li>
-              <li><a href="/smart-materials-vibration-control-project-development">Smart Materials in Vibration Control Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics">
+      Fluid Mechanics & Hydraulics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/aerodynamics-aero-propulsion">
+      Aerodynamics & Aero Propulsion
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/turbomachinery-gas-turbines">
+      Turbomachinery & Gas Turbines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/hydraulic-pneumatic-control">
+      Hydraulic & Pneumatic Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/multiphase-flow-heat">
+      Multiphase Flow & Heat Transfer
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/fluid-structure-interaction">
+      Fluid-Structure Interaction
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/biofluid-mechanics-microfluidics">
+      Biofluid Mechanics & Microfluidics
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

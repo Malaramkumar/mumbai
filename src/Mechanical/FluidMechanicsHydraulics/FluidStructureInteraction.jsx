@@ -1,4 +1,23 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+
+const keywords = [
+  "fluid structure interaction projects mumbai",
+  "fsi cfd ieee projects",
+  "aeroelasticity projects mumbai",
+  "biomedical fsi projects ieee",
+  "multiphysics fsi simulation",
+  "offshore fsi analysis mumbai",
+  "ai enabled fsi projects",
+  "btech fluid structure projects",
+  "mtech multiphysics projects",
+  "phd fsi research mumbai",
+  "narpavi research institute fsi projects",
+  "fsi modeling ansys fluent",
+  "fsi comsol multiphysics projects",
+  "fsi structural dynamic coupling",
+  "fsi vibration analysis projects"
+];
 
 const faqs = [
   {
@@ -26,6 +45,14 @@ const faqs = [
 const MEFluidStructureInteractionProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Fluid-Structure Interaction (FSI) Project Development in Mumbai | CFD–Structural Coupling | B.Tech, M.Tech, Ph.D."
+  description="IEEE-aligned Fluid-Structure Interaction (FSI) project development in Mumbai. Includes aeroelasticity, CFD–FEA coupling, bio-FSI, fluid-induced vibrations, multiphysics modeling, and AI-driven FSI prediction using ANSYS Fluent, COMSOL, and MATLAB."
+  url="/mechanical/fluid-mechanics-hydraulics/fluid-structure-interaction"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -224,12 +251,49 @@ const MEFluidStructureInteractionProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/multiphase-flow-heat-transfer-project-development">Multiphase Flow & Heat Transfer Project Development</a></li>
-              <li><a href="/aerodynamics-aero-propulsion-project-development">Aerodynamics & Aero-Propulsion Systems Project Development</a></li>
-              <li><a href="/turbomachinery-gas-turbines-project-development">Turbomachinery & Gas Turbines Project Development</a></li>
-              <li><a href="/smart-materials-vibration-control-project-development">Smart Materials in Vibration Control Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics">
+      Fluid Mechanics & Hydraulics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/aerodynamics-aero-propulsion">
+      Aerodynamics & Aero Propulsion
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/turbomachinery-gas-turbines">
+      Turbomachinery & Gas Turbines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/hydraulic-pneumatic-control">
+      Hydraulic & Pneumatic Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/multiphase-flow-heat">
+      Multiphase Flow & Heat Transfer
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/fluid-structure-interaction">
+      Fluid-Structure Interaction
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/biofluid-mechanics-microfluidics">
+      Biofluid Mechanics & Microfluidics
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

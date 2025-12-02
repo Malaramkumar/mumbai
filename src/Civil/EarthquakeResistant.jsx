@@ -1,5 +1,24 @@
 import React from 'react';
-import "./CivilProjectDevelopmentCenter.scss"; // Assuming a common SCSS file
+import "./CivilProjectDevelopmentCenter.scss"; 
+import ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
+const keywords = [
+  "Earthquake Resistant Structures Mumbai",
+  "Seismic Design Projects Mumbai",
+  "ETABS earthquake analysis Mumbai",
+  "SAP2000 seismic design projects",
+  "OpenSees nonlinear analysis Mumbai",
+  "B.Tech earthquake engineering projects",
+  "M.Tech seismic analysis research",
+  "Ph.D. structural health monitoring Mumbai",
+  "Base isolation design Mumbai",
+  "Smart damping systems civil engineering",
+  "Digital Twin seismic resilience",
+  "AI earthquake damage prediction",
+  "Structural health monitoring IoT Mumbai",
+  "Earthquake retrofitting projects Mumbai",
+  "Narpavi Research Institute Mumbai"
+];
 
 const faqs = [
   {
@@ -27,12 +46,19 @@ const faqs = [
 const EarthquakeResistantStructuresMumbai = () => {
   return (
     <div className="CEProjectDevelopmentCenter no-sidebar"> {/* Added 'no-sidebar' class for styling adjustments */}
-      {/* The <Sidebar /> component has been removed */}
+      <SEO
+    title="Earthquake Resistant Structures in Mumbai | Seismic Design, ETABS, SAP2000, OpenSees"
+    description="IEEE-aligned B.Tech, M.Tech, and Ph.D. earthquake engineering projects in Mumbai. Includes ETABS seismic design, SAP2000 analysis, OpenSees nonlinear modeling, base isolation, structural health monitoring, AI damage prediction, and Digital Twin applications."
+    url="/civil/earthquake-resistant"
+    keywords={keywords}
+    faqs={faqs}
+  />
       <div className="CEProjectDevelopmentCenter-main">
         <div className="CEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="CEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Earthquake Resistant Structures Mumbai</li>
@@ -166,12 +192,28 @@ const EarthquakeResistantStructuresMumbai = () => {
           <div className="CEProjectDevelopmentCenter-right">
             <h3>🔗 Related Civil Fields</h3>
             <ul>
-              <li><a href="/structural-engineering-mumbai">Structural Engineering</a></li>
-              <li><a href="/geotechnical-engineering-mumbai">Geotechnical Engineering</a></li>
-              <li><a href="/construction-management-mumbai">Construction Management</a></li>
-              <li><a href="/transportation-engineering-mumbai">Transportation Engineering</a></li>
-              <li><a href="/smart-city-planning-mumbai">Smart City Planning</a></li>
-            </ul>
+  <li>
+    <a href="/departments?dept=civil">Civil Engineering</a>
+  </li>
+
+  <li><a href="/civil/structural-engineering">Structural Engineering</a></li>
+  <li><a href="/civil/bridgedesign-and-monitoring">Bridge Design & Monitoring</a></li>
+  <li><a href="/civil/earthquake-resistant">Earthquake Resistant Design</a></li>
+  <li><a href="/civil/steel-and-rcc-design">Steel & RCC Design</a></li>
+  <li><a href="/civil/tall-building-analysis">Tall Building Analysis</a></li>
+  <li><a href="/civil/geotechnical-engineering">Geotechnical Engineering</a></li>
+  <li><a href="/civil/soil-stabilization-techniques">Soil Stabilization Techniques</a></li>
+  <li><a href="/civil/foundation-design">Foundation Design</a></li>
+  <li><a href="/civil/transportation-engineering">Transportation Engineering</a></li>
+  <li><a href="/civil/smart-traffic-management">Smart Traffic Management</a></li>
+  <li><a href="/civil/pavement-analysis-design">Pavement Analysis & Design</a></li>
+  <li><a href="/civil/environmental-engineering">Environmental Engineering</a></li>
+  <li><a href="/civil/water-treatment-recycling">Water Treatment & Recycling</a></li>
+  <li><a href="/civil/construction-project">Construction Project Management</a></li>
+  <li><a href="/civil/remote-sensing-gis">Remote Sensing & GIS</a></li>
+
+</ul>
+
           </div>
           
         </div>

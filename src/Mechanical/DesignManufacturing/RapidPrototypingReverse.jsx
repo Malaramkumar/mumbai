@@ -1,4 +1,21 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "rapid prototyping projects mumbai",
+  "reverse engineering ieee projects",
+  "3d printing reverse engineering projects",
+  "laser scanning cad projects",
+  "cnc rapid prototyping projects",
+  "digital twin reverse engineering",
+  "industry 4.0 prototyping mumbai",
+  "btech prototyping projects",
+  "mtech reverse engineering projects",
+  "phd prototyping research",
+  "geomagic design x projects",
+  "catia solidworks reverse engineering",
+  "3d scanning cad reconstruction",
+  "narpavi research institute prototyping"
+];
 
 const faqs = [
   {
@@ -26,6 +43,14 @@ const faqs = [
 const MERapidPrototypingReverseEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Rapid Prototyping & Reverse Engineering Projects in Mumbai | 3D Printing, Laser Scanning, CAD Reconstruction | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Rapid Prototyping & Reverse Engineering project support in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes 3D printing, CNC machining, laser scanning, CT imaging, CAD reconstruction, and digital twin solutions for automotive, aerospace, biomedical, and Industry 4.0 sectors."
+        url="/mechanical/design-manufacturing/rapid-prototyping-reverse"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -225,12 +250,47 @@ const MERapidPrototypingReverseEngineeringProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/additive-manufacturing-3d-printing-project-development">Additive Manufacturing & 3D Printing Project Development</a></li>
-              <li><a href="/cad-cam-cae-mechanical-design-project-development">CAD/CAM/CAE in Mechanical Design Project Development</a></li>
-              <li><a href="/advanced-machining-manufacturing-processes-project-development">Advanced Machining & Manufacturing Processes Project Development</a></li>
-              <li><a href="/product-lifecycle-management-project-development">Product Lifecycle Management Project Development</a></li>
-              <li><a href="/computational-fluid-dynamics-thermal-systems-project-development">Computational Fluid Dynamics (CFD) in Thermal Systems Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/design-manufacturing">Design & Manufacturing</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/cadcam-mechanical-design">
+      CAD/CAM Mechanical Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/additive-manufacturing-3d-printing">
+      Additive Manufacturing (3D Printing)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/advanced-machining-manufacturing">
+      Advanced Machining & Manufacturing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/product-lifecycle-management-project">
+      Product Lifecycle Management
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/rapid-prototyping-reverse">
+      Rapid Prototyping & Reverse Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/smart-manufacturing-industry">
+      Smart Manufacturing & Industry 4.0
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

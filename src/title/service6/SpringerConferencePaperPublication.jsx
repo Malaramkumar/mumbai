@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./SpringerConferencePaperPublication.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const sections = [
   {
@@ -208,6 +209,8 @@ export default function SpringerConferencePublication() {
     <div className="scp-layout">
       {/* Left sticky TOC */}
       <aside className="scp-aside scp-aside--left fade-in-left" aria-label="On this page">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <div className="scp-sidebar-header">
           <h2 className="scp-sidebar-title">On this page</h2>
           <span className="scp-section-count">{tocItems.length} sections</span>

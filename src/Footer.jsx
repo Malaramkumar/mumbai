@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.scss";
 import {
   FaLinkedin,
-  FaTwitter,
   FaWhatsapp,
   FaFacebook,
   FaInstagram,
@@ -11,6 +10,7 @@ import {
   FaMapMarkerAlt,
   FaExternalLinkAlt,
 } from "react-icons/fa";
+import LeftSidebar from "./LeftSidebar";
 
 const Footer = () => {
   return (
@@ -18,16 +18,7 @@ const Footer = () => {
       <div className="footer-inner">
         {/* Column 1 */}
         <div className="footer-col">
-          <h3>Our Services</h3>
-          <ul>
-            <li id="brands"> PhD Consulting</li>
-            <li>PhD Admission</li>
-            <li>Research Proposal</li>
-            <li>Methodology</li>
-            <li>Journal Writing</li>
-            <li>Publication</li>
-            <li>Thesis Writing</li>
-          </ul>
+          <LeftSidebar/>
         </div>
 
         {/* Column 2 */}
@@ -41,7 +32,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://ranmarscorp.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://ranmars.com" target="_blank" rel="noopener noreferrer">
                 ranmarscorp.com <FaExternalLinkAlt className="external-icon" />
               </a>
             </li>
@@ -52,48 +43,37 @@ const Footer = () => {
         <div className="footer-col footer-contact">
           <h3>Contact Details</h3>
           <p>
-            <FaPhoneAlt className="icon" /> +91 1234567890
+            <FaPhoneAlt className="icon" /> +91 9677111787 <br /> +91 9677111760
           </p>
           <p>
-            <FaEnvelope className="icon" /> info@narpavi.org
+            <FaEnvelope className="icon" /> narpavitechmumbai@gmail.com
           </p>
           <p>
-            <FaMapMarkerAlt className="icon" /> 2nd Floor, Narpavi Research Institute,
-            Mumbai, Maharashtra 400001
+            <FaMapMarkerAlt className="icon" />Commerz II, Goregaon, Mumbai, Maharashtra 400063
           </p>
           <p>
-            <a
-              href="https://maps.google.com/?q=Narpavi+Research+Institute+Mumbai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="map-link"
-            >
-              View Location <FaExternalLinkAlt className="external-icon" />
-            </a>
+             <div className="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60297.149433645776!2d72.81908109480679!3d19.170210378479286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a9286dc87f%3A0x572ab07cfc518e07!2sCommerz%20II!5e0!3m2!1sen!2sin!4v1762928107686!5m2!1sen!2sin"
+        width="300"
+        height="150"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Commerz II Location"
+      ></iframe>
+
+    </div>
           </p>
 
           {/* Social media icons */}
           <div className="footer-social-links">
             <h4>Follow Us</h4>
             <div className="social-icons">
+              
               <a
-                href="https://www.linkedin.com/company/narpavi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://twitter.com/narpavi"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="https://wa.me/911234567890"
+                href="https://wa.me/9677111787"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -101,7 +81,7 @@ const Footer = () => {
                 <FaWhatsapp />
               </a>
               <a
-                href="https://facebook.com/narpavi"
+                href="https://www.facebook.com/phdresearchguidancecenterinchennai/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -109,15 +89,25 @@ const Footer = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://instagram.com/narpavi"
+                href="https://www.instagram.com/narpavi_research_institute2012"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
               >
                 <FaInstagram />
+              </a>           
+              <a
+                href="https://www.linkedin.com/company/narpavi-technologies/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin />
               </a>
+
             </div>
           </div>
+          
         </div>
       </div>
 
@@ -130,4 +120,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;   

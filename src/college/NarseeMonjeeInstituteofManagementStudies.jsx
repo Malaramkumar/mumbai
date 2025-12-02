@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "What is the NMIMS PhD Entrance structure?",
@@ -29,6 +29,18 @@ const faqs = [
       "Yes. Two ABDC-B or SCI-indexed papers and one conference paper are mandatory. Turnitin similarity ≤12%."
   }
 ];
+const keywords = [
+  "NMIMS PhD Admission 2025",
+  "NMIMS Mumbai PhD",
+  "PhD in Management Mumbai",
+  "NMIMS Entrance CBT",
+  "NMIMS Research",
+  "NMIMS PhD Eligibility",
+  "Executive PhD NMIMS",
+  "Part time PhD NMIMS",
+  "NMIMS Engineering PhD",
+  "NMIMS Fellowship"
+];
 
 const NMIMSPhD = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -36,6 +48,14 @@ const NMIMSPhD = () => {
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="NMIMS PhD Admission 2025 | Eligibility, CBT Exam, Research Areas, Fees & Fellowship"
+        description="NMIMS PhD Admission 2025: CBT entrance test pattern, eligibility, research centres, fellowships, publications, program duration, fees and detailed timeline."
+        url="/colleges/nmims-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -179,14 +199,12 @@ const NMIMSPhD = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>NMIMS Mumbai</li>
-            <li>PhD Admission</li>
-            <li>CBT Entrance</li>
-            <li>Engineering & Management</li>
-            <li>Fellowship</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

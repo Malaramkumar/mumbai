@@ -1,5 +1,6 @@
 import React from "react";
 import "./PhdOnlineAdmissionMumbai.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const PhdOnlineAdmissionMumbai = () => {
   const faqs = [
@@ -51,6 +52,8 @@ const PhdOnlineAdmissionMumbai = () => {
     <div className="PhdOnlineMumbai">
       {/* LEFT: SEO KEYWORDS */}
       <div className="PhdOnlineMumbai-left">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h4>🔍 SEO Keywords</h4>
         <ul>
           {keywords.map((word, i) => (

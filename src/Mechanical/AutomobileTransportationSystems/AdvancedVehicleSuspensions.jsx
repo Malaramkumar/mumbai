@@ -1,5 +1,17 @@
 import "../MEProjectDevelopmentCenter.scss";
-
+import SEO from "../../assets/SEO";
+const keywords = [
+  "vehicle suspension projects Mumbai",
+  "advanced suspension systems research",
+  "B.Tech suspension simulation projects",
+  "M.Tech adaptive suspension design",
+  "Ph.D. suspension optimization Mumbai",
+  "magnetorheological suspension IEEE projects",
+  "digital twin suspension projects",
+  "EV suspension design Mumbai",
+  "smart suspension systems research",
+  "Narpavi Research Institute suspension projects"
+];
 const faqs = [
   {
     question: "What services does the Advanced Vehicle Suspension Systems Project Development Center offer in Mumbai?",
@@ -26,22 +38,22 @@ const faqs = [
 const MEAdvancedVehicleSuspensionSystemsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Advanced Vehicle Suspension Systems – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Advanced Vehicle Suspension Systems Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on suspension technologies."
+        url="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions" 
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>vehicle suspension projects Mumbai</li>
-              <li>advanced suspension systems research</li>
-              <li>B.Tech suspension simulation projects</li>
-              <li>M.Tech adaptive suspension design</li>
-              <li>Ph.D. suspension optimization Mumbai</li>
-              <li>magnetorheological suspension IEEE projects</li>
-              <li>digital twin suspension projects</li>
-              <li>EV suspension design Mumbai</li>
-              <li>smart suspension systems research</li>
-              <li>Narpavi Research Institute suspension projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -181,7 +193,7 @@ const MEAdvancedVehicleSuspensionSystemsProjectDevelopmentCenter = () => {
             </section>
 
             <section className="MEProjectDevelopmentCenter-conclusion">
-              <h2>Conclusion</h2>
+              <h2></h2>
               <p>
                 Advanced Vehicle Suspension Systems are revolutionizing the automotive landscape in Mumbai, supporting industries from OEMs and EV startups to luxury cars and public transportation. By combining smart materials, adaptive controls, and AI-based systems, suspension engineering ensures both comfort and sustainability.
               </p>
@@ -224,13 +236,50 @@ const MEAdvancedVehicleSuspensionSystemsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/automotive-aerodynamics-fuel-efficiency-project-development">Automotive Aerodynamics & Fuel Efficiency Project Development</a></li>
-              <li><a href="/internal-combustion-engine-optimization-project-development">Internal Combustion Engine Optimization Project Development</a></li>
-              <li><a href="/vehicle-dynamics-crash-safety-systems-project-development">Vehicle Dynamics & Crash Safety Systems Project Development</a></li>
-              <li><a href="/electric-hybrid-vehicle-design-project-development">Electric & Hybrid Vehicle Design Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/automobile-transportation-systems">
+      Automobile & Transportation Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design">
+      Electric & Hybrid Vehicle Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety">
+      Vehicle Dynamics & Crash Safety
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/internal-combustion-engine">
+      Internal Combustion Engines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel">
+      Automotive Aerodynamics & Fuel Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions">
+      Advanced Vehicle Suspensions
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/intelligent-transportation">
+      Intelligent Transportation Systems
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

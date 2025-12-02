@@ -1,14 +1,66 @@
-import React from "react";
+import React,{useState} from "react";
 import "./PhDApplicationHelpMumbai.scss";
+import { ChevronDown, ChevronUp } from "lucide-react"; 
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
+const KEYWORDS = [
+  "PhD application help in Mumbai fees",
+  "Best PhD application help in Mumbai",
+  "PhD admission consultants in India",
+  "PhD consultants in Chennai",
+  "PhD assistance services",
+  "PhD thesis support",
+  "PhD help in Delhi",
+];
+const FAQS = [
+  {
+    question: "What documents are needed for PhD application in Mumbai?",
+    answer:
+      "You typically need degree certificates, entrance exam scores (NET/GATE/PET), SOP, research proposal, ID proof, and supporting publications.",
+  },
+  {
+    question: "Do I need to clear PET for PhD admission in Mumbai?",
+    answer:
+      "Yes, unless you qualify for exemptions via UGC-NET, GATE, JRF, or equivalent credentials.",
+  },
+  {
+    question: "Which are the top universities in Mumbai for PhD?",
+    answer:
+      "IIT Bombay, University of Mumbai, TISS, NMIMS, and ICT Mumbai are among the top doctoral institutions in Mumbai.",
+  },
+  {
+    question: "Can Narpavi help with PhD SOP and proposal writing?",
+    answer:
+      "Absolutely. Narpavi Research Institute assists with SOP drafting, proposal structuring, and university-specific formatting.",
+  },
+  {
+    question: "Do you provide guide shortlisting services in Mumbai?",
+    answer:
+      "Yes, we help scholars identify and connect with suitable PhD guides based on research interests and availability.",
+  },
+];
 
 const PhDApplicationHelpMumbai = () => {
+   const [openIndex, setOpenIndex] = useState(null);
+    const toggleFAQ = (idx) => setOpenIndex((p) => (p === idx ? null : idx));
+  
   return (
     <div className="PhDApplicationHelpMumbai">
-
+       <SEO
+        title="PhD Application Help in Mumbai | Admission Support & Documentation | Narpavi Research Institute"
+        description="Get expert PhD application help in Mumbai. Narpavi Research Institute offers end-to-end admission support, SOP & proposal writing, document preparation, and guide shortlisting for PhD scholars."
+        url="/phd-application-help-in-mumbai"
+        image="/assets/phd-application-help-mumbai-banner.jpg"
+        keywords={KEYWORDS}
+        faqs={FAQS}
+      />
     <div className="phd-mumbai-wrapper">
+      
       {/* Left Sidebar */}
       <aside className="left-sidebar">
-        <h3>Quick Navigation</h3>
+        <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
+        {/* <h3>Quick Navigation</h3>
         <ul>
           <li><a href="#introduction">🎓 Introduction</a></li>
           <li><a href="#step-process">📍 Step-by-Step Process</a></li>
@@ -16,7 +68,7 @@ const PhDApplicationHelpMumbai = () => {
           <li><a href="#mistakes">❌ Common Mistakes</a></li>
           <li><a href="#why-narpavi">✅ Why Choose Narpavi</a></li>
           <li><a href="#contact">📞 Contact</a></li>
-        </ul>
+        </ul> */}
       </aside>
 
       {/* Main Content */}
@@ -149,7 +201,41 @@ const PhDApplicationHelpMumbai = () => {
             <li>🎤 Interview assistance and Proposal Defense Prep</li>
             <li>📅 Timeline Management and Alerts</li>
           </ul>
+
+  <section id="why-matters" className="highlight-why">
+  <h2>🎯 Selecting the Best University Enhances Your Research Opportunities</h2>
+  <p>
+    Choosing the right university is crucial. It influences your research scope,
+    funding, supervisor quality, access to labs, and post-PhD prospects.
+    Mumbai hosts top-tier universities like IIT Bombay, TISS, NMIMS, and more—but
+    choosing one isn’t just about rankings.
+  </p>
+  <div className="button-row">
+    <a href="/colleges" className="colleges-btn">
+      📚 View Top University in Mumbai
+    </a>
+  </div>
+</section>
+
         </section>
+        {/* FAQ ACCORDION */}
+          <section id="faqs" className="faq-section">
+            <h3 className="faq-title">❓ FAQs – We Refer Guide for PhD in Mumbai</h3>
+            <ol>
+              {FAQS.map(({ question, answer }, idx) => (
+                <li key={idx} className={openIndex === idx ? "active" : ""}>
+                  <button className="faq-question" onClick={() => toggleFAQ(idx)}>
+                    {question}
+                    {openIndex === idx ? <ChevronUp size={18}/> : <ChevronDown size={18}/>}
+                  </button>
+                  {openIndex === idx && (
+                    <div className="faq-answer"><p>{answer}</p></div>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </section>
+
 
       </main>
 

@@ -1,0 +1,176 @@
+.containerimage {
+  margin: 0 auto;
+  width: 1140px;
+  max-width: 90%;
+  padding: 75px 20px;
+
+  h1 {
+    position: relative;
+    margin-bottom: 45px;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 0.8s ease;
+    text-transform: uppercase;
+  }
+
+  .Images-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    gap: 15px;
+
+    .photo {
+      flex: 1;
+      height: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: flex 0.8s ease, transform 0.5s ease, box-shadow 0.4s ease;
+      animation: fadeInUp 1s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      /* dark overlay for better text contrast */
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        transition: background 0.4s ease;
+        z-index: 1;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-weight: 600;
+        padding: 20px;
+        line-height: 1.3;
+        z-index: 2;
+        transition: transform 0.4s ease;
+      }
+
+      button {
+        margin-top: 20px;
+        background: #fff;
+        color: #000;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 2;
+        position: relative;
+
+        &:hover {
+          background: #f5b301;
+          color: #fff;
+          transform: scale(1.05);
+        }
+      }
+
+      &:hover {
+        flex: 4;
+        transform: scale(1.02);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+        h2 {
+          transform: scale(1.05);
+        }
+
+        &::before {
+          background: rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+  }
+}
+
+/* 📱 Responsive Media Queries */
+@media (max-width: 1024px) {
+  .containerimage {
+    h1 {
+      font-size: 48px;
+    }
+    .Images-wrap {
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .containerimage {
+    h1 {
+      font-size: 40px;
+    }
+
+    .Images-wrap {
+      flex-direction: column;
+      height: auto;
+
+      .photo {
+        height: 220px;
+
+        h2 {
+          font-size: 22px;
+        }
+
+        button {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .containerimage {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .Images-wrap {
+      gap: 10px;
+
+      .photo {
+        height: 180px;
+        border-radius: 15px;
+
+        h2 {
+          font-size: 18px;
+          padding: 15px;
+        }
+
+        button {
+          font-size: 13px;
+          padding: 6px 12px;
+        }
+      }
+    }
+  }
+}
+
+/* ✨ Fade-up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

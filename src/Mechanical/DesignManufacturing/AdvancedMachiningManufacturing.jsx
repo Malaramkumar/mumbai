@@ -1,4 +1,19 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+
+const keywords = [
+  "advanced machining projects Mumbai",
+  "manufacturing projects Mumbai",
+  "CNC machining IEEE projects",
+  "EDM ECM machining projects",
+  "laser beam machining projects",
+  "ultrasonic machining projects",
+  "hybrid machining projects Mumbai",
+  "industry 4.0 machining projects",
+  "mechanical manufacturing IEEE projects",
+  "BTech MTech PhD machining projects Mumbai",
+  "Narpavi Research Institute machining"
+];
 
 const faqs = [
   {
@@ -26,6 +41,14 @@ const faqs = [
 const MEAdvancedMachiningManufacturingProcessesProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Advanced Machining & Manufacturing Processes Projects in Mumbai | CNC, EDM, ECM, Laser, Hybrid Machining | B.Tech, M.Tech, PhD"
+  description="IEEE-aligned Advanced Machining & Manufacturing Processes projects in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes CNC machining, EDM, ECM, laser beam machining, ultrasonic machining, hybrid machining, Industry 4.0 manufacturing, simulation, and optimization projects."
+  url="/mechanical/design-manufacturing/advanced-machining-manufacturing"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -225,12 +248,47 @@ const MEAdvancedMachiningManufacturingProcessesProjectDevelopmentCenter = () => 
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/additive-manufacturing-3d-printing-project-development">Additive Manufacturing & 3D Printing Project Development</a></li>
-              <li><a href="/cad-cam-cae-mechanical-design-project-development">CAD/CAM/CAE in Mechanical Design Project Development</a></li>
-              <li><a href="/waste-heat-recovery-energy-conservation-project-development">Waste Heat Recovery & Energy Conservation Project Development</a></li>
-              <li><a href="/thermal-energy-storage-systems-project-development">Thermal Energy Storage Systems Project Development</a></li>
-              <li><a href="/computational-fluid-dynamics-thermal-systems-project-development">Computational Fluid Dynamics (CFD) in Thermal Systems Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/design-manufacturing">Design & Manufacturing</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/cadcam-mechanical-design">
+      CAD/CAM Mechanical Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/additive-manufacturing-3d-printing">
+      Additive Manufacturing (3D Printing)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/advanced-machining-manufacturing">
+      Advanced Machining & Manufacturing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/product-lifecycle-management-project">
+      Product Lifecycle Management
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/rapid-prototyping-reverse">
+      Rapid Prototyping & Reverse Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/smart-manufacturing-industry">
+      Smart Manufacturing & Industry 4.0
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

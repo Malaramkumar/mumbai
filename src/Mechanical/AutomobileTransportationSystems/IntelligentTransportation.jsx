@@ -1,5 +1,17 @@
 import "../MEProjectDevelopmentCenter.scss";
-
+import SEO from "../../assets/SEO";
+const keywords = [
+  "intelligent transportation systems projects Mumbai",
+  "ITS projects for B.Tech students",
+  "AI in transportation projects India",
+  "IoT-enabled traffic systems Mumbai",
+  "ITS smart parking projects IEEE",
+  "vehicle-to-infrastructure projects Mumbai",
+  "blockchain in ITS IEEE projects",
+  "machine learning accident prediction projects",
+  "ITS Ph.D. projects India",
+  "Narpavi Research Institute ITS projects"
+];
 const faqs = [
   {
     question: "What services does the Intelligent Transportation Systems (ITS) Project Development Center offer in Mumbai?",
@@ -26,22 +38,22 @@ const faqs = [
 const MEIntelligentTransportationSystemsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Intelligent Transportation Systems (ITS) – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Intelligent Transportation Systems (ITS) Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on ITS technologies."
+        url="/mechanical/automobile-transportation-systems/intelligent-transportation"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>intelligent transportation systems projects Mumbai</li>
-              <li>ITS projects for B.Tech students</li>
-              <li>AI in transportation projects India</li>
-              <li>IoT-enabled traffic systems Mumbai</li>
-              <li>ITS smart parking projects IEEE</li>
-              <li>vehicle-to-infrastructure projects Mumbai</li>
-              <li>blockchain in ITS IEEE projects</li>
-              <li>machine learning accident prediction projects</li>
-              <li>ITS Ph.D. projects India</li>
-              <li>Narpavi Research Institute ITS projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -205,7 +217,7 @@ const MEIntelligentTransportationSystemsProjectDevelopmentCenter = () => {
             </section>
 
             <section className="MEProjectDevelopmentCenter-conclusion">
-              <h2>Conclusion</h2>
+              <h2></h2>
               <p>
                 Intelligent Transportation Systems (ITS) are redefining the future of mobility in Mumbai and across India. With its ability to combine real-time traffic control, smart logistics, predictive safety measures, and eco-friendly transportation, ITS represents the foundation of sustainable smart cities.
               </p>
@@ -248,13 +260,50 @@ const MEIntelligentTransportationSystemsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/advanced-vehicle-suspension-systems-project-development">Advanced Vehicle Suspension Systems Project Development</a></li>
-              <li><a href="/automotive-aerodynamics-fuel-efficiency-project-development">Automotive Aerodynamics & Fuel Efficiency Project Development</a></li>
-              <li><a href="/internal-combustion-engine-optimization-project-development">Internal Combustion Engine Optimization Project Development</a></li>
-              <li><a href="/vehicle-dynamics-crash-safety-systems-project-development">Vehicle Dynamics & Crash Safety Systems Project Development</a></li>
-              <li><a href="/electric-hybrid-vehicle-design-project-development">Electric & Hybrid Vehicle Design Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/automobile-transportation-systems">
+      Automobile & Transportation Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design">
+      Electric & Hybrid Vehicle Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety">
+      Vehicle Dynamics & Crash Safety
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/internal-combustion-engine">
+      Internal Combustion Engines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel">
+      Automotive Aerodynamics & Fuel Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions">
+      Advanced Vehicle Suspensions
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/intelligent-transportation">
+      Intelligent Transportation Systems
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

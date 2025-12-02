@@ -1,5 +1,6 @@
 import "./CSEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
 const faqs = [
   {
     question: "What services does the Cartia Projects Project Development Center offer in Mumbai?",
@@ -22,25 +23,40 @@ const faqs = [
     answer: "We offer end-to-end guidance, including topic selection, simulation, analysis, documentation, and support for IEEE/Scopus/SCI journal publications and patents, with collaboration opportunities in Mumbai’s industrial ecosystem."
   }
 ];
+const keywords = [
+  "Cartia Projects in Mumbai",
+  "Cartia CAD Projects Mumbai",
+  "civil engineering simulation projects",
+  "structural engineering Cartia projects",
+  "smart city Cartia projects Mumbai",
+  "B.Tech Cartia projects",
+  "M.Tech Cartia simulation projects",
+  "Ph.D. Cartia research Mumbai",
+  "IEEE Cartia projects",
+  "urban infrastructure simulation Mumbai"
+];
 
 const CSECartiaProjectsProjectDevelopmentCenter = () => {
   return (
     <div className="CSEProjectDevelopmentCenter">
+      <SEO
+        title="Cartia Projects in Mumbai | B.Tech, M.Tech, PhD CAD & Structural Simulation Project Development"
+        description="IEEE-aligned Cartia project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Structural analysis, CAD simulation, smart city design, seismic modeling, and digital twin-based urban infrastructure projects."
+        url="/cartia-projects-project-development"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="CSEProjectDevelopmentCenter-main">
         <div className="CSEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="CSEProjectDevelopmentCenter-left">
-            <h3>🔑 Keywords</h3>
+          <LeftSidebar/>
+           <h3>🔑 Keywords</h3>
             <ul>
-              <li>Cartia Projects in Mumbai</li>
-              <li>Structural Engineering Projects Mumbai</li>
-              <li>Civil Simulation Projects Mumbai</li>
-              <li>Smart City Projects Mumbai</li>
-              <li>Cartia CAD Projects Mumbai</li>
-              <li>B.Tech Cartia Projects Mumbai</li>
-              <li>M.Tech Cartia Projects Mumbai</li>
-              <li>Ph.D. Cartia Projects Mumbai</li>
-              <li>IEEE Cartia Projects Mumbai</li>
+              {keywords.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
             </ul>
           </div>
 
@@ -176,13 +192,60 @@ const CSECartiaProjectsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="CSEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/ansys-projects-project-development">Ansys Projects Project Development</a></li>
-              <li><a href="/robotics-projects-project-development">Robotics Projects Project Development</a></li>
-              <li><a href="/ns3-projects-project-development">NS3 Projects Project Development</a></li>
-              <li><a href="/vlsi-projects-project-development">VLSI Projects Project Development</a></li>
-              <li><a href="/r-projects-project-development">R Projects Project Development</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=cse">Computer Science & Engineering</a>
+  </li>
+
+  <li><a href="/cse/artificial-intelligence-machine-learning">Artificial Intelligence & Machine Learning</a></li>
+  <li><a href="/cse/custom-software-development">Custom Software Development</a></li>
+  <li><a href="/cse/data-science-big-data-analytics">Data Science & Big Data Analytics</a></li>
+  <li><a href="/cse/internet-of-things">Internet of Things (IoT)</a></li>
+  <li><a href="/cse/cybersecurity-privacy">Cybersecurity & Privacy</a></li>
+  <li><a href="/cse/blockchain-distributed-systems">Blockchain & Distributed Systems</a></li>
+  <li><a href="/cse/cloud-edge-infrastructure">Cloud & Edge Infrastructure</a></li>
+  <li><a href="/cse/quantum-computing-information">Quantum Computing & Information</a></li>
+  <li><a href="/cse/human-computer-interaction">Human-Computer Interaction</a></li>
+  <li><a href="/cse/computer-vision-image">Computer Vision & Image Processing</a></li>
+  <li><a href="/cse/autonomous-systems-robotics">Autonomous Systems & Robotics</a></li>
+  <li><a href="/cse/natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="/cse/digital-twins-simulation">Digital Twins & Simulation</a></li>
+  <li><a href="/cse/quantum-networking-communication">Quantum Networking & Communication</a></li>
+  <li><a href="/cse/web-application-development">Web Application Development</a></li>
+  <li><a href="/cse/mobile-app-development">Mobile App Development</a></li>
+  <li><a href="/cse/mvp-development">MVP Development</a></li>
+  <li><a href="/cse/startup-software-development">Startup Software Development</a></li>
+  <li><a href="/cse/enterprise-software-solutions">Enterprise Software Solutions</a></li>
+  <li><a href="/cse/dedicated-development-teams">Dedicated Development Teams</a></li>
+  <li><a href="/cse/design-lab-ui-ux-development">Design Lab UI/UX Development</a></li>
+  <li><a href="/cse/qa-testing-services">QA & Testing Services</a></li>
+
+  <li><a href="/cse/java">Java Development</a></li>
+  <li><a href="/cse/php-development">PHP Development</a></li>
+  <li><a href="/cse/spring-development">Spring Development</a></li>
+  <li><a href="/cse/csharp-development">C# Development</a></li>
+
+  <li><a href="/cse/machine-learning-based">Machine Learning Based Projects</a></li>
+  <li><a href="/cse/python-development">Python Development</a></li>
+  <li><a href="/cse/matlab-projects">MATLAB Projects</a></li>
+  <li><a href="/cse/dotnet-projects">DotNet Projects</a></li>
+  <li><a href="/cse/r-projects">R Projects</a></li>
+  <li><a href="/cse/ns3-projects">NS3 Projects</a></li>
+  <li><a href="/cse/vlsi-projects">VLSI Projects</a></li>
+  <li><a href="/cse/opnet-projects">OPNET Projects</a></li>
+  <li><a href="/cse/robotics-projects">Robotics Projects</a></li>
+  <li><a href="/cse/ansys-projects">ANSYS Projects</a></li>
+  <li><a href="/cse/solidworks-projects">SolidWorks Projects</a></li>
+  <li><a href="/cse/cartia-projects">Cartia Projects</a></li>
+  <li><a href="/cse/labview-projects">LabVIEW Projects</a></li>
+
+  <li><a href="/cse/power-system-projects">Power System Projects</a></li>
+  <li><a href="/cse/power-documents">Power Documents</a></li>
+
+  <li><a href="/cse/image-processing">Image Processing</a></li>
+  <li><a href="/cse/signal-processing">Signal Processing</a></li>
+</ul>
+
           </div>
         </div>
       </div>

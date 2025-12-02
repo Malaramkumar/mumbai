@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "smart manufacturing projects mumbai",
+  "industry 4.0 ieee projects",
+  "digital twin manufacturing projects",
+  "iot smart factory projects",
+  "ai in smart manufacturing",
+  "robotics automation projects",
+  "cyber physical systems manufacturing",
+  "secure iiot projects mumbai",
+  "btech smart manufacturing projects",
+  "mtech industry 4.0 projects",
+  "phd smart manufacturing research",
+  "narpavi research institute industry 4.0",
+  "predictive maintenance factory projects",
+  "ansys twin builder projects",
+  "raspberry pi industry 4.0 projects"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MESmartManufacturingIndustry40ProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Smart Manufacturing & Industry 4.0 Project Development in Mumbai | IoT, Digital Twin, AI, Robotics | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Smart Manufacturing & Industry 4.0 project support in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes IoT systems, digital twins, AI, robotics, PLC automation, cyber-physical systems, cloud/edge computing, and real-time industrial data analytics."
+        url="/mechanical/design-manufacturing/smart-manufacturing-industry"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -225,12 +251,47 @@ const MESmartManufacturingIndustry40ProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/rapid-prototyping-reverse-engineering-project-development">Rapid Prototyping & Reverse Engineering Project Development</a></li>
-              <li><a href="/product-lifecycle-management-project-development">Product Lifecycle Management Project Development</a></li>
-              <li><a href="/additive-manufacturing-3d-printing-project-development">Additive Manufacturing & 3D Printing Project Development</a></li>
-              <li><a href="/cad-cam-cae-mechanical-design-project-development">CAD/CAM/CAE in Mechanical Design Project Development</a></li>
-              <li><a href="/advanced-machining-manufacturing-processes-project-development">Advanced Machining & Manufacturing Processes Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/design-manufacturing">Design & Manufacturing</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/cadcam-mechanical-design">
+      CAD/CAM Mechanical Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/additive-manufacturing-3d-printing">
+      Additive Manufacturing (3D Printing)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/advanced-machining-manufacturing">
+      Advanced Machining & Manufacturing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/product-lifecycle-management-project">
+      Product Lifecycle Management
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/rapid-prototyping-reverse">
+      Rapid Prototyping & Reverse Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/smart-manufacturing-industry">
+      Smart Manufacturing & Industry 4.0
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

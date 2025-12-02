@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "What is the admission process at ICT Mumbai for PhD?",
@@ -24,13 +24,32 @@ const faqs = [
     answer: "Minimum three SCI-indexed papers and one patent (desirable) before viva."
   }
 ];
-
+const keywords = [
+  "ICT Mumbai PhD Admission 2025",
+  "Institute of Chemical Technology PhD",
+  "ICT PET Exam Syllabus",
+  "Chemical Engineering PhD Mumbai",
+  "ICT Fellowship Amount",
+  "ICT Eligibility Criteria",
+  "ICT PhD Fees Structure",
+  "ICT Research Labs",
+  "ICT PhD Entrance Test",
+  "PhD Chemical Technology India"
+];
 const ICTPhD = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="ICT Mumbai PhD Admission 2025 | Eligibility, PET Exam, Fees, Research & Fellowship"
+        description="ICT Mumbai PhD Admission 2025: Eligibility, PET exam pattern, fees, fellowship, research labs, specializations and complete step-by-step application guide."
+        url="/colleges/ict-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -65,9 +84,7 @@ const ICTPhD = () => {
             <div className="card">1 PF Supercomputing Node</div>
             <div className="card">DAE-funded Pilot Plants</div>
           </div>
-        </section>
-
-       
+        </section>      
 
         <section className="info-table-grid">
           <div className="info-card">
@@ -191,16 +208,12 @@ const ICTPhD = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-         
-          <ul>
-            <li>ICT Mumbai</li>
-            <li>Chemical Engineering</li>
-            <li>PhD Entrance</li>
-            <li>PET Exam</li>
-            <li>PhD Funding</li>
-          </ul>
-       
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

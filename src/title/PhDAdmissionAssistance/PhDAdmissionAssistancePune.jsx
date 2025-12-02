@@ -1,5 +1,6 @@
 import React from "react";
 import "./PhDAdmissionAssistancePune.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const faqs = [
   {
@@ -61,6 +62,8 @@ const PhdAssistancePune = () => {
       <div className="phd-pune-wrapper">
         {/* LEFT: SEO Keywords */}
         <aside className="phd-pune-left">
+           <a href="/home-page" class="buttonhp">Home Page</a>
+          <LeftSidebar/>
           <h3>SEO Keywords</h3>
           <ul>
             {seoKeywords.map((k, i) => (

@@ -1,0 +1,288 @@
+
+.ResearchMethodology-container {
+  min-height: 100vh;
+ 
+   background: linear-gradient(to bottom, rgba(0, 59, 115, 1), rgba(5, 102, 180, 0.8) 70%);
+  color: #1e293b;
+  padding: 2rem;
+
+  .ResearchMethodology-grid {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1.5rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // LEFT SIDEBAR
+  .ResearchMethodology-left {
+    width: 280px;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+
+    .ResearchMethodology-links-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #0f172a;
+      }
+    }
+
+    .ResearchMethodology-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .ResearchMethodology-link {
+        text-decoration: none;
+        color: #334155;
+        font-size: 0.95rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #f1f5f9;
+          color: #0f172a;
+        }
+      }
+    }
+
+    .ResearchMethodology-search {
+      position: relative;
+
+      input {
+        width: 100%;
+        padding: 0.6rem 2.5rem 0.6rem 0.8rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 0.5rem;
+        font-size: 0.9rem;
+        outline: none;
+        transition: border 0.3s ease;
+
+        &:focus {
+          border-color: #94a3b8;
+        }
+      }
+
+      svg {
+        position: absolute;
+        right: 0.8rem;
+        top: 0.7rem;
+        color: #94a3b8;
+      }
+    }
+  }
+
+  // MAIN CONTENT
+  .ResearchMethodology-main {
+    background: #ffffff;
+    width: 900px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    overflow-y: auto;
+
+    .ResearchMethodology-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .ResearchMethodology-subtitle {
+      font-size: 1rem;
+      color: #475569;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .ResearchMethodology-content {
+      h2 {
+        font-size: 1.3rem;
+        color: #1e293b;
+        margin-top: 2rem;
+        font-weight: 600;
+        border-left: 4px solid #2563eb;
+        padding-left: 0.75rem;
+      }
+
+      ul,
+      ol {
+        margin-left: 1.25rem;
+        color: #475569;
+        line-height: 1.6;
+
+        li {
+          margin-bottom: 0.4rem;
+        }
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        th,
+        td {
+          border: 1px solid #cbd5e1;
+          padding: 0.6rem 0.8rem;
+          text-align: left;
+        }
+
+        th {
+          background: #f1f5f9;
+          color: #1e293b;
+          font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+          background: #f9fafb;
+        }
+      }
+    }
+
+    // FAQ
+    .ResearchMethodology-faq {
+      margin-top: 2rem;
+
+      .ResearchMethodology-faq-item {
+        border: 1px solid #e2e8f0;
+        border-radius: 0.6rem;
+        margin-bottom: 0.75rem;
+        overflow: hidden;
+
+        .ResearchMethodology-faq-question {
+          background: #f8fafc;
+          border: none;
+          width: 100%;
+          padding: 0.9rem 1rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-weight: 500;
+          cursor: pointer;
+          transition: background 0.3s;
+
+          &:hover {
+            background: #f1f5f9;
+          }
+
+          svg {
+            transition: transform 0.3s ease;
+          }
+
+          &.active svg {
+            transform: rotate(180deg);
+          }
+        }
+
+        .ResearchMethodology-faq-answer {
+          padding: 0.9rem 1rem;
+          background: #f9fafb;
+          font-size: 0.9rem;
+          color: #475569;
+          border-top: 1px solid #e2e8f0;
+        }
+      }
+    }
+  }
+
+  // RIGHT SIDEBAR
+  .ResearchMethodology-right {
+    width: 280px;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 1.25rem;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+
+    h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 0.75rem;
+    }
+
+    .ResearchMethodology-keywords {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      li {
+        font-size: 0.9rem;
+        color: #475569;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        background: #f9fafb;
+        transition: 0.3s;
+
+        &:hover {
+          background: #f1f5f9;
+        }
+      }
+    }
+
+    .ResearchMethodology-contact {
+      margin-top: 1.5rem;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1rem;
+
+      p {
+        font-size: 0.9rem;
+        color: #475569;
+        margin-bottom: 0.8rem;
+      }
+
+      a {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        color: #1e293b;
+        border: 1px solid #cbd5e1;
+        border-radius: 0.5rem;
+        padding: 0.6rem;
+        transition: 0.3s;
+
+        &:hover {
+          background: #f1f5f9;
+        }
+      }
+    }
+  }
+
+  // RESPONSIVE
+  @media (max-width: 768px) {
+    padding: 1rem;
+    .ResearchMethodology-main {
+      padding: 1.25rem;
+    }
+
+    .ResearchMethodology-left,
+    .ResearchMethodology-right {
+      position: relative;
+      top: 0;
+    }
+  }
+}

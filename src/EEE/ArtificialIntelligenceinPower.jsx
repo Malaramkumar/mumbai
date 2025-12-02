@@ -1,6 +1,19 @@
 import React from 'react';
 import "./EEEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
+const keywords = [
+  "AI in Power Systems Mumbai",
+  "Smart Grid AI Projects",
+  "Load Forecasting ANN Projects",
+  "Fuzzy PID Voltage Control",
+  "Reinforcement Learning Grid Optimization",
+  "AI Fault Detection Power Systems",
+  "Microgrid AI Control Projects",
+  "ETAP MATLAB TensorFlow Power",
+  "HIL Real Time Control Systems",
+  "IEEE Power AI 2023 2025"
+];
 const faqs = [
   {
     question: "Which AI techniques are most impactful for Mumbai’s grids?",
@@ -32,11 +45,20 @@ const faqs = [
 const AIPowerControlMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+      <SEO
+  title="AI in Power & Control Systems Projects in Mumbai | Smart Grid AI, Load Forecasting, RL, Fault Detection, ETAP/MATLAB, IEEE Research"
+  description="AI in Power & Control Systems Project Development Center in Mumbai. Work with ANN/CNN/RNN, fuzzy–PID, reinforcement learning, SVM fault detection, predictive maintenance, load forecasting, ETAP/MATLAB/TensorFlow, HIL control, and IEEE-aligned AI research for power systems."
+  url="/eee/artificial-intelligence-power"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>ECE AI in Power Systems</li>
@@ -219,12 +241,28 @@ const AIPowerControlMumbai = () => {
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE fields</h3>
             <ul>
-              <li><a href="/power-electronics-mumbai">Power Electronics</a></li>
-              <li><a href="/renewable-energy-mumbai">Renewable Energy</a></li>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/communication-systems-mumbai">Communication Systems</a></li>
-              <li><a href="/cyber-physical-systems-mumbai">Cyber‑Physical Systems</a></li>
-            </ul>
+  <li>
+    <a href="/departments?dept=eee">Electrical & Electronics</a>
+  </li>
+
+  <li><a href="/eee/smart-grid-microgrid">Smart Grid & Microgrid</a></li>
+  <li><a href="/eee/ev-charging-infrastructure-v2g">EV Charging Infrastructure & V2G</a></li>
+  <li><a href="/eee/power-system-stability">Power System Stability</a></li>
+  <li><a href="/eee/load-forecasting-demand-response">Load Forecasting & Demand Response</a></li>
+  <li><a href="/eee/high-voltage-dc">High Voltage DC Systems</a></li>
+  <li><a href="/eee/power-system-protection">Power System Protection</a></li>
+  <li><a href="/eee/power-electronics-renewables">Power Electronics for Renewables</a></li>
+  <li><a href="/eee/embedded-iot-energy">Embedded IoT for Energy Systems</a></li>
+  <li><a href="/eee/smart-lighting-building">Smart Lighting & Building Automation</a></li>
+  <li><a href="/eee/condition-monitoring-diagnosis">Condition Monitoring & Diagnosis</a></li>
+  <li><a href="/eee/electric-machines-coastal-marine">Electric Machines for Coastal & Marine</a></li>
+  <li><a href="/eee/power-electronics-ev-motor-drives">Power Electronics & EV Motor Drives</a></li>
+  <li><a href="/eee/wireless-power-transfer">Wireless Power Transfer</a></li>
+  <li><a href="/eee/artificial-intelligence-power">AI in Power Systems</a></li>
+  <li><a href="/eee/smart-metering-demand-response">Smart Metering & Demand Response</a></li>
+
+</ul>
+
           </div>
 
         </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO";
 const faqs = [
   {
     question: "Is NICMAR only for Civil or Construction background?",
@@ -24,13 +24,32 @@ const faqs = [
     answer: "Smart Cities, Project Risk, PPP Infrastructure, Green Construction, BIM, and Construction Finance."
   }
 ];
-
+const keywords = [
+  "NICMAR PhD Admission 2025",
+  "NICMAR University Pune",
+  "Construction Management PhD",
+  "Infrastructure PhD India",
+  "NICMAR RAT Exam",
+  "NICMAR PhD Eligibility",
+  "PhD in Smart Cities",
+  "PPP Infrastructure PhD",
+  "NICMAR Fellowship",
+  "Construction Research India"
+];
 const NICMARPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="NICMAR PhD Admission 2025 | Eligibility, NICMAR-RAT Exam, Research Areas, Fees & Fellowship"
+        description="NICMAR PhD Admission 2025 – NICMAR-RAT exam pattern, eligibility, construction research areas, fellowships, fees, infrastructure, and application timeline."
+        url="/colleges/nicmar-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -174,13 +193,12 @@ const NICMARPhDPage = () => {
       <aside className="right-sidebar">
         <h3>Tags</h3>
         <div className="tags">
-          <ul>
-            <li>NICMAR University</li>
-            <li>PhD in Construction</li>
-            <li>Infrastructure Finance</li>
-            <li>Smart Cities</li>
-            <li>PPP Projects</li>
-          </ul>
+           <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
         </div>
       </aside>
     </div>

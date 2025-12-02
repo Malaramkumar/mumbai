@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Does DYPU offer full-time and executive PhD options?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Yes. At least two SCI or ABDC-B indexed papers are mandatory before final thesis submission."
   }
 ];
+const keywords = [
+  "DY Patil University PhD Admission 2025",
+  "DYPU Navi Mumbai PhD",
+  "DYPU PhD Eligibility",
+  "DYPU PET Exam Details",
+  "PhD in Navi Mumbai Universities",
+  "DYPU Doctoral Fellowship",
+  "PhD Executive Mode Navi Mumbai",
+  "DY Patil University Research",
+  "PhD Health Sciences Mumbai",
+  "PhD Engineering DYPU"
+];
 
 const DyPatilPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,15 @@ const DyPatilPhDPage = () => {
 
   return (
     <div className="phd-layout">
+            <SEO
+        title="DY Patil University PhD Admission 2025 | Eligibility, PET, Research & Fellowships"
+        description="Detailed guide for DY Patil University PhD admission including eligibility, PET exam, executive PhD, research infrastructure, funding, publications and Narpavi support."
+        url="/colleges/dy-patil-university-navi-mumbai"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -225,14 +246,12 @@ const DyPatilPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD Navi Mumbai</li>
-            <li>DY Patil</li>
-            <li>Admissions</li>
-            <li>Research</li>
-            <li>PET Exam</li>
-          </ul>
+         <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

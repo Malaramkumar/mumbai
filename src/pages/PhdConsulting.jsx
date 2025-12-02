@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./PhdConsulting.scss";
-
+import LeftSidebar from "../LeftSidebar";
 const faqs = [
   {
     question: "What does a PhD consulting service cover?",
@@ -35,6 +35,9 @@ const PhDConsultingMumbai = () => {
   return (
     <div className="consulting-wrapper">
       <div className="left-side">
+        <a href="/home-page" class="buttonhp">Home Page</a>
+
+         <LeftSidebar/>
         <h3>Explore Topics</h3>
         <ul>
           <li>Admission Support</li>
@@ -50,7 +53,7 @@ const PhDConsultingMumbai = () => {
 
         <h2>Why PhD Support Matters More Than Ever</h2>
         <p>
-          Embarking on a PhD journey in today’s academic environment demands more than just knowledge—it requires strategic planning, domain expertise, and professional mentorship. With competitive admissions, funding challenges, and intense publishing pressure, scholars often need structured support to succeed.
+          Embarking on a PhD journey in today’s academic environment demands more than just knowledge —it requires strategic planning, domain expertise, and professional mentorship. With competitive admissions, funding challenges, and intense publishing pressure, scholars often need structured support to succeed.
         </p>
         <p>
           At Narpavi Research Institute, we provide expert-led PhD Consulting – Assistance and Guidance in Mumbai, supporting scholars across every stage of their doctoral lifecycle—from admissions to viva voce. Our end-to-end services are designed to empower PhD aspirants with the tools, mentorship, and technical writing skills they need to complete their research journey with confidence.

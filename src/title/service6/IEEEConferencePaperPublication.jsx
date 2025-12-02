@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./IEEEConferencePaperPublication.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const sections = [
   {
@@ -185,6 +186,8 @@ export default function IEEEConferencePublication() {
     <div className="icp-layout">
       {/* Left sticky TOC */}
       <aside className="icp-aside icp-aside--left fade-in-left" aria-label="On this page">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <div className="icp-sidebar-header">
           <h2 className="icp-sidebar-title">On this page</h2>
           <span className="icp-section-count">{tocItems.length} sections</span>

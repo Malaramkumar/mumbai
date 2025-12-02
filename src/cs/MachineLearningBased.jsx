@@ -1,5 +1,15 @@
 import "./CSEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO";
 
+const keywords = [ 
+  "Machine Learning Projects in Mumbai",
+  "IEEE Machine Learning Projects Mumbai",
+  "AI and ML Projects Mumbai",
+  "Final Year Machine Learning Projects Mumbai",
+  "Deep Learning Projects in Mumbai",
+  "Smart City ML Projects Mumbai",
+  "Narpavi Technologies Project Development Center"
+];
 const faqs = [
   {
     question: "What services does the Machine Learning-Based Projects Project Development Center offer in Mumbai?",
@@ -26,19 +36,23 @@ const faqs = [
 const CSEMachineLearningBasedProjectsProjectDevelopmentCenter = () => {
   return (
     <div className="CSEProjectDevelopmentCenter">
+      <SEO
+        title="Machine Learning Projects in Mumbai | B.Tech, M.Tech, PhD IEEE Project Development"
+        description="IEEE-aligned Machine Learning project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes applications in healthcare, finance, smart cities, retail, and education."
+        url="/cse/machine-learning-based-projects"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="CSEProjectDevelopmentCenter-main">
         <div className="CSEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="CSEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Machine Learning Projects in Mumbai</li>
-              <li>IEEE Machine Learning Projects Mumbai</li>
-              <li>AI and ML Projects Mumbai</li>
-              <li>Final Year Machine Learning Projects Mumbai</li>
-              <li>Deep Learning Projects in Mumbai</li>
-              <li>Smart City ML Projects Mumbai</li>
-              <li>Narpavi Technologies Project Development Center</li>
+              {keywords.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
             </ul>
           </div>
 

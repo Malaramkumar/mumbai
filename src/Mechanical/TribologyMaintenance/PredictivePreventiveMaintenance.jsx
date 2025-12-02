@@ -1,4 +1,20 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "predictive maintenance projects Mumbai",
+  "preventive maintenance IEEE projects",
+  "rotating machinery fault prediction",
+  "AI-based maintenance projects",
+  "IoT condition monitoring projects",
+  "vibration and thermal analysis projects",
+  "digital twin maintenance engineering",
+  "B.Tech predictive maintenance projects",
+  "M.Tech maintenance engineering projects",
+  "Ph.D predictive maintenance research Mumbai",
+  "industrial predictive analytics projects",
+  "machine learning fault diagnosis",
+  "Narpavi Research Institute maintenance projects"
+];
 
 const faqs = [
   {
@@ -26,6 +42,14 @@ const faqs = [
 const MEPredictivePreventiveMaintenanceEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Predictive & Preventive Maintenance Engineering Project Development in Mumbai"
+  description="IEEE-aligned predictive and preventive maintenance engineering projects for B.Tech, M.Tech, and Ph.D. students in Mumbai. Work on AI-based prediction models, vibration analysis, thermal monitoring, IoT-enabled condition monitoring, and digital twin-based maintenance."
+  url="/mechanical/TribologyMaintenance/PredictivePreventiveMaintenance"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -226,13 +250,50 @@ const MEPredictivePreventiveMaintenanceEngineeringProjectDevelopmentCenter = () 
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/tribology-micro-nano-systems-project-development">Tribology in Micro & Nano Systems Project Development</a></li>
-              <li><a href="/fault-diagnosis-rotating-machinery-project-development">Fault Diagnosis in Rotating Machinery Project Development</a></li>
-              <li><a href="/bearing-design-condition-monitoring-project-development">Bearing Design & Condition Monitoring Project Development</a></li>
-              <li><a href="/lubrication-technology-advanced-oils-project-development">Lubrication Technology & Advanced Oils Project Development</a></li>
-              <li><a href="/wear-friction-analysis-project-development">Wear & Friction Analysis Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/tribology-maintenance">
+      Tribology & Maintenance
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/wear-friction-analysis">
+      Wear & Friction Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/lubrication-technology-advanced">
+      Lubrication Technology (Advanced)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/bearing-design-condition">
+      Bearing Design & Condition
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/fault-diagnosis-rotating">
+      Fault Diagnosis (Rotating Machinery)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/tribology-in-micro-nano">
+      Tribology in Micro/Nano Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/predictive-preventive-maintenance">
+      Predictive & Preventive Maintenance
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

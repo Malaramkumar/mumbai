@@ -1,6 +1,7 @@
 import React from 'react';
 import "./CivilProjectDevelopmentCenter.scss"; // Assuming a common SCSS file
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
 const faqs = [
   {
     question: "What makes Narpavi's Tall Building Analysis center in Mumbai unique?",
@@ -23,15 +24,39 @@ const faqs = [
     answer: "Yes, a cornerstone of our program is dedicated publication support. We guide students through the entire process, from framing a research question and conducting analysis to preparing a manuscript for submission to prestigious IEEE, Scopus, and SCI-indexed journals."
   }
 ];
-
+const keywords = [
+  "Tall Building Analysis Mumbai",
+  "High-Rise Structural Design Projects",
+  "ETABS High-Rise Analysis Mumbai",
+  "SAP2000 Tall Building Projects",
+  "ANSYS Wind Load Simulation",
+  "M.Tech Structural Engineering Projects Mumbai",
+  "Ph.D Civil Structural Research Mumbai",
+  "Performance-Based Seismic Design",
+  "RCC Steel Composite Structures Mumbai",
+  "Digital Twin High-Rise Structures",
+  "Smart City Tall Building Design",
+  "Finite Element Analysis High-Rise",
+  "Wind and Seismic Analysis Mumbai",
+  "Vertical Urbanism Civil Projects",
+  "Narpavi Research Institute Mumbai"
+];
 const TallBuildingAnalysisMumbai = () => {
   return (
     <div className="CEProjectDevelopmentCenter">
+       <SEO
+        title="Tall Building Analysis Projects in Mumbai | High-Rise ETABS, SAP2000, ANSYS"
+        description="IEEE-aligned Tall Building Analysis projects in Mumbai with ETABS, SAP2000, ANSYS, and BIM integration. High-rise structural design, wind & seismic analysis, performance-based design, and research guidance for B.Tech, M.Tech, and Ph.D."
+        url="/civil/tall-building-analysis"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="CEProjectDevelopmentCenter-main">
         <div className="CEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="CEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Tall Building Analysis Projects Mumbai</li>
@@ -164,13 +189,29 @@ const TallBuildingAnalysisMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="CEProjectDevelopmentCenter-right">
             <h3>🔗 Related Civil Fields</h3>
-            <ul>
-              <li><a href="/structural-engineering-mumbai">Structural Engineering</a></li>
-              <li><a href="/earthquake-resistant-structures-mumbai">Earthquake Resistant Structures</a></li>
-              <li><a href="/geotechnical-engineering-mumbai">Geotechnical Engineering</a></li>
-              <li><a href="/construction-management-mumbai">Construction Management</a></li>
-              <li><a href="/smart-city-planning-mumbai">Smart City Planning</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=civil">Civil Engineering</a>
+  </li>
+
+  <li><a href="/civil/structural-engineering">Structural Engineering</a></li>
+  <li><a href="/civil/bridgedesign-and-monitoring">Bridge Design & Monitoring</a></li>
+  <li><a href="/civil/earthquake-resistant">Earthquake Resistant Design</a></li>
+  <li><a href="/civil/steel-and-rcc-design">Steel & RCC Design</a></li>
+  <li><a href="/civil/tall-building-analysis">Tall Building Analysis</a></li>
+  <li><a href="/civil/geotechnical-engineering">Geotechnical Engineering</a></li>
+  <li><a href="/civil/soil-stabilization-techniques">Soil Stabilization Techniques</a></li>
+  <li><a href="/civil/foundation-design">Foundation Design</a></li>
+  <li><a href="/civil/transportation-engineering">Transportation Engineering</a></li>
+  <li><a href="/civil/smart-traffic-management">Smart Traffic Management</a></li>
+  <li><a href="/civil/pavement-analysis-design">Pavement Analysis & Design</a></li>
+  <li><a href="/civil/environmental-engineering">Environmental Engineering</a></li>
+  <li><a href="/civil/water-treatment-recycling">Water Treatment & Recycling</a></li>
+  <li><a href="/civil/construction-project">Construction Project Management</a></li>
+  <li><a href="/civil/remote-sensing-gis">Remote Sensing & GIS</a></li>
+
+</ul>
+
           </div>
           
         </div>

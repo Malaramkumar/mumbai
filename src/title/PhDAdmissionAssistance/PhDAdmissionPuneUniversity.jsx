@@ -1,5 +1,6 @@
 import React from 'react';
 import './PhdAdmissionPuneUniversity.scss';
+import LeftSidebar from '../../LeftSidebar';
  const faqs = [
   {
     question: "How do I select the right university for my research domain?",
@@ -34,6 +35,8 @@ const PhdPuneUniversity = () => {
     <div className="phd-pune-layout">
       {/* ================= LEFT SIDEBAR ================= */}
       <div className="left-box">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>🔑 SEO Keywords</h3>
         <ul>
           <li>PhD Admission 2025 in Pune University</li>

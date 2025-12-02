@@ -1,5 +1,6 @@
 import React from "react";
 import "./PhDAdmission2025Mumbai.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const universityList = [
   {
@@ -91,6 +92,8 @@ const PhDAdmission2025Mumbai = () => {
     <div className="consulting-layout">
       {/* Left Sidebar */}
       <div className="side-box left-box">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>📘 Explore Topics</h3>
         <ul>
           <li>PhD Admission Process</li>

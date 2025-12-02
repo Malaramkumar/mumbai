@@ -2,7 +2,8 @@ import React from "react";
 import "./UniversitySelectionMumbai.scss";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "How many universities in Mumbai offer PhD programs?",
@@ -25,16 +26,34 @@ const faqs = [
     answer: "No. We maintain neutrality and independence. Our support is advisory and based on academic fit, guide research, and successful track records—not commissions or affiliations."
   }
 ];
-
+const keywords = [
+  "Top 10 best university for PhD in Mumbai",
+  "Best university for PhD in Mumbai with low fees",
+  "PhD colleges in Mumbai fees structure",
+  "Best university for PhD in Mumbai for CS",
+  "Top 10 PhD colleges in Mumbai",
+  "PhD colleges for commerce/science",
+  "PhD in Mumbai University",
+];
 
 const UniversitySelectionMumbai = () => {
     const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
   return (
     <div className="university-selection-wrapper">
+       <SEO
+        title="University Selection for PhD in Mumbai | Expert Guidance & Shortlisting | Narpavi Research Institute"
+        description="Discover how to select the right university for PhD in Mumbai. Learn about research strengths, guide matching, funding opportunities, and admission criteria with expert assistance from Narpavi Research Institute."
+        url="/university-selection"
+        image="/assets/university-selection-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs} // ✅ Auto converts to FAQ schema
+      />
       {/* Left Sidebar */}
       <aside className="left-box">
-        <h3>Explore Sections</h3>
+        <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
+        {/* <h3>Explore Sections</h3>
         <ul>
           <li><a href="#why-matters">Why University Choice Matters</a></li>
           <li><a href="#steps-process">Step-by-Step Selection Process</a></li>
@@ -47,7 +66,7 @@ const UniversitySelectionMumbai = () => {
           <li><a href="#narpavi-help">How Narpavi Helps</a></li>
           <li><a href="#final-checklist">Final Checklist</a></li>
           <li><a href="#faqs">FAQs</a></li>
-        </ul>
+        </ul> */}
       </aside>
 
       {/* Main Content */}
@@ -147,6 +166,22 @@ const UniversitySelectionMumbai = () => {
             <li>Identifies project-based funding</li>
           </ul>
         </section>
+
+<section id="why-matters" className="highlight-why">
+  <h2>🎯 Selecting the Best University Enhances Your Research Opportunities</h2>
+  <p>
+    Choosing the right university is crucial. It influences your research scope,
+    funding, supervisor quality, access to labs, and post-PhD prospects.
+    Mumbai hosts top-tier universities like IIT Bombay, TISS, NMIMS, and more—but
+    choosing one isn’t just about rankings.
+  </p>
+  <div className="button-row">
+    <a href="/colleges" className="colleges-btn">
+      📚 View Top University in Mumbai
+    </a>
+  </div>
+</section>
+
 <section id="final-checklist">
   <h2>📌 Final Checklist Before Finalizing the University</h2>
   <ul className="checklist">
@@ -200,15 +235,7 @@ const UniversitySelectionMumbai = () => {
       {/* Right Sidebar */}
       <aside className="right-box">
         <h4>🔍 SEO Keywords</h4>
-        <ul>
-          <li>Top 10 best university for PhD in Mumbai</li>
-          <li>Best university for PhD in Mumbai with low fees</li>
-          <li>PhD colleges in Mumbai fees structure</li>
-          <li>Best university for PhD in Mumbai for CS</li>
-          <li>Top 10 PhD colleges in Mumbai</li>
-          <li>PhD colleges for commerce/science</li>
-          <li>PhD in Mumbai University</li>
-        </ul>
+        <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul>
       </aside>
     </div>
   );

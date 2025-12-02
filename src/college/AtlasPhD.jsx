@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./university.scss";
+import SEO from ".././assets/SEO"
 
 const faqs = [
   {
@@ -24,6 +25,18 @@ const faqs = [
     answer: "We match themes with ATLAS's research focus, assist with SoP, and provide timeline reminders for ARAT and interviews."
   }
 ];
+const keywords = [
+  "ATLAS SkillTech University PhD Admission",
+  "ATLAS PhD Eligibility",
+  "ATLAS ARAT Exam 2025",
+  "PhD in Mumbai",
+  "ATLAS SkillTech Research Programs",
+  "ATLAS PhD Fees",
+  "ATLAS Interdisciplinary PhD",
+  "ATLAS SkillTech Fellowship",
+  "ATLAS University PhD Process",
+  "Narpavi PhD Guidance ATLAS"
+];
 
 const AtlasPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +44,15 @@ const AtlasPhDPage = () => {
 
   return (
     <div className="phd-layout">
+         <SEO
+        title="ATLAS SkillTech University PhD Admission 2025 | Eligibility, ARAT Exam, Research & Fees"
+        description="Complete guide to ATLAS SkillTech University PhD admissions: eligibility, ARAT exam, interdisciplinary research, funding, documentation, fees, and timelines with Narpavi support."
+        url="/colleges/atlas-skilltech-university"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -204,14 +226,12 @@ const AtlasPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>ATLAS PhD</li>
-            <li>PhD in Mumbai</li>
-            <li>ARAT Exam</li>
-            <li>Interdisciplinary PhD</li>
-            <li>Narpavi Guidance</li>
-          </ul>
+         <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

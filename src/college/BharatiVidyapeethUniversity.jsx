@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Is VUPET compulsory for all applicants?",
@@ -24,6 +24,19 @@ const faqs = [
     answer: "CoEs in Nanotoxicology, Ayurved Genomics, and Legal-Policy domains; multiple DST/ICMR-funded projects active."
   }
 ];
+const keywords = [
+  "Bharati Vidyapeeth PhD Admission 2025",
+  "Bharati Vidyapeeth Deemed University PhD",
+  "BVU PhD Eligibility",
+  "VUPET Exam 2025",
+  "PhD in Pune",
+  "Bharati Vidyapeeth Research Programs",
+  "BVU PhD Fees",
+  "BVU Fellowships",
+  "VUPET Syllabus",
+  "Narpavi PhD Guidance BVU"
+];
+
 
 const BharatiVidyapeethPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +44,14 @@ const BharatiVidyapeethPhDPage = () => {
 
   return (
     <div className="phd-layout">
+      <SEO
+        title="Bharati Vidyapeeth PhD Admission  | VUPET, Eligibility, Fees & Research Guide"
+        description="Detailed guide for Bharati Vidyapeeth (Deemed University) PhD admission including VUPET exam pattern, eligibility, research facilities, funding, timelines, fees and Narpavi support."
+        url="/colleges/bharati-vidyapeeth-university"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -205,14 +226,12 @@ const BharatiVidyapeethPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD Pune</li>
-            <li>Bharati Vidyapeeth</li>
-            <li>VUPET</li>
-            <li>Doctoral Research</li>
-            <li>Fellowship</li>
-          </ul>
+       <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

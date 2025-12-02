@@ -1,5 +1,18 @@
 import "./MEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Design & Manufacturing Engineering Projects Mumbai",
+  "CAD CAM CAE Projects for B.Tech M.Tech Ph.D.",
+  "FEA Simulation Projects in Mumbai",
+  "CNC Machining Projects Mumbai",
+  "Additive Manufacturing Projects in Mechanical Engineering",
+  "Robotics and Automation Projects Mumbai",
+  "IEEE Aligned Design & Manufacturing Projects 2023 2024 2025",
+  "Smart Factory Projects for Mechanical Engineering",
+  "Topology Optimization Projects Mumbai",
+  "Design & Manufacturing Project Development Narpavi Research Institute"
+];
 const faqs = [
   {
     question: "What services does the Design & Manufacturing Engineering Project Development Center offer in Mumbai?",
@@ -26,22 +39,23 @@ const faqs = [
 const MEDesignManufacturingEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Design & Manufacturing Engineering Project Development Center in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute's Design & Manufacturing Engineering Project Development Center in Mumbai supports B.Tech, M.Tech, and Ph.D. students in developing IEEE-aligned (2023–2025) projects on CAD/CAM/CAE, FEA, additive manufacturing, CNC machining, robotics, and Industry 4.0 for automotive, aerospace, and consumer goods industries."
+          url="/mechanical/design-manufacturing"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Design & Manufacturing Engineering Projects Mumbai</li>
-              <li>CAD CAM CAE Projects for B.Tech M.Tech Ph.D.</li>
-              <li>FEA Simulation Projects in Mumbai</li>
-              <li>CNC Machining Projects Mumbai</li>
-              <li>Additive Manufacturing Projects in Mechanical Engineering</li>
-              <li>Robotics and Automation Projects Mumbai</li>
-              <li>IEEE Aligned Design & Manufacturing Projects 2023 2024 2025</li>
-              <li>Smart Factory Projects for Mechanical Engineering</li>
-              <li>Topology Optimization Projects Mumbai</li>
-              <li>Design & Manufacturing Project Development Narpavi Research Institute</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -225,12 +239,47 @@ const MEDesignManufacturingEngineeringProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/thermal-energy-engineering-project-development">Thermal & Energy Engineering Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-project-development">Smart Factory Systems Project Development</a></li>
-              <li><a href="/industrial-safety-ergonomics-project-development">Industrial Safety & Ergonomics Project Development</a></li>
-              <li><a href="/supply-chain-process-optimization-project-development">Supply Chain & Process Optimization Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/design-manufacturing">Design & Manufacturing</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/cadcam-mechanical-design">
+      CAD/CAM Mechanical Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/additive-manufacturing-3d-printing">
+      Additive Manufacturing (3D Printing)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/advanced-machining-manufacturing">
+      Advanced Machining & Manufacturing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/product-lifecycle-management-project">
+      Product Lifecycle Management
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/rapid-prototyping-reverse">
+      Rapid Prototyping & Reverse Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/design-manufacturing/smart-manufacturing-industry">
+      Smart Manufacturing & Industry 4.0
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

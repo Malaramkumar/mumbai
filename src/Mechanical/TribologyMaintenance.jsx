@@ -1,4 +1,18 @@
 import "./MEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Tribology Projects Mumbai",
+  "Maintenance Engineering Projects India",
+  "Wear Analysis Projects Mechanical Engineering",
+  "Nanolubricants Research Projects",
+  "Condition Monitoring Student Projects",
+  "AI Predictive Maintenance Projects",
+  "Surface Coating Tribology Projects",
+  "IEEE Tribology Projects 2023 2024 2025",
+  "Mechanical Maintenance Projects Mumbai",
+  "Narpavi Research Institute Tribology"
+];
 
 const faqs = [
   {
@@ -26,10 +40,19 @@ const faqs = [
 const METribologyMaintenanceProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Tribology & Maintenance Project Development in Mumbai"
+  description="IEEE-aligned Tribology & Maintenance project development for B.Tech, M.Tech, and Ph.D. students in Mumbai. Work on wear analysis, lubrication systems, nanolubricants, condition monitoring, predictive maintenance, digital twins, and surface coatings."
+  url="/mechanical/tribology-maintenance"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Tribology & Maintenance Projects Mumbai</li>
@@ -214,12 +237,49 @@ const METribologyMaintenanceProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/fluid-mechanics-hydraulics-project-development">Fluid Mechanics & Hydraulics Project Development</a></li>
-              <li><a href="/dynamics-vibration-engineering-project-development">Dynamics & Vibration Engineering Project Development</a></li>
-              <li><a href="/robotics-automation-engineering-project-development">Robotics & Automation Engineering Project Development</a></li>
-              <li><a href="/materials-metallurgy-engineering-project-development">Materials & Metallurgy Engineering Project Development</a></li>
-              <li><a href="/design-manufacturing-engineering-project-development">Design & Manufacturing Engineering Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/tribology-maintenance">
+      Tribology & Maintenance
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/wear-friction-analysis">
+      Wear & Friction Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/lubrication-technology-advanced">
+      Lubrication Technology (Advanced)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/bearing-design-condition">
+      Bearing Design & Condition
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/fault-diagnosis-rotating">
+      Fault Diagnosis (Rotating Machinery)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/tribology-in-micro-nano">
+      Tribology in Micro/Nano Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/predictive-preventive-maintenance">
+      Predictive & Preventive Maintenance
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

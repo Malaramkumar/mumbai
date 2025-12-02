@@ -2,7 +2,8 @@ import React from "react";
 import "./ReviewArticleWritingMumbai.scss";
 import  { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "Who can avail of this service?",
@@ -41,6 +42,17 @@ const faqs = [
   },
 ];
 
+const keywords = [
+  "Top review article writing services in Mumbai",
+  "Best review article writing services in Mumbai",
+  "Online review article writing services in Mumbai",
+  "Review article writing services in Mumbai for students",
+  "Free review article writing services in Mumbai",
+  "Research paper writing services in Mumbai",
+  "Research paper writing services in India",
+  "Research paper writing services near me",
+];
+
 const ReviewArticleWritingMumbai = () => {
      const [openIndex, setOpenIndex] = useState(null);
         
@@ -49,17 +61,23 @@ const ReviewArticleWritingMumbai = () => {
           };
   return (
     <div className="ReviewArticleMumbai">
+       <SEO
+        title="Review Article Writing Service in Mumbai | Professional Scholarly Review Writers"
+        description="Expert Review Article Writing Services in Mumbai for scholars and researchers. Scopus, Elsevier & UGC CARE aligned review article drafting, synthesis, formatting & plagiarism-free writing support."
+        url="/review-article-writing-services-in-mumbai"
+        image="/assets/review-article-writing-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+      
       <div className="ReviewArticleMumbai-left">
-        <h3>SEO Keywords</h3>
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
+      <h3> Keywords</h3>
         <ul>
-          <li>Top review article writing services in Mumbai</li>
-          <li>Best review article writing services in Mumbai</li>
-          <li>Online review article writing services in Mumbai</li>
-          <li>Review article writing services in Mumbai for students</li>
-          <li>Free review article writing services in Mumbai</li>
-          <li>Research paper writing services in Mumbai</li>
-          <li>Research paper writing services in India</li>
-          <li>Research paper writing services near me</li>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
         </ul>
       </div>
 

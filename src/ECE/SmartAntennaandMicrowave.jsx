@@ -1,6 +1,18 @@
 import React from 'react';
 import "./ECEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+const keywords = [
+  "Smart Antenna Projects Mumbai",
+  "Microwave Engineering Projects",
+  "HFSS CST ADS Antenna Design",
+  "Beamforming and Phased Arrays",
+  "Millimeter Wave Antenna Design",
+  "Metamaterial Antenna Projects",
+  "RF and Microwave Filter Design",
+  "MIMO Antenna Systems",
+  "5G 6G Antenna Development",
+  "IEEE Antenna and RF Projects"
+];
 const faqs = [
   {
     question: "Which EM and RF tools are supported for projects?",
@@ -32,11 +44,20 @@ const faqs = [
 const SmartAntennaMicrowaveMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+      <SEO
+  title="Smart Antenna & Microwave Engineering Projects in Mumbai | HFSS, CST, ADS, Beamforming, RF Filters, IEEE Research"
+  description="Smart Antenna and Microwave Engineering Project Development Center in Mumbai for B.Tech, M.Tech, and Ph.D. students. Work with HFSS, CST, ADS, MATLAB RF DSP, phased arrays, metamaterial antennas, RF filters, and IEEE-aligned antenna/RF research with chamber validation."
+  url="/ece/smart-antenna-microwave"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>ECE Smart Antenna Projects</li>
@@ -229,13 +250,30 @@ const SmartAntennaMicrowaveMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE fields</h3>
-            <ul>
-              <li><a href="/communication-systems-mumbai">Communication Systems</a></li>
-              <li><a href="/signal-processing-mumbai">Signal Processing</a></li>
-              <li><a href="/vlsi-design-mumbai">VLSI Design</a></li>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/wireless-security-mumbai">Wireless Security</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=ece">Electronics & Communication</a>
+  </li>
+
+  <li><a href="/ece/vlsi-design-verification">VLSI Design & Verification</a></li>
+  <li><a href="/ece/embedded-systems-iot">Embedded Systems & IoT</a></li>
+  <li><a href="/ece/communication-signal-processing">Communication & Signal Processing</a></li>
+  <li><a href="/ece/power-electronics-drives">Power Electronics & Drives</a></li>
+  <li><a href="/ece/renewable-energy-systems">Renewable Energy Systems</a></li>
+  <li><a href="/ece/embedded-iot">Embedded & IoT Applications</a></li>
+  <li><a href="/ece/wireless-communication-networking">Wireless Communication & Networking</a></li>
+  <li><a href="/ece/ai-ml-applications-electronics">AI & ML Applications in Electronics</a></li>
+  <li><a href="/ece/internet-of-medical-things">Internet of Medical Things (IoMT)</a></li>
+  <li><a href="/ece/smart-antenna-microwave">Smart Antenna & Microwave Engineering</a></li>
+  <li><a href="/ece/fpga-reconfigurable-systems">FPGA & Reconfigurable Systems</a></li>
+  <li><a href="/ece/cyber-physical-smart-systems">Cyber Physical & Smart Systems</a></li>
+  <li><a href="/ece/control-systems-mechatronics">Control Systems & Mechatronics</a></li>
+  <li><a href="/ece/satellite-communication-navigation">Satellite Communication & Navigation</a></li>
+  <li><a href="/ece/optical-communication-photonics">Optical Communication & Photonics</a></li>
+  <li><a href="/ece/robotics-industrial-automation-mumbai">Robotics & Industrial Automation</a></li>
+
+</ul>
+
           </div>
 
         </div>

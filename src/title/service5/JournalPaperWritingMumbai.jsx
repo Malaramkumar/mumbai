@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./JournalPaperWritingMumbai.scss";
-
+import SEO from "../../assets/SEO"; 
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "Who can use the Journal Paper Writing Service in Mumbai?",
@@ -34,6 +35,18 @@ const faqs = [
       "Yes. We provide end-to-end revision and resubmission support to ensure successful acceptance in your target journal."
   }
 ];
+const keywords = [
+  "Journal paper writing services in Mumbai",
+  "Scopus journal article writing Mumbai",
+  "Best journal paper writing services in Mumbai",
+  "Research paper writing services in India",
+  "Journal manuscript writing Mumbai",
+  "UGC CARE journal writing support",
+  "Academic journal writing services Mumbai",
+  "Journal paper writing for PhD Mumbai",
+  "Web of Science paper writing Mumbai",
+  "IEEE journal support India"
+];
 
 const JournalPaperWritingMumbai = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -44,22 +57,23 @@ const JournalPaperWritingMumbai = () => {
 
   return (
      <div className="JournalPaperWriting-page">
+           <SEO
+        title="Journal Paper Writing Service in Mumbai | Scopus, UGC CARE, Web of Science Support"
+        description="Professional Journal Paper Writing Service in Mumbai for PhD scholars, students, and researchers. Plagiarism-free, reviewer-ready manuscripts for Scopus, UGC CARE, Elsevier, IEEE, and Web of Science journals."
+        url="/journal-paper-writing-service-in-mumbai"
+        image="/assets/journal-paper-writing-service-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="JournalPaperWriting-grid">
       {/* Left Sidebar - SEO Keywords */}
-      <div className="JournalPaperWriting-left">
-        <h3>SEO Keywords</h3>
-        <ul>
-          <li>Top journal paper writing services in Mumbai</li>
-          <li>Free journal paper writing services in Mumbai</li>
-          <li>Best journal paper writing services in Mumbai</li>
-          <li>Journal paper writing services in Mumbai for students</li>
-          <li>Research paper writing services in India</li>
-          <li>Journal paper writing services in Mumbai contact number</li>
-          <li>Research paper writing services near me</li>
-          <li>Cheap research paper writing services in India</li>
-          <li>Top journal paper writing services in Mumbai for students</li>
-        </ul>
-      </div>
+        <div className="JournalPaperWriting-left">
+           <a href="/home-page" class="buttonhp">Home Page</a>
+          <LeftSidebar/>
+          <h3>SEO Keywords</h3>
+          <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul>
+        </div>
+       
 
       {/* Center Content */}
       <div className="JournalPaperWriting-center">

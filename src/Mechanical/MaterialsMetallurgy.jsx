@@ -1,4 +1,23 @@
 import "./MEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "materials engineering projects mumbai",
+  "metallurgy engineering ieee projects",
+  "advanced alloys project development",
+  "nanomaterials and coatings projects",
+  "additive manufacturing metal projects",
+  "corrosion engineering mumbai",
+  "computational materials science projects",
+  "metal testing and characterization projects",
+  "btech metallurgy projects",
+  "mtech materials engineering projects",
+  "phd metallurgy research mumbai",
+  "materials research narpavi institute",
+  "lamps materials simulation projects",
+  "ansys metallurgy projects",
+  "high entropy alloys research"
+];
 
 const faqs = [
   {
@@ -26,10 +45,19 @@ const faqs = [
 const MEMaterialsMetallurgyEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Materials & Metallurgy Engineering Project Development in Mumbai | B.Tech, M.Tech, Ph.D."
+  description="IEEE-aligned Materials & Metallurgy project development in Mumbai. Includes advanced alloys, corrosion science, nanomaterials, additive manufacturing, computational materials science, and metallurgical analysis for aerospace, automotive, marine, and energy industries."
+  url="/mechanical/materials-metallurgy"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Materials & Metallurgy Engineering Projects Mumbai</li>
@@ -219,13 +247,48 @@ const MEMaterialsMetallurgyEngineeringProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/design-manufacturing-engineering-project-development">Design & Manufacturing Engineering Project Development</a></li>
-              <li><a href="/thermal-energy-engineering-project-development">Thermal & Energy Engineering Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-project-development">Smart Factory Systems Project Development</a></li>
-              <li><a href="/industrial-safety-ergonomics-project-development">Industrial Safety & Ergonomics Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/materials-metallurgy">Materials & Metallurgy</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/advanced-composite-materials">
+      Advanced Composite Materials
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/nanomaterials-for-mechanical">
+      Nanomaterials for Mechanical
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/welding-casting-joining">
+      Welding, Casting & Joining
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/corrosion-surface-engineering">
+      Corrosion & Surface Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/material-testing-non-destructive">
+      Material Testing & Non-Destructive
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/smart-intelligent-materials">
+      Smart & Intelligent Materials
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

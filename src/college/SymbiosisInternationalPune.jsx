@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO";
 const faqs = [
   {
     question: "Is the Symbiosis PhD entrance mandatory?",
@@ -24,13 +24,31 @@ const faqs = [
     answer: "Applications: April–May | PET: June | Interviews: July"
   }
 ];
-
+const keywords = [
+  "SIU PhD Admission",
+  "Symbiosis PhD Eligibility",
+  "PET SIU Exam ",
+  "PhD in Pune",
+  "Symbiosis Research Programs",
+  "SIU Fellowship",
+  "PhD in Management Pune",
+  "Symbiosis Entrance Test",
+  "SIU PhD Fees",
+  "Symbiosis Research Collaboration"
+];
 const SiuPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+      <SEO
+        title="Symbiosis (SIU) PhD Admission  | PET Exam, Eligibility, Fees & Research Guide"
+        description="Symbiosis International University (SIU) PhD Admissions  – PET exam details, eligibility, fees, fellowships, research areas, global collaborations, and complete admission timeline."
+        url="/colleges/siu-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -174,16 +192,12 @@ const SiuPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-        <div className="tags">
-          <ul>
-            <li>SIU Pune</li>
-            <li>PhD in Management</li>
-            <li>Health Sciences Research</li>
-            <li>Symbiosis PET</li>
-            <li>UGC-CSIR Fellowships</li>
-          </ul>
-        </div>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>     
       </aside>
     </div>
   );

@@ -2,7 +2,8 @@ import React from "react";
 import "./ReviewPaperWritingMumbai.scss";
 import  { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "Who can avail of this service?",
@@ -35,6 +36,18 @@ const faqs = [
       "Yes. We provide reviewer response drafting and revision support until your paper achieves final acceptance in the target journal.",
   },
 ];
+const keywords = [
+  "Research Paper writing services in Mumbai",
+  "Research paper writing services in India",
+  "Cheap research paper writing services in India",
+  "Best research paper writing services in India",
+  "Research paper writing services near me",
+  "Journal paper writing services in India",
+  "Research paper writing services Delhi",
+  "Review paper writing support in Mumbai for students",
+  "Best review paper writing support in Mumbai",
+  "Free review paper writing support in Mumbai",
+];
 
 const ReviewPaperWritingMumbai = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -45,19 +58,22 @@ const ReviewPaperWritingMumbai = () => {
 
   return (
     <div className="ReviewPaperMumbai">
+        <SEO
+        title="Review Paper Writing Service in Mumbai | Professional Review Article Writers"
+        description="Get the best Review Paper Writing Service in Mumbai. Expert assistance for Scopus, Elsevier, Springer, and UGC CARE journals. Plagiarism-free review papers with end-to-end support."
+        url="/review-paper-writing-service-in-mumbai"
+        image="/assets/review-paper-writing-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="ReviewPaperMumbai-left">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>SEO Keywords</h3>
         <ul>
-          <li>Research Paper writing services in Mumbai</li>
-          <li>Research paper writing services in India</li>
-          <li>Cheap research paper writing services in India</li>
-          <li>Best research paper writing services in India</li>
-          <li>Research paper writing services near me</li>
-          <li>Journal paper writing services in India</li>
-          <li>Research paper writing services Delhi</li>
-          <li>Review paper writing support in Mumbai for students</li>
-          <li>Best review paper writing support in Mumbai</li>
-          <li>Free review paper writing support in Mumbai</li>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
         </ul>
       </div>
 

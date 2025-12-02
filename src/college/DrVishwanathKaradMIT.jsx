@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "What are the eligibility criteria for MIT-WPU PhD?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Applications open in May, WPU-RAT is conducted in June, and results are announced by July."
   }
 ];
+const keywords = [
+  "MIT-WPU PhD Admission 2025",
+  "MIT World Peace University PhD",
+  "WPU-RAT Exam Details",
+  "PhD in Pune Universities",
+  "Peace Studies PhD India",
+  "Engineering PhD Pune",
+  "MIT-WPU Doctoral Fellowship",
+  "MIT-WPU Research Areas",
+  "PhD in Renewable Energy",
+  "MIT-WPU Robotics Research"
+];
 
 const MITWPUPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,14 @@ const MITWPUPhDPage = () => {
 
   return (
     <div className="phd-layout">
+         <SEO
+        title="MIT-WPU PhD Admission 2025 | Eligibility, WPU-RAT, Research Areas & Fellowships"
+        description="Complete guide for MIT World Peace University PhD admissions: eligibility, WPU-RAT exam, research strengths, funding, timelines, and Narpavi’s PhD guidance support."
+        url="/colleges/mit-world-peace-university"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -187,14 +207,12 @@ const MITWPUPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-                  <ul>
-            <li>PhD Pune</li>
-            <li>MIT-WPU</li>
-            <li>Peace Studies</li>
-            <li>Engineering Research</li>
-            <li>UGC NET</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

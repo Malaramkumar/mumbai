@@ -1,4 +1,5 @@
 import React from "react";
+import LeftSidebar from "../../LeftSidebar";
 //import "./PhDAdmissionMumbaiUniversity.scss";
 
 const services = [
@@ -55,6 +56,8 @@ const PhDAdmissionMU2025 = () => {
     <div className="consulting-layout">
       {/* Left Sidebar */}
       <div className="left-box">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>Services We Offer</h3>
         <ul>
           {services.map((s, i) => (

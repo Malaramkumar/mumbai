@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO";
 const faqs = [
   {
     question: "What are VU’s core PhD domains?",
@@ -24,13 +24,31 @@ const faqs = [
     answer: "Applications open March–May. Entrance in June. Final admissions by July."
   }
 ];
-
+const keywords = [
+  "Vishwakarma University PhD Admission ",
+  "VU Pune PhD Eligibility",
+  "VU-PET Entrance Test",
+  "PhD in Design Pune",
+  "Engineering PhD Pune",
+  "VU PhD Fellowship",
+  "Sound Engineering PhD",
+  "Human Centered Design PhD",
+  "VU Research Facilities",
+  "Vishwakarma University Doctoral Program"
+];
 const VishwakarmaPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+      <SEO
+        title="Vishwakarma University PhD Admission  | Eligibility, VU-PET, Fellowships & Research Areas"
+        description="Vishwakarma University (VU) Pune PhD Admission Guide – PET entrance, eligibility, research domains, design portfolios, fellowships, fees, and complete admission timeline."
+        url="/colleges/vishwakarma-university-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -175,14 +193,12 @@ const VishwakarmaPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>VU Pune PhD</li>
-            <li>Design Research</li>
-            <li>Sound Engineering PhD</li>
-            <li>Patent-Focused Research</li>
-            <li>Narpavi @ Vishwakarma</li>
-          </ul>
+       <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
   
       </aside>
     </div>

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ReviewPaperPublication.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 // Your original sections data (unchanged)
 const sections = [
@@ -208,6 +209,8 @@ export default function ReviewPaperPublicationServices() {
     <div className="rpps-layout">
       {/* Animated Left Sidebar - Table of Contents */}
       <aside className="rpps-aside rpps-aside--left fade-in-left" aria-label="Page navigation">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <div className="rpps-sidebar-header">
           <h2 className="rpps-sidebar-title">On This Page</h2>
           <div className="rpps-section-count">
@@ -357,7 +360,7 @@ export default function ReviewPaperPublicationServices() {
 
           {/* Conclusion Section */}
           <section id="section-conclusion" className="rpps-section fade-in-slide" aria-labelledby="h-conclusion">
-            <h2 id="h-conclusion" className="rpps-section-title">Conclusion</h2>
+            <h2 id="h-conclusion" className="rpps-section-title"></h2>
             <div className="rpps-conclusion-content">
               <p className="rpps-paragraph rpps-conclusion-highlight">
                 Publishing a review paper reflects scholarly maturity and mastery over a field of study. With our Review Paper Publication Services in Mumbai, Narpavi Research Institute empowers researchers to publish impactful, well-structured, and globally recognized review papers.

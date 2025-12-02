@@ -1,5 +1,19 @@
 import React from "react";
 import "./EEEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Power System Protection Mumbai",
+  "Relay Coordination Simulation",
+  "Fault Detection and Isolation",
+  "Arc Flash Assessment",
+  "IEC 61850 Substation Automation",
+  "PMU Synchrophasor Analytics",
+  "MATLAB ETAP DIgSILENT Projects",
+  "PSCAD EMT Modeling",
+  "Protection for Coastal Substations",
+  "IEEE Power Engineering Projects 2025"
+];
 
 const faqs = [
   {
@@ -28,32 +42,24 @@ const faqs = [
       "Yes—prototypes with embedded relays, breaker trip logic, and IEC 61850‑style messaging can be evaluated with HIL benches and SCADA emulation for end‑to‑end validation."
   }
 ];
-
-const JsonLd = ({ data }) => (
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-  />
-);
-
+ 
 const PowerProtectionMumbaiUtilities = () => {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.question,
-      acceptedAnswer: { "@type": "Answer", text: f.answer }
-    }))
-  };
-
+ 
   return (
     <div className="EEEProjectDevelopmentCenter">
+       <SEO
+        title="Power System Protection Projects in Mumbai | Relay Coordination, Arc Flash, IEC 61850, IEEE 2023–2025"
+        description="Power System Protection and Relay Coordination projects in Mumbai for B.Tech, M.Tech, and Ph.D. students. Focus areas include short-circuit analysis, arc-flash mitigation, IEC 61850 substation automation, and PMU-based fault analytics using ETAP, MATLAB, PSCAD, and DIgSILENT."
+        url="/eee/power-system-protection"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="EEEProjectDevelopmentCenter-main">
         <div className="EEEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="EEEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Power System Protection Mumbai</li>
@@ -216,20 +222,35 @@ const PowerProtectionMumbaiUtilities = () => {
                   </details>
                 ))}
               </div>
-              <JsonLd data={faqSchema} />
+      
             </section>
           </div>
 
           {/* Right Column – Related Fields */}
           <div className="EEEProjectDevelopmentCenter-right">
             <h3>🔗 Related EEE Fields</h3>
-            <ul>
-              <li><a href="/power-systems-mumbai">Power System Optimization</a></li>
-              <li><a href="/protection-systems-mumbai">Protection & SCADA Systems</a></li>
-              <li><a href="/smart-grid-communication-mumbai">Smart Grid Communication</a></li>
-              <li><a href="/renewable-energy-mumbai">Renewable Energy Systems</a></li>
-              <li><a href="/hvdc-coastal-mumbai">HVDC & Coastal Transmission</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=eee">Electrical & Electronics</a>
+  </li>
+
+  <li><a href="/eee/smart-grid-microgrid">Smart Grid & Microgrid</a></li>
+  <li><a href="/eee/ev-charging-infrastructure-v2g">EV Charging Infrastructure & V2G</a></li>
+  <li><a href="/eee/power-system-stability">Power System Stability</a></li>
+  <li><a href="/eee/load-forecasting-demand-response">Load Forecasting & Demand Response</a></li>
+  <li><a href="/eee/high-voltage-dc">High Voltage DC Systems</a></li>
+  <li><a href="/eee/power-system-protection">Power System Protection</a></li>
+  <li><a href="/eee/power-electronics-renewables">Power Electronics for Renewables</a></li>
+  <li><a href="/eee/embedded-iot-energy">Embedded IoT for Energy Systems</a></li>
+  <li><a href="/eee/smart-lighting-building">Smart Lighting & Building Automation</a></li>
+  <li><a href="/eee/condition-monitoring-diagnosis">Condition Monitoring & Diagnosis</a></li>
+  <li><a href="/eee/electric-machines-coastal-marine">Electric Machines for Coastal & Marine</a></li>
+  <li><a href="/eee/power-electronics-ev-motor-drives">Power Electronics & EV Motor Drives</a></li>
+  <li><a href="/eee/wireless-power-transfer">Wireless Power Transfer</a></li>
+  <li><a href="/eee/artificial-intelligence-power">AI in Power Systems</a></li>
+  <li><a href="/eee/smart-metering-demand-response">Smart Metering & Demand Response</a></li>
+
+</ul>
           </div>
 
         </div>

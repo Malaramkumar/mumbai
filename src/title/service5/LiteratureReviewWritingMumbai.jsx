@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./LiteratureReviewWritingMumbai.scss";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "Who can avail of this service?",
@@ -39,6 +40,18 @@ const faqs = [
       "Yes. We use professional tools like Mendeley, EndNote, and Zotero for citation accuracy."
   }
 ];
+const keywords = [
+  "Literature Review Writing Services in Mumbai",
+  "Best Literature Review Writing Support in Mumbai",
+  "PhD Literature Review Services Mumbai",
+  "Research Paper Literature Review Assistance",
+  "Academic Writing Services in Mumbai",
+  "Scopus Journal Literature Review Writing",
+  "Thesis Literature Review Services Mumbai",
+  "Dissertation Literature Review Writing India",
+  "Professional Literature Review Help Mumbai"
+];
+
 
 const LiteratureReviewWritingMumbai = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -49,20 +62,25 @@ const LiteratureReviewWritingMumbai = () => {
 
   return (
     <div className="LiteratureReviewWriting-page">
+       <SEO
+        title="Literature Review Writing Services in Mumbai | Thesis & Research Review Experts"
+        description="Professional Literature Review Writing Services in Mumbai for PhD, M.Phil, and research scholars. Scopus-aligned, plagiarism-free, critically analyzed reviews with expert support."
+        url="/literature-review-writing-services-in-mumbai"
+        image="/assets/literature-review-writing-services-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="LiteratureReviewWriting-grid">
         {/* Left Sidebar - SEO Keywords */}
         <div className="LiteratureReviewWriting-left">
-          <h3>SEO Keywords</h3>
+           <a href="/home-page" class="buttonhp">Home Page</a>
+          <LeftSidebar/>
+          <h3> Keywords</h3>
           <ul>
-            <li>Literature Review Writing Services in Mumbai</li>
-            <li>Best Literature Review Writing Support in Mumbai</li>
-            <li>Professional Literature Review Help Mumbai</li>
-            <li>PhD Literature Review Writing Services Mumbai</li>
-            <li>Research Paper Literature Review Assistance</li>
-            <li>Academic Writing Services in Mumbai</li>
-            <li>Scopus Journal Literature Review Writing</li>
-            <li>Thesis Literature Review Services Mumbai</li>
-            <li>Dissertation Literature Review Writing India</li>
+            {keywords.map((k) => (
+              <li key={k}>{k}</li>
+            ))}
           </ul>
         </div>
 

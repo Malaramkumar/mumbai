@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from "../assets/SEO";
 const faqs = [
   {
     question: "What is the eligibility for PhD at ADYPU?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Yes. ADYPU has a Global Mentor Program with Coventry University (UK) and HTW Berlin (Germany)."
   }
 ];
+const keywords = [
+  "ADYPU PhD Admission 2025",
+  "Ajeenkya DY Patil University PhD",
+  "ADYPU PhD Eligibility",
+  "ADYPU PhD Entrance Exam PET",
+  "PhD in Pune Universities",
+  "ADYPU PhD Fees 2025",
+  "ADYPU Research Programs",
+  "ADYPU PhD Fellowship",
+  "ADYPU PET Syllabus",
+  "PhD Admission Pune"
+];
 
 const AdypuPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,15 @@ const AdypuPhDPage = () => {
 
   return (
     <div className="phd-layout">
+    <SEO
+    title="ADYPU PhD Admission 2025 | Eligibility, PET Exam, Research & Fees"
+    description="Complete guide for Ajeenkya D. Y. Patil University PhD admission including eligibility, PET exam details, fees, research labs, collaborations, and fellowships."
+    url="/colleges/ajeenkya-d-y-patil-university-pune"
+    image="/assets/university-default-banner.jpg"
+    keywords={keywords}
+    faqs={faqs}
+    />
+
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -224,16 +245,10 @@ const AdypuPhDPage = () => {
         </section>
       </main>
 
-      {/* Right Sidebar */}
+    {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD Pune</li>
-            <li>ADYPU</li>
-            <li>Research</li>
-            <li>Innovation</li>
-            <li>Design Doctorate</li>
-          </ul>
+         <h3> Keywords</h3>
+                <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul>
       </aside>
     </div>
   );

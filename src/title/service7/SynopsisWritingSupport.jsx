@@ -1,5 +1,6 @@
 import React from "react";
 import "./SynopsisWritingSupport.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const navItems = [
   { id: "intro", label: "Overview" },
@@ -69,7 +70,10 @@ export default function SynopsisMumbai() {
       <div className="sm-layout">
         {/* Left Sidebar */}
         <aside className="sm-sidebar sm-sidebar--left">
+          
           <div className="sm-card sm-card--nav">
+             <a href="/home-page" class="buttonhp">Home Page</a>
+            <LeftSidebar/>
             <h3 className="sm-card__title">Quick Navigation</h3>
             <nav className="sm-nav">
               <ul>
@@ -82,18 +86,6 @@ export default function SynopsisMumbai() {
                 ))}
               </ul>
             </nav>
-          </div>
-
-          <div className="sm-card">
-            <h4 className="sm-card__title">Why Choose Us</h4>
-            <ul className="sm-list">
-              <li>UGC & University-compliant formats</li>
-              <li>Turnitin-checked, plagiarism  10%</li>
-              <li>Domain expert writers</li>
-              <li>On-time delivery</li>
-              <li>Unlimited revisions till approval</li>
-            </ul>
-            <a className="btn btn-secondary" href="#support">Request Consultation</a>
           </div>
         </aside>
 
@@ -277,7 +269,7 @@ export default function SynopsisMumbai() {
           </section>
 
           <section id="conclusion" className="sm-section">
-            <h2>Conclusion</h2>
+         
             <p>
               A well-written synopsis is the gateway to a successful PhD journey. With Narpavi Research Institute’s Synopsis Writing Support in Mumbai, you can expect academic precision, originality, and adherence to institutional standards—ensuring impactful, approval-ready submissions.
             </p>
@@ -289,22 +281,7 @@ export default function SynopsisMumbai() {
           <div className="sm-card">
             <h4 className="sm-card__title">Free Consultation</h4>
             <p>Get a 15-minute call with our research mentor to discuss topics, timelines, and formats.</p>
-            <a className="btn btn-primary" href="mailto:research@narpavi.com">Book a Slot</a>
-          </div>
-
-          <div className="sm-card sm-card--muted">
-            <h4 className="sm-card__title">Contact</h4>
-            <ul className="sm-list">
-              <li>Email: research@narpavi.com</li>
-              <li>Phone: +91 90000 00000</li>
-              <li>Mumbai, Pune & Maharashtra</li>
-            </ul>
-          </div>
-
-          <div className="sm-card sm-card--badges">
-            <span className="sm-badge sm-badge--green">Turnitin Checked</span>
-            <span className="sm-badge sm-badge--blue">UGC Compliant</span>
-            <span className="sm-badge sm-badge--orange">On-time Delivery</span>
+            <a className="btn btn-primary" href="mailto:narpavitech@gmail.com">Book a Slot</a>
           </div>
         </aside>
       </div>

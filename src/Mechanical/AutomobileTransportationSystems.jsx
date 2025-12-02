@@ -1,11 +1,23 @@
 import "./MEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO";
+import LeftSidebar from ".././LeftSidebar"  
+const keywords = [
+  "Automobile and Transportation Systems Projects Mumbai",
+  "EV Projects Mechanical Engineering",
+  "Hybrid Vehicle Projects IEEE 2023 2024 2025",
+  "Autonomous Vehicle Projects Mumbai",
+  "Intelligent Transportation Systems Projects",
+  "Vehicle Dynamics Projects",
+  "Emission Reduction Projects Automobile Engineering",
+  "Narpavi Research Institute Automobile Projects"
+];
 
 const faqs = [
   {
     question: "What services does the Automobile & Transportation Systems Project Development Center offer in Mumbai?",
     answer: "Narpavi Research Institute’s Automobile & Transportation Systems Project Development Center in Mumbai supports B.Tech, M.Tech, and Ph.D. students in developing IEEE-aligned (2023–2025) projects on electric & hybrid vehicles, autonomous driving, vehicle dynamics, intelligent transportation systems, and emission control for industries like automotive, public transport, and logistics."
   },
-  {
+  { 
     question: "What types of Automobile & Transportation Systems projects are supported?",
     answer: "We support B.Tech projects (suspension design, EV prototypes), M.Tech projects (battery management, autonomous navigation), and Ph.D. projects (AI-driven connected vehicles, digital twins) for applications in automotive, metro, and smart mobility."
   },
@@ -26,20 +38,23 @@ const faqs = [
 const MEAutomobileTransportationSystemsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Automobile & Transportation Systems – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Automobile & Transportation Systems Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on electric & hybrid vehicles, autonomous driving, vehicle dynamics, intelligent transportation systems, and emission control."
+        url="/mechanical/automobile-transportation-systems" 
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Automobile and Transportation Systems Projects Mumbai</li>
-              <li>EV Projects Mechanical Engineering</li>
-              <li>Hybrid Vehicle Projects IEEE 2023 2024 2025</li>
-              <li>Autonomous Vehicle Projects Mumbai</li>
-              <li>Intelligent Transportation Systems Projects</li>
-              <li>Vehicle Dynamics Projects</li>
-              <li>Emission Reduction Projects Automobile Engineering</li>
-              <li>Narpavi Research Institute Automobile Projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -212,12 +227,49 @@ const MEAutomobileTransportationSystemsProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/industrial-production-engineering-project-development">Industrial & Production Engineering Project Development</a></li>
-              <li><a href="/tribology-maintenance-project-development">Tribology & Maintenance Project Development</a></li>
-              <li><a href="/fluid-mechanics-hydraulics-project-development">Fluid Mechanics & Hydraulics Project Development</a></li>
-              <li><a href="/dynamics-vibration-engineering-project-development">Dynamics & Vibration Engineering Project Development</a></li>
-              <li><a href="/robotics-automation-engineering-project-development">Robotics & Automation Engineering Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/automobile-transportation-systems">
+      Automobile & Transportation Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design">
+      Electric & Hybrid Vehicle Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety">
+      Vehicle Dynamics & Crash Safety
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/internal-combustion-engine">
+      Internal Combustion Engines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel">
+      Automotive Aerodynamics & Fuel Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions">
+      Advanced Vehicle Suspensions
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/intelligent-transportation">
+      Intelligent Transportation Systems
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

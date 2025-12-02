@@ -8,37 +8,37 @@ import {
   University,
 } from "lucide-react";
 import "./Services2.scss";
-import bgImage from "../images/AdmissionAssistance4.png"
+import bgImage from "../images/services2_bg.png"
 
 const services = [
   {
     title: "PhD Guide Selection",
     desc: "Find the right supervisor to align with your research journey.",
-    link: "/manageengine/phd-guide-selection-in-mumbai",
+    link: "/phd-guide-selection-in-mumbai",
     icon: <GraduationCap size={36} />,
   },
   {
     title: "Topic Selection Support",
     desc: "Nail your research direction with expert topic guidance.",
-    link: "/manageengine/phd-topic-selection-support-in-mumbai",
+    link: "/phd-topic-selection-support-in-mumbai",
     icon: <ListChecks size={36} />,
   },
   {
     title: "Application Help",
     desc: "Craft standout SOPs, CVs, and university applications.",
-    link: "/manageengine/phd-application-help-in-mumbai",
+    link: "/phd-application-help-in-mumbai",
     icon: <FileText size={36} />,
   },
   {
     title: "Proposal Writing",
     desc: "Structure your PhD research proposal with expert input.",
-    link: "/manageengine/phd-research-proposal-writing-services-in-mumbai",
+    link: "/phd-research-proposal-writing-services-in-mumbai",
     icon: <PencilLine size={36} />,
   },
   {
     title: "University Selection",
     desc: "Choose the right university for your research goals.",
-    link: "/manageengine/university-selection",
+    link: "/university-selection",
     icon: <University size={36} />,
   },
 ];
@@ -62,7 +62,7 @@ const ManageEngineSection = () => {
   <section className="services2-main">
  <div
               className="services1-dark-section"
-              style={{ backgroundImage: `url(${bgImage})` }}>
+              style={{ backgroundImage: `url(${bgImage} )` }}>
   <section className="services2-section" >
    
 
@@ -72,7 +72,7 @@ const ManageEngineSection = () => {
         <h1>PhD Admission Assistance in Mumbai </h1>
         <p>At Narpavi Research Institute, our specialized PhD admission assistance services in Mumbai are tailored to help aspiring scholars make informed and strategic choices at the outset of their research journey. We provide comprehensive support in identifying suitable research topics aligned with current academic and industry trends, connecting candidates with qualified research guides, and preparing strong PhD applications. Our expert team also assists in crafting impactful research proposals that meet the specific requirements of universities and funding bodies. With in-depth knowledge of leading institutions across Mumbai, we guide candidates in selecting the right university based on their research interests, academic goals, and faculty expertise, ensuring a smooth and competitive admission process.</p>
         
-        <button onClick={() => navigate("/phd-admission-assistance-for-mumbai")}>
+        <button className="btn2" onClick={() => navigate("/phd-admission-assistance-for-mumbai")}>
           Explore Admission Help
         </button>
       </div>

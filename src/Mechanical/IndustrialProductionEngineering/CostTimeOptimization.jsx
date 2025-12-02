@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "cost optimization projects mumbai",
+  "time optimization manufacturing ieee",
+  "lean manufacturing cycle time reduction",
+  "value stream mapping vsm projects",
+  "digital twin manufacturing optimization",
+  "ai based production scheduling",
+  "smart factory time cost optimization",
+  "btech manufacturing optimization projects",
+  "mtech smart factory projects",
+  "phd production efficiency research mumbai",
+  "industry 4.0 manufacturing optimization",
+  "matlab production simulation projects",
+  "arena simulation manufacturing",
+  "iot based workflow optimization",
+  "narpavi research institute manufacturing projects"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MECostTimeOptimizationInManufacturingProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Cost & Time Optimization in Manufacturing Project Development in Mumbai | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Cost & Time Optimization in Manufacturing project development in Mumbai. Work on lean manufacturing, VSM, digital twin modeling, AI-based scheduling, simulation, automation, and industry 4.0 smart factory optimization."
+        url="/mechanical/industrial-production-engineering/cost-time-optimization"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -225,13 +251,38 @@ const MECostTimeOptimizationInManufacturingProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/smart-factory-systems-industry-40-project-development">Smart Factory Systems (Industry 4.0) Project Development</a></li>
-              <li><a href="/supply-chain-process-optimization-project-development">Supply Chain & Process Optimization Project Development</a></li>
-              <li><a href="/lean-manufacturing-techniques-project-development">Lean Manufacturing Techniques Project Development</a></li>
-              <li><a href="/predictive-preventive-maintenance-engineering-project-development">Predictive & Preventive Maintenance Engineering Project Development</a></li>
-              <li><a href="/tribology-micro-nano-systems-project-development">Tribology in Micro & Nano Systems Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/industrial-production-engineering">
+      Industrial & Production Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/lean-manufacturing-techniques">
+      Lean Manufacturing Techniques
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/supply-chain-process">
+      Supply Chain Process
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/smart-factory-systems">
+      Smart Factory Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/cost-time-optimization">
+      Cost & Time Optimization
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

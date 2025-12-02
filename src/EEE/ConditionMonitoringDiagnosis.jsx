@@ -1,5 +1,19 @@
 import React from 'react';
 import "./EEEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
+const keywords = [
+  "Condition Monitoring Projects Mumbai",
+  "Fault Diagnosis ECE Projects",
+  "Predictive Maintenance AI",
+  "Vibration Analysis DSP",
+  "Industrial IoT Condition Monitoring",
+  "Electrical Signature Analysis",
+  "Raspberry Pi ESP32 IIoT",
+  "Edge AI Predictive Models",
+  "Digital Twin Maintenance",
+  "IEEE Predictive Maintenance 2023 2025"
+];
 
 const faqs = [
   {
@@ -32,11 +46,20 @@ const faqs = [
 const ConditionMonitoringFaultDiagnosisMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+      <SEO
+  title="Condition Monitoring & Fault Diagnosis Projects in Mumbai | Predictive Maintenance, Vibration Analysis, Edge AI, IIoT, IEEE 2023–2025"
+  description="Condition Monitoring & Fault Diagnosis Project Center in Mumbai—covering vibration analysis, electrical signature detection, sensor fusion, IoT condition monitoring, edge AI, Raspberry Pi/ESP32 systems, MATLAB/LabVIEW DSP, and IEEE-aligned predictive maintenance research."
+  url="/eee/condition-monitoring-diagnosis"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>ECE Condition Monitoring</li>
@@ -222,12 +245,27 @@ const ConditionMonitoringFaultDiagnosisMumbai = () => {
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE fields</h3>
             <ul>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/signal-processing-mumbai">Signal Processing</a></li>
-              <li><a href="/communication-systems-mumbai">Communication Systems</a></li>
-              <li><a href="/power-electronics-mumbai">Power Electronics</a></li>
-              <li><a href="/cyber-physical-systems-mumbai">Cyber‑Physical Systems</a></li>
-            </ul>
+  <li>
+    <a href="/departments?dept=eee">Electrical & Electronics</a>
+  </li>
+
+  <li><a href="/eee/smart-grid-microgrid">Smart Grid & Microgrid</a></li>
+  <li><a href="/eee/ev-charging-infrastructure-v2g">EV Charging Infrastructure & V2G</a></li>
+  <li><a href="/eee/power-system-stability">Power System Stability</a></li>
+  <li><a href="/eee/load-forecasting-demand-response">Load Forecasting & Demand Response</a></li>
+  <li><a href="/eee/high-voltage-dc">High Voltage DC Systems</a></li>
+  <li><a href="/eee/power-system-protection">Power System Protection</a></li>
+  <li><a href="/eee/power-electronics-renewables">Power Electronics for Renewables</a></li>
+  <li><a href="/eee/embedded-iot-energy">Embedded IoT for Energy Systems</a></li>
+  <li><a href="/eee/smart-lighting-building">Smart Lighting & Building Automation</a></li>
+  <li><a href="/eee/condition-monitoring-diagnosis">Condition Monitoring & Diagnosis</a></li>
+  <li><a href="/eee/electric-machines-coastal-marine">Electric Machines for Coastal & Marine</a></li>
+  <li><a href="/eee/power-electronics-ev-motor-drives">Power Electronics & EV Motor Drives</a></li>
+  <li><a href="/eee/wireless-power-transfer">Wireless Power Transfer</a></li>
+  <li><a href="/eee/artificial-intelligence-power">AI in Power Systems</a></li>
+  <li><a href="/eee/smart-metering-demand-response">Smart Metering & Demand Response</a></li>
+
+</ul>
           </div>
 
         </div>

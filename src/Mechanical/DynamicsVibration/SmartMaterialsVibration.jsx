@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "smart materials vibration control mumbai",
+  "piezoelectric damping ieee projects",
+  "shape memory alloy sma vibration control",
+  "magnetorheological mr fluid suspension projects",
+  "electroactive polymer eap vibration control",
+  "smart composite vibration damping",
+  "btech smart materials projects mumbai",
+  "mtech vibration control smart materials",
+  "phd smart material research mumbai",
+  "ai integrated vibration damping ieee",
+  "smart coatings vibration suppression",
+  "energy harvesting piezoelectric systems",
+  "hybrid smart material vibration control",
+  "comsol smart materials simulation",
+  "adaptive damping smart structures"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MESmartMaterialsVibrationControlProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Smart Materials in Vibration Control Project Development in Mumbai | Piezoelectric | MR Fluids | SMA | B.Tech, M.Tech, Ph.D."
+  description="IEEE-aligned Smart Materials in Vibration Control project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Covers piezoelectric damping, SMA systems, MR fluid dampers, EAP actuators, smart composites, hybrid systems, and AI-integrated vibration control using MATLAB, ANSYS, COMSOL, and LabVIEW."
+  url="/mechanical/dynamics-vibration/smart-materials-vibration"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -223,13 +249,48 @@ const MESmartMaterialsVibrationControlProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/seismic-vibration-control-systems-project-development">Seismic Vibration Control Systems Project Development</a></li>
-              <li><a href="/modal-harmonic-analysis-project-development">Modal & Harmonic Analysis Project Development</a></li>
-              <li><a href="/noise-vibration-harshness-project-development">Noise, Vibration & Harshness (NVH) Analysis Project Development</a></li>
-              <li><a href="/structural-dynamics-earthquake-engineering-project-development">Structural Dynamics & Earthquake Engineering Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/dynamics-vibration">Dynamics & Vibration</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/structural-dynamics-earthquake">
+      Structural Dynamics & Earthquake
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/noise-vibration-harshness">
+      Noise, Vibration & Harshness
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/rotor-dynamics-balancing">
+      Rotor Dynamics & Balancing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/modal-harmonic-analysis">
+      Modal & Harmonic Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/seismic-vibration-control">
+      Seismic Vibration Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/smart-materials-vibration">
+      Smart Materials in Vibration
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

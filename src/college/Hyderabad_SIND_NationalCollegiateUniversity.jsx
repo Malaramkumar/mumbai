@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "What is HPET for PhD at HSNC University?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Yes, a minimum of two SCOPUS or UGC-CARE indexed publications with ≤10% Turnitin similarity is mandatory."
   }
 ];
+const keywords = [
+  "HSNC University PhD Admissions 2025",
+  "HPET Exam 2025",
+  "HSNC Mumbai PhD",
+  "HSNC PhD Eligibility",
+  "HSNC Fellowship 2025",
+  "HSNC PhD Fees",
+  "HSNC Research Collaborations",
+  "PhD Admission Mumbai",
+  "PhD Entrance Test Maharashtra",
+  "HSNC University HPET Syllabus"
+];
 
 const HSNCPhD = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,14 @@ const HSNCPhD = () => {
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="HSNC University PhD Admission 2025 | HPET Exam, Eligibility, Fees & Research Guide"
+        description="Complete guide for HSNC University's PhD admission 2025. Includes HPET exam pattern, eligibility, fees, fellowship, research labs, collaborations, and timeline."
+        url="/colleges/hsnc-university-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -190,14 +210,12 @@ const HSNCPhD = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>HSNC University</li>
-            <li>PhD Admission</li>
-            <li>HPET CBT</li>
-            <li>JRF/CSIR Grants</li>
-            <li>Research Collaborations</li>
-          </ul>
+       <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

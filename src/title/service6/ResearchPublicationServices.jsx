@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ResearchPublicationServices.scss";
-
+import LeftSidebar from "../../LeftSidebar"
 // All your original sections data (unchanged)
 const sections = [
     {
@@ -202,6 +202,8 @@ export default function ResearchPublicationServices() {
         <div className="rps-layout">
             {/* Animated Left Sidebar - Table of Contents */}
             <aside className="rps-aside rps-aside--left fade-in-left" aria-label="Page navigation">
+                 <a href="/home-page" class="buttonhp">Home Page</a>
+                <LeftSidebar/>
                 <div className="rps-sidebar-header">
                     <h2 className="rps-sidebar-title">On This Page</h2>
                     <div className="rps-section-count">
@@ -347,7 +349,7 @@ export default function ResearchPublicationServices() {
 
                     {/* Conclusion Section */}
                     <section id="section-conclusion" className="rps-section fade-in-slide" aria-labelledby="h-conclusion">
-                        <h2 id="h-conclusion" className="rps-section-title">Conclusion</h2>
+                        <h2 id="h-conclusion" className="rps-section-title"></h2>
                         <div className="rps-conclusion-content">
                             <p className="rps-paragraph rps-conclusion-highlight">
                                 Publishing your research is a symbol of academic excellence. With Research Publication Services in Mumbai, Narpavi Research Institute supports scholars through every stage — from manuscript preparation to international publication.

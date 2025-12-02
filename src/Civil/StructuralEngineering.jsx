@@ -1,6 +1,24 @@
 import React from 'react';
 import "./CivilProjectDevelopmentCenter.scss"; // Assuming a common SCSS file for Civil centers
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from ".././LeftSidebar"
+const keywords = [
+  "Structural Engineering Mumbai",
+  "B.Tech Structural Projects Mumbai",
+  "M.Tech Structural Engineering Research",
+  "Ph.D Structural Analysis Mumbai",
+  "High-Rise Structural Design",
+  "Bridge Structural Health Monitoring Mumbai",
+  "RCC Structural Design Projects",
+  "Seismic Analysis Civil Engineering",
+  "Finite Element Analysis Civil",
+  "Civil Engineering Research Mumbai",
+  "ETABS SAP2000 STAAD Pro Projects",
+  "Structural Optimization Projects Mumbai",
+  "Metro Structural Engineering Projects",
+  "Coastal Structure Analysis Mumbai",
+  "Smart Infrastructure Structural Monitoring"
+];
 const faqs = [
   {
     question: "What kind of support does Narpavi offer for Structural Engineering projects in Mumbai?",
@@ -27,11 +45,20 @@ const faqs = [
 const StructuralEngineeringMumbai = () => {
   return (
     <div className="CEProjectDevelopmentCenter"> {/* Assuming a Civil Engineering class name */}
+    <SEO
+        title="Structural Engineering Projects in Mumbai | ETABS, SAP2000, ANSYS | IEEE-Aligned"
+        description="IEEE-aligned Structural Engineering projects in Mumbai using ETABS, SAP2000, STAAD.Pro, and ANSYS. High-rise design, seismic analysis, bridge monitoring, digital twins, and research support for B.Tech, M.Tech, and Ph.D."
+        url="/civil/structural-engineering"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="CEProjectDevelopmentCenter-main">
         <div className="CEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="CEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Structural Engineering Mumbai</li>
@@ -164,13 +191,30 @@ const StructuralEngineeringMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="CEProjectDevelopmentCenter-right">
             <h3>🔗 Related Civil Fields</h3>
-            <ul>
-              <li><a href="/geotechnical-engineering-mumbai">Geotechnical Engineering</a></li>
-              <li><a href="/transportation-engineering-mumbai">Transportation Engineering</a></li>
-              <li><a href="/environmental-engineering-mumbai">Environmental Engineering</a></li>
-              <li><a href="/construction-management-mumbai">Construction Management</a></li>
-              <li><a href="/water-resources-engineering-mumbai">Water Resources Engineering</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=civil">Civil Engineering</a>
+  </li>
+
+  <li><a href="/civil/structural-engineering">Structural Engineering</a></li>
+  <li><a href="/civil/bridgedesign-and-monitoring">Bridge Design & Monitoring</a></li>
+  <li><a href="/civil/earthquake-resistant">Earthquake Resistant Design</a></li>
+  <li><a href="/civil/steel-and-rcc-design">Steel & RCC Design</a></li>
+  <li><a href="/civil/tall-building-analysis">Tall Building Analysis</a></li>
+  <li><a href="/civil/geotechnical-engineering">Geotechnical Engineering</a></li>
+  <li><a href="/civil/soil-stabilization-techniques">Soil Stabilization Techniques</a></li>
+  <li><a href="/civil/foundation-design">Foundation Design</a></li>
+  <li><a href="/civil/transportation-engineering">Transportation Engineering</a></li>
+  <li><a href="/civil/smart-traffic-management">Smart Traffic Management</a></li>
+  <li><a href="/civil/pavement-analysis-design">Pavement Analysis & Design</a></li>
+  <li><a href="/civil/environmental-engineering">Environmental Engineering</a></li>
+  <li><a href="/civil/water-treatment-recycling">Water Treatment & Recycling</a></li>
+  <li><a href="/civil/construction-project">Construction Project Management</a></li>
+  <li><a href="/civil/remote-sensing-gis">Remote Sensing & GIS</a></li>
+
+</ul>
+
+            
           </div>
           
         </div>

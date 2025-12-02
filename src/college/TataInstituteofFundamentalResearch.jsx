@@ -2,7 +2,7 @@ import React from "react";
 import "./university.scss";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO";
 const faqs = [
   {
     question: "Does TIFR require prior research experience?",
@@ -26,12 +26,33 @@ const faqs = [
   }
 ];
 
+const keywords = [
+  "TIFR PhD Admission ",
+  "TIFR GS Exam",
+  "Tata Institute of Fundamental Research",
+  "PhD in Physics Mumbai",
+  "TIFR Research Labs",
+  "TIFR Fellowship",
+  "JEST PhD Admission",
+  "GATE PhD Eligibility",
+  "DAE Research Fellowship",
+  "TIFR Entrance "
+];
+
+
 const TifrPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+      <SEO
+        title="TIFR PhD Admission  | GS Entrance, Eligibility, Research Labs & Fellowship"
+        description="Tata Institute of Fundamental Research (TIFR) Mumbai PhD Admissions – Eligibility, TIFR GS exam, research areas, funding, global collaborations, and interview process."
+        url="/colleges/tifr-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -239,14 +260,12 @@ const TifrPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Keywords</h3>
-          <ul>
-            <li>PhD Mumbai</li>
-            <li>TIFR</li>
-            <li>Admissions</li>
-            <li>Research</li>
-            <li>JEST</li>
-          </ul>
+         <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

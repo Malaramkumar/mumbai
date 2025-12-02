@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO";
 const faqs = [
   {
     question: "Do all departments at SPPU offer PhD?",
@@ -24,13 +24,32 @@ const faqs = [
     answer: "Yes, subject to approval by the department and research center. NOC may be required from your employer."
   }
 ];
-
+const keywords = [
+  "SPPU PhD Admission 2025",
+  "Pune University PhD",
+  "SPPU PET Exam",
+  "PhD admission Pune",
+  "SPPU BCUD Fellowship",
+  "SPPU PhD eligibility",
+  "Savitribai Phule Pune University PhD",
+  "PhD Entrance Test Pune",
+  "SPPU Research Centres",
+  "Pune University PET dates"
+];
 const SPPUPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="SPPU PhD Admission 2025 | PET Exam, Eligibility, Fees, Research Centres & BCUD Fellowship"
+        description="SPPU PhD Admission 2025 guide: PET exam dates, eligibility, fees, fellowships, department-wise research facilities, and complete admission process for Pune University."
+        url="/colleges/sppu-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -172,16 +191,12 @@ const SPPUPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-        <div className="tags">
-          <ul>
-            <li>SPPU</li>
-            <li>Pune University</li>
-            <li>PhD Admissions</li>
-            <li>PET 2025</li>
-            <li>BCUD Fellowship</li>
-          </ul>
-        </div>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

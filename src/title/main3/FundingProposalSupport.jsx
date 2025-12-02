@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./FundingProposalSupport.scss";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "What types of funding proposals do you support?",
@@ -29,7 +30,18 @@ const faqs = [
       "Yes, including Horizon Europe, NIH, UKRI, UNDP, and other global research grant agencies.",
   },
 ];
-
+const keywords = [
+  "Funding project proposal support in Mumbai",
+  "Research funding support in Mumbai",
+  "Proposal writing services Mumbai",
+  "Grant proposal consultants in Mumbai",
+  "Academic funding support India",
+  "PhD funding assistance Mumbai",
+  "UGC DST DBT proposal help",
+  "Research proposal writers India",
+  "Funding scheme mapping support",
+  "Institutional research funding Mumbai",
+];
 
 const FundingProposalSupport = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -37,9 +49,19 @@ const FundingProposalSupport = () => {
 
   return (
     <div className="funding-page"> 
+     <SEO
+        title="Funding Project Proposal Support in Mumbai | UGC, DST, DBT, ICSSR Grants | Narpavi Research Institute"
+        description="Expert funding project proposal support in Mumbai for UGC, DST, DBT, ICSSR, AICTE, and international grants. Narpavi Research Institute helps you craft successful, compliant, and impactful research proposals."
+        url="/funding-project-support-mumbai"
+        image="/assets/funding-proposal-support-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
        {/* Left Sidebar */}
         <div className="left-side">
-        <h3>Explore Topics</h3>
+           <a href="/home-page" class="buttonhp">Home Page</a>
+          <LeftSidebar/>
+        {/* <h3>Explore Topics</h3>
          <ul>
             <li><a href="#intro">Intro</a></li>
             <li><a href="#strengths">Strengths</a></li>
@@ -48,7 +70,7 @@ const FundingProposalSupport = () => {
             <li><a href="#tips">Tips</a></li>
             <li><a href="#criteria">Evaluation</a></li>
             <li><a href="#cta">Get Started</a></li>
-          </ul>
+          </ul> */}
       </div>
 
       <div className="funding-layout">
@@ -212,19 +234,8 @@ const FundingProposalSupport = () => {
 
        {/* Right Sidebar */}
         <div className="right-side">
-        <h3>📌 Keywords</h3>
-            <ul>
-              <li>Funding project proposal support in Mumbai</li>
-              <li>Research funding support in Mumbai</li>
-              <li>Proposal writing services Mumbai</li>
-              <li>Grant proposal consultants in Mumbai</li>
-              <li>Academic funding support India</li>
-              <li>PhD funding assistance Mumbai</li>
-              <li>UGC DST DBT proposal help</li>
-              <li>Research proposal writers India</li>
-              <li>Funding scheme mapping support</li>
-              <li>Institutional research funding Mumbai</li>
-            </ul>
+       <h3>📌 Keywords</h3>
+        <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul>
           </div>
     </div>
   );

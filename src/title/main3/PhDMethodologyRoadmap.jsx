@@ -1,19 +1,43 @@
 import React from "react";
 import "./PhDMethodologyRoadmap.scss";
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
+
+const keywords = [
+  "Research methodology for PhD proposal",
+  "Quantitative methodology for engineering PhD",
+  "Simulation-based research PhD support",
+  "Engineering research workflow guidance",
+  "PhD tools and analytics",
+  "Research proposal sample for engineering PhD",
+  "Methodology writing help Mumbai",
+  "Engineering PhD methodology guidance",
+  "PhD methodology chapter writing Mumbai",
+  "Experimental design support for PhD Mumbai",
+];
 
 const PhDMethodologyRoadmap = () => {
   return (
     <div className="methodology-page">
+      <SEO
+        title="PhD Research Methodology Roadmap in Mumbai | Engineering PhD Support by Narpavi Research Institute"
+        description="Comprehensive PhD research methodology roadmap for engineering scholars in Mumbai. Covers coursework, workflow, simulations, data analysis, and publication-ready methodology guidance by Narpavi Research Institute."
+        url="/methodology-roadmap-mumbai"
+        image="/assets/phd-methodology-roadmap-mumbai-banner.jpg"
+        keywords={keywords}
+      />
         {/* Left Sidebar */}
         <div className="left-side">
-          <h3>Explore Topics</h3>
+           <a href="/home-page" class="buttonhp">Home Page</a>
+          <LeftSidebar/>
+          {/* <h3>Explore Topics</h3>
           <ul>
             <li><a href="#intro">Introduction</a></li>
             <li><a href="#coursework">Research Methodology Coursework</a></li>
             <li><a href="#workflow">Workflow</a></li>
             <li><a href="#support">Support</a></li>
             <li><a href="#why">Why Choose Us</a></li>
-          </ul>
+          </ul> */}
         </div>
       <div className="methodology-layout">
         
@@ -204,15 +228,7 @@ const PhDMethodologyRoadmap = () => {
         {/* Right Sidebar */}
         <div className="right-side">
           <h3>📌 Keywords</h3>
-          <ul>
-            <li>Research methodology for PhD proposal</li>
-            <li>Quantitative methodology for engineering PhD</li>
-            <li>Simulation-based research PhD support</li>
-            <li>Engineering research workflow guidance</li>
-            <li>PhD tools and analytics</li>
-            <li>Research proposal sample for engineering PhD</li>
-            <li>Methodology writing help Mumbai</li>
-          </ul>
+        <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul>
         </div>
       
     </div>

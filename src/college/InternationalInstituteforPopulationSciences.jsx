@@ -24,13 +24,32 @@ const faqs = [
     answer: "Two Web of Science (WoS) indexed papers are required before submission."
   }
 ];
-
+const keywords = [
+  "IIPS Mumbai PhD Admission 2025",
+  "IIPS PhD Eligibility",
+  "Population Studies PhD India",
+  "IIPS Entrance Test",
+  "Demography PhD Mumbai",
+  "IIPS Biostatistics PhD",
+  "IIPS Fellowship Amount",
+  "IIPS Research Infrastructure",
+  "PhD in Population Studies",
+  "IIPS CBT Exam Pattern"
+];
 const IIPSPhD = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="amity-layout">
+        <SEO
+        title="IIPS Mumbai PhD Admission 2025 | Eligibility, CBT Exam, Fellowship, NFHS Data Access"
+        description="IIPS Mumbai PhD Admission 2025: Eligibility, CBT exam pattern, fellowship, NFHS data access, research labs, timeline, fees and complete application guidance."
+        url="/colleges/iips-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -197,15 +216,12 @@ const IIPSPhD = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-      
-          <ul>
-            <li>IIPS Mumbai</li>
-            <li>Population Studies</li>
-            <li>PhD Admission</li>
-            <li>CBT Entrance</li>
-            <li>Biostatistics</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

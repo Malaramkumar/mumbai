@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Does FLAME University conduct an entrance test for PhD?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "FLAME University accepts applications annually between April and July."
   }
 ];
+const keywords = [
+  "FLAME University PhD Admission 2025",
+  "FLAME PhD Eligibility",
+  "FLAME University Research",
+  "PhD in Liberal Arts India",
+  "PhD Psychology FLAME",
+  "FLAME Public Policy PhD",
+  "FLAME Research Fellowships",
+  "PhD Pune Universities",
+  "FLAME Statement of Research Intent",
+  "FLAME PhD Application 2025"
+];
 
 const FLAMEPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,16 @@ const FLAMEPhDPage = () => {
 
   return (
     <div className="phd-layout">
+  
+      <SEO
+        title="FLAME University PhD Admission 2025 | Eligibility, Research Areas, Funding & SoR Guide"
+        description="Complete details on FLAME University PhD including eligibility, research specializations, fellowship amounts, SoR requirements, application timeline and Narpavi support."
+        url="/colleges/flame-university-pune"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -182,14 +204,12 @@ const FLAMEPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD Pune</li>
-            <li>FLAME University</li>
-            <li>Social Sciences</li>
-            <li>Research Proposal</li>
-            <li>Liberal Arts</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

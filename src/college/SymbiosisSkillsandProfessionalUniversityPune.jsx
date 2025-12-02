@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO";
 const faqs = [
   {
     question: "What are SSPU's PhD focus areas?",
@@ -24,13 +24,31 @@ const faqs = [
     answer: "Typically between June and August."
   }
 ];
-
+const keywords = [
+  "SSPU PhD Admission ",
+  "Symbiosis Skills University PhD",
+  "SSPU PET Exam",
+  "PhD in AI ML",
+  "Industry 4.0 PhD",
+  "SSPU Research Facilities",
+  "PhD IoT and Logistics",
+  "Skill-Based University PhD",
+  "SSPU Fellowship",
+  "PhD Pune University"
+];
 const SspuPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="SSPU PhD Admission  | Industry 4.0, AI/ML, IoT, Fees & Entrance Details"
+        description="Symbiosis Skills & Professional University (SSPU) PhD Admissions – Entrance exam, eligibility, research labs, Industry 4.0 focus areas, funding, and admission timeline."
+        url="/colleges/sspu-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -167,16 +185,12 @@ const SspuPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-        <div className="tags">
-          <ul>
-            <li>SSPU PhD</li>
-            <li>Skill-Based Doctorate</li>
-            <li>PhD in AI/ML</li>
-            <li>IoT Logistics Research</li>
-            <li>NASSCOM Research</li>
-          </ul>
-        </div>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

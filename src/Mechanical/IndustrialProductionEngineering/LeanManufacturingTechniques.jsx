@@ -1,4 +1,23 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+
+const keywords = [
+  "lean manufacturing projects mumbai",
+  "5S implementation ieee",
+  "kaizen process optimization projects",
+  "value stream mapping vsm projects",
+  "tpm predictive maintenance projects",
+  "digital twin lean manufacturing",
+  "ai integrated lean manufacturing",
+  "btech lean manufacturing projects",
+  "mtech lean process optimization",
+  "phd smart factory lean research",
+  "industry 4.0 lean manufacturing",
+  "kanban workflow optimization",
+  "continuous improvement projects",
+  "smart manufacturing lean techniques",
+  "narpavi research institute lean projects"
+];
 
 const faqs = [
   {
@@ -26,6 +45,14 @@ const faqs = [
 const MELeanManufacturingTechniquesProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Lean Manufacturing Techniques Project Development in Mumbai | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Lean Manufacturing project development in Mumbai. Specializing in 5S, Kaizen, VSM, TPM, Kanban, AI-based optimization, and digital twin modeling for automotive, electronics, pharma, steel, textile, and FMCG industries."
+        url="/mechanical/industrial-production-engineering/lean-manufacturing-techniques"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -227,12 +254,37 @@ const MELeanManufacturingTechniquesProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/predictive-preventive-maintenance-engineering-project-development">Predictive & Preventive Maintenance Engineering Project Development</a></li>
-              <li><a href="/tribology-micro-nano-systems-project-development">Tribology in Micro & Nano Systems Project Development</a></li>
-              <li><a href="/fault-diagnosis-rotating-machinery-project-development">Fault Diagnosis in Rotating Machinery Project Development</a></li>
-              <li><a href="/bearing-design-condition-monitoring-project-development">Bearing Design & Condition Monitoring Project Development</a></li>
-              <li><a href="/lubrication-technology-advanced-oils-project-development">Lubrication Technology & Advanced Oils Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/industrial-production-engineering">
+      Industrial & Production Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/lean-manufacturing-techniques">
+      Lean Manufacturing Techniques
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/supply-chain-process">
+      Supply Chain Process
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/smart-factory-systems">
+      Smart Factory Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/cost-time-optimization">
+      Cost & Time Optimization
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

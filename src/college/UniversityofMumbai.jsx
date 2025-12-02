@@ -2,6 +2,7 @@
 import "./MumbaiPhDOverview.scss";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import SEO from ".././assets/SEO";
 
 const faqs = [
   {
@@ -30,13 +31,31 @@ const faqs = [
       "At least one UGC-CARE or Scopus-indexed publication is mandatory before submitting the synopsis."
   }
 ];
-
+const keywords = [
+  "Mumbai University PhD Admission ",
+  "MU PET Exam ",
+  "PhD Admission Mumbai",
+  "Mumbai University Research",
+  "MU PET Exemption",
+  "University of Mumbai Doctoral Program",
+  "PhD Eligibility Mumbai University",
+  "Mumbai University Fellowships",
+  "MU PhD Guide Consent",
+  "MU PET Syllabus"
+];
 
 const MumbaiPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
     const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
   return (
     <div className="mu-layout">
+       <SEO
+        title="Mumbai University PhD Admission | PET Exam, Eligibility, Guide Consent & Research Facilities"
+        description="Complete guide to Mumbai University PhD admissions – PET exam structure, eligibility, guide consent, publications, fees, fellowships, and admission timeline."
+        url="/colleges/mumbai-university-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar - Quick Links */}
       <div className="left-sidebar">
         <h3>Quick Links</h3>
@@ -234,13 +253,11 @@ const MumbaiPhDPage = () => {
 
       {/* Right Sidebar - SEO Keywords */}
       <div className="right-sidebar">
-        <h3>SEO Keywords</h3>
+         <h3>SEO Keywords</h3>
         <ul className="tags">
-          <li>University of Mumbai PhD</li>
-          <li>MU PET 2025</li>
-          <li>PhD Admission Mumbai</li>
-          <li>Research at Mumbai University</li>
-          <li>Mumbai PET Exemption</li>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
         </ul>
       </div>
     </div>

@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "advanced composite materials projects mumbai",
+  "carbon fiber reinforced composites ieee",
+  "glass fiber mechanical projects",
+  "nano material composites engineering",
+  "polymer matrix composite projects",
+  "hybrid composites research",
+  "smart composite materials projects",
+  "fea composite analysis projects",
+  "ansys composite prep-post projects",
+  "btech composite fabrication projects",
+  "mtech composite simulation projects",
+  "phd composite materials research mumbai",
+  "aerospace composite materials projects",
+  "automotive composite design projects",
+  "nanocomposite biomedical applications"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MEAdvancedCompositeMaterialsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Advanced Composite Materials Project Development in Mumbai | B.Tech, M.Tech, Ph.D."
+  description="IEEE-aligned Advanced Composite Materials project development in Mumbai. Includes carbon fiber, glass fiber, polymer matrix composites, nano-composites, hybrid composites, FEA analysis, fabrication & testing for automotive, aerospace, biomedical, and marine industries."
+  url="/mechanical/materials-metallurgy/advanced-composite-materials"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -223,13 +249,48 @@ const MEAdvancedCompositeMaterialsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/nano-materials-mechanical-systems-project-development">Nano-Materials for Mechanical Systems Project Development</a></li>
-              <li><a href="/welding-casting-joining-technologies-project-development">Welding, Casting & Joining Technologies Project Development</a></li>
-              <li><a href="/corrosion-surface-engineering-project-development">Corrosion & Surface Engineering Project Development</a></li>
-              <li><a href="/material-testing-nde-project-development">Material Testing & Non-Destructive Evaluation (NDE) Project Development</a></li>
-              <li><a href="/smart-intelligent-materials-project-development">Smart & Intelligent Materials Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/materials-metallurgy">Materials & Metallurgy</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/advanced-composite-materials">
+      Advanced Composite Materials
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/nanomaterials-for-mechanical">
+      Nanomaterials for Mechanical
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/welding-casting-joining">
+      Welding, Casting & Joining
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/corrosion-surface-engineering">
+      Corrosion & Surface Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/material-testing-non-destructive">
+      Material Testing & Non-Destructive
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/materials-metallurgy/smart-intelligent-materials">
+      Smart & Intelligent Materials
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

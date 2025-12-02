@@ -1,5 +1,18 @@
 import "../MEProjectDevelopmentCenter.scss";
-
+import SEO from "../../assets/SEO";
+const keywords = [
+  "Computational Fluid Dynamics in Mechanical Systems",
+  "CFD Projects Mumbai",
+  "CFD in Automotive Industry",
+  "CFD for Aerospace Applications",
+  "CFD Heat Transfer Analysis",
+  "CFD in Oil and Gas",
+  "CFD FSI Simulation",
+  "CFD in Biomedical Engineering",
+  "IEEE CFD Projects 2023–2025",
+  "Narpavi Research Institute CFD Support",
+  "CFD for B.Tech M.Tech Ph.D. Projects"
+];
 const faqs = [
   {
     question: "What services does the Computational Fluid Dynamics (CFD) in Mechanical Systems Project Development Center offer in Mumbai?",
@@ -26,23 +39,22 @@ const faqs = [
 const MEComputationalFluidDynamicsInMechanicalSystemsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Computational Fluid Dynamics (CFD) in Mechanical Systems Project Development Center in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute's Computational Fluid Dynamics (CFD) in Mechanical Systems Project Development Center in Mumbai supports B.Tech, M.Tech, and Ph.D. students in developing IEEE-aligned (2023–2025) projects on CFD simulations for automotive, aerospace, oil & gas, marine, HVAC, and biomedical applications."
+          url="/mechanical/computational-simulation-techniques/computational-fluid-dynamic"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Computational Fluid Dynamics in Mechanical Systems</li>
-              <li>CFD Projects Mumbai</li>
-              <li>CFD in Automotive Industry</li>
-              <li>CFD for Aerospace Applications</li>
-              <li>CFD Heat Transfer Analysis</li>
-              <li>CFD in Oil and Gas</li>
-              <li>CFD FSI Simulation</li>
-              <li>CFD in Biomedical Engineering</li>
-              <li>IEEE CFD Projects 2023–2025</li>
-              <li>Narpavi Research Institute CFD Support</li>
-              <li>CFD for B.Tech M.Tech Ph.D. Projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -235,12 +247,49 @@ const MEComputationalFluidDynamicsInMechanicalSystemsProjectDevelopmentCenter = 
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/finite-element-analysis-applications-project-development">Finite Element Analysis (FEA) Applications Project Development</a></li>
-              <li><a href="/intelligent-transportation-systems-project-development">Intelligent Transportation Systems (ITS) Project Development</a></li>
-              <li><a href="/advanced-vehicle-suspension-systems-project-development">Advanced Vehicle Suspension Systems Project Development</a></li>
-              <li><a href="/automotive-aerodynamics-fuel-efficiency-project-development">Automotive Aerodynamics & Fuel Efficiency Project Development</a></li>
-              <li><a href="/internal-combustion-engine-optimization-project-development">Internal Combustion Engine Optimization Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/computational-simulation-techniques">
+      Computational Simulation Techniques
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/finite-element-analysis">
+      Finite Element Analysis (FEA)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/computational-fluid-dynamic">
+      Computational Fluid Dynamics (CFD)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/multi-body-dynamics">
+      Multi-Body Dynamics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/fracture-mechanics-fatigue">
+      Fracture Mechanics & Fatigue
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/digital-twin-smart-simulation">
+      Digital Twin & Smart Simulation
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/high-performance-computing">
+      High Performance Computing (HPC)
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

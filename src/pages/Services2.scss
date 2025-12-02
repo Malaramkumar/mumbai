@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: 105vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,32 +30,34 @@
   }
 
   .services2-top-section {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     max-width: 1300px;
     margin: auto;
 
     h1 {
       font-size: 36px;
-      color: #000000;
+      color: #ffffff;
+      margin-top: 3rem;
       text-transform: uppercase;
     }
 
     p {
       margin: 2rem;
-      color: #000000;
+      color: #ffffff;
       font-weight: 600;
+      margin-top: -1rem;
       font-size: 1.2rem;
       text-align: justify;
     }
 
-    button {
+    .btn2 {
       background: #0074b7;
       color: #fff;
       padding: 0.7rem 1.5rem;
-      font-size: 16px;
+      font-size: 1.5rem;
       border: none;
       border-radius: 6px;
-      margin: 0rem;
+      margin-bottom: 0rem;
       cursor: pointer;
       transition: background 0.3s ease;
 
@@ -73,9 +75,10 @@
     gap: 2rem;
 
     .services2-card {
-      background: #cdddf889;
+      background: radial-gradient(circle at center, #002a4f, #001a33);
       border: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 2rem;
+      padding: 1rem;
+      margin-top: 4rem;
       border-radius: 16px;
       width: 100%;
       max-width: 480px;
@@ -84,26 +87,27 @@
       cursor: pointer;
 
       .services2-icon {
-        color: navy;
+        color: rgb(255, 255, 255);
         margin-bottom: 1rem;
       }
 
       h2 {
         font-size: 1.6rem;
         font-weight: 900;
-        color: #033832;
+        color: #ffffff;
         margin-bottom: 0.6rem;
       }
 
       p {
         font-size: 1.2rem;
-        color: navy;
+        color: rgb(255, 255, 255);
         font-weight: 600;
       }
 
       &:hover {
         transform: scale(1.03);
         background: rgba(255, 255, 255, 0.12);
+        
       }
     }
   }
@@ -117,11 +121,11 @@
   margin: 3rem;
 
   .services2-title-box2 {
-    background: rgba(255, 255, 255, 0.421);
+    background: radial-gradient(circle at center, #002a4f, #001a33);
     padding: 0.6rem 1rem;
     border-radius: 8px;
     font-weight: 600;
-    color: navy;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     transition: all 0.3s ease;
     border: 1px solid transparent;
@@ -130,11 +134,13 @@
       background: rgba(255, 255, 255, 0.874);
       color: #000000;
       border-color: #60a3d9;
+      box-shadow: 0 30px 100px rgba(5, 126, 255, 0.61);
     }
 
     &:hover {
       background: rgba(255, 255, 255, 0.2);
       transform: translateY(-2px);
+      box-shadow: 0 30px 100px rgba(5, 126, 255, 0.61);
     }
   }
 }
@@ -152,7 +158,7 @@
         font-size: 1rem;
         margin: 1.5rem;
       }
-      button {
+      .btn2 {
         font-size: 15px;
         padding: 0.6rem 1.3rem;
       }
@@ -192,7 +198,7 @@
         text-align: justify;
       }
 
-      button {
+      .btn2 {
         font-size: 14px;
         padding: 0.6rem 1.2rem;
         margin: 1.5rem auto;
@@ -219,14 +225,17 @@
     .services2-top-section {
       h1 {
         font-size: 22px;
+        margin-top: 0rem;
       }
 
       p {
         font-size: 0.95rem;
         margin: 1rem 0;
+        height: 300px;
+        overflow-y: auto;
       }
 
-      button {
+      .btn2 {
         font-size: 13px;
         padding: 0.5rem 1rem;
       }

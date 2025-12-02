@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Does Deccan College offer full-time and part-time PhDs?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Applications close in May. PET in June. Final interviews and admission decisions are completed by August."
   }
 ];
+const keywords = [
+  "Deccan College PhD Admission 2025",
+  "Deccan College Pune PhD",
+  "Archaeology PhD Pune",
+  "Indology PhD Admission",
+  "Linguistics Research Pune",
+  "Deccan College PET Exam",
+  "PhD in Ancient Indian History",
+  "Deccan College Fellowship",
+  "Research in Epigraphy",
+  "Narpavi Research Guidance"
+];
 
 const DeccanCollegePhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,15 @@ const DeccanCollegePhDPage = () => {
 
   return (
     <div className="phd-layout">
+       {/* ✅ SEO BLOCK */}
+      <SEO
+        title="Deccan College PhD Admission 2025 | PET, Eligibility, Research Strengths & Fellowships"
+        description="Complete guide for Deccan College PhD admissions including PET exam, research strengths in archaeology, linguistics, Indology, eligibility, fees, timelines, and Narpavi research support."
+        url="/colleges/deccan-college"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -200,16 +221,12 @@ const DeccanCollegePhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-        
-          <ul>
-            <li>PhD Pune</li>
-            <li>Deccan College</li>
-            <li>Archaeology</li>
-            <li>Indology</li>
-            <li>UGC PET</li>
-          </ul>
-        
+           <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

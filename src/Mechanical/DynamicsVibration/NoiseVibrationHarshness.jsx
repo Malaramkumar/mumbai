@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "NVH projects Mumbai",
+  "noise vibration harshness ieee projects",
+  "btech nvh analysis projects",
+  "mtech nvh simulation projects",
+  "phd nvh research mumbai",
+  "automotive nvh ieee projects",
+  "acoustic simulation projects",
+  "vibration fault detection projects",
+  "ai based nvh optimization",
+  "smart materials nvh reduction",
+  "ev motor noise vibration projects",
+  "ansys acoustic nvh projects",
+  "comsol hypermesh nvh analysis",
+  "vibration signal processing projects",
+  "predictive nvh fault diagnosis"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MENoiseVibrationHarshnessProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Noise, Vibration & Harshness (NVH) Analysis Project Development in Mumbai | Acoustic Simulation | Vibration Analysis | B.Tech, M.Tech, Ph.D."
+  description="IEEE-aligned NVH (Noise, Vibration & Harshness) project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes finite element NVH analysis, acoustic simulation, vibration signal processing, AI-based NVH optimization, and sensor-based testing."
+  url="/mechanical/dynamics-vibration/noise-vibration-harshness"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -217,12 +243,47 @@ const MENoiseVibrationHarshnessProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/structural-dynamics-earthquake-engineering-project-development">Structural Dynamics & Earthquake Engineering Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-              <li><a href="/control-systems-robotics-project-development">Control Systems for Robotics Project Development</a></li>
-              <li><a href="/smart-intelligent-materials-project-development">Smart & Intelligent Materials Project Development</a></li>
-              <li><a href="/ai-machine-learning-robotics-project-development">AI & Machine Learning in Robotics Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/dynamics-vibration">Dynamics & Vibration</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/structural-dynamics-earthquake">
+      Structural Dynamics & Earthquake
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/noise-vibration-harshness">
+      Noise, Vibration & Harshness
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/rotor-dynamics-balancing">
+      Rotor Dynamics & Balancing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/modal-harmonic-analysis">
+      Modal & Harmonic Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/seismic-vibration-control">
+      Seismic Vibration Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/smart-materials-vibration">
+      Smart Materials in Vibration
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

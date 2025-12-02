@@ -23,14 +23,16 @@
     h1 {
       font-size: 36px;
       color: #bfd7ed;
+      
       text-transform: uppercase;
       //text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
     }
 
     p {
-      margin: 2rem;
+      margin: 2rem ;
       color: #fff;
+      
       font-size: 1.2rem;
       text-align: justify;
     }
@@ -39,7 +41,7 @@
       background: #0074b7;
       color: #fff;
       padding: 0.7rem 1.5rem;
-      font-size: 16px;
+      font-size: 1.5rem;
       border: none;
       border-radius: 6px;
       margin: 2rem;
@@ -69,6 +71,10 @@
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
       transition: all 0.3s ease;
       cursor: pointer;
+       border: 3px solid #007bff;
+       transform: translateY(-4px);
+       box-shadow: 0 30px 100px rgba(5, 126, 255, 0.61);
+        
 
       .services3-icon {
         color: #60a3d9;
@@ -90,7 +96,9 @@
       &:hover {
         transform: scale(1.03);
         background: rgba(255, 255, 255, 0.12);
+        
       }
+
     }
   }
 }
@@ -100,7 +108,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin: 4rem;
+  margin: 2rem;
 
   .services3-title-box-proposal {
     background: rgba(255, 255, 255, 0.08);
@@ -206,11 +214,12 @@
     .services3-top-section {
       h1 {
         font-size: 22px;
+        margin-top: -2rem;
       }
 
       p {
         font-size: 0.95rem;
-        margin: 1rem 0;
+        margin: 3rem 0;
       }
 
       button {
@@ -220,7 +229,9 @@
     }
 
     .services3-center-slider {
+      display: none;
       .card {
+        
         padding: 1.5rem;
         max-width: 260px;
         max-width: 160px;
@@ -235,7 +246,8 @@
       }
     }
      .services3-title-row-proposal{
-      display:block;
+      display:flex;
+      //gap: 1rem;
     }
   }
 }

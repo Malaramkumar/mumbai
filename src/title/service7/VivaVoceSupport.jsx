@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./VivaVoceSupport.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const sections = [
   {
@@ -18,7 +19,7 @@ Our Viva Voce Support in Mumbai trains scholars in articulating their research c
   },
   {
     id: "significance",
-    title: "Significance of Viva Voce in Research",
+    title: "Significance of Viva Voce in Research",   
     list: [
       "Understands the depth and scope of their research area.",
       "Can defend the methodology and results confidently.",
@@ -223,29 +224,11 @@ export default function VivaVoceSupport() {
 
   return (
     <div className="vvs-layout">
+     
       {/* Left sticky TOC */}
-      <aside className="vvs-aside vvs-aside--left fade-in-left" aria-label="On this page">
-        <div className="vvs-sidebar-header">
-          <h2 className="vvs-sidebar-title">On this page</h2>
-          <span className="vvs-section-count">{tocItems.length} sections</span>
-        </div>
-        <nav ref={tocRef} className="vvs-toc" aria-label="Section navigation">
-          <ul className="vvs-toc-list" role="list">
-            {tocItems.map((t) => (
-              <li key={t.id} className="vvs-toc-item">
-                <a
-                  href={`#h-${t.id}`}
-                  onClick={(e) => smoothScroll(e, t.id)}
-                  className={`vvs-toc-link ${active === t.id ? "is-active" : ""}`}
-                  aria-current={active === t.id ? "true" : "false"}
-                >
-                  <span className="vvs-toc-text">{t.label}</span>
-                  <span className="vvs-toc-indicator" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+      <aside className="vvs-aside vvs-aside--left fade-in-left" aria-label="On this page"> 
+         <a href="/home-page" class="buttonhp">Home Page</a>
+         <LeftSidebar/>
       </aside>
 
       {/* Main content */}
@@ -340,54 +323,9 @@ export default function VivaVoceSupport() {
             <li className="vvs-card-item">🧠 Anxiety & Time Coaching</li>
             <li className="vvs-card-item">✅ Post‑Viva Revision Support</li>
           </ul>
-          <div className="vvs-card-footer">
-            <button className="vvs-cta-button" aria-label="Start viva support">Get Started</button>
-          </div>
+        
         </div>
 
-        <div className="vvs-card vvs-card--secondary">
-          <h4 className="vvs-card-title">Quick Navigation</h4>
-          <ul className="vvs-card-list vvs-quick-links">
-            {[
-              { href: "#h-preparation-stages", text: "Prep Stages" },
-              { href: "#h-common-questions", text: "Common Questions" },
-              { href: "#h-dos-donts", text: "Dos & Don’ts" },
-              { href: "#h-timeline", text: "Timeline" },
-              { href: "#h-faqs", text: "FAQs" },
-            ].map((l, i) => (
-              <li key={i} className="vvs-card-item">
-                <a
-                  href={l.href}
-                  className="vvs-quick-link"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.querySelector(l.href)?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  {l.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="vvs-card vvs-card--stats">
-          <h4 className="vvs-card-title">Our Impact</h4>
-          <div className="vvs-stats-grid">
-            <div className="vvs-stat-item">
-              <span className="vvs-stat-number">300+</span>
-              <span className="vvs-stat-label">Vivas Trained</span>
-            </div>
-            <div className="vvs-stat-item">
-              <span className="vvs-stat-number">95%</span>
-              <span className="vvs-stat-label">Success Rate</span>
-            </div>
-            <div className="vvs-stat-item">
-              <span className="vvs-stat-number">50+</span>
-              <span className="vvs-stat-label">Universities</span>
-            </div>
-          </div>
-        </div>
       </aside>
     </div>
   );

@@ -1,5 +1,18 @@
 import "./CSEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Quantum Networking projects Mumbai",
+  "Quantum Communication IEEE projects",
+  "Quantum Key Distribution B.Tech projects",
+  "M.Tech quantum networking research",
+  "Ph.D. projects in quantum communication",
+  "Quantum cryptography for fintech Mumbai",
+  "entanglement communication projects",
+  "secure quantum internet Mumbai",
+  "IEEE aligned quantum projects",
+  "Narpavi Research Institute quantum networking Mumbai"
+];
 const faqs = [
   {
     question: "What services does the Quantum Networking / Communication Project Development Center offer in Mumbai?",
@@ -26,22 +39,23 @@ const faqs = [
 const CSEQuantumNetworkingCommunicationProjectDevelopmentCenter = () => {
   return (
     <div className="CSEProjectDevelopmentCenter">
+      <SEO
+        title="Quantum Networking / Communication – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Quantum Networking / Communication Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on quantum technologies."
+            url="/cse/quantum-networking-communication"
+            keywords={keywords}
+        faqs={faqs}
+      />
       <div className="CSEProjectDevelopmentCenter-main">
         <div className="CSEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="CSEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Quantum Networking projects Mumbai</li>
-              <li>Quantum Communication IEEE projects</li>
-              <li>Quantum Key Distribution B.Tech projects</li>
-              <li>M.Tech quantum networking research</li>
-              <li>Ph.D. projects in quantum communication</li>
-              <li>Quantum cryptography for fintech Mumbai</li>
-              <li>entanglement communication projects</li>
-              <li>secure quantum internet Mumbai</li>
-              <li>IEEE aligned quantum projects</li>
-              <li>Narpavi Research Institute quantum networking Mumbai</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -220,12 +234,59 @@ const CSEQuantumNetworkingCommunicationProjectDevelopmentCenter = () => {
           <div className="CSEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/digital-twins-simulation-project-development">Digital Twins & Simulation Project Development</a></li>
-              <li><a href="/natural-language-processing-nlp-large-language-models-llms-project-development">Natural Language Processing (NLP) & Large Language Models (LLMs) Project Development</a></li>
-              <li><a href="/autonomous-systems-robotics-project-development">Autonomous Systems & Robotics Project Development</a></li>
-              <li><a href="/computer-vision-image-video-processing-project-development">Computer Vision & Image/Video Processing Project Development</a></li>
-              <li><a href="/human-computer-interaction-hci-vr-ar-project-development">Human-Computer Interaction (HCI), VR/AR Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/departments?dept=cse">Computer Science & Engineering</a>
+  </li>
+
+  <li><a href="/cse/artificial-intelligence-machine-learning">Artificial Intelligence & Machine Learning</a></li>
+  <li><a href="/cse/custom-software-development">Custom Software Development</a></li>
+  <li><a href="/cse/data-science-big-data-analytics">Data Science & Big Data Analytics</a></li>
+  <li><a href="/cse/internet-of-things">Internet of Things (IoT)</a></li>
+  <li><a href="/cse/cybersecurity-privacy">Cybersecurity & Privacy</a></li>
+  <li><a href="/cse/blockchain-distributed-systems">Blockchain & Distributed Systems</a></li>
+  <li><a href="/cse/cloud-edge-infrastructure">Cloud & Edge Infrastructure</a></li>
+  <li><a href="/cse/quantum-computing-information">Quantum Computing & Information</a></li>
+  <li><a href="/cse/human-computer-interaction">Human-Computer Interaction</a></li>
+  <li><a href="/cse/computer-vision-image">Computer Vision & Image Processing</a></li>
+  <li><a href="/cse/autonomous-systems-robotics">Autonomous Systems & Robotics</a></li>
+  <li><a href="/cse/natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="/cse/digital-twins-simulation">Digital Twins & Simulation</a></li>
+  <li><a href="/cse/quantum-networking-communication">Quantum Networking & Communication</a></li>
+  <li><a href="/cse/web-application-development">Web Application Development</a></li>
+  <li><a href="/cse/mobile-app-development">Mobile App Development</a></li>
+  <li><a href="/cse/mvp-development">MVP Development</a></li>
+  <li><a href="/cse/startup-software-development">Startup Software Development</a></li>
+  <li><a href="/cse/enterprise-software-solutions">Enterprise Software Solutions</a></li>
+  <li><a href="/cse/dedicated-development-teams">Dedicated Development Teams</a></li>
+  <li><a href="/cse/design-lab-ui-ux-development">Design Lab UI/UX Development</a></li>
+  <li><a href="/cse/qa-testing-services">QA & Testing Services</a></li>
+
+  <li><a href="/cse/java">Java Development</a></li>
+  <li><a href="/cse/php-development">PHP Development</a></li>
+  <li><a href="/cse/spring-development">Spring Development</a></li>
+  <li><a href="/cse/csharp-development">C# Development</a></li>
+
+  <li><a href="/cse/machine-learning-based">Machine Learning Based Projects</a></li>
+  <li><a href="/cse/python-development">Python Development</a></li>
+  <li><a href="/cse/matlab-projects">MATLAB Projects</a></li>
+  <li><a href="/cse/dotnet-projects">DotNet Projects</a></li>
+  <li><a href="/cse/r-projects">R Projects</a></li>
+  <li><a href="/cse/ns3-projects">NS3 Projects</a></li>
+  <li><a href="/cse/vlsi-projects">VLSI Projects</a></li>
+  <li><a href="/cse/opnet-projects">OPNET Projects</a></li>
+  <li><a href="/cse/robotics-projects">Robotics Projects</a></li>
+  <li><a href="/cse/ansys-projects">ANSYS Projects</a></li>
+  <li><a href="/cse/solidworks-projects">SolidWorks Projects</a></li>
+  <li><a href="/cse/cartia-projects">Cartia Projects</a></li>
+  <li><a href="/cse/labview-projects">LabVIEW Projects</a></li>
+
+  <li><a href="/cse/power-system-projects">Power System Projects</a></li>
+  <li><a href="/cse/power-documents">Power Documents</a></li>
+
+  <li><a href="/cse/image-processing">Image Processing</a></li>
+  <li><a href="/cse/signal-processing">Signal Processing</a></li>
+</ul>
+
           </div>
         </div>
       </div>

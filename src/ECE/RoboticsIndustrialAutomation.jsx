@@ -1,6 +1,19 @@
 import React from "react";
 import "./ECEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Robotics Projects Mumbai",
+  "Industrial Automation Projects",
+  "ROS Robotics Development",
+  "Machine Vision Robotics",
+  "Jetson Nano Robotics",
+  "MATLAB Robotics Toolbox Projects",
+  "Autonomous Mobile Robots Mumbai",
+  "Collaborative Robotics Systems",
+  "Smart Factory Automation",
+  "IEEE Robotics Automation Projects"
+];
 const faqs = [
   {
     question: "Which robotics platforms and tools are supported at the center?",
@@ -32,11 +45,19 @@ const faqs = [
 const RoboticsIndustrialAutomationMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+      <SEO
+  title="Robotics & Industrial Automation Projects in Mumbai | ROS, Jetson Nano, Machine Vision, IEEE Research"
+  description="Robotics and Industrial Automation Project Development Center in Mumbai for B.Tech, M.Tech, and Ph.D. students. Work with ROS, Jetson Nano, Arduino, OpenCV, MATLAB Robotics Toolbox, industrial automation systems, and IEEE-aligned robotics research."
+  url="/ece/robotics-industrial-automation-mumbai"
+  keywords={keywords}
+  faqs={faqs}
+/>
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
           
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Robotics Projects Mumbai</li>
@@ -206,33 +227,37 @@ const RoboticsIndustrialAutomationMumbai = () => {
                 ))}
               </div>
 
-              <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                  __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "FAQPage",
-                    "mainEntity": faqs.map(f => ({
-                      "@type": "Question",
-                      "name": f.question,
-                      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
-                    }))
-                  })
-                }}
-              />
+             
             </section>
           </div>
 
           {/* Right Column – Related Fields */}
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE Fields</h3>
-            <ul>
-              <li><a href="/mechatronics-mumbai">Mechatronics Systems</a></li>
-              <li><a href="/industrial-automation-mumbai">Industrial Automation</a></li>
-              <li><a href="/machine-vision-mumbai">Machine Vision & Imaging</a></li>
-              <li><a href="/ai-robotics-mumbai">AI in Robotics</a></li>
-              <li><a href="/embedded-control-mumbai">Embedded Control Systems</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=ece">Electronics & Communication</a>
+  </li>
+
+  <li><a href="/ece/vlsi-design-verification">VLSI Design & Verification</a></li>
+  <li><a href="/ece/embedded-systems-iot">Embedded Systems & IoT</a></li>
+  <li><a href="/ece/communication-signal-processing">Communication & Signal Processing</a></li>
+  <li><a href="/ece/power-electronics-drives">Power Electronics & Drives</a></li>
+  <li><a href="/ece/renewable-energy-systems">Renewable Energy Systems</a></li>
+  <li><a href="/ece/embedded-iot">Embedded & IoT Applications</a></li>
+  <li><a href="/ece/wireless-communication-networking">Wireless Communication & Networking</a></li>
+  <li><a href="/ece/ai-ml-applications-electronics">AI & ML Applications in Electronics</a></li>
+  <li><a href="/ece/internet-of-medical-things">Internet of Medical Things (IoMT)</a></li>
+  <li><a href="/ece/smart-antenna-microwave">Smart Antenna & Microwave Engineering</a></li>
+  <li><a href="/ece/fpga-reconfigurable-systems">FPGA & Reconfigurable Systems</a></li>
+  <li><a href="/ece/cyber-physical-smart-systems">Cyber Physical & Smart Systems</a></li>
+  <li><a href="/ece/control-systems-mechatronics">Control Systems & Mechatronics</a></li>
+  <li><a href="/ece/satellite-communication-navigation">Satellite Communication & Navigation</a></li>
+  <li><a href="/ece/optical-communication-photonics">Optical Communication & Photonics</a></li>
+  <li><a href="/ece/robotics-industrial-automation-mumbai">Robotics & Industrial Automation</a></li>
+
+</ul>
+
           </div>
           
         </div>

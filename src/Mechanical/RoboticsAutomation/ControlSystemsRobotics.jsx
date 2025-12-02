@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+
+const keywords = [
+  "robotics control systems projects mumbai",
+  "btech robotics control projects",
+  "mtech robotic control systems ieee",
+  "phd robotics control research mumbai",
+  "adaptive control robotics projects",
+  "nonlinear control robotics ieee",
+  "ai based robotic controllers mumbai",
+  "industrial automation robotics projects",
+  "control systems robotics narpavi research institute",
+  "model predictive control robotics projects",
+  "pid controller robotics project",
+  "robust control robotic systems",
+  "fuzzy logic control robotics",
+  "matlab simulink control systems projects"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MEControlSystemsRoboticsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Control Systems for Robotics Project Development in Mumbai"
+  description="IEEE-aligned Control Systems for Robotics project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Work on PID control, adaptive control, robust control, nonlinear control, MPC, AI-driven robotic control systems and industrial automation."
+  url="/mechanical/robotics-automation/control-systems-robotics"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -223,12 +249,47 @@ const MEControlSystemsRoboticsProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/autonomous-vehicles-mobile-robots-project-development">Autonomous Vehicles & Mobile Robots Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-              <li><a href="/industrial-collaborative-robots-project-development">Industrial & Collaborative Robots Project Development</a></li>
-              <li><a href="/smart-manufacturing-industry-4-0-project-development">Smart Manufacturing & Industry 4.0 Project Development</a></li>
-              <li><a href="/smart-intelligent-materials-project-development">Smart & Intelligent Materials Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/robotics-automation">Robotics & Automation</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/industrial-collaborative-robots">
+      Industrial & Collaborative Robots
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/mechatronic-systems-smart">
+      Mechatronic Systems & Smart Devices
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/autonomous-vehicles-mobile">
+      Autonomous Vehicles & Mobile Robots
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/control-systems-robotics">
+      Control Systems in Robotics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/ai-ml-robotics">
+      AI & ML in Robotics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/robotic-process-automation">
+      Robotic Process Automation (RPA)
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

@@ -1,4 +1,23 @@
 import "./MEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "industrial and production engineering projects mumbai",
+  "lean manufacturing ieee projects",
+  "supply chain optimization projects",
+  "smart factory industry 4.0 projects",
+  "predictive maintenance projects",
+  "digital twin manufacturing projects",
+  "production engineering projects for btech",
+  "mtech industrial engineering projects",
+  "phd production engineering research",
+  "operations research projects mumbai",
+  "ai based production planning",
+  "six sigma projects ieee",
+  "matlab production simulation projects",
+  "anylogic supply chain modeling",
+  "narpavi research institute production engineering"
+];
 
 const faqs = [
   {
@@ -26,10 +45,19 @@ const faqs = [
 const MEIndustrialProductionEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Industrial & Production Engineering Project Development in Mumbai | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Industrial & Production Engineering project development in Mumbai. Work on lean manufacturing, supply chain optimization, Industry 4.0, predictive maintenance, digital twins, production simulation, and AI-based manufacturing systems."
+        url="/mechanical/industrial-production-engineering"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Industrial and Production Engineering Projects Mumbai</li>
@@ -212,12 +240,37 @@ const MEIndustrialProductionEngineeringProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/tribology-maintenance-project-development">Tribology & Maintenance Project Development</a></li>
-              <li><a href="/fluid-mechanics-hydraulics-project-development">Fluid Mechanics & Hydraulics Project Development</a></li>
-              <li><a href="/dynamics-vibration-engineering-project-development">Dynamics & Vibration Engineering Project Development</a></li>
-              <li><a href="/robotics-automation-engineering-project-development">Robotics & Automation Engineering Project Development</a></li>
-              <li><a href="/materials-metallurgy-engineering-project-development">Materials & Metallurgy Engineering Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/industrial-production-engineering">
+      Industrial & Production Engineering
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/lean-manufacturing-techniques">
+      Lean Manufacturing Techniques
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/supply-chain-process">
+      Supply Chain Process
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/smart-factory-systems">
+      Smart Factory Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/industrial-production-engineering/cost-time-optimization">
+      Cost & Time Optimization
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./ThesisWritingServices.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const navItems = [
   { id: "intro", label: "Overview" },
@@ -65,9 +66,13 @@ export default function ThesisMumbai() {
       </header>
 
       <div className="tm-layout">
+
         {/* Left Sidebar */}
         <aside className="tm-sidebar tm-sidebar--left">
+          
           <div className="tm-card tm-card--nav">
+             <a href="/home-page" class="buttonhp">Home Page</a>
+            <LeftSidebar/>
             <h3 className="tm-card__title">Quick Navigation</h3>
             <nav className="tm-nav">
               <ul>
@@ -82,17 +87,7 @@ export default function ThesisMumbai() {
             </nav>
           </div>
 
-          <div className="tm-card">
-            <h4 className="tm-card__title">Why Choose Us</h4>
-            <ul className="tm-list">
-              <li>UGC & University-compliant formatting</li>
-              <li>Turnitin-checked, plagiarism 10%</li>
-              <li>Domain-specific expert writers</li>
-              <li>End-to-end documentation</li>
-              <li>On-time delivery</li>
-            </ul>
-            <a className="btn btn-secondary" href="#support">Request Consultation</a>
-          </div>
+        
         </aside>
 
         {/* Main Content */}
@@ -267,25 +262,22 @@ export default function ThesisMumbai() {
 
         {/* Right Sidebar */}
         <aside className="tm-sidebar tm-sidebar--right">
-          <div className="tm-card">
-            <h4 className="tm-card__title">Free Consultation</h4>
-            <p>Get a 15-minute call with our research mentor to discuss scope, timelines, and compliance.</p>
-            <a className="btn btn-primary" href="mailto:research@narpavi.com">Book a Slot</a>
-          </div>
-
-          <div className="tm-card tm-card--muted">
-            <h4 className="tm-card__title">Contact</h4>
-            <ul className="tm-list">
-              <li>Email: research@narpavi.com</li>
-              <li>Phone: +91 90000 00000</li>
-              <li>Mumbai & Pune Support</li>
-            </ul>
-          </div>
-
+      
           <div className="tm-card tm-card--badges">
             <span className="tm-badge tm-badge--green">Turnitin Checked</span>
             <span className="tm-badge tm-badge--blue">UGC Compliant</span>
             <span className="tm-badge tm-badge--orange">On-time Delivery</span>
+          </div>
+            <div className="tm-card">
+            <h4 className="tm-card__title">Why Choose Us</h4>
+            <ul className="tm-list">
+              <li>UGC & University-compliant formatting</li>
+              <li>Turnitin-checked, plagiarism 10%</li>
+              <li>Domain-specific expert writers</li>
+              <li>End-to-end documentation</li>
+              <li>On-time delivery</li>
+            </ul>
+         
           </div>
         </aside>
       </div>

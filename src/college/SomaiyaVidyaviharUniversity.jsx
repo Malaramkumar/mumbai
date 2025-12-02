@@ -25,13 +25,32 @@ const faqs = [
     answer: "A minimum of two Scopus/ABDC papers and one national conference presentation is required."
   }
 ];
-
+const keywords = [
+  "SVU PhD Admission 2025",
+  "Somaiya PhD Eligibility",
+  "SVU PET Exam",
+  "PhD Mumbai",
+  "Somaiya Vidyavihar PhD",
+  "SVU Research Facilities",
+  "PhD Fellowship Mumbai",
+  "SVU Doctoral Assistantship",
+  "Somaiya PET Syllabus",
+  "SVU PhD Fee Structure"
+];
 const SVUPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+         <SEO
+        title="SVU PhD Admission 2025 | Eligibility, PET Exam, Research & Fellowship"
+        description="Somaiya Vidyavihar University PhD Admissions 2025 – Eligibility, PET exam, research infrastructure, funding, required publications, and admission timeline."
+        url="/colleges/svu-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
         <ul>
@@ -215,14 +234,12 @@ const SVUPhDPage = () => {
       </main>
 
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>SVU</li>
-            <li>PhD Mumbai</li>
-            <li>Admissions</li>
-            <li>Research</li>
-            <li>Narpavi</li>
-          </ul>
+       <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

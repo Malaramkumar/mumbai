@@ -1,5 +1,17 @@
 import "../MEProjectDevelopmentCenter.scss";
-
+import SEO from "../../assets/SEO";
+const keywords = [
+  "internal combustion engine projects Mumbai",
+  "B.Tech IC engine optimization projects",
+  "M.Tech engine performance modeling",
+  "Ph.D. combustion research Mumbai",
+  "CFD combustion analysis",
+  "IC engine emission control projects",
+  "hybrid IC engine projects",
+  "hydrogen engine IEEE projects",
+  "ICE optimization with AI",
+  "Narpavi Research Institute automotive projects"
+];
 const faqs = [
   {
     question: "What services does the Internal Combustion Engine Optimization Project Development Center offer in Mumbai?",
@@ -26,22 +38,22 @@ const faqs = [
 const MEInternalCombustionEngineOptimizationProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Internal Combustion Engine Optimization – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Internal Combustion Engine Optimization Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on ICE technology."
+        url="/mechanical/automobile-transportation-systems/internal-combustion-engine"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>internal combustion engine projects Mumbai</li>
-              <li>B.Tech IC engine optimization projects</li>
-              <li>M.Tech engine performance modeling</li>
-              <li>Ph.D. combustion research Mumbai</li>
-              <li>CFD combustion analysis</li>
-              <li>IC engine emission control projects</li>
-              <li>hybrid IC engine projects</li>
-              <li>hydrogen engine IEEE projects</li>
-              <li>ICE optimization with AI</li>
-              <li>Narpavi Research Institute automotive projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -181,7 +193,7 @@ const MEInternalCombustionEngineOptimizationProjectDevelopmentCenter = () => {
             </section>
 
             <section className="MEProjectDevelopmentCenter-conclusion">
-              <h2>Conclusion</h2>
+              <h2></h2>
               <p>
                 Internal Combustion Engine Optimization continues to be a vital research area for Mumbai’s automotive, marine, logistics, and hybrid vehicle industries. By adopting CFD modeling, AI-assisted optimization, hybrid integration, and alternative fuels, researchers are driving innovations that balance efficiency, performance, and sustainability.
               </p>
@@ -225,12 +237,49 @@ const MEInternalCombustionEngineOptimizationProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/vehicle-dynamics-crash-safety-systems-project-development">Vehicle Dynamics & Crash Safety Systems Project Development</a></li>
-              <li><a href="/electric-hybrid-vehicle-design-project-development">Electric & Hybrid Vehicle Design Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-industry-40-project-development">Smart Factory Systems (Industry 4.0) Project Development</a></li>
-              <li><a href="/supply-chain-process-optimization-project-development">Supply Chain & Process Optimization Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/automobile-transportation-systems">
+      Automobile & Transportation Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design">
+      Electric & Hybrid Vehicle Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety">
+      Vehicle Dynamics & Crash Safety
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/internal-combustion-engine">
+      Internal Combustion Engines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel">
+      Automotive Aerodynamics & Fuel Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions">
+      Advanced Vehicle Suspensions
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/intelligent-transportation">
+      Intelligent Transportation Systems
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

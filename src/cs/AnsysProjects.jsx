@@ -1,5 +1,6 @@
- import "./CSEProjectDevelopmentCenter.scss";
-
+import "./CSEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
 const faqs = [
   {
     question: "What services does the Ansys Projects Project Development Center offer in Mumbai?",
@@ -23,25 +24,40 @@ const faqs = [
   }
 ];
 
+const keywords = [
+  "Ansys Projects Mumbai",
+  "FEA Projects Mumbai",
+  "CFD Simulation Projects Mumbai",
+  "Mechanical Simulation Projects Mumbai",
+  "Thermal Analysis Projects Mumbai",
+  "Structural Analysis Projects Mumbai",
+  "B.Tech Ansys Projects Mumbai",
+  "M.Tech Ansys Projects Mumbai",
+  "Ph.D. Ansys Projects Mumbai",
+  "Narpavi Technologies Ansys Project Development Center"
+];
+
 const CSEAnsysProjectsProjectDevelopmentCenter = () => {
   return (
     <div className="CSEProjectDevelopmentCenter">
+       <SEO
+        title="Ansys Projects in Mumbai | FEA, CFD, Mechanical & Thermal Simulation"
+        description="IEEE-aligned (2023–2025) Ansys projects for B.Tech, M.Tech, and PhD students with FEA, CFD, structural, thermal, and multiphysics simulations in Mumbai."
+        url="/cse/ansys-projects"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="CSEProjectDevelopmentCenter-main">
         <div className="CSEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="CSEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Ansys Projects Mumbai</li>
-              <li>FEA Projects Mumbai</li>
-              <li>CFD Simulation Projects Mumbai</li>
-              <li>Mechanical Simulation Projects Mumbai</li>
-              <li>Thermal Analysis Projects Mumbai</li>
-              <li>Structural Analysis Projects Mumbai</li>
-              <li>B.Tech Ansys Projects Mumbai</li>
-              <li>M.Tech Ansys Projects Mumbai</li>
-              <li>Ph.D. Ansys Projects Mumbai</li>
-              <li>Narpavi Technologies Ansys Project Development Center</li>
+              {keywords.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
             </ul>
           </div>
 
@@ -151,7 +167,7 @@ const CSEAnsysProjectsProjectDevelopmentCenter = () => {
             </section>
 
             <section className="CSEProjectDevelopmentCenter-conclusion">
-              <h2>Conclusion</h2>
+               
               <p>
                 Ansys Projects in Mumbai at Narpavi Technologies Project Development Center equip students with cutting-edge skills in simulation, design validation, and optimization. From B.Tech students performing basic structural analysis to Ph.D. scholars developing AI-assisted multi-physics simulations, our projects are IEEE-aligned, industry-relevant, and Mumbai-focused, enabling students to excel in automotive, aerospace, manufacturing, and energy sectors.
               </p>
@@ -191,13 +207,60 @@ const CSEAnsysProjectsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="CSEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/robotics-projects-project-development">Robotics Projects Project Development</a></li>
-              <li><a href="/ns3-projects-project-development">NS3 Projects Project Development</a></li>
-              <li><a href="/vlsi-projects-project-development">VLSI Projects Project Development</a></li>
-              <li><a href="/r-projects-project-development">R Projects Project Development</a></li>
-              <li><a href="/dotnet-projects-project-development">DotNet Projects Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/departments?dept=cse">Computer Science & Engineering</a>
+  </li>
+
+  <li><a href="/cse/artificial-intelligence-machine-learning">Artificial Intelligence & Machine Learning</a></li>
+  <li><a href="/cse/custom-software-development">Custom Software Development</a></li>
+  <li><a href="/cse/data-science-big-data-analytics">Data Science & Big Data Analytics</a></li>
+  <li><a href="/cse/internet-of-things">Internet of Things (IoT)</a></li>
+  <li><a href="/cse/cybersecurity-privacy">Cybersecurity & Privacy</a></li>
+  <li><a href="/cse/blockchain-distributed-systems">Blockchain & Distributed Systems</a></li>
+  <li><a href="/cse/cloud-edge-infrastructure">Cloud & Edge Infrastructure</a></li>
+  <li><a href="/cse/quantum-computing-information">Quantum Computing & Information</a></li>
+  <li><a href="/cse/human-computer-interaction">Human-Computer Interaction</a></li>
+  <li><a href="/cse/computer-vision-image">Computer Vision & Image Processing</a></li>
+  <li><a href="/cse/autonomous-systems-robotics">Autonomous Systems & Robotics</a></li>
+  <li><a href="/cse/natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="/cse/digital-twins-simulation">Digital Twins & Simulation</a></li>
+  <li><a href="/cse/quantum-networking-communication">Quantum Networking & Communication</a></li>
+  <li><a href="/cse/web-application-development">Web Application Development</a></li>
+  <li><a href="/cse/mobile-app-development">Mobile App Development</a></li>
+  <li><a href="/cse/mvp-development">MVP Development</a></li>
+  <li><a href="/cse/startup-software-development">Startup Software Development</a></li>
+  <li><a href="/cse/enterprise-software-solutions">Enterprise Software Solutions</a></li>
+  <li><a href="/cse/dedicated-development-teams">Dedicated Development Teams</a></li>
+  <li><a href="/cse/design-lab-ui-ux-development">Design Lab UI/UX Development</a></li>
+  <li><a href="/cse/qa-testing-services">QA & Testing Services</a></li>
+
+  <li><a href="/cse/java">Java Development</a></li>
+  <li><a href="/cse/php-development">PHP Development</a></li>
+  <li><a href="/cse/spring-development">Spring Development</a></li>
+  <li><a href="/cse/csharp-development">C# Development</a></li>
+
+  <li><a href="/cse/machine-learning-based">Machine Learning Based Projects</a></li>
+  <li><a href="/cse/python-development">Python Development</a></li>
+  <li><a href="/cse/matlab-projects">MATLAB Projects</a></li>
+  <li><a href="/cse/dotnet-projects">DotNet Projects</a></li>
+  <li><a href="/cse/r-projects">R Projects</a></li>
+  <li><a href="/cse/ns3-projects">NS3 Projects</a></li>
+  <li><a href="/cse/vlsi-projects">VLSI Projects</a></li>
+  <li><a href="/cse/opnet-projects">OPNET Projects</a></li>
+  <li><a href="/cse/robotics-projects">Robotics Projects</a></li>
+  <li><a href="/cse/ansys-projects">ANSYS Projects</a></li>
+  <li><a href="/cse/solidworks-projects">SolidWorks Projects</a></li>
+  <li><a href="/cse/cartia-projects">Cartia Projects</a></li>
+  <li><a href="/cse/labview-projects">LabVIEW Projects</a></li>
+
+  <li><a href="/cse/power-system-projects">Power System Projects</a></li>
+  <li><a href="/cse/power-documents">Power Documents</a></li>
+
+  <li><a href="/cse/image-processing">Image Processing</a></li>
+  <li><a href="/cse/signal-processing">Signal Processing</a></li>
+</ul>
+
           </div>
         </div>
       </div>

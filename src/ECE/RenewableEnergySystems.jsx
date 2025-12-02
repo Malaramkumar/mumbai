@@ -1,6 +1,19 @@
 import React from 'react';
 import "./ECEProjectDevelopmentCenter.scss"; // Assuming a common SCSS file for ECE/VLSI
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
+const keywords = [
+  "Renewable Energy Projects Mumbai",
+  "Solar PV Projects ECE",
+  "Wind Energy Systems Projects",
+  "Hybrid Microgrid Projects",
+  "Energy Storage Systems",
+  "Smart Grid ECE Mumbai",
+  "IEEE Renewable Energy Projects",
+  "HOMER Energy Simulation",
+  "MATLAB Renewable Modeling",
+  "Sustainable Energy Systems Mumbai"
+];
 const faqs = [
   {
     question: "Why is Renewable Energy Systems a key focus in Mumbai?",
@@ -27,11 +40,20 @@ const faqs = [
 const RenewableEnergySystemsMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+      <SEO
+  title="Renewable Energy Systems Projects in Mumbai | Solar, Wind, Microgrids, Energy Storage, IEEE Research"
+  description="Renewable Energy Systems Project Development Center in Mumbai for B.Tech, M.Tech, and Ph.D. students. Develop solar PV, wind systems, hybrid microgrids, battery storage, and smart grid controllers using MATLAB, HOMER Energy, PSCAD, and IEEE-aligned methodologies."
+  url="/ece/renewable-energy-systems"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>ECE Renewable Energy Projects</li>
@@ -192,13 +214,30 @@ const RenewableEnergySystemsMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE Fields</h3>
-            <ul>
-              <li><a href="/power-electronics-mumbai">Power Electronics</a></li>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/communication-systems-mumbai">Communication Systems</a></li>
-              <li><a href="/smart-grid-ece-mumbai">Smart Grid in ECE</a></li>
-              <li><a href="/energy-storage-mumbai">Energy Storage Systems</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=ece">Electronics & Communication</a>
+  </li>
+
+  <li><a href="/ece/vlsi-design-verification">VLSI Design & Verification</a></li>
+  <li><a href="/ece/embedded-systems-iot">Embedded Systems & IoT</a></li>
+  <li><a href="/ece/communication-signal-processing">Communication & Signal Processing</a></li>
+  <li><a href="/ece/power-electronics-drives">Power Electronics & Drives</a></li>
+  <li><a href="/ece/renewable-energy-systems">Renewable Energy Systems</a></li>
+  <li><a href="/ece/embedded-iot">Embedded & IoT Applications</a></li>
+  <li><a href="/ece/wireless-communication-networking">Wireless Communication & Networking</a></li>
+  <li><a href="/ece/ai-ml-applications-electronics">AI & ML Applications in Electronics</a></li>
+  <li><a href="/ece/internet-of-medical-things">Internet of Medical Things (IoMT)</a></li>
+  <li><a href="/ece/smart-antenna-microwave">Smart Antenna & Microwave Engineering</a></li>
+  <li><a href="/ece/fpga-reconfigurable-systems">FPGA & Reconfigurable Systems</a></li>
+  <li><a href="/ece/cyber-physical-smart-systems">Cyber Physical & Smart Systems</a></li>
+  <li><a href="/ece/control-systems-mechatronics">Control Systems & Mechatronics</a></li>
+  <li><a href="/ece/satellite-communication-navigation">Satellite Communication & Navigation</a></li>
+  <li><a href="/ece/optical-communication-photonics">Optical Communication & Photonics</a></li>
+  <li><a href="/ece/robotics-industrial-automation-mumbai">Robotics & Industrial Automation</a></li>
+
+</ul>
+
           </div>
           
         </div>

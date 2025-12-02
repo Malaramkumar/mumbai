@@ -2,7 +2,8 @@ import React from "react";
 import "./ResearchMethodologySupport.scss";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
  const faqs = [
   {
     question: "Do you help with research methodology for all domains?",
@@ -25,16 +26,37 @@ import { ChevronDown, ChevronUp } from "lucide-react";
     answer: "Yes, we assist in preparing and formatting documents required for ethics clearance, informed consent forms, and participant information sheets."
   }
 ];
-
+const keywords = [
+  "PhD Research Methodology Support Mumbai",
+  "Research Methodology Chapter Help",
+  "University-Compliant PhD Methodology",
+  "Quantitative and Qualitative Design Mumbai",
+  "Tool Development for PhD Mumbai",
+  "SPSS and R Data Analysis Mumbai",
+  "Research Ethics Documentation India",
+  "PhD Fieldwork Assistance in Mumbai",
+  "IRB Approval Support for PhD",
+  "Chapter 3 Methodology Writing Service",
+];
 
 const ResearchMethodologySupport = () => {
     const [openIndex, setOpenIndex] = useState(null);
     const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
   return (
     <div className="methodology-page">
+       <SEO
+        title="PhD Research Methodology Support in Mumbai | Quantitative, Qualitative, and Mixed Methods | Narpavi Research Institute"
+        description="Expert PhD research methodology support in Mumbai. Assistance with research design, sampling, data analysis, tool development, and ethics documentation for university-compliant methodology chapters."
+        url="/methodology-support-assistance-mumbai"
+        image="/assets/research-methodology-support-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs} // ✅ Enables rich FAQ schema in Google
+      />
       {/* Left Sidebar */}
       <div className="left-side">
-        <h3>Explore Sections</h3>
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
+        {/* <h3>Explore Sections</h3>
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#university-guidelines">University Guidelines</a></li>
@@ -42,7 +64,7 @@ const ResearchMethodologySupport = () => {
           <li><a href="#structure">Chapter Structure</a></li>
           <li><a href="#mistakes">Common Mistakes</a></li>
           <li><a href="#cta">Get Support</a></li>
-        </ul>
+        </ul> */}
       </div>
 
       {/* Main Content */}
@@ -206,18 +228,7 @@ const ResearchMethodologySupport = () => {
       {/* Right Sidebar */}
       <div className="right-side">
         <h3>📌 SEO Keywords</h3>
-        <ul>
-          <li>PhD Research Methodology Support Mumbai</li>
-          <li>Research Methodology Chapter Help</li>
-          <li>University-Compliant PhD Methodology</li>
-          <li>Quantitative and Qualitative Design Mumbai</li>
-          <li>Tool Development for PhD Mumbai</li>
-          <li>SPSS and R Data Analysis Mumbai</li>
-          <li>Research Ethics Documentation India</li>
-          <li>PhD Fieldwork Assistance in Mumbai</li>
-          <li>IRB Approval Support for PhD</li>
-          <li>Chapter 3 Methodology Writing Service</li>
-        </ul>
+        <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul>
       </div>
     </div>
   );

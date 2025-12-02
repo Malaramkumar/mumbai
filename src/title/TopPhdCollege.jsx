@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import './TopPhdCollege.scss';
+import SEO from "../assets/SEO";
+import LeftSidebar from '../LeftSidebar';
 const faqs = [
   {
     question: "Which are the top PhD colleges in Mumbai?",
@@ -24,7 +26,21 @@ const faqs = [
     answer: "Yes, scholars can apply for fellowships like UGC-NET JRF, DST INSPIRE, CSIR, and university-level research grants."
   }
 ];
-
+const keywords = [
+  "Top PhD colleges in Mumbai",
+  "PhD admission 2025 in Mumbai",
+  "Best universities in Mumbai for PhD in Engineering/Management",
+  "Recognized PhD programs in Mumbai",
+  "How to apply for PhD in top Mumbai colleges",
+  "PhD entrance exams and supervisor mapping in Mumbai",
+  "Doctoral research opportunities in Mumbai 2025",
+  "Top PhD colleges in Mumbai for Science",
+  "PhD Colleges in Mumbai Fees Structure",
+  "Top 10 PhD colleges in Mumbai",
+  "PhD colleges in Mumbai for Commerce",
+  "PhD colleges in Mumbai for Management",
+  "Part time PhD colleges in Mumbai",
+];
 
 const TopPhDCollegesMumbai = () => {
   
@@ -34,8 +50,18 @@ const [openIndex, setOpenIndex] = useState(null);
 
   return (
     <section className="phd-mumbai-container">
+       <SEO
+        title="Top PhD Colleges in Mumbai 2025 | University List, Admission & Eligibility"
+        description="Explore the top PhD colleges in Mumbai for 2025 including IIT Bombay, University of Mumbai, and TISS. Learn about eligibility, part-time options, and supervisor mapping guidance from Narpavi Research Institute."
+        url="/top-phd-colleges-mumbai"
+        image="/assets/top-phd-colleges-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs} // ✅ Auto-generates FAQ structured data
+      />
       {/* Left Sidebar */}
       <aside className="left-box">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>Quick Links</h3>
         <ul>
           <li>Top Colleges</li>
@@ -208,24 +234,11 @@ const [openIndex, setOpenIndex] = useState(null);
       {/* Right Sidebar */}
       <aside className="right-box">
         <h3>📌 SEO Keywords</h3>
-<ul>
-  <li>Top PhD colleges in Mumbai</li>
-  <li>PhD admission 2025 in Mumbai</li>
-  <li>Best universities in Mumbai for PhD in Engineering/Management</li>
-  <li>Recognized PhD programs in Mumbai</li>
-  <li>How to apply for PhD in top Mumbai colleges</li>
-  <li>PhD entrance exams and supervisor mapping in Mumbai</li>
-  <li>Doctoral research opportunities in Mumbai 2025</li>
-  <li>Top PhD colleges in Mumbai for Science</li>
-  <li>PhD Colleges in Mumbai Fees Structure</li>
-  <li>Top PhD colleges in Mumbai with fees</li>
-  <li>Top PhD colleges in Mumbai PDF</li>
-  <li>Top 10 PhD colleges in Mumbai</li>
-  <li>PhD colleges in Mumbai for Commerce</li>
-  <li>PhD colleges in Mumbai for Management</li>
-  <li>Part time PhD colleges in Mumbai</li>
-</ul>
-
+        <ul>
+          {keywords.map((keyword, index) => (
+            <li key={index}>{keyword}</li>
+          ))}
+        </ul>
       </aside>
     </section>
   );

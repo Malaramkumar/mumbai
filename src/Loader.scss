@@ -1,0 +1,284 @@
+/* === Wrapper holds both layers === */
+.preloader-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/* === Preloader Background Layer === */
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #002a4f, #001a33);
+  overflow: hidden;
+  color: #fff;
+  flex-direction: column;
+  font-family: cizel;
+  z-index: 1;
+  transition: all 1.5s ease-in-out;
+  opacity: 1;
+}
+/* === When Preloader fades into background === */
+.fade-bg {
+  opacity: 0.15 ;
+  filter: blur(1px);
+  transform: scale(1.05);
+  z-index: 0;
+}
+/* === Background Waves === */
+.preloader-bg { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 43%;
+  animation: waveMove 6s linear infinite;
+}
+.wave2 {
+  animation-delay: 3s;
+  opacity: 0.5;
+}
+
+@keyframes waveMove {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(-25%) translateY(10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+.progress-ring {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle {
+  transform: rotate(-90deg); /* makes animation start from top */
+}
+
+.ring-bg {
+  z-index: 1;
+}
+
+.ring-progress {
+  stroke-dasharray: 339.29; /* 2 * π * r (r=54) */
+  stroke-dashoffset: 305.36; /* starts at 10% visible */
+  animation: fillRing 3s ease-in-out forwards;
+  z-index: 2;
+}
+
+@keyframes fillRing {
+  from {
+    stroke-dashoffset: 340; /* 10% drawn */ //starting point
+  }
+  to {
+    stroke-dashoffset: 0; /* 100% drawn */ //ending point
+  }
+}
+
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  object-fit: contain;
+  border-radius:50% ;
+}
+
+
+
+/* === Logo Text & Animation === */
+.preloader-logo {  
+  text-align: center;
+  z-index: 5;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.institute-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+
+  span {
+    color: #4db8ff;
+  }
+}
+
+.tagline {
+  font-size: 2.5rem;
+  color: #cce7ff;
+  letter-spacing: 1px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* === Main Foreground Content === */
+.preloader-main-content {
+  opacity: 0;
+  z-index: 2;
+  position: relative;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.preloader-main-content.show {
+  opacity: 1;
+}
+
+/* === Large Screens (1440px and above) === */
+@media (min-width: 1440px) {
+  .progress-ring {
+    width: 120px;
+    height: 120px;
+  }
+
+  .center-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .institute-name {
+    font-size: 4rem;
+  }
+
+  .tagline {
+    font-size: 2.5rem;
+  }
+}
+
+/* === Tablets (max-width: 1024px) === */
+@media (max-width: 1024px) {
+  .progress-ring {
+    width: 90px;
+    height: 90px;
+  }
+
+  .center-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .institute-name {
+    font-size: 2.8rem;
+  }
+
+  .tagline {
+    font-size: 1.8rem;
+  }
+
+  .wave {
+    height: 160px;
+  }
+}
+
+/* === Mobile Devices (max-width: 768px) === */
+@media (max-width: 768px) {
+  .preloader {
+    background: radial-gradient(circle at center, #00203f, #000820);
+  }
+
+  .progress-ring {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .center-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .institute-name {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+  }
+
+  .wave {
+    height: 130px;
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
+/* === Small Mobile (max-width: 480px) === */
+@media (max-width: 480px) {
+  .progress-ring {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .center-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .institute-name {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .wave {
+    height: 100px;
+  }
+}
+
+/* === Ultra Small Screens (max-width: 360px) === */
+@media (max-width: 360px) {
+  .progress-ring {
+    width: 50px;
+    height: 50px;
+  }
+
+  .center-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .institute-name {
+    font-size: 1.3rem;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+}

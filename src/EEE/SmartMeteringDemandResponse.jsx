@@ -1,5 +1,7 @@
 import React from 'react';
 import "./EEEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
 
 const faqs = [
   {
@@ -28,15 +30,34 @@ const faqs = [
       "B.Tech: working smart‑meter/DR prototype + report; M.Tech: predictive DR + microgrid controller + benchmarking + publication draft; Ph.D.: multi‑agent/AI frameworks + HIL validation + artifact repository and IEEE manuscript."
   }
 ];
-
+const keywords = [
+  "Smart Metering Mumbai",
+  "Demand Response DR Projects",
+  "Apartment Microgrids Mumbai",
+  "LoRaWAN Zigbee MQTT",
+  "Smart Energy Billing MDMS",
+  "AI Load Forecasting Energy",
+  "PV Battery Microgrid Mumbai",
+  "ETAP Simulink HOMER Projects",
+  "Edge Gateway TLS IoT",
+  "IEEE Smart Grid Projects 2023 2025"
+];
 const SmartMeteringDRMicrogridsMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+          <SEO
+        title="Smart Metering, Demand Response & Microgrid Projects in Mumbai | AI, LoRaWAN, PV-Battery, IEEE 2023–2025"
+        description="Smart Metering and Demand Response Project Center in Mumbai—develop IoT-based AMI systems, microgrid controllers, and DR optimization with LoRaWAN, Zigbee, MQTT, ETAP, and Simulink. Integrate PV, battery storage, and AI forecasting for urban apartment communities under IEEE frameworks."
+        url="/eee/smart-metering-demand-response"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Smart Metering Apartments</li>
@@ -218,13 +239,28 @@ const SmartMeteringDRMicrogridsMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE fields</h3>
-            <ul>
-              <li><a href="/renewable-energy-mumbai">Renewable Energy</a></li>
-              <li><a href="/power-electronics-mumbai">Power Electronics</a></li>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/ai-power-control-mumbai">AI in Power & Control</a></li>
-              <li><a href="/cyber-physical-systems-mumbai">Cyber‑Physical Systems</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=eee">Electrical & Electronics</a>
+  </li>
+
+  <li><a href="/eee/smart-grid-microgrid">Smart Grid & Microgrid</a></li>
+  <li><a href="/eee/ev-charging-infrastructure-v2g">EV Charging Infrastructure & V2G</a></li>
+  <li><a href="/eee/power-system-stability">Power System Stability</a></li>
+  <li><a href="/eee/load-forecasting-demand-response">Load Forecasting & Demand Response</a></li>
+  <li><a href="/eee/high-voltage-dc">High Voltage DC Systems</a></li>
+  <li><a href="/eee/power-system-protection">Power System Protection</a></li>
+  <li><a href="/eee/power-electronics-renewables">Power Electronics for Renewables</a></li>
+  <li><a href="/eee/embedded-iot-energy">Embedded IoT for Energy Systems</a></li>
+  <li><a href="/eee/smart-lighting-building">Smart Lighting & Building Automation</a></li>
+  <li><a href="/eee/condition-monitoring-diagnosis">Condition Monitoring & Diagnosis</a></li>
+  <li><a href="/eee/electric-machines-coastal-marine">Electric Machines for Coastal & Marine</a></li>
+  <li><a href="/eee/power-electronics-ev-motor-drives">Power Electronics & EV Motor Drives</a></li>
+  <li><a href="/eee/wireless-power-transfer">Wireless Power Transfer</a></li>
+  <li><a href="/eee/artificial-intelligence-power">AI in Power Systems</a></li>
+  <li><a href="/eee/smart-metering-demand-response">Smart Metering & Demand Response</a></li>
+
+</ul>
           </div>
 
         </div>

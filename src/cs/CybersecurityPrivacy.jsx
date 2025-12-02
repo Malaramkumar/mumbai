@@ -1,5 +1,18 @@
 import "./CSEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Cybersecurity projects in Mumbai",
+  "Privacy-preserving machine learning",
+  "Blockchain for cybersecurity",
+  "AI intrusion detection Mumbai",
+  "Post-quantum cryptography research",
+  "Secure software development projects",
+  "IEEE cybersecurity papers",
+  "IoT security in Mumbai",
+  "Network security projects for students",
+  "Cybersecurity domain research Mumbai"
+];
 const faqs = [
   {
     question: "What services does the Cybersecurity & Privacy Project Development Center offer in Mumbai?",
@@ -26,22 +39,23 @@ const faqs = [
 const CSECybersecurityPrivacyProjectDevelopmentCenter = () => {
   return (
     <div className="CSEProjectDevelopmentCenter">
+      <SEO
+        title="Cybersecurity & Privacy Projects in Mumbai | B.Tech, M.Tech, PhD IEEE Project Development"
+        description="IEEE-aligned Cybersecurity & Privacy project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes applications in banking, healthcare, IT, government, telecom, and education."
+        url="/cse/cybersecurity-privacy"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="CSEProjectDevelopmentCenter-main">
         <div className="CSEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="CSEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Cybersecurity projects in Mumbai</li>
-              <li>Privacy-preserving machine learning</li>
-              <li>Blockchain for cybersecurity</li>
-              <li>AI intrusion detection Mumbai</li>
-              <li>Post-quantum cryptography research</li>
-              <li>Secure software development projects</li>
-              <li>IEEE cybersecurity papers</li>
-              <li>IoT security in Mumbai</li>
-              <li>Network security projects for students</li>
-              <li>Cybersecurity domain research Mumbai</li>
+              {keywords.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
             </ul>
           </div>
 
@@ -195,13 +209,60 @@ const CSECybersecurityPrivacyProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="CSEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/iot-edge-fog-computing-project-development">Internet of Things (IoT) & Edge / Fog Computing Project Development</a></li>
-              <li><a href="/data-science-big-data-analytics-project-development">Data Science, Big Data & Analytics Project Development</a></li>
-              <li><a href="/artificial-intelligence-machine-learning-project-development">Artificial Intelligence & Machine Learning (AI/ML) Project Development</a></li>
-              <li><a href="/high-performance-computing-mechanical-engineering-project-development">High-Performance Computing (HPC) in Mechanical Engineering Project Development</a></li>
-              <li><a href="/digital-twin-smart-simulation-mechanical-engineering-project-development">Digital Twin & Smart Simulation in Mechanical Engineering Project Development</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=cse">Computer Science & Engineering</a>
+  </li>
+
+  <li><a href="/cse/artificial-intelligence-machine-learning">Artificial Intelligence & Machine Learning</a></li>
+  <li><a href="/cse/custom-software-development">Custom Software Development</a></li>
+  <li><a href="/cse/data-science-big-data-analytics">Data Science & Big Data Analytics</a></li>
+  <li><a href="/cse/internet-of-things">Internet of Things (IoT)</a></li>
+  <li><a href="/cse/cybersecurity-privacy">Cybersecurity & Privacy</a></li>
+  <li><a href="/cse/blockchain-distributed-systems">Blockchain & Distributed Systems</a></li>
+  <li><a href="/cse/cloud-edge-infrastructure">Cloud & Edge Infrastructure</a></li>
+  <li><a href="/cse/quantum-computing-information">Quantum Computing & Information</a></li>
+  <li><a href="/cse/human-computer-interaction">Human-Computer Interaction</a></li>
+  <li><a href="/cse/computer-vision-image">Computer Vision & Image Processing</a></li>
+  <li><a href="/cse/autonomous-systems-robotics">Autonomous Systems & Robotics</a></li>
+  <li><a href="/cse/natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="/cse/digital-twins-simulation">Digital Twins & Simulation</a></li>
+  <li><a href="/cse/quantum-networking-communication">Quantum Networking & Communication</a></li>
+  <li><a href="/cse/web-application-development">Web Application Development</a></li>
+  <li><a href="/cse/mobile-app-development">Mobile App Development</a></li>
+  <li><a href="/cse/mvp-development">MVP Development</a></li>
+  <li><a href="/cse/startup-software-development">Startup Software Development</a></li>
+  <li><a href="/cse/enterprise-software-solutions">Enterprise Software Solutions</a></li>
+  <li><a href="/cse/dedicated-development-teams">Dedicated Development Teams</a></li>
+  <li><a href="/cse/design-lab-ui-ux-development">Design Lab UI/UX Development</a></li>
+  <li><a href="/cse/qa-testing-services">QA & Testing Services</a></li>
+
+  <li><a href="/cse/java">Java Development</a></li>
+  <li><a href="/cse/php-development">PHP Development</a></li>
+  <li><a href="/cse/spring-development">Spring Development</a></li>
+  <li><a href="/cse/csharp-development">C# Development</a></li>
+
+  <li><a href="/cse/machine-learning-based">Machine Learning Based Projects</a></li>
+  <li><a href="/cse/python-development">Python Development</a></li>
+  <li><a href="/cse/matlab-projects">MATLAB Projects</a></li>
+  <li><a href="/cse/dotnet-projects">DotNet Projects</a></li>
+  <li><a href="/cse/r-projects">R Projects</a></li>
+  <li><a href="/cse/ns3-projects">NS3 Projects</a></li>
+  <li><a href="/cse/vlsi-projects">VLSI Projects</a></li>
+  <li><a href="/cse/opnet-projects">OPNET Projects</a></li>
+  <li><a href="/cse/robotics-projects">Robotics Projects</a></li>
+  <li><a href="/cse/ansys-projects">ANSYS Projects</a></li>
+  <li><a href="/cse/solidworks-projects">SolidWorks Projects</a></li>
+  <li><a href="/cse/cartia-projects">Cartia Projects</a></li>
+  <li><a href="/cse/labview-projects">LabVIEW Projects</a></li>
+
+  <li><a href="/cse/power-system-projects">Power System Projects</a></li>
+  <li><a href="/cse/power-documents">Power Documents</a></li>
+
+  <li><a href="/cse/image-processing">Image Processing</a></li>
+  <li><a href="/cse/signal-processing">Signal Processing</a></li>
+</ul>
+
           </div>
         </div>
       </div>

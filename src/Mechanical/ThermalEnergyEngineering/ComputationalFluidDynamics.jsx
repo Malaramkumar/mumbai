@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "CFD thermal systems projects Mumbai",
+  "computational fluid dynamics project center",
+  "ANSYS Fluent CFD projects",
+  "OpenFOAM thermal simulation projects",
+  "CFD multiphysics simulation Mumbai",
+  "EV battery thermal management CFD",
+  "LES DNS CFD research India",
+  "thermal fluid simulation IEEE projects",
+  "CFD heat transfer analysis projects",
+  "renewable energy CFD modeling",
+  "electronics cooling CFD simulation",
+  "HVAC CFD optimization projects",
+  "STAR-CCM+ thermal simulation",
+  "COMSOL thermal modeling projects",
+  "Narpavi Research Institute CFD projects"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MEComputationalFluidDynamicsThermalSystemsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="CFD in Thermal Systems Project Development in Mumbai"
+  description="IEEE-aligned Computational Fluid Dynamics (CFD) in Thermal Systems project development for B.Tech, M.Tech, and Ph.D. students in Mumbai. Work with ANSYS Fluent, STAR-CCM+, OpenFOAM, COMSOL, MATLAB, and CFD-based thermal optimization for EVs, aerospace, renewable energy, HVAC, and electronics cooling."
+  url="/mechanical/thermal-energy-engineering/computational-fluid-dynamics"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -230,13 +256,42 @@ const MEComputationalFluidDynamicsThermalSystemsProjectDevelopmentCenter = () =>
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/heat-transfer-enhancement-techniques-project-development">Heat Transfer Enhancement Techniques Project Development</a></li>
-              <li><a href="/computational-simulation-techniques-project-development">Computational & Simulation Techniques Project Development</a></li>
-              <li><a href="/automobile-transportation-systems-project-development">Automobile & Transportation Systems Project Development</a></li>
-              <li><a href="/industrial-production-engineering-project-development">Industrial & Production Engineering Project Development</a></li>
-              <li><a href="/fluid-mechanics-hydraulics-project-development">Fluid Mechanics & Hydraulics Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering">Thermal Energy Engineering</a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/heat-transfer-enhancement">
+      Heat Transfer Enhancement
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/computational-fluid-dynamics">
+      Computational Fluid Dynamics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/solar-thermal-geothermal">
+      Solar Thermal & Geothermal
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/refrigeration-cryogenics">
+      Refrigeration & Cryogenics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/waste-heat-recovery-energy">
+      Waste Heat Recovery & Energy
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/thermal-energy">
+      Thermal Energy
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

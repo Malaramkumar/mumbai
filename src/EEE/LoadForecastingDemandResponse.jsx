@@ -1,5 +1,7 @@
 import React from "react";
 import "./EEEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
 
 const faqs = [
   {
@@ -28,32 +30,39 @@ const faqs = [
       "Python (Pandas/Scikit‑learn/TensorFlow), MATLAB/Simulink Power Systems, Power BI for dashboards, and lightweight SCADA simulators for signal orchestration and control loops."
   }
 ];
-
-const JsonLd = ({ data }) => (
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-  />
-);
+const keywords = [
+  "Load Forecasting Mumbai",
+  "Demand Response Projects Mumbai",
+  "Smart Grid Load Prediction",
+  "AI Based Energy Forecasting",
+  "EEE Smart Power Systems Mumbai",
+  "Energy Management Systems Research",
+  "IEEE Smart Grid Projects 2025",
+  "Urban Energy Optimization",
+  "Machine Learning for Power Demand",
+  "Renewable Integration Forecasting Mumbai"
+];
+ 
 
 const LoadForecastingDemandResponseMumbai = () => {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.question,
-      acceptedAnswer: { "@type": "Answer", text: f.answer }
-    }))
-  };
-
+ 
   return (
     <div className="EEEProjectDevelopmentCenter">
+
+        <SEO
+        title="Load Forecasting & Demand Response Projects in Mumbai | AI, Smart Grid, IEEE 2023–2025"
+        description="Explore Load Forecasting and Demand Response projects in Mumbai—covering smart grid analytics, AI/ML forecasting models (LSTM, GRU, CNN-BiLSTM), renewable integration, SCADA simulation, and IEEE-aligned project development for EEE students."
+        url="/eee/load-forecasting-demand-response"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="EEEProjectDevelopmentCenter-main">
         <div className="EEEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="EEEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Load Forecasting & Demand Response for Mumbai</li>
@@ -210,20 +219,35 @@ const LoadForecastingDemandResponseMumbai = () => {
                   </details>
                 ))}
               </div>
-              <JsonLd data={faqSchema} />
+               
             </section>
           </div>
 
           {/* Right Column – Related Fields */}
           <div className="EEEProjectDevelopmentCenter-right">
             <h3>🔗 Related EEE Fields</h3>
-            <ul>
-              <li><a href="/smart-grid-communication-mumbai">Smart Grid Communication</a></li>
-              <li><a href="/renewable-energy-mumbai">Renewable Energy Systems</a></li>
-              <li><a href="/power-systems-mumbai">Power System Optimization</a></li>
-              <li><a href="/energy-management-mumbai">Energy Management Systems</a></li>
-              <li><a href="/ev-v2g-mumbai">EV Charging & V2G</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=eee">Electrical & Electronics</a>
+  </li>
+
+  <li><a href="/eee/smart-grid-microgrid">Smart Grid & Microgrid</a></li>
+  <li><a href="/eee/ev-charging-infrastructure-v2g">EV Charging Infrastructure & V2G</a></li>
+  <li><a href="/eee/power-system-stability">Power System Stability</a></li>
+  <li><a href="/eee/load-forecasting-demand-response">Load Forecasting & Demand Response</a></li>
+  <li><a href="/eee/high-voltage-dc">High Voltage DC Systems</a></li>
+  <li><a href="/eee/power-system-protection">Power System Protection</a></li>
+  <li><a href="/eee/power-electronics-renewables">Power Electronics for Renewables</a></li>
+  <li><a href="/eee/embedded-iot-energy">Embedded IoT for Energy Systems</a></li>
+  <li><a href="/eee/smart-lighting-building">Smart Lighting & Building Automation</a></li>
+  <li><a href="/eee/condition-monitoring-diagnosis">Condition Monitoring & Diagnosis</a></li>
+  <li><a href="/eee/electric-machines-coastal-marine">Electric Machines for Coastal & Marine</a></li>
+  <li><a href="/eee/power-electronics-ev-motor-drives">Power Electronics & EV Motor Drives</a></li>
+  <li><a href="/eee/wireless-power-transfer">Wireless Power Transfer</a></li>
+  <li><a href="/eee/artificial-intelligence-power">AI in Power Systems</a></li>
+  <li><a href="/eee/smart-metering-demand-response">Smart Metering & Demand Response</a></li>
+
+</ul>
           </div>
 
         </div>

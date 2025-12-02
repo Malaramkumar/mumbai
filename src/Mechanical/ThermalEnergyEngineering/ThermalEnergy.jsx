@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "Thermal energy storage systems Mumbai",
+  "PCM latent heat storage projects",
+  "Molten salt storage research India",
+  "Thermal battery project development",
+  "HVAC ice storage projects Mumbai",
+  "Thermochemical energy storage PhD",
+  "Solar thermal energy storage projects",
+  "Renewable energy storage systems India",
+  "CFD thermal storage simulation",
+  "Narpavi Research Institute thermal projects",
+  "Industrial waste heat storage systems",
+  "Phase change material PCM projects",
+  "Hybrid thermal storage systems",
+  "Molten salt CSP energy storage",
+  "Smart city energy storage solutions"
+];
 
 const faqs = [
   {
@@ -26,6 +44,13 @@ const faqs = [
 const METhermalEnergyStorageSystemsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+    title="Thermal Energy Storage Systems Project Development in Mumbai"
+    description="IEEE-aligned Thermal Energy Storage Systems project development for B.Tech, M.Tech, and Ph.D. students in Mumbai. Work on PCM, molten salt, thermochemical storage, ice storage, CFD thermal modeling, and renewable energy integration."
+    url="/thermal-energy-storage-systems-project-development"
+    keywords={keywords}
+    faqs={faqs}
+  />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -221,13 +246,42 @@ const METhermalEnergyStorageSystemsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/solar-thermal-geothermal-energy-systems-project-development">Solar Thermal & Geothermal Energy Systems Project Development</a></li>
-              <li><a href="/refrigeration-cryogenics-air-conditioning-project-development">Refrigeration, Cryogenics & Air Conditioning Project Development</a></li>
-              <li><a href="/computational-fluid-dynamics-thermal-systems-project-development">Computational Fluid Dynamics (CFD) in Thermal Systems Project Development</a></li>
-              <li><a href="/heat-transfer-enhancement-techniques-project-development">Heat Transfer Enhancement Techniques Project Development</a></li>
-              <li><a href="/computational-simulation-techniques-project-development">Computational & Simulation Techniques Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering">Thermal Energy Engineering</a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/heat-transfer-enhancement">
+      Heat Transfer Enhancement
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/computational-fluid-dynamics">
+      Computational Fluid Dynamics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/solar-thermal-geothermal">
+      Solar Thermal & Geothermal
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/refrigeration-cryogenics">
+      Refrigeration & Cryogenics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/waste-heat-recovery-energy">
+      Waste Heat Recovery & Energy
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/thermal-energy">
+      Thermal Energy
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

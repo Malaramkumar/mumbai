@@ -1,4 +1,23 @@
 import "./MEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "thermal engineering projects mumbai",
+  "energy engineering ieee projects",
+  "heat transfer projects btech mtech",
+  "cfd simulation projects mumbai",
+  "solar thermal engineering projects",
+  "cryogenics project development",
+  "waste heat recovery ieee projects",
+  "thermal energy storage research",
+  "renewable energy engineering projects",
+  "mechanical engineering thermal projects",
+  "narpavi research institute thermal engineering",
+  "ansys fluent thermal projects",
+  "phase change material pcm projects",
+  "hybrid energy storage ieee projects",
+  "ai based thermal system projects"
+];
 
 const faqs = [
   {
@@ -26,10 +45,19 @@ const faqs = [
 const METhermalEnergyEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Thermal & Energy Engineering Project Development in Mumbai"
+        description="IEEE-aligned Thermal & Energy Engineering project development for B.Tech, M.Tech, and Ph.D. students in Mumbai. Work on CFD, solar thermal, geothermal systems, cryogenics, waste heat recovery, thermal storage, ANSYS Fluent, MATLAB, and advanced energy solutions."
+        url="/mechanical/thermalenergyengineering"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Thermal & Energy Engineering Projects Mumbai</li>
@@ -224,13 +252,42 @@ const METhermalEnergyEngineeringProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-project-development">Smart Factory Systems Project Development</a></li>
-              <li><a href="/industrial-safety-ergonomics-project-development">Industrial Safety & Ergonomics Project Development</a></li>
-              <li><a href="/supply-chain-process-optimization-project-development">Supply Chain & Process Optimization Project Development</a></li>
-              <li><a href="/lean-manufacturing-techniques-project-development">Lean Manufacturing Techniques Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering">Thermal Energy Engineering</a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/heat-transfer-enhancement">
+      Heat Transfer Enhancement
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/computational-fluid-dynamics">
+      Computational Fluid Dynamics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/solar-thermal-geothermal">
+      Solar Thermal & Geothermal
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/refrigeration-cryogenics">
+      Refrigeration & Cryogenics
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/waste-heat-recovery-energy">
+      Waste Heat Recovery & Energy
+    </a>
+  </li>
+  <li>
+    <a href="/mechanical/thermal-energy-engineering/thermal-energy">
+      Thermal Energy
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

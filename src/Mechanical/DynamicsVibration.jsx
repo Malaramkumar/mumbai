@@ -1,4 +1,23 @@
 import "./MEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "dynamics vibration engineering projects mumbai",
+  "vibration analysis ieee projects",
+  "rotor dynamics projects",
+  "structural dynamics projects india",
+  "vibration isolation mechanical engineering",
+  "finite element vibration analysis",
+  "ai vibration fault diagnosis projects",
+  "smart materials vibration control",
+  "modal analysis engineering projects",
+  "dynamic system modeling projects",
+  "btech vibration projects",
+  "mtech dynamics projects",
+  "phd vibration research",
+  "digital twin vibration analysis",
+  "matlab ansys comsol vibration projects"
+];
 
 const faqs = [
   {
@@ -26,10 +45,19 @@ const faqs = [
 const MEDynamicsVibrationEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Dynamics & Vibration Engineering Project Development in Mumbai | Structural Dynamics, Rotor Dynamics, Vibration Isolation | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Dynamics & Vibration Engineering project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes structural dynamics, rotor dynamics, vibration isolation, smart materials, finite element vibration analysis, and AI-driven vibration fault diagnosis."
+        url="/mechanical/dynamics-vibration"
+        keywords={keywords}
+        faqs={faqs}
+      />
+           
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Dynamics & Vibration Engineering Projects Mumbai</li>
@@ -219,13 +247,48 @@ const MEDynamicsVibrationEngineeringProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/robotics-automation-engineering-project-development">Robotics & Automation Engineering Project Development</a></li>
-              <li><a href="/materials-metallurgy-engineering-project-development">Materials & Metallurgy Engineering Project Development</a></li>
-              <li><a href="/design-manufacturing-engineering-project-development">Design & Manufacturing Engineering Project Development</a></li>
-              <li><a href="/thermal-energy-engineering-project-development">Thermal & Energy Engineering Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/dynamics-vibration">Dynamics & Vibration</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/structural-dynamics-earthquake">
+      Structural Dynamics & Earthquake
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/noise-vibration-harshness">
+      Noise, Vibration & Harshness
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/rotor-dynamics-balancing">
+      Rotor Dynamics & Balancing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/modal-harmonic-analysis">
+      Modal & Harmonic Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/seismic-vibration-control">
+      Seismic Vibration Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/smart-materials-vibration">
+      Smart Materials in Vibration
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

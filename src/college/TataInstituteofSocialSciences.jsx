@@ -6,7 +6,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 const faqs = [
   {
     question: "Does TISS conduct its own entrance test for PhD?",
-    answer: "No. From 2024–25, TISS considers NET score (70%) + personal interview (30%) for PhD admissions."
+    answer: "No. TISS considers NET score (70%) + personal interview (30%) for PhD admissions."
   },
   {
     question: "Is work experience mandatory?",
@@ -25,13 +25,31 @@ const faqs = [
     answer: "Yes. TISS is UGC-recognized and globally respected for its excellence in social science research."
   }
 ];
-
+const keywords = [
+  "TISS PhD Admission ",
+  "TISS NET PhD",
+  "TISS PhD Eligibility",
+  "TISS Research Programs",
+  "Social Sciences PhD Mumbai",
+  "TISS Fellowship",
+  "TISS NET Weightage",
+  "TISS PhD Fee Structure",
+  "Executive PhD TISS",
+  "TISS Interview Process"
+];
 const TissPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="TISS PhD Admission  | NET-Based Selection, Research, Eligibility & Fellowships"
+        description="Tata Institute of Social Sciences (TISS) Mumbai PhD Admissions  – NET-based selection, eligibility, interview process, research facilities, funding, and complete PhD structure."
+        url="/colleges/tiss-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -241,14 +259,12 @@ const TissPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>TISS</li>
-            <li>PhD Mumbai</li>
-            <li>Social Sciences</li>
-            <li>UGC NET</li>
-            <li>Executive PhD</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

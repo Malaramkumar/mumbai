@@ -1,4 +1,22 @@
 import "./MEProjectDevelopmentCenter.scss";
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "robotics automation projects mumbai",
+  "industrial robotics projects ieee",
+  "mobile robot projects mumbai",
+  "drone projects ieee",
+  "plc scada automation projects",
+  "ai robotics projects",
+  "btech robotics projects mumbai",
+  "mtech automation engineering projects",
+  "phd robotics research mumbai",
+  "industry 4.0 robotics projects",
+  "ros based robotics projects",
+  "autonomous robot projects india",
+  "smart factory automation ieee",
+  "narpavi robotics project development"
+];
 
 const faqs = [
   {
@@ -26,10 +44,19 @@ const faqs = [
 const MERoboticsAutomationEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Robotics & Automation Engineering Project Development in Mumbai"
+  description="IEEE-aligned Robotics & Automation Engineering project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes industrial robots, drones, PLC/SCADA automation, AI robotics, ROS-based robots, cyber-physical systems, and Industry 4.0 smart factory projects."
+  url="/mechanical/robotics-automation"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>  
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Robotics & Automation Engineering Projects Mumbai</li>
@@ -219,13 +246,48 @@ const MERoboticsAutomationEngineeringProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/materials-metallurgy-engineering-project-development">Materials & Metallurgy Engineering Project Development</a></li>
-              <li><a href="/design-manufacturing-engineering-project-development">Design & Manufacturing Engineering Project Development</a></li>
-              <li><a href="/thermal-energy-engineering-project-development">Thermal & Energy Engineering Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-project-development">Smart Factory Systems Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/robotics-automation">Robotics & Automation</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/industrial-collaborative-robots">
+      Industrial & Collaborative Robots
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/mechatronic-systems-smart">
+      Mechatronic Systems & Smart Devices
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/autonomous-vehicles-mobile">
+      Autonomous Vehicles & Mobile Robots
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/control-systems-robotics">
+      Control Systems in Robotics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/ai-ml-robotics">
+      AI & ML in Robotics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/robotic-process-automation">
+      Robotic Process Automation (RPA)
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

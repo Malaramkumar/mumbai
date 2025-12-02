@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import "./ResearchArticleWritingServiceMumbai.scss";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "Who can avail of the Research Article Writing Service in Mumbai?",
@@ -35,6 +36,19 @@ const faqs = [
   },
 ];
 
+const keywords = [
+  "Research paper writing services in Mumbai",
+  "PhD thesis writing services in Mumbai",
+  "Thesis writing services India",
+  "Journal writers near me",
+  "Professional research writers Mumbai",
+  "Best research paper writing services in Mumbai",
+  "UGC CARE publication support Mumbai",
+  "Scopus journal article writing Mumbai",
+  "Research publication support India",
+  "Online academic writing services Mumbai",
+];
+
 const ResearchArticleWritingServiceMumbai = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -44,22 +58,22 @@ const ResearchArticleWritingServiceMumbai = () => {
 
   return (
     <main className="ResearchArticleWriting-page container">
+       <SEO
+        title="Research Article Writing Service in Mumbai | Scopus & UGC CARE Journal Support | Narpavi Research Institute"
+        description="Professional Research Article Writing Service in Mumbai for PhD scholars, students, and faculty. End-to-end assistance for Scopus, Web of Science, and UGC CARE publications — plagiarism-free, structured, and reviewer-ready papers."
+        url="/research-article-writing-service-mumbai"
+        image="/assets/research-article-writing-service-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="ResearchArticleWriting-grid">
         {/* Left: Keywords / SEO */}
         <aside className="ResearchArticleWriting-left">
-          <h3>Keywords</h3>
-          <ul>
-            <li>Research Paper writing services in Mumbai</li>
-            <li>PhD thesis writing services in Mumbai</li>
-            <li>Thesis writing services India</li>
-            <li>Journal writers near me</li>
-            <li>Thesis writers professionals</li>
-            <li>Top research paper writing services in Mumbai</li>
-            <li>Research paper writing services in mumbai for students</li>
-            <li>Online research paper writing services in mumbai</li>
-            <li>Best research paper writing services in mumbai</li>
-            <li>Research paper writing services near me</li>
-          </ul>
+           <a href="/home-page" class="buttonhp">Home Page</a>
+          <LeftSidebar/>
+         <h3>📌 Keywords</h3>
+          <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul> 
         </aside>
 
         {/* Center: Main Content */}

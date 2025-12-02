@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "modal analysis projects mumbai",
+  "harmonic analysis ieee projects",
+  "finite element modal analysis",
+  "harmonic response analysis projects",
+  "experimental modal testing projects",
+  "operational modal analysis projects",
+  "ai modal prediction projects",
+  "digital twin modal analysis",
+  "btech modal vibration projects",
+  "mtech harmonic analysis projects",
+  "phd modal dynamics research",
+  "ansys modal harmonic projects",
+  "matlab modal analysis",
+  "comsol abaqus modal harmonic projects",
+  "ev motor vibration modal projects"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MEModalHarmonicAnalysisProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Modal & Harmonic Analysis Project Development in Mumbai | FEM Modal Testing | Harmonic Response | B.Tech, M.Tech, Ph.D."
+        description="IEEE-aligned Modal & Harmonic Analysis project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes FEM modal analysis, harmonic response, experimental modal testing, digital twins, and AI-based modal prediction."
+        url="/mechanical/dynamics-vibration/modal-harmonic-analysis"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -216,13 +242,48 @@ const MEModalHarmonicAnalysisProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/rotor-dynamics-balancing-project-development">Rotor Dynamics & Balancing Project Development</a></li>
-              <li><a href="/noise-vibration-harshness-project-development">Noise, Vibration & Harshness (NVH) Analysis Project Development</a></li>
-              <li><a href="/structural-dynamics-earthquake-engineering-project-development">Structural Dynamics & Earthquake Engineering Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-              <li><a href="/smart-intelligent-materials-project-development">Smart & Intelligent Materials Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/dynamics-vibration">Dynamics & Vibration</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/structural-dynamics-earthquake">
+      Structural Dynamics & Earthquake
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/noise-vibration-harshness">
+      Noise, Vibration & Harshness
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/rotor-dynamics-balancing">
+      Rotor Dynamics & Balancing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/modal-harmonic-analysis">
+      Modal & Harmonic Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/seismic-vibration-control">
+      Seismic Vibration Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/smart-materials-vibration">
+      Smart Materials in Vibration
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

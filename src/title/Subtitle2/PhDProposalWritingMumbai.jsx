@@ -2,7 +2,8 @@ import React from "react";
 import "./PhDProposalWritingMumbai.scss";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 const faqs = [
   {
     question: "What does the service include?",
@@ -37,6 +38,16 @@ const faqs = [
     answer: "Yes, services are available across India and globally (online)."
   }
 ];
+const keywords = [
+  "Top PhD research proposal writing services in Mumbai",
+  "Best PhD research proposal writing services in Mumbai",
+  "Online PhD research proposal writing services in Mumbai",
+  "PhD thesis writing services in Mumbai",
+  "PhD paper writing services",
+  "Medical research paper writing services in India",
+  "Research paper writing and publishing services",
+  "Research paper writing services in Bangalore",
+];
 
 
 const PhDProposalWritingMumbai = () => {
@@ -45,9 +56,19 @@ const PhDProposalWritingMumbai = () => {
 
   return (
     <div className="phd-proposal-wrapper">
+         <SEO
+        title="PhD Research Proposal Writing Services in Mumbai | Professional Assistance by Narpavi Research Institute"
+        description="Get expert PhD research proposal writing services in Mumbai. Narpavi Research Institute offers customized proposal drafting, literature review, and funding support for PhD scholars in IITB, TISS, NMIMS, and University of Mumbai."
+        url="/phd-research-proposal-writing-services-in-mumbai"
+        image="/assets/phd-proposal-writing-mumbai-banner.jpg"
+        keywords={keywords}
+        faqs={faqs} // ✅ Automatically builds FAQ schema
+      />
       {/* Left Sidebar */}
       <aside className="left-side">
-        <h3>Quick Links</h3>
+        <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
+        {/* <h3>Quick Links</h3>
         <ul>
           <li><a href="#what-is-proposal">What Is a Research Proposal?</a></li>
           <li><a href="#linking-proposal">Linking Proposal to University & Funding</a></li>
@@ -58,7 +79,7 @@ const PhDProposalWritingMumbai = () => {
           <li><a href="#ideal-structure">Ideal Structure</a></li>
           <li><a href="#why-choose">Why Choose Narpavi</a></li>
           <li><a href="#faqs">❓ FAQs</a></li>
-        </ul>
+        </ul> */}
       </aside>
 
       {/* Main Content */}
@@ -174,6 +195,21 @@ const PhDProposalWritingMumbai = () => {
           </ul>
         </section>
 
+      <section id="why-matters" className="highlight-why">
+        <h2>🎯 Selecting the Best University Enhances Your Research Opportunities</h2>
+        <p>
+          Choosing the right university is crucial. It influences your research scope,
+          funding, supervisor quality, access to labs, and post-PhD prospects.
+          Mumbai hosts top-tier universities like IIT Bombay, TISS, NMIMS, and more—but
+          choosing one isn’t just about rankings.
+        </p>
+        <div className="button-row">
+          <a href="/colleges" className="colleges-btn">
+            📚 View Top University in Mumbai
+          </a>
+        </div>
+      </section>
+        
       <section  className="faq-section11">
                 <h2> FAQs – PhD Research Proposal Writing Services</h2>
                 {faqs.map((item, index) => (
@@ -190,18 +226,9 @@ const PhDProposalWritingMumbai = () => {
       </main>
 
       {/* Right Sidebar */}
-      <aside className="right-side">
+     <aside className="right-side">
         <h4>🔍 SEO Keywords</h4>
-        <ul>
-          <li>Top PhD research proposal writing services in Mumbai</li>
-          <li>Best PhD research proposal writing services in Mumbai</li>
-          <li>Online PhD research proposal writing services in Mumbai</li>
-          <li>PhD thesis writing services in Mumbai</li>
-          <li>PhD paper writing services</li>
-          <li>Medical research paper writing services in India</li>
-          <li>Research paper writing and publishing services</li>
-          <li>Research paper writing services in Bangalore</li>
-        </ul>
+        <ul>{keywords.map((k) => <li key={k}>{k}</li>)}</ul>
       </aside>
     </div>
   );

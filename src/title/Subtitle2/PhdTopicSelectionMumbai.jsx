@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";   //  npm i lucide-react
 import "./PhdTopicSelectionMumbai.scss";                          //  ← import the shared SCSS
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 
 /* ——— side‑bar keywords (left + right) ——— */
 const KEYWORDS = [
@@ -47,10 +49,19 @@ export default function PhdTopicSelectionMumbai() {
 
   return (
     <div className="consulting-wrapper">
+       <SEO
+        title="PhD Topic Selection Support in Mumbai | Research Gap & Journal Mapping | Narpavi Research Institute"
+        description="Get expert assistance with PhD topic selection in Mumbai. Narpavi Research Institute offers research gap analysis, journal mapping (Scopus/UGC-CARE), and feasibility studies for your doctoral topic."
+        url="/phd-topic-selection-support-in-mumbai"
+        image="/assets/phd-topic-selection-mumbai-banner.jpg"
+        keywords={KEYWORDS}
+        faqs={FAQS.map((f) => ({ question: f.q, answer: f.a }))} // ✅ Auto converts to FAQ schema
+      />
       {/* — LEFT KEYWORD SIDEBAR — */}
       <aside className="left-links">
-        <h3>📌 Keywords</h3>
-        <ul>{KEYWORDS.map((k) => <li key={k}>{k}</li>)}</ul>
+        <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
+         
       </aside>
 
       {/* — MAIN CONTENT — */}
@@ -157,6 +168,22 @@ export default function PhdTopicSelectionMumbai() {
             <li>✔ Fast‑track delivery (2–3 days)</li>
           </ul>
         </section>
+
+        <section id="why-matters" className="highlight-why">
+          <h2>🎯 Selecting the Best University Enhances Your Research Opportunities</h2>
+          <p>
+            Choosing the right university is crucial. It influences your research scope,
+            funding, supervisor quality, access to labs, and post-PhD prospects.
+            Mumbai hosts top-tier universities like IIT Bombay, TISS, NMIMS, and more—but
+            choosing one isn’t just about rankings.
+          </p>
+          <div className="button-row">
+            <a href="/colleges" className="colleges-btn">
+              📚 View Top University in Mumbai
+            </a>
+          </div>
+        </section>
+                  
 
         {/* FAQ ACCORDION */}
         <section className="faq-section11">

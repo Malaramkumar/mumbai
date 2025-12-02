@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "multiphase flow projects mumbai",
+  "heat transfer ieee projects",
+  "nano fluid cooling projects",
+  "multiphase cfd simulation mumbai",
+  "phase change material pcm projects",
+  "cryogenic flow projects ieee",
+  "multiphase biomedical heat transfer",
+  "btech thermal engineering projects",
+  "mtech cfd heat transfer projects",
+  "phd multiphase research mumbai",
+  "ev battery thermal management pcm",
+  "nano fluid heat exchanger simulation",
+  "two phase flow modeling",
+  "boiling and condensation analysis",
+  "narpavi research institute heat transfer projects"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MEMultiphaseFlowHeatTransferProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Multiphase Flow & Heat Transfer Project Development in Mumbai | B.Tech, M.Tech, Ph.D."
+  description="IEEE-aligned Multiphase Flow & Heat Transfer project development in Mumbai. Work on nano-fluids, EV battery cooling, PCM systems, cryogenic flow, multiphase CFD simulations, boiling & condensation, and biomedical thermal systems."
+  url="/mechanical/fluid-mechanics-hydraulics/multiphase-flow-heat"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -224,12 +250,49 @@ const MEMultiphaseFlowHeatTransferProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/turbomachinery-gas-turbines-project-development">Turbomachinery & Gas Turbines Project Development</a></li>
-              <li><a href="/aerodynamics-aero-propulsion-project-development">Aerodynamics & Aero-Propulsion Systems Project Development</a></li>
-              <li><a href="/smart-materials-vibration-control-project-development">Smart Materials in Vibration Control Project Development</a></li>
-              <li><a href="/hydraulic-pneumatic-control-systems-project-development">Hydraulic & Pneumatic Control Systems Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics">
+      Fluid Mechanics & Hydraulics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/aerodynamics-aero-propulsion">
+      Aerodynamics & Aero Propulsion
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/turbomachinery-gas-turbines">
+      Turbomachinery & Gas Turbines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/hydraulic-pneumatic-control">
+      Hydraulic & Pneumatic Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/multiphase-flow-heat">
+      Multiphase Flow & Heat Transfer
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/fluid-structure-interaction">
+      Fluid-Structure Interaction
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/fluid-mechanics-hydraulics/biofluid-mechanics-microfluidics">
+      Biofluid Mechanics & Microfluidics
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

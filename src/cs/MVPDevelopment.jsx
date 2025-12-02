@@ -1,5 +1,18 @@
 import "./CSEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "MVP development projects Mumbai",
+  "Minimum Viable Product development IEEE projects",
+  "startup MVP solutions in Mumbai",
+  "cross-platform MVP projects",
+  "B.Tech MVP development projects",
+  "M.Tech MVP cloud projects",
+  "Ph.D. MVP AI research Mumbai",
+  "rapid prototyping software Mumbai",
+  "Narpavi Technologies project development center",
+  "MVP for fintech healthcare edtech Mumbai"
+];
 const faqs = [
   {
     question: "What services does the MVP Development (Minimum Viable Product Development) Project Development Center offer in Mumbai?",
@@ -26,23 +39,24 @@ const faqs = [
 const CSEMVPDevelopmentMinimumViableProductDevelopmentProjectDevelopmentCenter = () => {
   return (
     <div className="CSEProjectDevelopmentCenter">
+      <SEO
+        title="MVP Development (Minimum Viable Product Development) in Mumbai | B.Tech, M.Tech, PhD IEEE Project Development"
+        description="IEEE-aligned MVP Development (Minimum Viable Product Development) project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Includes applications in fintech, healthcare, e-commerce, edtech, logistics, and smart cities."
+        url="/cse/mvp-development-minimum-viable-product-development"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="CSEProjectDevelopmentCenter-main">
         <div className="CSEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="CSEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>MVP development projects Mumbai</li>
-              <li>Minimum Viable Product development IEEE projects</li>
-              <li>startup MVP solutions in Mumbai</li>
-              <li>cross-platform MVP projects</li>
-              <li>B.Tech MVP development projects</li>
-              <li>M.Tech MVP cloud projects</li>
-              <li>Ph.D. MVP AI research Mumbai</li>
-              <li>rapid prototyping software Mumbai</li>
-              <li>Narpavi Technologies project development center</li>
-              <li>MVP for fintech healthcare edtech Mumbai</li>
-            </ul>
+              {keywords.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
+            </ul>    
           </div>
 
           {/* Center: Main Content */}
@@ -209,13 +223,60 @@ const CSEMVPDevelopmentMinimumViableProductDevelopmentProjectDevelopmentCenter =
           {/* Right: Subpage Links */}
           <div className="CSEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/mobile-app-development-android-ios-project-development">Mobile App Development (Android / iOS) Project Development</a></li>
-              <li><a href="/quantum-networking-communication-project-development">Quantum Networking / Communication Project Development</a></li>
-              <li><a href="/digital-twins-simulation-project-development">Digital Twins & Simulation Project Development</a></li>
-              <li><a href="/natural-language-processing-nlp-large-language-models-llms-project-development">Natural Language Processing (NLP) & Large Language Models (LLMs) Project Development</a></li>
-              <li><a href="/autonomous-systems-robotics-project-development">Autonomous Systems & Robotics Project Development</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=cse">Computer Science & Engineering</a>
+  </li>
+
+  <li><a href="/cse/artificial-intelligence-machine-learning">Artificial Intelligence & Machine Learning</a></li>
+  <li><a href="/cse/custom-software-development">Custom Software Development</a></li>
+  <li><a href="/cse/data-science-big-data-analytics">Data Science & Big Data Analytics</a></li>
+  <li><a href="/cse/internet-of-things">Internet of Things (IoT)</a></li>
+  <li><a href="/cse/cybersecurity-privacy">Cybersecurity & Privacy</a></li>
+  <li><a href="/cse/blockchain-distributed-systems">Blockchain & Distributed Systems</a></li>
+  <li><a href="/cse/cloud-edge-infrastructure">Cloud & Edge Infrastructure</a></li>
+  <li><a href="/cse/quantum-computing-information">Quantum Computing & Information</a></li>
+  <li><a href="/cse/human-computer-interaction">Human-Computer Interaction</a></li>
+  <li><a href="/cse/computer-vision-image">Computer Vision & Image Processing</a></li>
+  <li><a href="/cse/autonomous-systems-robotics">Autonomous Systems & Robotics</a></li>
+  <li><a href="/cse/natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="/cse/digital-twins-simulation">Digital Twins & Simulation</a></li>
+  <li><a href="/cse/quantum-networking-communication">Quantum Networking & Communication</a></li>
+  <li><a href="/cse/web-application-development">Web Application Development</a></li>
+  <li><a href="/cse/mobile-app-development">Mobile App Development</a></li>
+  <li><a href="/cse/mvp-development">MVP Development</a></li>
+  <li><a href="/cse/startup-software-development">Startup Software Development</a></li>
+  <li><a href="/cse/enterprise-software-solutions">Enterprise Software Solutions</a></li>
+  <li><a href="/cse/dedicated-development-teams">Dedicated Development Teams</a></li>
+  <li><a href="/cse/design-lab-ui-ux-development">Design Lab UI/UX Development</a></li>
+  <li><a href="/cse/qa-testing-services">QA & Testing Services</a></li>
+
+  <li><a href="/cse/java">Java Development</a></li>
+  <li><a href="/cse/php-development">PHP Development</a></li>
+  <li><a href="/cse/spring-development">Spring Development</a></li>
+  <li><a href="/cse/csharp-development">C# Development</a></li>
+
+  <li><a href="/cse/machine-learning-based">Machine Learning Based Projects</a></li>
+  <li><a href="/cse/python-development">Python Development</a></li>
+  <li><a href="/cse/matlab-projects">MATLAB Projects</a></li>
+  <li><a href="/cse/dotnet-projects">DotNet Projects</a></li>
+  <li><a href="/cse/r-projects">R Projects</a></li>
+  <li><a href="/cse/ns3-projects">NS3 Projects</a></li>
+  <li><a href="/cse/vlsi-projects">VLSI Projects</a></li>
+  <li><a href="/cse/opnet-projects">OPNET Projects</a></li>
+  <li><a href="/cse/robotics-projects">Robotics Projects</a></li>
+  <li><a href="/cse/ansys-projects">ANSYS Projects</a></li>
+  <li><a href="/cse/solidworks-projects">SolidWorks Projects</a></li>
+  <li><a href="/cse/cartia-projects">Cartia Projects</a></li>
+  <li><a href="/cse/labview-projects">LabVIEW Projects</a></li>
+
+  <li><a href="/cse/power-system-projects">Power System Projects</a></li>
+  <li><a href="/cse/power-documents">Power Documents</a></li>
+
+  <li><a href="/cse/image-processing">Image Processing</a></li>
+  <li><a href="/cse/signal-processing">Signal Processing</a></li>
+</ul>
+
           </div>
         </div>
       </div>

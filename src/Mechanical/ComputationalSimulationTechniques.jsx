@@ -1,5 +1,17 @@
 import "./MEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO";
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Computational and Simulation Techniques Projects Mumbai",
+  "FEA Projects Mechanical Engineering Mumbai",
+  "CFD Projects for B.Tech M.Tech Ph.D.",
+  "Digital Twin Projects IEEE 2023 2024 2025",
+  "Multi-Body Dynamics Simulation Projects Mumbai",
+  "Fracture and Fatigue Simulation Projects",
+  "AI-Integrated Simulation Projects",
+  "Computational Mechanics Projects in Mumbai",
+  "Narpavi Research Institute Simulation Projects"
+];
 const faqs = [
   {
     question: "What services does the Computational & Simulation Techniques Project Development Center offer in Mumbai?",
@@ -26,21 +38,23 @@ const faqs = [
 const MEComputationalSimulationTechniquesProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Computational & Simulation Techniques Project Development Center in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute's Computational & Simulation Techniques Project Development Center in Mumbai supports B.Tech, M.Tech, and Ph.D. students in developing IEEE-aligned (2023–2025) projects on FEA, CFD, MBD, digital twins, and AI-integrated simulations for aerospace, automotive, marine, and smart manufacturing industries."
+         url="/mechanical/computational-simulation-techniques" 
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>Computational and Simulation Techniques Projects Mumbai</li>
-              <li>FEA Projects Mechanical Engineering Mumbai</li>
-              <li>CFD Projects for B.Tech M.Tech Ph.D.</li>
-              <li>Digital Twin Projects IEEE 2023 2024 2025</li>
-              <li>Multi-Body Dynamics Simulation Projects Mumbai</li>
-              <li>Fracture and Fatigue Simulation Projects</li>
-              <li>AI-Integrated Simulation Projects</li>
-              <li>Computational Mechanics Projects in Mumbai</li>
-              <li>Narpavi Research Institute Simulation Projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -213,12 +227,49 @@ const MEComputationalSimulationTechniquesProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/automobile-transportation-systems-project-development">Automobile & Transportation Systems Project Development</a></li>
-              <li><a href="/industrial-production-engineering-project-development">Industrial & Production Engineering Project Development</a></li>
-              <li><a href="/tribology-maintenance-project-development">Tribology & Maintenance Project Development</a></li>
-              <li><a href="/fluid-mechanics-hydraulics-project-development">Fluid Mechanics & Hydraulics Project Development</a></li>
-              <li><a href="/dynamics-vibration-engineering-project-development">Dynamics & Vibration Engineering Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/computational-simulation-techniques">
+      Computational Simulation Techniques
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/finite-element-analysis">
+      Finite Element Analysis (FEA)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/computational-fluid-dynamic">
+      Computational Fluid Dynamics (CFD)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/multi-body-dynamics">
+      Multi-Body Dynamics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/fracture-mechanics-fatigue">
+      Fracture Mechanics & Fatigue
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/digital-twin-smart-simulation">
+      Digital Twin & Smart Simulation
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/computational-simulation-techniques/high-performance-computing">
+      High Performance Computing (HPC)
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

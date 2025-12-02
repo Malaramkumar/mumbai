@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./JournalPublicationSupport.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const timelineData = [
   { type: "Fast-track Open Access (MDPI, PLOS ONE)", time: "1–3 months" },
@@ -36,7 +37,7 @@ export default function JournalPublicationSupport() {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
   const [activeSection, setActiveSection] = useState("intro");
 
-  const sections = [
+  const sections = [ 
     { id: "intro", label: "Overview" },
     { id: "types", label: "Journal Types" },
     { id: "steps", label: "Steps in Support" },
@@ -73,8 +74,11 @@ export default function JournalPublicationSupport() {
 
   return (
     <div className="jp-layout">
+
       {/* Left Sidebar Navigation */}
       <aside className="jp-left-nav">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <nav>
           <ul>
             {sections.map((s) => (

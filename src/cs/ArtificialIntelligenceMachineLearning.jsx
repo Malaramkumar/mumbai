@@ -1,5 +1,7 @@
 import "./CSEProjectDevelopmentCenter.scss";
 import "../Mechanical/MEProjectDevelopmentCenter.scss"
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
 const faqs = [
   {
     question: "What services does the Artificial Intelligence & Machine Learning (AI/ML) Project Development Center offer in Mumbai?",
@@ -22,27 +24,40 @@ const faqs = [
     answer: "We offer end-to-end guidance, including topic selection, modeling, implementation, documentation, and support for IEEE/Scopus/SCI journal publications and patents, with collaboration opportunities in Mumbai’s industrial ecosystem."
   }
 ];
+const keywords = [
+  "AI ML Projects Mumbai",
+  "Artificial Intelligence Project Center Mumbai",
+  "Machine Learning IEEE Projects",
+  "Deep Learning Projects Mumbai",
+  "NLP Projects Mumbai",
+  "Reinforcement Learning IEEE",
+  "AI Smart City Projects Mumbai",
+  "BTech AI ML Projects",
+  "MTech Machine Learning Mumbai",
+  "PhD AI Projects IEEE"
+];
 
 const MEArtificialIntelligenceMachineLearningProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="AI & Machine Learning Projects in Mumbai | B.Tech, M.Tech, PhD Support"
+  description="AI/ML Project Development Center in Mumbai for B.Tech, M.Tech, and Ph.D. | Deep Learning, NLP, Reinforcement Learning, Federated Learning. IEEE 2023–2025 aligned projects with publication support."
+  url="/cse/artificial-intelligence-machine-learning"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>AI ML projects Mumbai</li>
-              <li>artificial intelligence project center Mumbai</li>
-              <li>machine learning IEEE projects</li>
-              <li>deep learning projects for students Mumbai</li>
-              <li>NLP projects Mumbai</li>
-              <li>reinforcement learning projects IEEE</li>
-              <li>AI-based smart city projects Mumbai</li>
-              <li>B.Tech AI ML projects</li>
-              <li>M.Tech AI machine learning research Mumbai</li>
-              <li>Ph.D. AI ML projects IEEE</li>
-              <li>Narpavi Research Institute AI ML projects</li>
+              {keywords.map((k) => (
+                <li key={k}>{k}</li>
+              ))}
             </ul>
           </div>
 
@@ -55,7 +70,7 @@ const MEArtificialIntelligenceMachineLearningProjectDevelopmentCenter = () => {
                 <strong>Narpavi Research Institute</strong> presents the Artificial Intelligence & Machine Learning (AI/ML) Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on AI/ML technologies.
               </p>
               <p>
-                Artificial Intelligence & Machine Learning (AI/ML) have become the backbone of innovation across industries in Mumbai, driving automation, data-driven decisions, predictive modeling, and intelligent applications. From smart city projects and financial analytics to healthcare diagnostics and autonomous systems, AI/ML is shaping the next era of computational intelligence. With advances in deep learning, reinforcement learning, natural language processing, and federated learning, AI，大/ML research is transforming both academic and industrial landscapes.
+                Artificial Intelligence & Machine Learning (AI/ML) have become the backbone of innovation across industries in Mumbai, driving automation, data-driven decisions, predictive modeling, and intelligent applications. From smart city projects and financial analytics to healthcare diagnostics and autonomous systems, AI/ML is shaping the next era of computational intelligence. With advances in deep learning, reinforcement learning, natural language processing, and federated learning, AI/ML research is transforming both academic and industrial landscapes.
               </p>
               <p>
                 At Narpavi Research Institute, Mumbai, our Project Development Center empowers B.Tech, M.Tech, and Ph.D. students to engage in IEEE-aligned research, spanning cutting-edge AI frameworks, algorithmic optimization, and real-world deployment. We focus on both software development (algorithms, data models, frameworks) and hardware integration (embedded AI, edge AI, robotics), ensuring students are fully industry-ready.
@@ -228,12 +243,59 @@ const MEArtificialIntelligenceMachineLearningProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/high-performance-computing-mechanical-engineering-project-development">High-Performance Computing (HPC) in Mechanical Engineering Project Development</a></li>
-              <li><a href="/digital-twin-smart-simulation-mechanical-engineering-project-development">Digital Twin & Smart Simulation in Mechanical Engineering Project Development</a></li>
-              <li><a href="/fracture-mechanics-fatigue-analysis-mechanical-systems-project-development">Fracture Mechanics & Fatigue Analysis in Mechanical Systems Project Development</a></li>
-              <li><a href="/computational-fluid-dynamics-mechanical-systems-project-development">Computational Fluid Dynamics (CFD) in Mechanical Systems Project Development</a></li>
-              <li><a href="/finite-element-analysis-applications-project-development">Finite Element Analysis (FEA) Applications Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/departments?dept=cse">Computer Science & Engineering</a>
+  </li>
+
+  <li><a href="/cse/artificial-intelligence-machine-learning">Artificial Intelligence & Machine Learning</a></li>
+  <li><a href="/cse/custom-software-development">Custom Software Development</a></li>
+  <li><a href="/cse/data-science-big-data-analytics">Data Science & Big Data Analytics</a></li>
+  <li><a href="/cse/internet-of-things">Internet of Things (IoT)</a></li>
+  <li><a href="/cse/cybersecurity-privacy">Cybersecurity & Privacy</a></li>
+  <li><a href="/cse/blockchain-distributed-systems">Blockchain & Distributed Systems</a></li>
+  <li><a href="/cse/cloud-edge-infrastructure">Cloud & Edge Infrastructure</a></li>
+  <li><a href="/cse/quantum-computing-information">Quantum Computing & Information</a></li>
+  <li><a href="/cse/human-computer-interaction">Human-Computer Interaction</a></li>
+  <li><a href="/cse/computer-vision-image">Computer Vision & Image Processing</a></li>
+  <li><a href="/cse/autonomous-systems-robotics">Autonomous Systems & Robotics</a></li>
+  <li><a href="/cse/natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="/cse/digital-twins-simulation">Digital Twins & Simulation</a></li>
+  <li><a href="/cse/quantum-networking-communication">Quantum Networking & Communication</a></li>
+  <li><a href="/cse/web-application-development">Web Application Development</a></li>
+  <li><a href="/cse/mobile-app-development">Mobile App Development</a></li>
+  <li><a href="/cse/mvp-development">MVP Development</a></li>
+  <li><a href="/cse/startup-software-development">Startup Software Development</a></li>
+  <li><a href="/cse/enterprise-software-solutions">Enterprise Software Solutions</a></li>
+  <li><a href="/cse/dedicated-development-teams">Dedicated Development Teams</a></li>
+  <li><a href="/cse/design-lab-ui-ux-development">Design Lab UI/UX Development</a></li>
+  <li><a href="/cse/qa-testing-services">QA & Testing Services</a></li>
+
+  <li><a href="/cse/java">Java Development</a></li>
+  <li><a href="/cse/php-development">PHP Development</a></li>
+  <li><a href="/cse/spring-development">Spring Development</a></li>
+  <li><a href="/cse/csharp-development">C# Development</a></li>
+
+  <li><a href="/cse/machine-learning-based">Machine Learning Based Projects</a></li>
+  <li><a href="/cse/python-development">Python Development</a></li>
+  <li><a href="/cse/matlab-projects">MATLAB Projects</a></li>
+  <li><a href="/cse/dotnet-projects">DotNet Projects</a></li>
+  <li><a href="/cse/r-projects">R Projects</a></li>
+  <li><a href="/cse/ns3-projects">NS3 Projects</a></li>
+  <li><a href="/cse/vlsi-projects">VLSI Projects</a></li>
+  <li><a href="/cse/opnet-projects">OPNET Projects</a></li>
+  <li><a href="/cse/robotics-projects">Robotics Projects</a></li>
+  <li><a href="/cse/ansys-projects">ANSYS Projects</a></li>
+  <li><a href="/cse/solidworks-projects">SolidWorks Projects</a></li>
+  <li><a href="/cse/cartia-projects">Cartia Projects</a></li>
+  <li><a href="/cse/labview-projects">LabVIEW Projects</a></li>
+
+  <li><a href="/cse/power-system-projects">Power System Projects</a></li>
+  <li><a href="/cse/power-documents">Power Documents</a></li>
+
+  <li><a href="/cse/image-processing">Image Processing</a></li>
+  <li><a href="/cse/signal-processing">Signal Processing</a></li>
+</ul>
+
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import "./CivilProjectDevelopmentCenter.scss"; 
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
 const faqs = [
   {
     question: "Why is Remote Sensing & GIS critical for civil engineering in Mumbai?",
@@ -23,15 +24,40 @@ const faqs = [
     answer: "Absolutely. Narpavi provides end-to-end guidance for publishing research in high-impact journals. We help students and researchers frame their work within IEEE standards, conduct robust spatial analysis, and prepare high-quality manuscripts for submission to top-tier Scopus and SCI-indexed publications."
   }
 ];
-
+const keywords = [
+  "Remote Sensing GIS Mumbai",
+  "GIS Civil Engineering Projects",
+  "Satellite Imagery Civil Projects",
+  "LiDAR Mapping Mumbai",
+  "Geospatial Analysis Mumbai",
+  "Urban Planning GIS",
+  "Civil Engineering Remote Sensing",
+  "Google Earth Engine Projects",
+  "Spatial Data Analytics Mumbai",
+  "B.Tech GIS Projects",
+  "M.Tech Remote Sensing Research",
+  "AI GIS Research Mumbai",
+  "Smart City GIS Applications",
+  "MMRDA GIS Projects",
+  "Narpavi Research Institute"
+];
 const RemoteSensingAndGISMumbai = () => {
   return (
     <div className="CEProjectDevelopmentCenter">
+      <SEO
+        title="Remote Sensing & GIS Projects in Mumbai | Civil Engineering | Mapping, LiDAR, AI-GIS"
+        description="IEEE-aligned Remote Sensing & GIS projects in Mumbai. Learn satellite image processing, LiDAR mapping, GEE analytics, AI-based land-use modeling, flood prediction, and smart city GIS solutions."
+        url="  /civil/remote-sensing-gis"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="CEProjectDevelopmentCenter-main">
         <div className="CEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="CEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Remote Sensing & GIS</li>
@@ -153,13 +179,29 @@ const RemoteSensingAndGISMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="CEProjectDevelopmentCenter-right">
             <h3>🔗 Related Civil Fields</h3>
-            <ul>
-              <li><a href="/transportation-engineering-mumbai">Transportation Engineering</a></li>
-              <li><a href="/smart-city-planning-mumbai">Smart City Planning</a></li>
-              <li><a href="/environmental-engineering-mumbai">Environmental Engineering</a></li>
-              <li><a href="/water-resources-engineering-mumbai">Water Resources Engineering</a></li>
-              <li><a href="/construction-management-mumbai">Construction Management</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=civil">Civil Engineering</a>
+  </li>
+
+  <li><a href="/civil/structural-engineering">Structural Engineering</a></li>
+  <li><a href="/civil/bridgedesign-and-monitoring">Bridge Design & Monitoring</a></li>
+  <li><a href="/civil/earthquake-resistant">Earthquake Resistant Design</a></li>
+  <li><a href="/civil/steel-and-rcc-design">Steel & RCC Design</a></li>
+  <li><a href="/civil/tall-building-analysis">Tall Building Analysis</a></li>
+  <li><a href="/civil/geotechnical-engineering">Geotechnical Engineering</a></li>
+  <li><a href="/civil/soil-stabilization-techniques">Soil Stabilization Techniques</a></li>
+  <li><a href="/civil/foundation-design">Foundation Design</a></li>
+  <li><a href="/civil/transportation-engineering">Transportation Engineering</a></li>
+  <li><a href="/civil/smart-traffic-management">Smart Traffic Management</a></li>
+  <li><a href="/civil/pavement-analysis-design">Pavement Analysis & Design</a></li>
+  <li><a href="/civil/environmental-engineering">Environmental Engineering</a></li>
+  <li><a href="/civil/water-treatment-recycling">Water Treatment & Recycling</a></li>
+  <li><a href="/civil/construction-project">Construction Project Management</a></li>
+  <li><a href="/civil/remote-sensing-gis">Remote Sensing & GIS</a></li>
+
+</ul>
+
           </div>
           
         </div>

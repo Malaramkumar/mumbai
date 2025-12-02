@@ -18,7 +18,7 @@ const services = [
     icon: <Briefcase size={20} />,
   },
   {
-    title: "Corporate Demand For PhDs",
+    title: "Corporate Demand",
     desc: "Get expert help choosing impactful and feasible research topics.",
     link: "/top-mnc-hiring",
     icon: <Building2 size={20} />,
@@ -32,7 +32,7 @@ const services = [
   {
     title: "Scholarships & Fellowships",
     desc: "Professional support for crafting compelling proposals.",
-    link: "/top-for-phd-colleges-in-mumbai",
+    link: "/funding-for-phd-in-mumbai–2025",
     icon: <Wallet size={20} />,
   },
 ];
@@ -75,8 +75,8 @@ const Brands = () => {
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="services1-center-content">
-          <h1>PhD Consulting <br/> – Assistance and Guidance in Mumbai</h1>
-          <p>At Narpavi Research Institute, we offer end-to-end PhD consulting services designed to support scholars through every stage of their doctoral journey. From expert guidance in PhD admission assistance and proposal writing to hands-on support in research methodology, implementation, and thesis development, we ensure academic excellence with precision and professionalism. Our services also include high-impact journal/conference paper writing and publishing support, synopsis preparation, viva voce training, and funding project proposal assistance. With a focus on quality, timely delivery, and personalized mentoring, we empower researchers to navigate their PhD journey with confidence and clarity.</p>
+          <h1>PhD Consulting <br/>  Assistance and Guidance in Mumbai</h1>
+          <p>At Narpavi Research Institute, we offer end-to-end PhD consulting services designed to support scholars through every stage of their doctoral journey. From expert guidance in PhD admission assistance and proposal writing to hands-on support in research methodology, implementation, and thesis development, we ensure academic excellence with precision and professionalism. Our services also include high-impact journal / conference paper writing and publishing support, synopsis preparation, viva voce training, and funding project proposal assistance. With a focus on quality, timely delivery, and personalized mentoring, we empower researchers to navigate their PhD journey with confidence and clarity.</p>
           <button onClick={() => navigate("/phd-consulting")}>
             PhD Consulting
           </button>

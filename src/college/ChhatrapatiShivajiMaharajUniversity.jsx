@@ -2,7 +2,7 @@ import React from "react";
 import "./university.scss";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Does CSMU conduct its own PhD entrance exam?",
@@ -25,6 +25,18 @@ const faqs = [
     answer: "Yes. Two Scopus/UGC-CARE-indexed papers and ≤10% Turnitin similarity are required pre-synopsis."
   }
 ];
+const keywords = [
+  "CSMU PhD Admission 2025",
+  "Chhatrapati Shivaji Maharaj University PhD",
+  "CSMU PET Exam",
+  "PhD in Mumbai",
+  "CSMU Research Programs",
+  "CSMU PhD Eligibility",
+  "PhD Fellowships Mumbai",
+  "CSMU Part-Time PhD",
+  "PET-CSMU Syllabus",
+  "Narpavi Research Support CSMU"
+];
 
 const CsmuPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -32,6 +44,15 @@ const CsmuPhDPage = () => {
 
   return (
     <div className="phd-layout">
+      {/* ✅ SEO Component */}
+      <SEO
+        title="CSMU PhD Admission 2025 | PET-CSMU, Eligibility, Fees & Research Guide"
+        description="Complete guide for Chhatrapati Shivaji Maharaj University PhD admissions: PET-CSMU exam pattern, eligibility, fees, research labs, funding, publications requirements and Narpavi support."
+        url="/colleges/chhatrapati-shivaji-maharaj-university"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -211,7 +232,7 @@ const CsmuPhDPage = () => {
 
         <section id="cta" className="cta-box">
           <h2>Narpavi Research Institute: Your Success Partner @ CSMU</h2>
-          <p>From crafting PET-ready proposals to polishing Scopus manuscripts, Narpavi’s 15-year legacy (400 + success stories) wraps every step—funding dossiers, publication mentoring, thesis structuring—into one seamless service hub so you finish faster and stronger.</p>
+          <p>From crafting PET-ready proposals to polishing Scopus manuscripts, Narpavi’s 15-year legacy (400+ success stories) wraps every step—funding dossiers, publication mentoring, thesis structuring—into one seamless service hub so you finish faster and stronger.</p>
           <strong>“From Entrance to Excellence – Narpavi’s Handholding at Every Stage”</strong>
         </section>
 
@@ -231,14 +252,12 @@ const CsmuPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD Mumbai</li>
-            <li>CSMU</li>
-            <li>Admissions</li>
-            <li>Research</li>
-            <li>UGC NET</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

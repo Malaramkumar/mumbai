@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "structural dynamics projects mumbai",
+  "earthquake engineering ieee projects",
+  "seismic analysis btech projects",
+  "tuned mass damper design mumbai",
+  "rotor dynamics projects mumbai",
+  "modal and harmonic analysis ieee",
+  "smart materials earthquake resistance",
+  "mtech seismic safety projects",
+  "phd structural engineering research mumbai",
+  "ai based seismic prediction projects",
+  "base isolation ieee project",
+  "structural health monitoring iot",
+  "fea dynamic analysis projects",
+  "bridge vibration analysis mumbai",
+  "high rise seismic safety projects"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MEStructuralDynamicsEarthquakeEngineeringProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Structural Dynamics & Earthquake Engineering Project Development in Mumbai | Seismic Analysis | TMD | FEA | B.Tech, M.Tech, Ph.D."
+  description="IEEE-aligned Structural Dynamics & Earthquake Engineering project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Covers seismic vibration control, tuned mass dampers, rotor dynamics, modal/harmonic analysis, FEA, and smart materials using ANSYS, MATLAB, ABAQUS, HyperMesh, and LabVIEW."
+  url="/mechanical/dynamics-vibration/structural-dynamics-earthquake"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -216,13 +242,48 @@ const MEStructuralDynamicsEarthquakeEngineeringProjectDevelopmentCenter = () => 
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/smart-intelligent-materials-project-development">Smart & Intelligent Materials Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-              <li><a href="/industrial-collaborative-robots-project-development">Industrial & Collaborative Robots Project Development</a></li>
-              <li><a href="/control-systems-robotics-project-development">Control Systems for Robotics Project Development</a></li>
-              <li><a href="/ai-machine-learning-robotics-project-development">AI & Machine Learning in Robotics Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/dynamics-vibration">Dynamics & Vibration</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/structural-dynamics-earthquake">
+      Structural Dynamics & Earthquake
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/noise-vibration-harshness">
+      Noise, Vibration & Harshness
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/rotor-dynamics-balancing">
+      Rotor Dynamics & Balancing
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/modal-harmonic-analysis">
+      Modal & Harmonic Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/seismic-vibration-control">
+      Seismic Vibration Control
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/dynamics-vibration/smart-materials-vibration">
+      Smart Materials in Vibration
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

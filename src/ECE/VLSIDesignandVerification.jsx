@@ -1,6 +1,20 @@
 import React from 'react';
 import "./ECEProjectDevelopmentCenter.scss"; // Assuming a common SCSS file for ECE/VLSI
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
 
+const keywords = [
+  "VLSI Design Projects Mumbai",
+  "VLSI Verification Projects",
+  "FPGA ASIC Projects Mumbai",
+  "Semiconductor Projects Mumbai",
+  "Low Power VLSI Design",
+  "SoC Design Projects",
+  "IEEE VLSI Research 2023 2025",
+  "Cadence Synopsys VLSI Tools",
+  "AI Hardware Accelerator Projects",
+  "Narpavi VLSI Project Center"
+];
 const faqs = [
   {
     question: "Why is VLSI Design and Verification a high-demand field in Mumbai?",
@@ -27,11 +41,20 @@ const faqs = [
 const VLSIDesignVerificationMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+      <SEO
+  title="VLSI Design & Verification Projects in Mumbai | FPGA, ASIC, Cadence, Synopsys, IEEE VLSI Research"
+  description="VLSI Design & Verification Project Development Center in Mumbai for B.Tech, M.Tech, and Ph.D. students. Work with Cadence, Synopsys, Xilinx Vivado, FPGA/ASIC design, RTL synthesis, low-power VLSI, AI hardware acceleration, and IEEE-aligned research workflows."
+  url="/ece/vlsi-design-verification"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>ECE VLSI Design Projects</li>
@@ -193,12 +216,29 @@ const VLSIDesignVerificationMumbai = () => {
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE Fields</h3>
             <ul>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/ai-machine-learning-ece-mumbai">AI & Machine Learning in ECE</a></li>
-              <li><a href="/digital-signal-processing-mumbai">Digital Signal Processing</a></li>
-              <li><a href="/iot-embedded-design-mumbai">IoT & Embedded Design</a></li>
-              <li><a href="/semiconductor-technology-mumbai">Semiconductor Technology</a></li>
-            </ul>
+  <li>
+    <a href="/departments?dept=ece">Electronics & Communication</a>
+  </li>
+
+  <li><a href="/ece/vlsi-design-verification">VLSI Design & Verification</a></li>
+  <li><a href="/ece/embedded-systems-iot">Embedded Systems & IoT</a></li>
+  <li><a href="/ece/communication-signal-processing">Communication & Signal Processing</a></li>
+  <li><a href="/ece/power-electronics-drives">Power Electronics & Drives</a></li>
+  <li><a href="/ece/renewable-energy-systems">Renewable Energy Systems</a></li>
+  <li><a href="/ece/embedded-iot">Embedded & IoT Applications</a></li>
+  <li><a href="/ece/wireless-communication-networking">Wireless Communication & Networking</a></li>
+  <li><a href="/ece/ai-ml-applications-electronics">AI & ML Applications in Electronics</a></li>
+  <li><a href="/ece/internet-of-medical-things">Internet of Medical Things (IoMT)</a></li>
+  <li><a href="/ece/smart-antenna-microwave">Smart Antenna & Microwave Engineering</a></li>
+  <li><a href="/ece/fpga-reconfigurable-systems">FPGA & Reconfigurable Systems</a></li>
+  <li><a href="/ece/cyber-physical-smart-systems">Cyber Physical & Smart Systems</a></li>
+  <li><a href="/ece/control-systems-mechatronics">Control Systems & Mechatronics</a></li>
+  <li><a href="/ece/satellite-communication-navigation">Satellite Communication & Navigation</a></li>
+  <li><a href="/ece/optical-communication-photonics">Optical Communication & Photonics</a></li>
+  <li><a href="/ece/robotics-industrial-automation-mumbai">Robotics & Industrial Automation</a></li>
+
+</ul>
+
           </div>
           
         </div>

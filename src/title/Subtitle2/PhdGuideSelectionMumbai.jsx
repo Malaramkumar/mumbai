@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";   //  npm i lucide-react
 import "./PhdGuideSelectionMumbai.scss";
-
+import SEO from "../../assets/SEO";
+import LeftSidebar from "../../LeftSidebar";
 /* ───── DATA ───── */
 const KEYWORDS = [
   "phd guide selection in Mumbai",
@@ -35,11 +36,20 @@ const PhdGuideSelectionMumbai = () => {
 
   return (
     <div className="PhdGuideSelectionMumbai">
+       <SEO
+        title="PhD Guide Selection in Mumbai | Supervisor Evaluation Service | Narpavi Research Institute"
+        description="Get expert help selecting the best PhD guide in Mumbai. Narpavi Research Institute provides evaluation of university-approved supervisors, publication review, and topic alignment support for PhD candidates."
+        url="/phd-guide-selection-in-mumbai"
+        image="/assets/phd-guide-selection-mumbai-banner.jpg"
+        keywords={KEYWORDS}
+        faqs={FAQS} // ✅ Auto-builds FAQ schema
+      />
       <div className="phd-guide-wrapper">
         {/* LEFT SIDEBAR */}
         <aside className="left-side">
-          <h3>📢 Keywords</h3>
-          <ul>{KEYWORDS.map((k) => <li key={k}>{k}</li>)}</ul>
+          <a href="/home-page" class="buttonhp">Home Page</a>
+          <LeftSidebar/>
+         
         </aside>
 
         {/* MAIN CONTENT */}
@@ -116,6 +126,21 @@ const PhdGuideSelectionMumbai = () => {
             </div>
           </section>
 
+          <section id="why-matters" className="highlight-why">
+          <h2>🎯 Selecting the Best University Enhances Your Research Opportunities</h2>
+          <p>
+            Choosing the right university is crucial. It influences your research scope,
+            funding, supervisor quality, access to labs, and post-PhD prospects.
+            Mumbai hosts top-tier universities like IIT Bombay, TISS, NMIMS, and more—but
+            choosing one isn’t just about rankings.
+          </p>
+          <div className="button-row">
+            <a href="/colleges" className="colleges-btn">
+              📚 View Top University in Mumbai
+            </a>
+          </div>
+        </section>
+          
           {/* FAQ ACCORDION */}
           <section id="faqs" className="faq-section">
             <h3 className="faq-title">❓ FAQs – We Refer Guide for PhD in Mumbai</h3>

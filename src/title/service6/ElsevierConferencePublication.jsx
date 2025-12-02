@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ElsevierConferencePublication.scss";
+import LeftSidebar from "../../LeftSidebar";
 
 const sections = [
   {
@@ -201,6 +202,8 @@ export default function ElsevierConferencePublication() {
     <div className="ecp-layout">
       {/* Left sticky TOC */}
       <aside className="ecp-aside ecp-aside--left fade-in-left" aria-label="On this page">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <div className="ecp-sidebar-header">
           <h2 className="ecp-sidebar-title">On this page</h2>
           <span className="ecp-section-count">{tocItems.length} sections</span>

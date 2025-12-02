@@ -1,6 +1,19 @@
 import React from 'react';
 import "./ECEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
+const keywords = [
+  "Cyber Physical Systems Mumbai",
+  "Smart Sensors Projects Mumbai",
+  "IIoT Projects Mumbai",
+  "Real-Time Control Systems",
+  "Digital Twin Projects",
+  "ESP32 Raspberry Pi CPS",
+  "Node-RED MQTT TLS",
+  "MATLAB LabVIEW CPS",
+  "Predictive Maintenance Sensors",
+  "IEEE CPS Projects 2023-2025"
+];
 const faqs = [
   {
     question: "Which stacks and platforms are best for CPS prototyping?",
@@ -32,11 +45,19 @@ const faqs = [
 const CyberPhysicalSmartSensorsMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+       <SEO
+        title="Cyber-Physical Systems (CPS) & Smart Sensors Projects in Mumbai | IIoT, ESP32, MATLAB, Digital Twins"
+        description="CPS and Smart Sensor Projects for B.Tech, M.Tech, and Ph.D. students in Mumbai. Includes ESP32, Raspberry Pi, IIoT, MQTT, MATLAB, Simulink, Digital Twins, Predictive Maintenance, and IEEE-aligned research."
+        url="/ece/cyber-physical-smart-systems"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>ECE Cyber‑Physical Systems</li>
@@ -221,13 +242,30 @@ const CyberPhysicalSmartSensorsMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE fields</h3>
-            <ul>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/communication-systems-mumbai">Communication Systems</a></li>
-              <li><a href="/ai-ml-electronics-mumbai">AI & ML in Electronics</a></li>
-              <li><a href="/power-electronics-mumbai">Power Electronics</a></li>
-              <li><a href="/wireless-security-mumbai">Wireless Security</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=ece">Electronics & Communication</a>
+  </li>
+
+  <li><a href="/ece/vlsi-design-verification">VLSI Design & Verification</a></li>
+  <li><a href="/ece/embedded-systems-iot">Embedded Systems & IoT</a></li>
+  <li><a href="/ece/communication-signal-processing">Communication & Signal Processing</a></li>
+  <li><a href="/ece/power-electronics-drives">Power Electronics & Drives</a></li>
+  <li><a href="/ece/renewable-energy-systems">Renewable Energy Systems</a></li>
+  <li><a href="/ece/embedded-iot">Embedded & IoT Applications</a></li>
+  <li><a href="/ece/wireless-communication-networking">Wireless Communication & Networking</a></li>
+  <li><a href="/ece/ai-ml-applications-electronics">AI & ML Applications in Electronics</a></li>
+  <li><a href="/ece/internet-of-medical-things">Internet of Medical Things (IoMT)</a></li>
+  <li><a href="/ece/smart-antenna-microwave">Smart Antenna & Microwave Engineering</a></li>
+  <li><a href="/ece/fpga-reconfigurable-systems">FPGA & Reconfigurable Systems</a></li>
+  <li><a href="/ece/cyber-physical-smart-systems">Cyber Physical & Smart Systems</a></li>
+  <li><a href="/ece/control-systems-mechatronics">Control Systems & Mechatronics</a></li>
+  <li><a href="/ece/satellite-communication-navigation">Satellite Communication & Navigation</a></li>
+  <li><a href="/ece/optical-communication-photonics">Optical Communication & Photonics</a></li>
+  <li><a href="/ece/robotics-industrial-automation-mumbai">Robotics & Industrial Automation</a></li>
+
+</ul>
+
           </div>
 
         </div>

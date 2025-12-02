@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "./PhDAdmissionAssistanceforThreeState.scss";
-
+import LeftSidebar from "../LeftSidebar";
 const seoKeywords = [
   "PhD admission assistance in Mumbai",
   "Online PhD admission assistance in Mumbai",
@@ -71,6 +71,8 @@ const [openIndex, setOpenIndex] = useState(null);
     <div className="phd-page-container">
       {/* Left Sidebar */}
       <aside className="left-side">
+         <a href="/home-page" class="buttonhp">Home Page</a>
+        <LeftSidebar/>
         <h3>🔍 SEO Keywords</h3>
         <ul>
           {seoKeywords.map((keyword, idx) => (
@@ -128,6 +130,22 @@ const [openIndex, setOpenIndex] = useState(null);
         <p>PhD admissions in Mumbai require a clear academic vision, expert mentorship, and strategic
 execution. We deliver all three—guided by transparency, upheld by integrity, and supported by a
 consistent record of successful outcomes.</p>
+
+          <section id="why-matters" className="highlight-why">
+  <h2>🎯 Selecting the Best University Enhances Your Research Opportunities</h2>
+  <p>
+    Choosing the right university is crucial. It influences your research scope,
+    funding, supervisor quality, access to labs, and post-PhD prospects.
+    Mumbai hosts top-tier universities like IIT Bombay, TISS, NMIMS, and more—but
+    choosing one isn’t just about rankings.
+  </p>
+  <div className="button-row">
+    <a href="/colleges" className="colleges-btn">
+      📚 View Top University in Mumbai
+    </a>
+  </div>
+</section>
+
 
 <section  className="faq-section11">
   

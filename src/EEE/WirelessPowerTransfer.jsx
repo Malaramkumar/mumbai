@@ -1,6 +1,7 @@
 import React from 'react';
 import "./EEEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
 const faqs = [
   {
     question: "Which WPT approach should be used for Mumbai deployments?",
@@ -28,15 +29,36 @@ const faqs = [
       "B.Tech: low‑power pad prototype + efficiency curves; M.Tech: resonant inverter with adaptive control + EMI pre‑checks + publication draft; Ph.D.: multi‑vehicle WPT frameworks, EMI mitigation, AI optimization + field data and IEEE manuscript."
   }
 ];
+const keywords = [
+  "Wireless Power Transfer Mumbai",
+  "Inductive Resonant Charging EV",
+  "Dynamic Wireless Charging India",
+  "GaN SiC Converters EV Chargers",
+  "Smart Grid V2G Wireless Power",
+  "Coastal EMI EMC Design",
+  "EV Depot Wireless Charging Mumbai",
+  "Marine Inductive Charging Systems",
+  "High Frequency Resonant Inverter",
+  "IEEE WPT Projects 2023 2025"
+];
 
 const WirelessPowerChargingMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+         <SEO
+        title="Wireless Power Transfer & Charging Infrastructure Projects in Mumbai | EV, V2G, Resonant Inductive, IEEE 2023–2025"
+        description="Wireless Power Transfer and Charging Infrastructure Projects in Mumbai for EVs, buses, and marine systems. Work on resonant inductive/dynamic WPT, GaN/SiC converters, EMI mitigation, V2G grid integration, and AI optimization under IEEE-aligned frameworks."
+        url="/eee/wireless-power-transfer"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>ECE Wireless Power Transfer</li>
@@ -218,13 +240,28 @@ const WirelessPowerChargingMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE fields</h3>
-            <ul>
-              <li><a href="/power-electronics-mumbai">Power Electronics</a></li>
-              <li><a href="/embedded-systems-mumbai">Embedded Systems</a></li>
-              <li><a href="/renewable-energy-mumbai">Renewable Energy</a></li>
-              <li><a href="/communication-systems-mumbai">Communication Systems</a></li>
-              <li><a href="/cyber-physical-systems-mumbai">Cyber‑Physical Systems</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=eee">Electrical & Electronics</a>
+  </li>
+
+  <li><a href="/eee/smart-grid-microgrid">Smart Grid & Microgrid</a></li>
+  <li><a href="/eee/ev-charging-infrastructure-v2g">EV Charging Infrastructure & V2G</a></li>
+  <li><a href="/eee/power-system-stability">Power System Stability</a></li>
+  <li><a href="/eee/load-forecasting-demand-response">Load Forecasting & Demand Response</a></li>
+  <li><a href="/eee/high-voltage-dc">High Voltage DC Systems</a></li>
+  <li><a href="/eee/power-system-protection">Power System Protection</a></li>
+  <li><a href="/eee/power-electronics-renewables">Power Electronics for Renewables</a></li>
+  <li><a href="/eee/embedded-iot-energy">Embedded IoT for Energy Systems</a></li>
+  <li><a href="/eee/smart-lighting-building">Smart Lighting & Building Automation</a></li>
+  <li><a href="/eee/condition-monitoring-diagnosis">Condition Monitoring & Diagnosis</a></li>
+  <li><a href="/eee/electric-machines-coastal-marine">Electric Machines for Coastal & Marine</a></li>
+  <li><a href="/eee/power-electronics-ev-motor-drives">Power Electronics & EV Motor Drives</a></li>
+  <li><a href="/eee/wireless-power-transfer">Wireless Power Transfer</a></li>
+  <li><a href="/eee/artificial-intelligence-power">AI in Power Systems</a></li>
+  <li><a href="/eee/smart-metering-demand-response">Smart Metering & Demand Response</a></li>
+
+</ul>  
           </div>
 
         </div>

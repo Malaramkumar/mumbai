@@ -1,5 +1,17 @@
 import "../MEProjectDevelopmentCenter.scss";
-
+import SEO from "../../assets/SEO";
+const keywords = [
+  "electric vehicle design projects Mumbai",
+  "hybrid vehicle IEEE projects",
+  "B.Tech EV design projects",
+  "M.Tech hybrid powertrain optimization",
+  "Ph.D. EV energy management research",
+  "AI-based EV optimization",
+  "regenerative braking projects Mumbai",
+  "battery management system EV projects",
+  "lightweight hybrid vehicle design",
+  "Narpavi Research Institute EV projects"
+];
 const faqs = [
   {
     question: "What services does the Electric & Hybrid Vehicle Design Project Development Center offer in Mumbai?",
@@ -26,22 +38,22 @@ const faqs = [
 const MEElectricHybridVehicleDesignProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Electric & Hybrid Vehicle Design – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Electric & Hybrid Vehicle Design Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on EV and hybrid systems."
+        url="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>electric vehicle design projects Mumbai</li>
-              <li>hybrid vehicle IEEE projects</li>
-              <li>B.Tech EV design projects</li>
-              <li>M.Tech hybrid powertrain optimization</li>
-              <li>Ph.D. EV energy management research</li>
-              <li>AI-based EV optimization</li>
-              <li>regenerative braking projects Mumbai</li>
-              <li>battery management system EV projects</li>
-              <li>lightweight hybrid vehicle design</li>
-              <li>Narpavi Research Institute EV projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -181,7 +193,7 @@ const MEElectricHybridVehicleDesignProjectDevelopmentCenter = () => {
             </section>
 
             <section className="MEProjectDevelopmentCenter-conclusion">
-              <h2>Conclusion</h2>
+              <h2></h2>
               <p>
                 Electric & Hybrid Vehicle Design is pivotal for Mumbai’s automotive and EV industries, enabling sustainable, high-performance, and energy-efficient vehicles. With the integration of AI, simulation tools, and advanced materials, vehicle systems are becoming smarter, safer, and more environmentally friendly.
               </p>
@@ -225,12 +237,49 @@ const MEElectricHybridVehicleDesignProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-industry-40-project-development">Smart Factory Systems (Industry 4.0) Project Development</a></li>
-              <li><a href="/supply-chain-process-optimization-project-development">Supply Chain & Process Optimization Project Development</a></li>
-              <li><a href="/lean-manufacturing-techniques-project-development">Lean Manufacturing Techniques Project Development</a></li>
-              <li><a href="/predictive-preventive-maintenance-engineering-project-development">Predictive & Preventive Maintenance Engineering Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/automobile-transportation-systems">
+      Automobile & Transportation Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design">
+      Electric & Hybrid Vehicle Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety">
+      Vehicle Dynamics & Crash Safety
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/internal-combustion-engine">
+      Internal Combustion Engines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel">
+      Automotive Aerodynamics & Fuel Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions">
+      Advanced Vehicle Suspensions
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/intelligent-transportation">
+      Intelligent Transportation Systems
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

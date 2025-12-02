@@ -2,7 +2,7 @@ import React from "react";
 import "./university.scss";
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "Does Amity University offer full-time and part-time PhD programs?",
@@ -25,7 +25,19 @@ const faqs = [
     answer: "Yes. Amity University is UGC-approved, and its PhD degrees are recognized in India and abroad."
   }
 ];
-
+// ✅ Keywords
+const keywords = [
+  "Amity University Mumbai PhD Admission 2025",
+  "Amity PhD Eligibility",
+  "Amity PhD Entrance Exam",
+  "PhD in Mumbai Universities",
+  "Amity University PET",
+  "Amity University PhD Fees",
+  "Amity Research Programs",
+  "Amity University PhD Fellowship",
+  "Amity University PhD Process",
+  "PhD Admission Mumbai 2025"
+];
 
 const AmityPhDEnhancedPage = () => {
   
@@ -34,6 +46,15 @@ const [openIndex, setOpenIndex] = useState(null);
 
   return (
     <div className="phd-layout">
+        {/* ✅ SEO Component */}
+      <SEO
+        title="Amity University Mumbai PhD Admission 2025 | Eligibility, Fees, PET, Research & Guide"
+        description="Complete details on Amity University Mumbai PhD admission: eligibility, PET exam, fees, research facilities, collaborations, fellowships, and documentation checklist."
+        url="/colleges/amity-university"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -258,14 +279,12 @@ const [openIndex, setOpenIndex] = useState(null);
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-          <li>PhD Mumbai</li>
-          <li>Amity</li>
-          <li>Admissions</li>
-          <li>Research</li>
-          <li>UGC NET</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

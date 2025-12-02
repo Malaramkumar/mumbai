@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "What is the PET-HBSU exam pattern?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Portal opens Sep 18, closes Oct 5. PET in 3rd week Oct. Interviews in late Oct. Offers by Nov 1."
   }
 ];
+const keywords = [
+  "HBSU PhD Admission 2025",
+  "Homi Bhabha State University PhD",
+  "PET-HBSU",
+  "Cluster University Mumbai",
+  "Institute of Science PhD",
+  "HBSU Eligibility",
+  "HBSU Research Facilities",
+  "HBSU Fellowship",
+  "PhD Mumbai Universities",
+  "HBSU Application 2025"
+];
 
 const HBSIPhDEnhancedPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,14 @@ const HBSIPhDEnhancedPage = () => {
 
   return (
     <div className="phd-layout">
+      <SEO
+        title="HBSU PhD Admission 2025 | PET-HBSU Exam, Eligibility, Fees & Research Facilities"
+        description="Complete guide for Dr. Homi Bhabha State University (HBSU) PhD admission 2025. PET-HBSU pattern, eligibility, fees, faculty research labs, HPC access, collaborations, and fellowship details."
+        url="/colleges/hbsu-mumbai"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -162,19 +182,15 @@ const HBSIPhDEnhancedPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-        <div className="tags">
-          <ul>
-            <li>HBSU Mumbai</li>
-            <li>Cluster University PhD</li>
-            <li>Institute of Science PhD</li>
-            <li>PET-HBSU</li>
-            <li>Narpavi Research Support</li>
-          </ul>
-        </div>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
-  );
+  );   
 };
 
 export default HBSIPhDEnhancedPage;

@@ -1,6 +1,19 @@
 import React from "react";
 import "./ECEProjectDevelopmentCenter.scss";
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from "../LeftSidebar";
+const keywords = [
+  "Optical Communication Projects Mumbai",
+  "Photonics Projects Mumbai",
+  "OptiSystem Simulation Projects",
+  "Fiber Optic Network Design",
+  "DWDM Optical Networks",
+  "MATLAB Optical Communication",
+  "COMSOL Photonics Modeling",
+  "Optical Signal Processing Projects",
+  "Quantum and Silicon Photonics",
+  "IEEE Optical Projects 2023 2025"
+];
 const faqs = [
   {
     question: "Which optical design tools are supported at the center?",
@@ -32,11 +45,20 @@ const faqs = [
 const OpticalCommunicationPhotonicsMumbai = () => {
   return (
     <div className="ECEProjectDevelopmentCenter">
+      <SEO
+  title="Optical Communication & Photonics Projects in Mumbai | OptiSystem, DWDM, COMSOL, MATLAB"
+  description="Optical Communication and Photonics Project Development Center in Mumbai for B.Tech, M.Tech, and Ph.D. students. Build DWDM systems, photonic sensors, EDFA amplifiers, optical OFDM models, and integrated photonic circuits using OptiSystem, COMSOL, MATLAB, and IEEE-aligned workflows."
+  url="ece/optical-communication-photonics"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="ECEProjectDevelopmentCenter-main">
         <div className="ECEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="ECEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>Optical Communication Projects Mumbai</li>
@@ -230,13 +252,30 @@ const OpticalCommunicationPhotonicsMumbai = () => {
           {/* Right Column – Related Fields */}
           <div className="ECEProjectDevelopmentCenter-right">
             <h3>🔗 Related ECE Fields</h3>
-            <ul>
-              <li><a href="/communication-systems-mumbai">Communication Systems</a></li>
-              <li><a href="/telecom-networking-mumbai">Telecom Networking</a></li>
-              <li><a href="/signal-processing-mumbai">Signal Processing</a></li>
-              <li><a href="/photonics-engineering-mumbai">Photonics Engineering</a></li>
-              <li><a href="/sensor-integrated-systems-mumbai">Sensor Integrated Systems</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=ece">Electronics & Communication</a>
+  </li>
+
+  <li><a href="/ece/vlsi-design-verification">VLSI Design & Verification</a></li>
+  <li><a href="/ece/embedded-systems-iot">Embedded Systems & IoT</a></li>
+  <li><a href="/ece/communication-signal-processing">Communication & Signal Processing</a></li>
+  <li><a href="/ece/power-electronics-drives">Power Electronics & Drives</a></li>
+  <li><a href="/ece/renewable-energy-systems">Renewable Energy Systems</a></li>
+  <li><a href="/ece/embedded-iot">Embedded & IoT Applications</a></li>
+  <li><a href="/ece/wireless-communication-networking">Wireless Communication & Networking</a></li>
+  <li><a href="/ece/ai-ml-applications-electronics">AI & ML Applications in Electronics</a></li>
+  <li><a href="/ece/internet-of-medical-things">Internet of Medical Things (IoMT)</a></li>
+  <li><a href="/ece/smart-antenna-microwave">Smart Antenna & Microwave Engineering</a></li>
+  <li><a href="/ece/fpga-reconfigurable-systems">FPGA & Reconfigurable Systems</a></li>
+  <li><a href="/ece/cyber-physical-smart-systems">Cyber Physical & Smart Systems</a></li>
+  <li><a href="/ece/control-systems-mechatronics">Control Systems & Mechatronics</a></li>
+  <li><a href="/ece/satellite-communication-navigation">Satellite Communication & Navigation</a></li>
+  <li><a href="/ece/optical-communication-photonics">Optical Communication & Photonics</a></li>
+  <li><a href="/ece/robotics-industrial-automation-mumbai">Robotics & Industrial Automation</a></li>
+
+</ul>
+
           </div>
 
         </div>

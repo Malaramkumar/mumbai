@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import SEO from ".././assets/SEO";
 
 const faqs = [
   {
@@ -24,13 +25,31 @@ const faqs = [
     answer: "PhD applications are accepted annually between January and March."
   }
 ];
-
+const keywords = [
+  "Spicer PhD Admission 2025",
+  "Spicer Adventist University PhD",
+  "Faith-based PhD Programs",
+  "Christian Research PhD",
+  "Religious Studies PhD India",
+  "Spicer Research Eligibility",
+  "PhD Pune Universities",
+  "Minority Fellowship PhD",
+  "Spicer PhD Fees",
+  "Spicer University Admissions"
+];
 const SpicerPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+<SEO
+        title="Spicer PhD Admission  | Eligibility, Research, Fellowship & Timeline"
+        description="Spicer Adventist University PhD admissions – eligibility, research areas, funding support, admission process, and academic requirements."
+        url="/colleges/spicer-phd"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -165,15 +184,12 @@ const SpicerPhDPage = () => {
       {/* Right Sidebar */}
       <aside className="right-sidebar">
         <h3>Tags</h3>
-        <div className="tags">
-          <ul>
-            <li>Spicer University</li>
-            <li>Christian Research</li>
-            <li>Faith-based PhD</li>
-            <li>Religious Studies</li>
-            <li>UGC Minority</li>
-          </ul>
-        </div>
+       <h3>Keywords</h3>
+        <ul>
+          {keywords.map((key) => (
+            <li key={key}>{key}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

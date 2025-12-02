@@ -1,4 +1,22 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "industrial robots projects mumbai",
+  "collaborative robots ieee projects",
+  "cobot projects btech",
+  "robotics projects narpavi research institute",
+  "industrial automation robotics projects",
+  "ai enabled robotics projects mumbai",
+  "mtech collaborative robotics projects",
+  "phd robotics research india",
+  "human robot interaction ieee projects",
+  "smart factory robotics mumbai",
+  "industrial articulated robot projects",
+  "scara robot projects ieee",
+  "delta robot student projects",
+  "mobile collaborative robots india",
+  "humanoid robot projects for students"
+];
 
 const faqs = [
   {
@@ -26,6 +44,14 @@ const faqs = [
 const MEIndustrialCollaborativeRobotsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Industrial & Collaborative Robots Project Development in Mumbai"
+  description="IEEE-aligned Industrial & Collaborative Robots project development in Mumbai for B.Tech, M.Tech, and Ph.D. students. Work on cobots, articulated robots, SCARA, delta robots, humanoid robots, AI-enabled automation, and Industry 4.0 solutions."
+  url="/mechanical/robotics-automation/industrial-collaborative-robots"
+  keywords={keywords}
+  faqs={faqs}
+/>
+
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -222,13 +248,48 @@ const MEIndustrialCollaborativeRobotsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/smart-manufacturing-industry-4-0-project-development">Smart Manufacturing & Industry 4.0 Project Development</a></li>
-              <li><a href="/advanced-composite-materials-project-development">Advanced Composite Materials Project Development</a></li>
-              <li><a href="/nano-materials-mechanical-systems-project-development">Nano-Materials for Mechanical Systems Project Development</a></li>
-              <li><a href="/welding-casting-joining-technologies-project-development">Welding, Casting & Joining Technologies Project Development</a></li>
-              <li><a href="/corrosion-surface-engineering-project-development">Corrosion & Surface Engineering Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/robotics-automation">Robotics & Automation</a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/industrial-collaborative-robots">
+      Industrial & Collaborative Robots
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/mechatronic-systems-smart">
+      Mechatronic Systems & Smart Devices
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/autonomous-vehicles-mobile">
+      Autonomous Vehicles & Mobile Robots
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/control-systems-robotics">
+      Control Systems in Robotics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/ai-ml-robotics">
+      AI & ML in Robotics
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/robotics-automation/robotic-process-automation">
+      Robotic Process Automation (RPA)
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

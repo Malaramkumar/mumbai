@@ -1,4 +1,21 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO"
+const keywords = [
+  "Wear and Friction Analysis Projects Mumbai",
+  "Tribology IEEE Projects",
+  "Surface Wear Testing Projects",
+  "AI in Tribology Projects",
+  "Lubrication Technology Research Mumbai",
+  "FEM Wear Analysis IEEE",
+  "Condition Monitoring Tribology Projects",
+  "B.Tech Tribology Projects Mumbai",
+  "M.Tech Wear Analysis Projects",
+  "Ph.D Tribology Research Mumbai",
+  "surface coatings tribology projects",
+  "nano tribology IEEE projects",
+  "advanced lubricants research Mumbai",
+  "Narpavi Research Institute tribology"
+];
 
 const faqs = [
   {
@@ -26,6 +43,13 @@ const faqs = [
 const MEWearFrictionAnalysisProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+  title="Wear & Friction Analysis Project Development in Mumbai"
+  description="IEEE-aligned Wear & Friction Analysis project development for B.Tech, M.Tech, and Ph.D. students in Mumbai. Includes surface coatings, tribology research, FEM wear modeling, lubrication technology, nano-tribology, and AI-based fault diagnosis."
+  url="/mechanical/TribologyMaintenance/WearFrictionAnalysis"
+  keywords={keywords}
+  faqs={faqs}
+/>
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
@@ -224,12 +248,49 @@ const MEWearFrictionAnalysisProjectDevelopmentCenter = () => {
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
             <ul>
-              <li><a href="/fluid-structure-interaction-project-development">Fluid-Structure Interaction Project Development</a></li>
-              <li><a href="/multiphase-flow-heat-transfer-project-development">Multiphase Flow & Heat Transfer Project Development</a></li>
-              <li><a href="/turbomachinery-gas-turbines-project-development">Turbomachinery & Gas Turbines Project Development</a></li>
-              <li><a href="/smart-materials-vibration-control-project-development">Smart Materials in Vibration Control Project Development</a></li>
-              <li><a href="/mechatronic-systems-smart-sensors-project-development">Mechatronic Systems & Smart Sensors Project Development</a></li>
-            </ul>
+  <li>
+    <a href="/mechanical/tribology-maintenance">
+      Tribology & Maintenance
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/wear-friction-analysis">
+      Wear & Friction Analysis
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/lubrication-technology-advanced">
+      Lubrication Technology (Advanced)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/bearing-design-condition">
+      Bearing Design & Condition
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/fault-diagnosis-rotating">
+      Fault Diagnosis (Rotating Machinery)
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/tribology-in-micro-nano">
+      Tribology in Micro/Nano Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/tribology-maintenance/predictive-preventive-maintenance">
+      Predictive & Preventive Maintenance
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

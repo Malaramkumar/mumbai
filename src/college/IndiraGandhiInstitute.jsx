@@ -24,13 +24,32 @@ const faqs = [
     answer: "Yes. Two WOS-listed publications are mandatory before the pre-submission seminar."
   }
 ];
-
+const keywords = [
+  "IGIDR PhD Admission 2025",
+  "IGIDR Development Studies PhD",
+  "IGIDR Entrance Test Syllabus",
+  "PhD Economics Mumbai",
+  "IGIDR Fellowship 2025",
+  "IGIDR Eligibility Criteria",
+  "IGIDR Fees Structure",
+  "IGIDR Research Labs",
+  "IGIDR PhD Selection Process",
+  "RBI IGIDR Research Institute"
+];
 const IGIDRPhD = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const toggleFAQ = (index) => setOpenIndex(openIndex === index ? null : index);
 
   return (
     <div className="phd-layout">
+       <SEO
+        title="IGIDR Mumbai PhD Admission 2025 | Development Studies, Entrance Test, Fees & Fellowship"
+        description="Complete guide to IGIDR Mumbai PhD 2025 — eligibility, entrance test pattern, funding, fees, research facilities, and application timeline."
+        url="/colleges/igidr-phd"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -204,14 +223,12 @@ const IGIDRPhD = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-          <ul>
-            <li>PhD Mumbai</li>
-            <li>IGIDR</li>
-            <li>Development Studies</li>
-            <li>Economics</li>
-            <li>Research</li>
-          </ul>
+        <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

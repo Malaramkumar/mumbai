@@ -1,6 +1,24 @@
 import React from 'react';
 import "./CivilProjectDevelopmentCenter.scss"; // Assuming a common SCSS file
-
+import SEO from ".././assets/SEO"
+import LeftSidebar from '../LeftSidebar';
+const keywords = [
+  "transportation engineering Mumbai",
+  "traffic management projects",
+  "pavement design Mumbai",
+  "smart city transportation",
+  "EV infrastructure projects Mumbai",
+  "intelligent transport systems",
+  "GIS-based urban mobility",
+  "sustainable transport design",
+  "B.Tech transportation projects Mumbai",
+  "M.Tech traffic engineering research",
+  "digital twin traffic simulation",
+  "PTV Vissim projects Mumbai",
+  "urban mobility planning Mumbai",
+  "Narpavi Research Institute",
+  "AI-based traffic prediction"
+];
 const faqs = [
   {
     question: "Why is Transportation Engineering a critical field for projects in Mumbai?",
@@ -27,11 +45,20 @@ const faqs = [
 const TransportationEngineeringMumbai = () => {
   return (
     <div className="CEProjectDevelopmentCenter">
+       <SEO
+        title="Transportation Engineering Projects in Mumbai | Traffic Simulation, ITS, Smart Mobility"
+        description="IEEE-aligned Transportation Engineering projects in Mumbai using PTV Vissim, TransCAD, GIS, and AI-based traffic prediction. B.Tech, M.Tech, and Ph.D. projects for traffic management, smart mobility, EV networks, and intelligent transport systems."
+        url="/civil/transportation-engineering"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       <div className="CEProjectDevelopmentCenter-main">
         <div className="CEProjectDevelopmentCenter-grid">
 
           {/* Left Column – Keywords */}
           <div className="CEProjectDevelopmentCenter-left">
+            <LeftSidebar/>
             <h3>🔑 Keywords</h3>
             <ul>
               <li>transportation engineering Mumbai</li>
@@ -154,13 +181,29 @@ const TransportationEngineeringMumbai = () => {
           {/* Right Column – Related Services */}
           <div className="CEProjectDevelopmentCenter-right">
             <h3>🔗 Related Civil Fields</h3>
-            <ul>
-              <li><a href="/structural-engineering-mumbai">Structural Engineering</a></li>
-              <li><a href="/construction-management-mumbai">Construction Management</a></li>
-              <li><a href="/geotechnical-engineering-mumbai">Geotechnical Engineering</a></li>
-              <li><a href="/smart-city-planning-mumbai">Smart City Planning</a></li>
-              <li><a href="/environmental-engineering-mumbai">Environmental Engineering</a></li>
-            </ul>
+             <ul>
+  <li>
+    <a href="/departments?dept=civil">Civil Engineering</a>
+  </li>
+
+  <li><a href="/civil/structural-engineering">Structural Engineering</a></li>
+  <li><a href="/civil/bridgedesign-and-monitoring">Bridge Design & Monitoring</a></li>
+  <li><a href="/civil/earthquake-resistant">Earthquake Resistant Design</a></li>
+  <li><a href="/civil/steel-and-rcc-design">Steel & RCC Design</a></li>
+  <li><a href="/civil/tall-building-analysis">Tall Building Analysis</a></li>
+  <li><a href="/civil/geotechnical-engineering">Geotechnical Engineering</a></li>
+  <li><a href="/civil/soil-stabilization-techniques">Soil Stabilization Techniques</a></li>
+  <li><a href="/civil/foundation-design">Foundation Design</a></li>
+  <li><a href="/civil/transportation-engineering">Transportation Engineering</a></li>
+  <li><a href="/civil/smart-traffic-management">Smart Traffic Management</a></li>
+  <li><a href="/civil/pavement-analysis-design">Pavement Analysis & Design</a></li>
+  <li><a href="/civil/environmental-engineering">Environmental Engineering</a></li>
+  <li><a href="/civil/water-treatment-recycling">Water Treatment & Recycling</a></li>
+  <li><a href="/civil/construction-project">Construction Project Management</a></li>
+  <li><a href="/civil/remote-sensing-gis">Remote Sensing & GIS</a></li>
+
+</ul>
+
           </div>
           
         </div>

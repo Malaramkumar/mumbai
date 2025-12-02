@@ -1,16 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  Cpu,
-  Cog,
-  Zap,
-  Radio,
-  Ruler,
-} from "lucide-react"; // ✅ Updated relevant icons
+import { Cpu, Cog, Zap, Radio, Ruler } from "lucide-react";
 import "./Services4.scss";
 //import "./Brands.scss"
 //import bgImage from "../images/bgmain3.png";
-import bgImage from "../images/ResearchMethodology.png"
+import bgImage from "../images/Services4_bg.png"
 // ✅ Import department background images
 
 import dept1 from "../images/dept/dept1.png";
@@ -23,44 +17,40 @@ const services = [
   {
     title: "CSC/IT",
     desc: "Department of Computer Science & Information Technology",
-     
-    link: "/",
-    icon: <Cpu size={20} />, // 💻 Computer chip icon
+    link: "/departments?dept=cse",
+    icon: <Cpu size={20} />,
     bg: dept1,
   },
   {
     title: "MECHANICAL",
     desc: "Department of Mechanical Engineering",
-     
-    link: "/",
-    icon: <Cog size={20} />, // ⚙️ Mechanical gear
+    link: "/departments?dept=mechanical",
+    icon: <Cog size={20} />,
     bg: dept2,
   },
   {
     title: "EEE",
     desc: "Department of Electrical & Electronics Engineering",
-     
-    link: "/",
-    icon: <Zap size={20} />, // ⚡ Electricity icon
+    link: "/departments?dept=eee",
+    icon: <Zap size={20} />,
     bg: dept3,
   },
   {
     title: "ECE",
     desc: "Department of Electronics & Communication Engineering",
-    
-    link: "/",
-    icon: <Radio size={20} />, // 📡 Communication signal
+    link: "/departments?dept=ece",
+    icon: <Radio size={20} />,
     bg: dept4,
   },
   {
     title: "CIVIL",
     desc: "Department of Civil Engineering",
- 
-    link: "/",
-    icon: <Ruler size={20} />, // 📏 Architecture/measurement tool
+    link: "/departments?dept=civil",
+    icon: <Ruler size={20} />,
     bg: dept5,
   },
 ];
+
 
 const Services4 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -99,17 +89,13 @@ const Services4 = () => {
         style={{ backgroundImage: `url(${bgImage})` }}
       >
         <div className="services4-center-content">
-          <h1>Research Methodology</h1>
+          <h1>Research Implementation</h1>
           <p>
-            At Narpavi Research Institute, we offer end-to-end PhD consulting
-            services designed to support scholars through every stage of their
-            doctoral journey. From expert guidance in PhD admission assistance
-            and proposal writing to hands-on support in research methodology,
-            implementation, and thesis development, we ensure academic excellence with precision and professionalism.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, nesciunt facere. Deserunt odio labore quos neque nobis tempora ea ab voluptatibus aspernatur aliquid quaerat, earum cumque sunt modi maiores maxime quasi possimus perspiciatis. Delectus, ut odit aliquid dolore repellat iusto neque laborum in magnam quod eaque iste est culpa quos eum rerum recusandae quam commodi pariatur porro laudantium, debitis deleniti. Neque suscipit, culpa soluta sed quibusdam voluptate debitis architecto asperiores laboriosam quas quasi sequi sapiente at, commodi aperiam excepturi labore tenetur quia amet voluptatum exercitationem accusamus! Nemo quos ea odio numquam odit sed obcaecati vero dolor. Totam, aut! Iste, aperiam.
+           A well-crafted research methodology is the backbone of every successful PhD and academic study—it transforms ideas into credible, data-driven discoveries. At Narpavi Research Institute, our Research Methodology Services in Mumbai empower scholars to design, validate, and execute research with precision, clarity, and global academic standards. From defining hypotheses to selecting analytical tools like SPSS, MATLAB, or NVivo, our experts ensure your methodology is not just compliant but publication-ready for Scopus, Web of Science, or UGC-approved journals. Explore how our structured and personalized guidance helps you master every stage—from research design to data interpretation—and elevate your work to international excellence.
+
           </p>
-          <button onClick={() => navigate("/phd-consulting")}>
-            Research Methodology
+          <button onClick={() => navigate("/research-methodology")}>
+            Research Implementation
           </button>
         </div>
 

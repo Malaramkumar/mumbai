@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./university.scss";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import SEO from ".././assets/SEO"
 const faqs = [
   {
     question: "What is the eligibility for PhD admission at HBNI?",
@@ -24,6 +24,18 @@ const faqs = [
     answer: "Portal opens in February, closes March 31. Shortlist in April, interviews in May, offers by June."
   }
 ];
+const keywords = [
+  "HBNI PhD Admission 2025",
+  "BARC PhD Admission",
+  "DAE Fellowship PhD",
+  "HBNI Research Aptitude Test",
+  "Nuclear Science PhD India",
+  "HBNI Eligibility 2025",
+  "HBNI Stipend",
+  "PhD Mumbai Universities",
+  "HBNI BARC Research",
+  "Homi Bhabha National Institute"
+];
 
 const HBNIPhDPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -31,6 +43,15 @@ const HBNIPhDPage = () => {
 
   return (
     <div className="phd-layout">
+        <SEO
+        title="HBNI PhD Admission 2025 | BARC Research, Eligibility, Stipend & DAE Fellowship"
+        description="Detailed guide for HBNI PhD admissions including eligibility, stipend, GATE/NET requirements, HBNI-RAT exam, research facilities at BARC/IGCAR/RRCAT, and complete 2025 timeline."
+        url="/colleges/hbni-mumbai"
+        image="/assets/university-default-banner.jpg"
+        keywords={keywords}
+        faqs={faqs}
+      />
+
       {/* Left Sidebar */}
       <aside className="left-sidebar">
         <h3>Quick Links</h3>
@@ -153,16 +174,12 @@ const HBNIPhDPage = () => {
 
       {/* Right Sidebar */}
       <aside className="right-sidebar">
-        <h3>Tags</h3>
-        <div className="tags">
-          <ul>
-            <li>HBNI Mumbai</li>
-            <li>BARC PhD Admission</li>
-            <li>DAE Fellowship</li>
-            <li>HBNI Research Test</li>
-            <li>Nuclear Science PhD</li>
-          </ul>
-        </div>
+          <h3>Keywords</h3>
+        <ul>
+          {keywords.map((k) => (
+            <li key={k}>{k}</li>
+          ))}
+        </ul>
       </aside>
     </div>
   );

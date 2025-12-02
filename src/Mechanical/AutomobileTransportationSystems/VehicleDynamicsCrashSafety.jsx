@@ -1,5 +1,18 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO";
 
+const keywords = [
+  "vehicle dynamics projects Mumbai",
+  "crash safety IEEE projects",
+  "B.Tech vehicle crash simulation",
+  "M.Tech vehicle dynamics modeling",
+  "Ph.D. crash safety systems research",
+  "AI-based crash prediction",
+  "LS-DYNA crash analysis projects",
+  "occupant safety design Mumbai",
+  "lightweight crash materials",
+  "Narpavi Research Institute automotive projects"
+];
 const faqs = [
   {
     question: "What services does the Vehicle Dynamics & Crash Safety Systems Project Development Center offer in Mumbai?",
@@ -26,22 +39,22 @@ const faqs = [
 const MEVehicleDynamicsCrashSafetySystemsProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Vehicle Dynamics & Crash Safety Systems – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Vehicle Dynamics & Crash Safety Systems Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on vehicle safety and dynamics."
+        url="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>vehicle dynamics projects Mumbai</li>
-              <li>crash safety IEEE projects</li>
-              <li>B.Tech vehicle crash simulation</li>
-              <li>M.Tech vehicle dynamics modeling</li>
-              <li>Ph.D. crash safety systems research</li>
-              <li>AI-based crash prediction</li>
-              <li>LS-DYNA crash analysis projects</li>
-              <li>occupant safety design Mumbai</li>
-              <li>lightweight crash materials</li>
-              <li>Narpavi Research Institute automotive projects</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -181,7 +194,7 @@ const MEVehicleDynamicsCrashSafetySystemsProjectDevelopmentCenter = () => {
             </section>
 
             <section className="MEProjectDevelopmentCenter-conclusion">
-              <h2>Conclusion</h2>
+              <h2></h2>
               <p>
                 Vehicle Dynamics & Crash Safety Systems is a crucial domain for Mumbai’s automotive and EV industries, ensuring safer, more reliable, and efficient vehicles. By integrating AI, lightweight materials, and simulation tools, engineers can design vehicles with enhanced crashworthiness and passenger protection.
               </p>
@@ -224,13 +237,50 @@ const MEVehicleDynamicsCrashSafetySystemsProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/electric-hybrid-vehicle-design-project-development">Electric & Hybrid Vehicle Design Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-industry-40-project-development">Smart Factory Systems (Industry 4.0) Project Development</a></li>
-              <li><a href="/supply-chain-process-optimization-project-development">Supply Chain & Process Optimization Project Development</a></li>
-              <li><a href="/lean-manufacturing-techniques-project-development">Lean Manufacturing Techniques Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/automobile-transportation-systems">
+      Automobile & Transportation Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design">
+      Electric & Hybrid Vehicle Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety">
+      Vehicle Dynamics & Crash Safety
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/internal-combustion-engine">
+      Internal Combustion Engines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel">
+      Automotive Aerodynamics & Fuel Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions">
+      Advanced Vehicle Suspensions
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/intelligent-transportation">
+      Intelligent Transportation Systems
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

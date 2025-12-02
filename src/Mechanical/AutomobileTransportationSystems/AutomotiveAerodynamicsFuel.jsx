@@ -1,4 +1,17 @@
 import "../MEProjectDevelopmentCenter.scss";
+import SEO from "../../assets/SEO";
+const keywords = [
+  "automotive aerodynamics projects Mumbai",
+  "fuel efficiency research projects",
+  "B.Tech vehicle drag reduction projects",
+  "M.Tech aerodynamic simulation",
+  "Ph.D. aerodynamic optimization Mumbai",
+  "CFD car body design projects",
+  "AI in automotive aerodynamics",
+  "lightweight vehicle design projects",
+  "active aerodynamics IEEE projects",
+  "Narpavi Research Institute automotive research"
+];
 
 const faqs = [
   {
@@ -26,22 +39,22 @@ const faqs = [
 const MEAutomotiveAerodynamicsFuelEfficiencyProjectDevelopmentCenter = () => {
   return (
     <div className="MEProjectDevelopmentCenter">
+      <SEO
+        title="Automotive Aerodynamics & Fuel Efficiency – Project Development Support in Mumbai | Narpavi Research Institute"
+        description="Narpavi Research Institute presents the Automotive Aerodynamics & Fuel Efficiency Project Development Center in Mumbai, a global platform for B.Tech, M.Tech, and Ph.D. students to develop IEEE-aligned (2023–2025) projects on aerodynamics and efficiency."
+        url="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel"
+        keywords={keywords}
+        faqs={faqs}
+      />
       <div className="MEProjectDevelopmentCenter-main">
         <div className="MEProjectDevelopmentCenter-grid">
           {/* Left: Keywords */}
           <div className="MEProjectDevelopmentCenter-left">
             <h3>🔑 Keywords</h3>
             <ul>
-              <li>automotive aerodynamics projects Mumbai</li>
-              <li>fuel efficiency research projects</li>
-              <li>B.Tech vehicle drag reduction projects</li>
-              <li>M.Tech aerodynamic simulation</li>
-              <li>Ph.D. aerodynamic optimization Mumbai</li>
-              <li>CFD car body design projects</li>
-              <li>AI in automotive aerodynamics</li>
-              <li>lightweight vehicle design projects</li>
-              <li>active aerodynamics IEEE projects</li>
-              <li>Narpavi Research Institute automotive research</li>
+              {keywords.map((keyword, index) => (
+                <li key={index}>{keyword}</li>
+              ))}
             </ul>
           </div>
 
@@ -181,7 +194,7 @@ const MEAutomotiveAerodynamicsFuelEfficiencyProjectDevelopmentCenter = () => {
             </section>
 
             <section className="MEProjectDevelopmentCenter-conclusion">
-              <h2>Conclusion</h2>
+              <h2></h2>
               <p>
                 Automotive Aerodynamics & Fuel Efficiency plays a crucial role in improving fuel economy, vehicle stability, and sustainability in Mumbai’s rapidly evolving automotive ecosystem. From EV startups and OEMs to logistics and public transportation, aerodynamic research directly impacts efficiency and environmental sustainability.
               </p>
@@ -224,13 +237,50 @@ const MEAutomotiveAerodynamicsFuelEfficiencyProjectDevelopmentCenter = () => {
           {/* Right: Subpage Links */}
           <div className="MEProjectDevelopmentCenter-right">
             <h3>🔗 Related Services</h3>
-            <ul>
-              <li><a href="/internal-combustion-engine-optimization-project-development">Internal Combustion Engine Optimization Project Development</a></li>
-              <li><a href="/vehicle-dynamics-crash-safety-systems-project-development">Vehicle Dynamics & Crash Safety Systems Project Development</a></li>
-              <li><a href="/electric-hybrid-vehicle-design-project-development">Electric & Hybrid Vehicle Design Project Development</a></li>
-              <li><a href="/cost-time-optimization-manufacturing-project-development">Cost & Time Optimization in Manufacturing Project Development</a></li>
-              <li><a href="/smart-factory-systems-industry-40-project-development">Smart Factory Systems (Industry 4.0) Project Development</a></li>
-            </ul>
+           <ul>
+  <li>
+    <a href="/mechanical/automobile-transportation-systems">
+      Automobile & Transportation Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/electric-hybrid-vehicle-design">
+      Electric & Hybrid Vehicle Design
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/vehicle-dynamics-crash-safety">
+      Vehicle Dynamics & Crash Safety
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/internal-combustion-engine">
+      Internal Combustion Engines
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/automotive-aerodynamics-fuel">
+      Automotive Aerodynamics & Fuel Systems
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/advanced-vehicle-suspensions">
+      Advanced Vehicle Suspensions
+    </a>
+  </li>
+
+  <li>
+    <a href="/mechanical/automobile-transportation-systems/intelligent-transportation">
+      Intelligent Transportation Systems
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
       </div>

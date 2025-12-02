@@ -13,47 +13,42 @@ import "./Services5.scss";
 const services = [
   {
     title: "Research Article Writing",
-    desc: "Find the right supervisor to align with your research journey.",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
-    link: "/research-article-and-journal-paper/research-article-writing-service-mumbai",
-    icon: <BookOpenText size={36} />, // 📖 Represents academic article writing
+    desc: "Expertly written research articles with strong structure, clarity, and accurate analysis.",
+    link: "/research-article-writing-service-mumbai",
+    icon: <BookOpenText size={36} />,
   },
   {
     title: "Journal Paper Writing",
-    desc: "Nail your research direction with expert topic guidance.",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
-    link: "/research-article-and-journal-paper/journal-paper-writing-service-in-mumbai",
-    icon: <NotebookText size={36} />, // 🧾 Represents journal or notebook entry
+    desc: "High-quality journal papers crafted to meet publication standards and guidelines.",
+    link: "/journal-paper-writing-service-in-mumbai",
+    icon: <NotebookText size={36} />,
   },
   {
     title: "Research Paper Writing",
-    desc: "Craft standout SOPs, CVs, and university applications.",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
-    link: "/research-article-and-journal-paper/research-paper-writing-service-in-mumbai",
-    icon: <FilePenLine size={36} />, // ✍️ Writing/editing paper
+    desc: "Well-researched and professionally written papers with proper methodology and results.",
+    link: "/research-paper-writing-service-in-mumbai",
+    icon: <FilePenLine size={36} />,
   },
   {
     title: "Review Paper Writing",
-    desc: "Structure your PhD research proposal with expert input.",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
-    link: "/research-article-and-journal-paper/review-paper-writing-service-in-mumbai",
-    icon: <ClipboardList size={36} />, // 🗒️ Checklist/review style icon
+    desc: "Comprehensive review papers summarizing and evaluating existing research effectively.",
+    link: "/review-paper-writing-service-in-mumbai",
+    icon: <ClipboardList size={36} />,
   },
   {
     title: "Review Article Writing",
-    desc: "Choose the right university for your research goals.",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
-    link: "/research-article-and-journal-paper/review-article-writing-service-in-mumbai",
-    icon: <BookMarked size={36} />, // 📘 Represents reviewed or referenced material
+    desc: "Clear and concise review articles presenting insights from multiple research sources.",
+    link: "/review-article-writing-service-in-mumbai",
+    icon: <BookMarked size={36} />,
   },
   {
     title: "Literature Review Writing",
-    desc: "Comprehensive support for literature surveys and summaries.",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, earum.",
-    link: "/research-article-and-journal-paper/literature-review-writing-services-in-mumbai",
-    icon: <FileText size={36} />, // 📄 Represents textual document/literature
+    desc: "Detailed literature reviews analyzing prior studies with critical evaluation.",
+    link: "/literature-review-writing-services-in-mumbai",
+    icon: <FileText size={36} />,
   },
 ];
+
 
 const Services5 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -76,20 +71,15 @@ const Services5 = () => {
         <div className="services5-top-section">
           <h1>Research Article & Journal Paper Writing Support</h1>
           <p>
-            At Narpavi Research Institute, our specialized PhD admission
-            assistance services in Mumbai are tailored to help aspiring scholars
-            make informed and strategic choices at the outset of their research
-            journey. We provide comprehensive support in identifying suitable
-            research topics aligned with current academic and industry trends,
-            connecting candidates with qualified research guides, and preparing
-            strong PhD applications.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, non dignissimos commodi neque velit minus. Repellendus culpa dolore dolorum aliquam aperiam voluptatem nesciunt. Voluptatum, aperiam at ex rem excepturi voluptatem facilis incidunt eum iure dicta expedita ullam nostrum odit delectus et cupiditate a tempora placeat consequatur eaque sit, eveniet iusto ad? Distinctio voluptatibus in officia vel soluta. Possimus quos, ad dolores, exercitationem facere ut beatae voluptates, quas dolore a earum aliquam autem. Ut vitae cum vero esse quam est architecto quia qui ratione velit laborum placeat molestias eveniet nostrum, assumenda optio tenetur ipsam. Sapiente dolor eaque, incidunt minima sequi repellat.
+            Transform your research into a publication-worthy masterpiece with our Research Article and Journal Paper Writing Services in Mumbai. At Narpavi Research Institute, we craft compelling, well-structured, and academically sound papers that meet the rigorous standards of international journals like Elsevier, Springer, IEEE, Scopus, and Web of Science. Our expert writers and editors ensure every section—introduction, methodology, results, and discussion—is logically connected, data-driven, and plagiarism-free. Whether you are preparing a conceptual paper, empirical article, or literature-based review, our guidance helps you articulate your findings with clarity and impact. Experience how our end-to-end publication support enhances your chances of journal acceptance and positions your research among globally recognized scholarly contributions.
+
           </p>
 
           <button
             onClick={() =>
-              navigate("/phd-admission-assistance-for-mumbai")
+              navigate("/research-article-and-journal-paper")
             }
+
           >
             Research Article & Journal Paper
           </button>
